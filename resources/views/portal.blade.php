@@ -2412,6 +2412,9 @@
             let savedTemplatesCache = [];
             let savedAddressesCache = [];
             let editingAddressId = null;
+            let savedDraftsCache = [];
+            let draftSaveTimer = null;
+            let draftAutoSaveInterval = null;
 
             function getEl(id) {
                 return document.getElementById(id);
@@ -4669,6 +4672,9 @@
             form.addEventListener('input', queueLiveEstimateUpdate);
             form.addEventListener('change', queueLiveEstimateUpdate);
             form.addEventListener('keyup', queueLiveEstimateUpdate);
+
+            form.addEventListener('input', scheduleDraftSave);
+            form.addEventListener('change', scheduleDraftSave);
 
             sameSizeMode.addEventListener('change', () => {
                 if (sameSizeMode.value === 'custom') {
@@ -7165,6 +7171,52 @@
                 return true;
             }
 
+            async function apiGetDrafts() {
+                const res = await fetch(API_BASE + '/drafts', {
+                    method: 'GET',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to load drafts.');
+                }
+
+                return json.data.drafts || [];
+            }
+
+            async function apiSaveDraft(payload) {
+                const res = await fetch(API_BASE + '/drafts', {
+                    method: 'POST',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to save draft.');
+                }
+
+                return json.data.draft;
+            }
+
+            async function apiDeleteDraft(id) {
+                const res = await fetch(API_BASE + '/drafts/' + id, {
+                    method: 'DELETE',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to delete draft.');
+                }
+
+                return true;
+            }
+
             function normalizeAuthUser(user) {
                 user = user || {};
 
@@ -7217,7 +7269,7 @@
                 return state;
             }
 
-            // ── Restore form from saved state ──
+            // ── Restore form from saved state ──apiGetAddresses()
             function restoreFormState(state) {
                 if (!state) return;
                 const set = (id, val) => { const el = getEl(id); if (el && val !== undefined) el.value = val; };
@@ -7520,6 +7572,16 @@
                 localStorage.removeItem('ac_jwt');
                 localStorage.removeItem('ac_dev_active_user');
 
+                if (draftAutoSaveInterval) {
+                    clearInterval(draftAutoSaveInterval);
+                    draftAutoSaveInterval = null;
+                }
+
+                if (draftSaveTimer) {
+                    clearTimeout(draftSaveTimer);
+                    draftSaveTimer = null;
+                }
+
                 updateAuthUI();
             }
 
@@ -7531,12 +7593,37 @@
 
                     if (authUser) {
                         await loadAccountData();
+                        startDraftAutoSave();
                     }
 
                     return;
                 }
 
                 updateAuthUI();
+            }
+
+            function startDraftAutoSave() {
+                if (draftAutoSaveInterval) {
+                    clearInterval(draftAutoSaveInterval);
+                }
+
+                draftAutoSaveInterval = setInterval(() => {
+                    if (authUser) {
+                        saveDraft();
+                    }
+                }, 30000);
+            }
+
+            function scheduleDraftSave() {
+                if (!authUser) return;
+
+                if (draftSaveTimer) {
+                    clearTimeout(draftSaveTimer);
+                }
+
+                draftSaveTimer = setTimeout(() => {
+                    saveDraft();
+                }, 3000);
             }
 
             // ── Auth modal helpers ──
@@ -7642,17 +7729,22 @@
                     populateSavedAddressPicker([]);
                 }
 
-                // Drafts/orders ekhono old logic e thakuk. Next step e convert korbo.
                 try {
-                    const [drafts, orders] = await Promise.all([
-                        wpGetMeta(META_DRAFTS),
-                        wpGetMeta(META_ORDER_HISTORY)
-                    ]);
-
+                    const drafts = await apiGetDrafts();
+                    savedDraftsCache = drafts;
                     renderDraftList(drafts || []);
+                } catch (err) {
+                    console.error(err);
+                    savedDraftsCache = [];
+                    renderDraftList([]);
+                }
+
+                // Orders ekhono old logic e thakuk, next step e order API korbo.
+                try {
+                    const orders = await wpGetMeta(META_ORDER_HISTORY);
                     renderOrderHistory(orders || []);
                 } catch (err) {
-                    console.error('Draft/order load failed:', err);
+                    console.error('Order history load failed:', err);
                 }
             }
 
@@ -7688,29 +7780,32 @@
             // ── Render draft list ──
             function renderDraftList(drafts) {
                 if (!draftListEl) return;
+
                 if (!drafts.length) {
                     draftListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📝</div>No drafts saved yet.<br>Start building a quote and it will be auto-saved here.</div>';
                     return;
                 }
-                draftListEl.innerHTML = drafts.map((d, i) => `
-      <div class="account-item" id="draftItem_${i}">
-        <div class="account-item-head">
-          <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:0;">
-            <div class="account-item-title draft-name-display" id="draftNameDisplay_${i}" ondblclick="startRenameDraft(${i})" title="Double-click to rename" style="cursor:text;">${esc(d.name || 'Draft ' + (i + 1))}</div>
-          </div>
-          <div class="account-item-meta" style="white-space:nowrap;">${esc(d.savedAt ? new Date(d.savedAt).toLocaleString() : '')}</div>
-        </div>
-        <div class="draft-rename-row hidden" id="draftRenameRow_${i}" style="display:none; gap:6px; align-items:center;">
-          <input type="text" class="save-template-input" id="draftRenameInput_${i}" value="${esc(d.name || 'Draft ' + (i + 1))}" maxlength="60" placeholder="Job name…" style="flex:1;" />
-          <button type="button" class="account-action-btn" onclick="confirmRenameDraft(${i})">Save</button>
-          <button type="button" class="account-action-btn" onclick="cancelRenameDraft(${i})">Cancel</button>
-        </div>
-        <div class="account-item-meta">${esc(String(d.state && d.state.tags ? d.state.tags.length : 0))} tag(s) · ${esc(d.state && d.state.jobName ? d.state.jobName : 'Untitled')}</div>
-        <div class="account-item-actions">
-          <button type="button" class="account-action-btn" onclick="loadDraft(${i})">Continue editing</button>
-          <button type="button" class="account-action-btn danger" onclick="deleteDraft(${i})">Delete</button>
-        </div>
-      </div>`).join('');
+
+                draftListEl.innerHTML = drafts.map((draft, index) => {
+                    const title = draft.title || draft.job_name || 'Untitled Draft';
+                    const dateText = draft.updated_at ? new Date(draft.updated_at).toLocaleString() : '';
+                    const tagCount = draft.total_tags || 0;
+                    const pieces = draft.total_pieces || 0;
+
+                    return `
+            <div class="account-item">
+                <div class="account-item-head">
+                    <div class="account-item-title">${esc(title)}</div>
+                    <div class="account-item-meta">${esc(dateText)}</div>
+                </div>
+                <div class="account-item-meta">${esc(String(tagCount))} tag(s) · ${esc(String(pieces))} piece(s)</div>
+                <div class="account-item-actions">
+                    <button type="button" class="account-action-btn" onclick="loadDraft(${index})">Load</button>
+                    <button type="button" class="account-action-btn danger" onclick="deleteDraft(${index})">Delete</button>
+                </div>
+            </div>
+        `;
+                }).join('');
             }
 
             window.startRenameDraft = function (index) {
@@ -7794,19 +7889,31 @@
                 }
             };
 
-            window.loadDraft = async function (index) {
-                const drafts = await wpGetMeta(META_DRAFTS) || [];
-                const d = drafts[index];
-                if (!d || !d.state) return;
-                restoreFormState(d.state);
+            window.loadDraft = function (index) {
+                const draft = savedDraftsCache[index];
+
+                if (!draft || !draft.payload) return;
+
+                restoreFormState(draft.payload);
                 closeAccountModal();
             };
+
             window.deleteDraft = async function (index) {
-                const drafts = await wpGetMeta(META_DRAFTS) || [];
-                drafts.splice(index, 1);
-                await wpSetMeta(META_DRAFTS, drafts);
-                renderDraftList(drafts);
+                const draft = savedDraftsCache[index];
+
+                if (!draft || !draft.id) return;
+
+                if (!window.confirm('Delete this draft?')) return;
+
+                try {
+                    await apiDeleteDraft(draft.id);
+                    savedDraftsCache.splice(index, 1);
+                    renderDraftList(savedDraftsCache);
+                } catch (err) {
+                    window.alert(err.message || 'Failed to delete draft.');
+                }
             };
+
             window.reorder = async function (index) {
                 const orders = await wpGetMeta(META_ORDER_HISTORY) || [];
                 const o = orders[index];
@@ -7829,25 +7936,54 @@
             }
             async function saveDraft() {
                 if (!authUser) return;
-                showDraftSaving();
+
                 const state = serializeFormState();
-                const jobName = state.jobName || 'Untitled';
-                let drafts = await wpGetMeta(META_DRAFTS) || [];
-                // Upsert: replace existing draft with same job name (or first slot if unnamed)
-                const existingIdx = drafts.findIndex(d => d.name === jobName);
-                const draft = { name: jobName, savedAt: new Date().toISOString(), state };
-                if (existingIdx >= 0) drafts[existingIdx] = draft;
-                else drafts.unshift(draft);
-                if (drafts.length > 20) drafts = drafts.slice(0, 20); // keep max 20 drafts
-                await wpSetMeta(META_DRAFTS, drafts);
-                showDraftSaved();
-            }
-            function startDraftAutoSave() {
-                stopDraftAutoSave();
-                draftTimer = setInterval(saveDraft, 30000);
-            }
-            function stopDraftAutoSave() {
-                if (draftTimer) { clearInterval(draftTimer); draftTimer = null; }
+
+                const totalTags = Array.isArray(state.tags) ? state.tags.length : 0;
+                const totalPieces = Array.isArray(state.tags)
+                    ? state.tags.reduce((sum, tag) => sum + Number(tag.qty || 0), 0)
+                    : 0;
+
+                // Empty form hole draft save korbo na
+                if (!state.jobName && totalTags === 0) return;
+
+                const title = state.jobName || 'Auto Draft';
+
+                try {
+                    if (draftDot) draftDot.classList.add('saving');
+                    if (draftStatusText) draftStatusText.textContent = 'Saving draft…';
+
+                    const saved = await apiSaveDraft({
+                        title,
+                        job_name: state.jobName || null,
+                        payload: state,
+                        total_tags: totalTags,
+                        total_pieces: totalPieces
+                    });
+
+                    savedDraftsCache.unshift(saved);
+
+                    // Max 20 drafts browser list-e show korbo
+                    savedDraftsCache = savedDraftsCache.slice(0, 20);
+
+                    renderDraftList(savedDraftsCache);
+
+                    if (draftDot) {
+                        draftDot.classList.remove('saving');
+                        draftDot.classList.add('saved');
+                    }
+
+                    if (draftStatusText) draftStatusText.textContent = 'Draft saved';
+                } catch (err) {
+                    console.error('Draft save failed:', err);
+
+                    if (draftDot) {
+                        draftDot.classList.remove('saving');
+                        draftDot.classList.remove('saved');
+                    }
+
+                    if (draftStatusText) draftStatusText.textContent = 'Draft save failed';
+                }
             }
 
             // ── Save order to history (called after Place Order) ──
