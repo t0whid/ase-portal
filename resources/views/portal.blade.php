@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Instant Quote | Accurate Signs &amp; Engraving</title>
     <style>
         :root {
@@ -1756,13 +1757,13 @@
                             <div class="field-grid" style="max-width:340px;" id="globalSizeWrap">
                                 <div class="field" id="globalHeightField">
                                     <label for="heightIn" id="globalHeightLabel">Height (in.)</label>
-                                    <input id="heightIn" name="heightIn" type="number" min="0.25"
-                                        step="0.001" value="1.000" required />
+                                    <input id="heightIn" name="heightIn" type="number" min="0.25" step="0.001"
+                                        value="1.000" required />
                                 </div>
                                 <div class="field">
                                     <label for="widthIn" id="globalWidthLabel">Width (in.)</label>
-                                    <input id="widthIn" name="widthIn" type="number" min="0.25"
-                                        step="0.001" value="3.000" required />
+                                    <input id="widthIn" name="widthIn" type="number" min="0.25" step="0.001"
+                                        value="3.000" required />
                                 </div>
                             </div>
 
@@ -1809,13 +1810,11 @@
                             </div>
                             <div class="field">
                                 <label for="companyName">Company</label>
-                                <input id="companyName" name="companyName" type="text"
-                                    placeholder="ABC Electric" />
+                                <input id="companyName" name="companyName" type="text" placeholder="ABC Electric" />
                             </div>
                             <div class="field">
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" placeholder="jane@company.com"
-                                    required />
+                                <input id="email" name="email" type="email" placeholder="jane@company.com" required />
                             </div>
                             <div class="field">
                                 <label for="phone">Phone</label>
@@ -1826,8 +1825,8 @@
                         <div id="accountNudge" class="hidden"
                             style="margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:12px; background:#fdf6f0; border:1px solid #e8c4a0; border-radius:10px; padding:10px 14px; flex-wrap:wrap;">
                             <div style="display:flex; align-items:center; gap:10px; min-width:0;">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
-                                    stroke="#b87333" stroke-width="1.6" style="flex-shrink:0;">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#b87333"
+                                    stroke-width="1.6" style="flex-shrink:0;">
                                     <circle cx="10" cy="7" r="3" />
                                     <path d="M4 17c0-3.314 2.686-6 6-6s6 2.686 6 6" />
                                 </svg>
@@ -1862,8 +1861,7 @@
                         </div>
                         <div id="saveTemplateInline" class="hidden"
                             style="margin-top:10px; display:flex; gap:8px; align-items:center;">
-                            <input type="text" id="saveTemplateInlineName" placeholder="Template name…"
-                                maxlength="60"
+                            <input type="text" id="saveTemplateInlineName" placeholder="Template name…" maxlength="60"
                                 style="flex:1; border:1px solid var(--line); border-radius:9px; padding:7px 10px; font-size:13px; font-family:inherit;" />
                             <button type="button" class="btn btn-primary btn-small"
                                 id="saveTemplateInlineConfirm">Save</button>
@@ -1936,8 +1934,8 @@
                 </div>
                 <div class="field">
                     <label for="authLoginPassword">Password</label>
-                    <input id="authLoginPassword" type="password" placeholder="••••••••"
-                        autocomplete="current-password" required />
+                    <input id="authLoginPassword" type="password" placeholder="••••••••" autocomplete="current-password"
+                        required />
                 </div>
                 <button type="submit" class="btn btn-primary" style="width:100%; padding:12px;">Sign In</button>
                 <div id="authLoginLoading" class="auth-loading-row hidden">
@@ -1972,8 +1970,7 @@
                 <div class="field">
                     <label for="authRegCompany">Company <span
                             style="font-weight:400; color:var(--muted);">(optional)</span></label>
-                    <input id="authRegCompany" type="text" placeholder="ABC Electric"
-                        autocomplete="organization" />
+                    <input id="authRegCompany" type="text" placeholder="ABC Electric" autocomplete="organization" />
                 </div>
                 <button type="submit" class="btn btn-primary" style="width:100%; padding:12px;">Create
                     Account</button>
@@ -1984,8 +1981,8 @@
             <div class="auth-modal-footer" id="authModalFooter">
                 <span id="authFooterLoginMsg">Don't have an account? <a id="authSwitchToRegister">Create
                         one</a></span>
-                <span id="authFooterRegisterMsg" class="hidden">Already have an account? <a
-                        id="authSwitchToLogin">Sign in</a></span>
+                <span id="authFooterRegisterMsg" class="hidden">Already have an account? <a id="authSwitchToLogin">Sign
+                        in</a></span>
             </div>
         </div>
     </div>
@@ -2057,8 +2054,7 @@
                         </div>
                         <div class="field">
                             <label for="addrZip">Zip</label>
-                            <input id="addrZip" type="text" placeholder="85001" maxlength="10"
-                                inputmode="numeric" />
+                            <input id="addrZip" type="text" placeholder="85001" maxlength="10" inputmode="numeric" />
                         </div>
                         <div class="field">
                             <label for="addrContact">Contact name <span
@@ -2074,8 +2070,7 @@
                     <div style="display:flex; gap:8px; flex-wrap:wrap;">
                         <button type="button" class="btn btn-primary btn-small" id="saveAddressBtn">Save
                             address</button>
-                        <button type="button" class="btn btn-secondary btn-small"
-                            id="cancelAddressBtn">Cancel</button>
+                        <button type="button" class="btn btn-secondary btn-small" id="cancelAddressBtn">Cancel</button>
                     </div>
                 </div>
                 <div class="account-list" id="addressList">
@@ -2149,8 +2144,8 @@
                 </div>
                 <div class="quote-actions-bottom">
                     <button type="button" class="btn btn-ghost" id="quoteModalCancel">Keep editing</button>
-                    <button type="button" class="btn btn-primary btn-primary-strong"
-                        id="quoteModalContinue">Continue to Order</button>
+                    <button type="button" class="btn btn-primary btn-primary-strong" id="quoteModalContinue">Continue to
+                        Order</button>
                 </div>
             </div>
             <div id="emailQuoteInline" class="hidden" style="margin-top:12px; display:flex; gap:8px;">
@@ -2208,8 +2203,8 @@
                         <div id="saveAddressNudge" class="hidden"
                             style="display:none; margin-top:8px; padding:10px 14px; background:#fdf6f0; border:1px solid #e8c4a0; border-radius:10px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
                             <div style="display:flex; align-items:center; gap:10px; min-width:0;">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
-                                    stroke="#b87333" stroke-width="1.6" style="flex-shrink:0;">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#b87333"
+                                    stroke-width="1.6" style="flex-shrink:0;">
                                     <path d="M10 2C7.239 2 5 4.239 5 7c0 4 5 10 5 10s5-6 5-10c0-2.761-2.239-5-5-5z" />
                                     <circle cx="10" cy="7" r="1.5" />
                                 </svg>
@@ -2249,8 +2244,8 @@
                         <div id="saveBillingAddressNudge" class="hidden"
                             style="display:none; grid-column:1/-1; margin-top:4px; padding:10px 14px; background:#fdf6f0; border:1px solid #e8c4a0; border-radius:10px; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
                             <div style="display:flex; align-items:center; gap:10px; min-width:0;">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
-                                    stroke="#b87333" stroke-width="1.6" style="flex-shrink:0;">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#b87333"
+                                    stroke-width="1.6" style="flex-shrink:0;">
                                     <path d="M10 2C7.239 2 5 4.239 5 7c0 4 5 10 5 10s5-6 5-10c0-2.761-2.239-5-5-5z" />
                                     <circle cx="10" cy="7" r="1.5" />
                                 </svg>
@@ -2285,14 +2280,14 @@
                     <p class="summary-section-title">Payment information</p>
                     <div class="field-grid">
                         <div class="field"><label>Cardholder name</label><input id="paymentCardholder" /></div>
-                        <div class="field"><label>Card number</label><input id="paymentCardNumber"
-                                inputmode="numeric" autocomplete="cc-number" /></div>
+                        <div class="field"><label>Card number</label><input id="paymentCardNumber" inputmode="numeric"
+                                autocomplete="cc-number" /></div>
                         <div class="field"><label>Expiration</label><input id="paymentExpiry" placeholder="MM/YY"
                                 autocomplete="cc-exp" /></div>
                         <div class="field"><label>CVV</label><input id="paymentCvv" inputmode="numeric"
                                 autocomplete="cc-csc" /></div>
-                        <div class="field"><label>Billing zip</label><input id="paymentBillingZip"
-                                inputmode="numeric" autocomplete="postal-code" /></div>
+                        <div class="field"><label>Billing zip</label><input id="paymentBillingZip" inputmode="numeric"
+                                autocomplete="postal-code" /></div>
                     </div>
                 </div>
                 <div class="quote-modal-card">
@@ -2320,8 +2315,7 @@
                         <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
                             <div class="proof-zoom-wrap">
                                 <span>Zoom</span>
-                                <input type="range" id="proofZoomRange" min="60" max="300"
-                                    step="10" value="150" />
+                                <input type="range" id="proofZoomRange" min="60" max="300" step="10" value="150" />
                                 <span id="proofZoomValue">150%</span>
                             </div>
                             <button type="button" class="btn btn-secondary-light" id="downloadProofBtn">Download
@@ -2364,1057 +2358,1058 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-                const NEWLINE = '\n';
-                const SVG_NS = 'http://www.w3.org/2000/svg';
-                const PRICING = {
-                    minimumOrder: 25,
-                    shippingRates: {
-                        pickup: 0,
-                        ground: 15,
-                        '2day': 30,
-                        overnight: 75
-                    },
-                    squareInchRate: 0.75
-                };
-                const BASELINE_LINE_SIZE_IN = 0.25;
-                const PORTAL_TAG_PX_PER_IN = 307;
-                const PORTAL_FONT_PX_PER_IN = 345;
-
-                const form = document.getElementById('quoteForm');
-                const signStack = document.getElementById('signStack');
-                const addSignBtn = document.getElementById('addSignBtn');
-                const resetBtn = document.getElementById('resetBtn');
-                const previewSignSelect = document.getElementById('previewSignSelect');
-                const designPreviewSvg = document.getElementById('designPreviewSvg');
-                const designPreviewMeta = document.getElementById('designPreviewMeta');
-                const previewWarning = document.getElementById('previewWarning');
-                const sameSizeMode = document.getElementById('sameSizeMode');
-                const globalSizeWrap = document.getElementById('globalSizeWrap');
-                const globalWidthLabel = document.getElementById('globalWidthLabel');
-                const globalHeightLabel = document.getElementById('globalHeightLabel');
-                const globalHeightField = document.getElementById('globalHeightField');
-                const lineCountInput = document.getElementById('lineCount');
-                const quoteModalBackdrop = document.getElementById('quoteModalBackdrop');
-                const quoteModalClose = document.getElementById('quoteModalClose');
-                const quoteModalCancel = document.getElementById('quoteModalCancel');
-                const quoteModalContinue = document.getElementById('quoteModalContinue');
-                const quoteModalSummary = document.getElementById('quoteModalSummary');
-                const quoteModalItems = document.getElementById('quoteModalItems');
-                const quoteModalTotal = document.getElementById('quoteModalTotal');
-                const quoteModalLeadTime = document.getElementById('quoteModalLeadTime');
-                const quoteModalMinimumNote = document.getElementById('quoteModalMinimumNote');
-                const downloadQuoteBtn = document.getElementById('downloadQuoteBtn');
-                const emailQuoteBtn = document.getElementById('emailQuoteBtn');
-                const emailInline = document.getElementById('emailQuoteInline');
-                const sendQuoteEmailBtn = document.getElementById('sendQuoteEmailBtn');
-                const quoteEmailInput = document.getElementById('quoteEmailInput');
-                const quoteLoadingBackdrop = document.getElementById('quoteLoadingBackdrop');
-                const generateBtn = document.getElementById('generateBtn');
-
-                let selectedPreviewIndex = 0;
-                let updateQueued = false;
-                let latestQuotePayload = null;
-                let quoteLoadingTimer = null;
-
-                function getEl(id) {
-                    return document.getElementById(id);
-                }
-
-                function setText(id, value) {
-                    const el = getEl(id);
-                    if (el) el.textContent = value;
-                }
-
-                function toggleHidden(el, hidden) {
-                    if (!el) return;
-                    el.classList.toggle('hidden', hidden);
-                }
-
-                function currency(value) {
-                    return new Intl.NumberFormat('en-US', {
-                        style: 'currency',
-                        currency: 'USD'
-                    }).format(Number(value || 0));
-                }
-
-                function normalizeNewlines(text) {
-                    return String(text || '').replace(/\r\n/g, NEWLINE).replace(/\r/g, NEWLINE);
-                }
-
-                function splitLines(text) {
-                    return normalizeNewlines(text).split(NEWLINE).map(l => l.trim());
-                }
-
-                function countCharacters(text) {
-                    return String(text || '').replace(/\s/g, '').length;
-                }
-
-                function esc(text) {
-                    return String(text || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-                        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-                }
-
-                function createSvgEl(tag, attrs = {}) {
-                    const el = document.createElementNS(SVG_NS, tag);
-                    Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, String(v)));
-                    return el;
-                }
-
-                function parseSizeValueToInches(value) {
-                    const raw = String(value || '').trim().toLowerCase().replace(/"/g, '');
-                    if (!raw || raw === 'auto' || raw === 'custom') return null;
-                    if (raw.includes('/')) {
-                        const [t, b] = raw.split('/');
-                        const top = Number(t),
-                            bot = Number(b);
-                        if (Number.isFinite(top) && Number.isFinite(bot) && bot !== 0) return top / bot;
-                    }
-                    const numeric = Number(raw);
-                    if (Number.isFinite(numeric) && numeric > 0) return numeric;
-                    return null;
-                }
-
-                function roundToNearestSixteenth(v) {
-                    return Math.round(v * 16) / 16;
-                }
-
-                function roundToThreeDecimals(v) {
-                    return Math.round(Number(v || 0) * 1000) / 1000;
-                }
-
-                function formatThreeDecimals(v) {
-                    return roundToThreeDecimals(v).toFixed(3);
-                }
-
-                function roundUpToIncrement(v, inc = 1 / 16) {
-                    if (!Number.isFinite(v) || v <= 0) return inc;
-                    return Math.ceil(v / inc) * inc;
-                }
-
-                function colorLabel(value) {
-                    const labels = {
-                        black_white: 'Black / White',
-                        white_black: 'White / Black',
-                        white_red: 'White / Red',
-                        yellow_black: 'Yellow / Black',
-                        yellow_red: 'Yellow / Red',
-                        red_white: 'Red / White',
-                        green_white: 'Green / White',
-                        blue_white: 'Blue / White',
-                        gray_white: 'Grey / White',
-                        brown_white: 'Brown / White',
-                        orange_white: 'Orange / White',
-                        orange_black: 'Orange / Black',
-                        purple_white: 'Purple / White'
-                    };
-                    return labels[value] || 'Black / White';
-                }
-
-                function colorPair(value) {
-                    const map = {
-                        black_white: ['#000000', '#ffffff'],
-                        white_black: ['#ffffff', '#000000'],
-                        white_red: ['#ffffff', '#ef1111'],
-                        yellow_black: ['#F5E800', '#000000'],
-                        yellow_red: ['#F5E800', '#ef1111'],
-                        red_white: ['#ef1111', '#ffffff'],
-                        green_white: ['#0b8f10', '#ffffff'],
-                        blue_white: ['#004F86', '#ffffff'],
-                        gray_white: ['#4F565B', '#ffffff'],
-                        brown_white: ['#523D2A', '#ffffff'],
-                        orange_white: ['#B84717', '#ffffff'],
-                        orange_black: ['#D24912', '#000000'],
-                        purple_white: ['#5b34b1', '#ffffff']
-                    };
-                    return map[value] || ['#000000', '#ffffff'];
-                }
-
-                function materialLabel() {
-                    return 'Laser-engraved plastic';
-                }
-
-                function fontLabel(value) {
-                    const labels = {
-                        'Arial, Helvetica, sans-serif': 'Arial',
-                        "'MS Gothic', monospace": 'MS Gothic',
-                        "'Switzerland Condensed', 'Arial Narrow', Arial, sans-serif": 'Switzerland Condensed'
-                    };
-                    return labels[value] || 'Arial';
-                }
-
-                function getFontWidthFactor(fontFamily) {
-                    if (fontFamily === "'Switzerland Condensed', 'Arial Narrow', Arial, sans-serif") return 0.9;
-                    if (fontFamily === "'MS Gothic', monospace") return 0.95;
-                    return 0.9;
-                }
-
-                function measureSvgTextWidth(svg, text, fontSize, fontFamily, fontWeight, letterSpacingPx) {
-                    const probe = createSvgEl('text', {
-                        x: -9999,
-                        y: -9999,
-                        'font-size': fontSize,
-                        'font-family': fontFamily,
-                        'font-weight': fontWeight,
-                        'letter-spacing': String(letterSpacingPx || 0) + 'px',
-                        visibility: 'hidden'
-                    });
-                    probe.textContent = text || ' ';
-                    svg.appendChild(probe);
-                    let width = 0;
-                    try {
-                        width = probe.getComputedTextLength();
-                    } catch (_) {
-                        width = (String(text || '').length || 1) * fontSize * 0.55;
-                    }
-                    probe.remove();
-                    return width;
-                }
-
-                function measureReferenceXMetrics(svg, fontSize, fontFamily, fontWeight) {
-                    const probe = createSvgEl('text', {
-                        x: -9999,
-                        y: -9999,
-                        'font-size': fontSize,
-                        'font-family': fontFamily,
-                        'font-weight': fontWeight,
-                        visibility: 'hidden'
-                    });
-                    probe.textContent = 'X';
-                    svg.appendChild(probe);
-                    let metrics = {
-                        height: fontSize * 0.7,
-                        ascent: fontSize * 0.7
-                    };
-                    try {
-                        const box = probe.getBBox();
-                        metrics = {
-                            height: box.height || fontSize * 0.7,
-                            ascent: (-box.y) || (box.height || fontSize * 0.7)
-                        };
-                    } catch (_) {}
-                    probe.remove();
-                    return metrics;
-                }
-
-                function measureReferenceXHeightInches(fontInches, fontFamily, isBold) {
-                    const mfpx = 240;
-                    const metrics = measureReferenceXMetrics(designPreviewSvg, mfpx, fontFamily ||
-                        'Arial, Helvetica, sans-serif', isBold ? 700 : 400);
-                    return roundToThreeDecimals(metrics.height * (fontInches / mfpx));
-                }
-
-                function getLeadTime() {
-                    return '24-48hrs';
-                }
-
-                function getLineSpacingMultiplier(value) {
-                    if (value==='tight') return 0.25;
-                if (value==='half') return 0.5;
-            if (value==='double') return 2;
-        return 1;
-        }
-
-        function getDefaultLineStyle() {
-            return {
-                bold: false,
-                size: '1/4',
-                customSize: ''
+            const NEWLINE = '\n';
+            const SVG_NS = 'http://www.w3.org/2000/svg';
+            const PRICING = {
+                minimumOrder: 25,
+                shippingRates: {
+                    pickup: 0,
+                    ground: 15,
+                    '2day': 30,
+                    overnight: 75
+                },
+                squareInchRate: 0.75
             };
-        }
+            const BASELINE_LINE_SIZE_IN = 0.25;
+            const PORTAL_TAG_PX_PER_IN = 307;
+            const PORTAL_FONT_PX_PER_IN = 345;
 
-        function getEffectiveLineSizeValue(style) {
-            if (!style) return '1/4';
-            if (style.size==='custom') return style.customSize || '';
-        return style.size || '1/4';
-        }
+            const form = document.getElementById('quoteForm');
+            const signStack = document.getElementById('signStack');
+            const addSignBtn = document.getElementById('addSignBtn');
+            const resetBtn = document.getElementById('resetBtn');
+            const previewSignSelect = document.getElementById('previewSignSelect');
+            const designPreviewSvg = document.getElementById('designPreviewSvg');
+            const designPreviewMeta = document.getElementById('designPreviewMeta');
+            const previewWarning = document.getElementById('previewWarning');
+            const sameSizeMode = document.getElementById('sameSizeMode');
+            const globalSizeWrap = document.getElementById('globalSizeWrap');
+            const globalWidthLabel = document.getElementById('globalWidthLabel');
+            const globalHeightLabel = document.getElementById('globalHeightLabel');
+            const globalHeightField = document.getElementById('globalHeightField');
+            const lineCountInput = document.getElementById('lineCount');
+            const quoteModalBackdrop = document.getElementById('quoteModalBackdrop');
+            const quoteModalClose = document.getElementById('quoteModalClose');
+            const quoteModalCancel = document.getElementById('quoteModalCancel');
+            const quoteModalContinue = document.getElementById('quoteModalContinue');
+            const quoteModalSummary = document.getElementById('quoteModalSummary');
+            const quoteModalItems = document.getElementById('quoteModalItems');
+            const quoteModalTotal = document.getElementById('quoteModalTotal');
+            const quoteModalLeadTime = document.getElementById('quoteModalLeadTime');
+            const quoteModalMinimumNote = document.getElementById('quoteModalMinimumNote');
+            const downloadQuoteBtn = document.getElementById('downloadQuoteBtn');
+            const emailQuoteBtn = document.getElementById('emailQuoteBtn');
+            const emailInline = document.getElementById('emailQuoteInline');
+            const sendQuoteEmailBtn = document.getElementById('sendQuoteEmailBtn');
+            const quoteEmailInput = document.getElementById('quoteEmailInput');
+            const quoteLoadingBackdrop = document.getElementById('quoteLoadingBackdrop');
+            const generateBtn = document.getElementById('generateBtn');
 
-        function getStoredLineStyles(entry) {
-            try {
-                return JSON.parse(entry.dataset.lineStyles || '[]');
-            } catch (_) {
+            let selectedPreviewIndex = 0;
+            let updateQueued = false;
+            let latestQuotePayload = null;
+            let quoteLoadingTimer = null;
+            let savedTemplatesCache = [];
+
+            function getEl(id) {
+                return document.getElementById(id);
+            }
+
+            function setText(id, value) {
+                const el = getEl(id);
+                if (el) el.textContent = value;
+            }
+
+            function toggleHidden(el, hidden) {
+                if (!el) return;
+                el.classList.toggle('hidden', hidden);
+            }
+
+            function currency(value) {
+                return new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD'
+                }).format(Number(value || 0));
+            }
+
+            function normalizeNewlines(text) {
+                return String(text || '').replace(/\r\n/g, NEWLINE).replace(/\r/g, NEWLINE);
+            }
+
+            function splitLines(text) {
+                return normalizeNewlines(text).split(NEWLINE).map(l => l.trim());
+            }
+
+            function countCharacters(text) {
+                return String(text || '').replace(/\s/g, '').length;
+            }
+
+            function esc(text) {
+                return String(text || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+            }
+
+            function createSvgEl(tag, attrs = {}) {
+                const el = document.createElementNS(SVG_NS, tag);
+                Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, String(v)));
+                return el;
+            }
+
+            function parseSizeValueToInches(value) {
+                const raw = String(value || '').trim().toLowerCase().replace(/"/g, '');
+                if (!raw || raw === 'auto' || raw === 'custom') return null;
+                if (raw.includes('/')) {
+                    const [t, b] = raw.split('/');
+                    const top = Number(t),
+                        bot = Number(b);
+                    if (Number.isFinite(top) && Number.isFinite(bot) && bot !== 0) return top / bot;
+                }
+                const numeric = Number(raw);
+                if (Number.isFinite(numeric) && numeric > 0) return numeric;
+                return null;
+            }
+
+            function roundToNearestSixteenth(v) {
+                return Math.round(v * 16) / 16;
+            }
+
+            function roundToThreeDecimals(v) {
+                return Math.round(Number(v || 0) * 1000) / 1000;
+            }
+
+            function formatThreeDecimals(v) {
+                return roundToThreeDecimals(v).toFixed(3);
+            }
+
+            function roundUpToIncrement(v, inc = 1 / 16) {
+                if (!Number.isFinite(v) || v <= 0) return inc;
+                return Math.ceil(v / inc) * inc;
+            }
+
+            function colorLabel(value) {
+                const labels = {
+                    black_white: 'Black / White',
+                    white_black: 'White / Black',
+                    white_red: 'White / Red',
+                    yellow_black: 'Yellow / Black',
+                    yellow_red: 'Yellow / Red',
+                    red_white: 'Red / White',
+                    green_white: 'Green / White',
+                    blue_white: 'Blue / White',
+                    gray_white: 'Grey / White',
+                    brown_white: 'Brown / White',
+                    orange_white: 'Orange / White',
+                    orange_black: 'Orange / Black',
+                    purple_white: 'Purple / White'
+                };
+                return labels[value] || 'Black / White';
+            }
+
+            function colorPair(value) {
+                const map = {
+                    black_white: ['#000000', '#ffffff'],
+                    white_black: ['#ffffff', '#000000'],
+                    white_red: ['#ffffff', '#ef1111'],
+                    yellow_black: ['#F5E800', '#000000'],
+                    yellow_red: ['#F5E800', '#ef1111'],
+                    red_white: ['#ef1111', '#ffffff'],
+                    green_white: ['#0b8f10', '#ffffff'],
+                    blue_white: ['#004F86', '#ffffff'],
+                    gray_white: ['#4F565B', '#ffffff'],
+                    brown_white: ['#523D2A', '#ffffff'],
+                    orange_white: ['#B84717', '#ffffff'],
+                    orange_black: ['#D24912', '#000000'],
+                    purple_white: ['#5b34b1', '#ffffff']
+                };
+                return map[value] || ['#000000', '#ffffff'];
+            }
+
+            function materialLabel() {
+                return 'Laser-engraved plastic';
+            }
+
+            function fontLabel(value) {
+                const labels = {
+                    'Arial, Helvetica, sans-serif': 'Arial',
+                    "'MS Gothic', monospace": 'MS Gothic',
+                    "'Switzerland Condensed', 'Arial Narrow', Arial, sans-serif": 'Switzerland Condensed'
+                };
+                return labels[value] || 'Arial';
+            }
+
+            function getFontWidthFactor(fontFamily) {
+                if (fontFamily === "'Switzerland Condensed', 'Arial Narrow', Arial, sans-serif") return 0.9;
+                if (fontFamily === "'MS Gothic', monospace") return 0.95;
+                return 0.9;
+            }
+
+            function measureSvgTextWidth(svg, text, fontSize, fontFamily, fontWeight, letterSpacingPx) {
+                const probe = createSvgEl('text', {
+                    x: -9999,
+                    y: -9999,
+                    'font-size': fontSize,
+                    'font-family': fontFamily,
+                    'font-weight': fontWeight,
+                    'letter-spacing': String(letterSpacingPx || 0) + 'px',
+                    visibility: 'hidden'
+                });
+                probe.textContent = text || ' ';
+                svg.appendChild(probe);
+                let width = 0;
+                try {
+                    width = probe.getComputedTextLength();
+                } catch (_) {
+                    width = (String(text || '').length || 1) * fontSize * 0.55;
+                }
+                probe.remove();
+                return width;
+            }
+
+            function measureReferenceXMetrics(svg, fontSize, fontFamily, fontWeight) {
+                const probe = createSvgEl('text', {
+                    x: -9999,
+                    y: -9999,
+                    'font-size': fontSize,
+                    'font-family': fontFamily,
+                    'font-weight': fontWeight,
+                    visibility: 'hidden'
+                });
+                probe.textContent = 'X';
+                svg.appendChild(probe);
+                let metrics = {
+                    height: fontSize * 0.7,
+                    ascent: fontSize * 0.7
+                };
+                try {
+                    const box = probe.getBBox();
+                    metrics = {
+                        height: box.height || fontSize * 0.7,
+                        ascent: (-box.y) || (box.height || fontSize * 0.7)
+                    };
+                } catch (_) { }
+                probe.remove();
+                return metrics;
+            }
+
+            function measureReferenceXHeightInches(fontInches, fontFamily, isBold) {
+                const mfpx = 240;
+                const metrics = measureReferenceXMetrics(designPreviewSvg, mfpx, fontFamily ||
+                    'Arial, Helvetica, sans-serif', isBold ? 700 : 400);
+                return roundToThreeDecimals(metrics.height * (fontInches / mfpx));
+            }
+
+            function getLeadTime() {
+                return '24-48hrs';
+            }
+
+            function getLineSpacingMultiplier(value) {
+                if (value === 'tight') return 0.25;
+                if (value === 'half') return 0.5;
+                if (value === 'double') return 2;
+                return 1;
+            }
+
+            function getDefaultLineStyle() {
+                return {
+                    bold: false,
+                    size: '1/4',
+                    customSize: ''
+                };
+            }
+
+            function getEffectiveLineSizeValue(style) {
+                if (!style) return '1/4';
+                if (style.size === 'custom') return style.customSize || '';
+                return style.size || '1/4';
+            }
+
+            function getStoredLineStyles(entry) {
+                try {
+                    return JSON.parse(entry.dataset.lineStyles || '[]');
+                } catch (_) {
+                    return [];
+                }
+            }
+
+            function setStoredLineStyles(entry, styles) {
+                entry.dataset.lineStyles = JSON.stringify(styles || []);
+            }
+
+            function getLineStylesForEntry(entry) {
+                const stored = getStoredLineStyles(entry);
+                const rows = Array.from(entry.querySelectorAll('.line-inline-row'));
+                if (!rows.length) return stored;
+                return rows.map((row, index) => {
+                    const sizeSelect = row.querySelector('.line-inline-size');
+                    const customInput = row.querySelector('.line-inline-custom');
+                    const boldInput = row.querySelector('.line-inline-bold-input');
+                    return {
+                        ...getDefaultLineStyle(),
+                        ...(stored[index] || {}),
+                        size: sizeSelect ? sizeSelect.value : (stored[index]?.size || '1/4'),
+                        customSize: customInput ? customInput.value.trim() : (stored[index]?.customSize || ''),
+                        bold: boldInput ? Boolean(boldInput.checked) : Boolean(stored[index]?.bold)
+                    };
+                });
+            }
+
+            function measureTextWidthInches(text, fontInches, fontFamily, isBold, condenseRatio) {
+                const sampleText = String(text || '').trim();
+                if (!sampleText) return 0;
+                const mfpx = 240;
+                const measuredPx = measureSvgTextWidth(designPreviewSvg, sampleText, mfpx, fontFamily ||
+                    'Arial, Helvetica, sans-serif', isBold ? 700 : 400, 0) * getFontWidthFactor(fontFamily ||
+                        'Arial, Helvetica, sans-serif');
+                return roundToThreeDecimals(measuredPx * (fontInches / mfpx) * (Number.isFinite(condenseRatio) ?
+                    condenseRatio : 1));
+            }
+
+            function getAutoHoleDiameter(w, h) {
+                const s = Math.min(w, h);
+                if (s <= 1.5) return 0.125;
+                if (s <= 4) return 0.1875;
+                if (s <= 8) return 0.25;
+                return 0.5;
+            }
+
+            function getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight) {
+                if (!holeQuantity || holeQuantity === 'No holes') return null;
+                if (holeQuantity === 'Cable tie slots') return {
+                    type: 'slot',
+                    width: 0.250,
+                    height: 0.188
+                };
+                const sizeMap = {
+                    '1/8': 0.125,
+                    '3/16': 0.188,
+                    '1/4': 0.250
+                };
+                const diameter = sizeMap[holeSizeValue] || getAutoHoleDiameter(tagWidth, tagHeight);
+                return {
+                    type: 'round',
+                    diameter
+                };
+            }
+
+            function getHoleCenterOffset(d) {
+                return d > 0 ? roundToThreeDecimals(d * 1.5) : 0;
+            }
+
+            function getNoHoleMargins(w, h) {
+                const h2 = roundToThreeDecimals(roundToNearestSixteenth(w * 0.065));
+                const v = roundToThreeDecimals(Math.min(h2, h * 0.15));
+                return {
+                    left: h2,
+                    right: h2,
+                    top: v,
+                    bottom: v
+                };
+            }
+
+            function getHoleSafeMargins(holeQuantity, holeSizeValue, tagWidth, tagHeight) {
+                const base = getNoHoleMargins(tagWidth, tagHeight);
+                const spec = getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight);
+                if (!spec) return base;
+                const sideMargin = roundToThreeDecimals(spec.type === 'slot' ? spec.height * 3 : spec.diameter * 3);
+                if (holeQuantity === '1 hole left') return {
+                    left: sideMargin,
+                    right: base.right,
+                    top: base.top,
+                    bottom: base.bottom
+                };
+                if (holeQuantity === '1 hole right') return {
+                    left: base.left,
+                    right: sideMargin,
+                    top: base.top,
+                    bottom: base.bottom
+                };
+                if (holeQuantity === '2 holes' || holeQuantity === 'Cable tie slots') return {
+                    left: sideMargin,
+                    right: sideMargin,
+                    top: base.top,
+                    bottom: base.bottom
+                };
+                if (holeQuantity === '4 holes' || holeQuantity === '6 holes') return {
+                    left: sideMargin,
+                    right: sideMargin,
+                    top: sideMargin,
+                    bottom: sideMargin
+                };
+                return base;
+            }
+
+            function getHolePlacementPoints(holeQuantity, tagWidth, tagHeight, centerOffset) {
+                const lx = centerOffset,
+                    rx = tagWidth - centerOffset,
+                    cy = tagHeight / 2,
+                    ty = centerOffset,
+                    by = tagHeight - centerOffset;
+                if (holeQuantity === '1 hole left') return [{
+                    x: lx,
+                    y: cy
+                }];
+                if (holeQuantity === '1 hole right') return [{
+                    x: rx,
+                    y: cy
+                }];
+                if (holeQuantity === '2 holes' || holeQuantity === 'Cable tie slots') return [{
+                    x: lx,
+                    y: cy
+                }, {
+                    x: rx,
+                    y: cy
+                }];
+                if (holeQuantity === '4 holes') return [{
+                    x: lx,
+                    y: ty
+                }, {
+                    x: rx,
+                    y: ty
+                }, {
+                    x: lx,
+                    y: by
+                }, {
+                    x: rx,
+                    y: by
+                }];
+                if (holeQuantity === '6 holes') return [{
+                    x: lx,
+                    y: ty
+                }, {
+                    x: rx,
+                    y: ty
+                }, {
+                    x: lx,
+                    y: by
+                }, {
+                    x: rx,
+                    y: by
+                }, {
+                    x: lx,
+                    y: cy
+                }, {
+                    x: rx,
+                    y: cy
+                }];
                 return [];
             }
-        }
 
-        function setStoredLineStyles(entry, styles) {
-            entry.dataset.lineStyles = JSON.stringify(styles || []);
-        }
+            function inchesToPx(value, scale) {
+                return value * scale;
+            }
 
-        function getLineStylesForEntry(entry) {
-            const stored = getStoredLineStyles(entry);
-            const rows = Array.from(entry.querySelectorAll('.line-inline-row'));
-            if (!rows.length) return stored;
-            return rows.map((row, index) => {
-                const sizeSelect = row.querySelector('.line-inline-size');
-                const customInput = row.querySelector('.line-inline-custom');
-                const boldInput = row.querySelector('.line-inline-bold-input');
-                return {
-                    ...getDefaultLineStyle(),
-                    ...(stored[index] || {}),
-                    size: sizeSelect ? sizeSelect.value : (stored[index]?.size || '1/4'),
-                    customSize: customInput ? customInput.value.trim() : (stored[index]?.customSize || ''),
-                    bold: boldInput ? Boolean(boldInput.checked) : Boolean(stored[index]?.bold)
-                };
-            });
-        }
+            function renderHoleFeatures(svgGroup, holeQuantity, holeSizeValue, tagWidth, tagHeight, offsetX, offsetY, scale,
+                textColor = '#000000') {
+                const spec = getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight);
+                if (!spec) return;
+                if (spec.type === 'round') {
+                    const co = getHoleCenterOffset(spec.diameter);
+                    getHolePlacementPoints(holeQuantity, tagWidth, tagHeight, co).forEach(pt => {
+                        svgGroup.appendChild(createSvgEl('circle', {
+                            cx: offsetX + inchesToPx(pt.x, scale),
+                            cy: offsetY + inchesToPx(pt.y, scale),
+                            r: inchesToPx(spec.diameter / 2, scale),
+                            fill: '#ffffff',
+                            stroke: textColor,
+                            'stroke-width': 1.25
+                        }));
+                    });
+                    return;
+                }
+                const co = getHoleCenterOffset(spec.height);
+                getHolePlacementPoints('Cable tie slots', tagWidth, tagHeight, co).forEach(pt => {
+                    svgGroup.appendChild(createSvgEl('rect', {
+                        x: offsetX + inchesToPx(pt.x - spec.width / 2, scale),
+                        y: offsetY + inchesToPx(pt.y - spec.height / 2, scale),
+                        width: inchesToPx(spec.width, scale),
+                        height: inchesToPx(spec.height, scale),
+                        rx: inchesToPx(spec.height / 2, scale),
+                        ry: inchesToPx(spec.height / 2, scale),
+                        fill: '#ffffff',
+                        stroke: textColor,
+                        'stroke-width': 1.25
+                    }));
+                });
+            }
 
-        function measureTextWidthInches(text, fontInches, fontFamily, isBold, condenseRatio) {
-            const sampleText = String(text || '').trim();
-            if (!sampleText) return 0;
-            const mfpx = 240;
-            const measuredPx = measureSvgTextWidth(designPreviewSvg, sampleText, mfpx, fontFamily ||
-                'Arial, Helvetica, sans-serif', isBold ? 700 : 400, 0) * getFontWidthFactor(fontFamily ||
-                'Arial, Helvetica, sans-serif');
-            return roundToThreeDecimals(measuredPx * (fontInches / mfpx) * (Number.isFinite(condenseRatio) ?
-                condenseRatio : 1));
-        }
-
-        function getAutoHoleDiameter(w, h) {
-            const s = Math.min(w, h);
-            if (s <= 1.5) return 0.125;
-            if (s <= 4) return 0.1875;
-            if (s <= 8) return 0.25;
-            return 0.5;
-        }
-
-        function getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight) {
-            if (!holeQuantity||holeQuantity==='No holes') return null;
-        if (holeQuantity==='Cable tie slots') return {
-            type: 'slot',
-            width: 0.250,
-            height: 0.188
-        };
-        const sizeMap = {
-            '1/8': 0.125,
-            '3/16': 0.188,
-            '1/4': 0.250
-        };
-        const diameter = sizeMap[holeSizeValue] || getAutoHoleDiameter(tagWidth, tagHeight);
-        return {
-            type: 'round',
-            diameter
-        };
-        }
-
-        function getHoleCenterOffset(d) {
-            return d > 0 ? roundToThreeDecimals(d * 1.5) : 0;
-        }
-
-        function getNoHoleMargins(w, h) {
-            const h2 = roundToThreeDecimals(roundToNearestSixteenth(w * 0.065));
-            const v = roundToThreeDecimals(Math.min(h2, h * 0.15));
-            return {
-                left: h2,
-                right: h2,
-                top: v,
-                bottom: v
-            };
-        }
-
-        function getHoleSafeMargins(holeQuantity, holeSizeValue, tagWidth, tagHeight) {
-            const base = getNoHoleMargins(tagWidth, tagHeight);
-            const spec = getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight);
-            if (!spec) return base;
-            const sideMargin = roundToThreeDecimals(spec.type==='slot' ? spec.height * 3 : spec.diameter * 3);
-        if (holeQuantity==='1 hole left') return {
-            left: sideMargin,
-            right: base.right,
-            top: base.top,
-            bottom: base.bottom
-        };
-        if (holeQuantity==='1 hole right') return {
-            left: base.left,
-            right: sideMargin,
-            top: base.top,
-            bottom: base.bottom
-        };
-        if (holeQuantity==='2 holes' || holeQuantity === 'Cable tie slots') return {
-            left: sideMargin,
-            right: sideMargin,
-            top: base.top,
-            bottom: base.bottom
-        };
-        if (holeQuantity==='4 holes' || holeQuantity === '6 holes') return {
-            left: sideMargin,
-            right: sideMargin,
-            top: sideMargin,
-            bottom: sideMargin
-        };
-        return base;
-        }
-
-        function getHolePlacementPoints(holeQuantity, tagWidth, tagHeight, centerOffset) {
-            const lx = centerOffset,
-                rx = tagWidth - centerOffset,
-                cy = tagHeight / 2,
-                ty = centerOffset,
-                by = tagHeight - centerOffset;
-            if (holeQuantity==='1 hole left') return [{
-        x: lx,
-        y: cy
-        }];
-        if (holeQuantity==='1 hole right') return [{
-            x: rx,
-            y: cy
-        }];
-        if (holeQuantity==='2 holes' || holeQuantity === 'Cable tie slots') return [{
-        x: lx,
-        y: cy
-        }, {
-        x: rx,
-        y: cy
-        }];
-        if (holeQuantity==='4 holes') return [{
-        x: lx,
-        y: ty
-        }, {
-        x: rx,
-        y: ty
-        }, {
-        x: lx,
-        y: by
-        }, {
-        x: rx,
-        y: by
-        }];
-        if (holeQuantity==='6 holes') return [{
-            x: lx,
-            y: ty
-        }, {
-            x: rx,
-            y: ty
-        }, {
-            x: lx,
-            y: by
-        }, {
-            x: rx,
-            y: by
-        }, {
-            x: lx,
-            y: cy
-        }, {
-            x: rx,
-            y: cy
-        }];
-        return [];
-        }
-
-        function inchesToPx(value, scale) {
-            return value * scale;
-        }
-
-        function renderHoleFeatures(svgGroup, holeQuantity, holeSizeValue, tagWidth, tagHeight, offsetX, offsetY, scale,
-            textColor='#000000') {
-            const spec = getSelectedHoleSpec(holeQuantity, holeSizeValue, tagWidth, tagHeight);
-            if (!spec) return;
-            if (spec.type==='round') {
-            const co = getHoleCenterOffset(spec.diameter);
-            getHolePlacementPoints(holeQuantity, tagWidth, tagHeight, co).forEach(pt => {
-                svgGroup.appendChild(createSvgEl('circle', {
-                    cx: offsetX + inchesToPx(pt.x, scale),
-                    cy: offsetY + inchesToPx(pt.y, scale),
-                    r: inchesToPx(spec.diameter / 2, scale),
-                    fill: '#ffffff',
-                    stroke: textColor,
-                    'stroke-width': 1.25
-                }));
-            });
-            return;
-        }
-        const co = getHoleCenterOffset(spec.height);
-        getHolePlacementPoints('Cable tie slots', tagWidth, tagHeight, co).forEach(pt => {
-            svgGroup.appendChild(createSvgEl('rect', {
-                x: offsetX + inchesToPx(pt.x - spec.width / 2, scale),
-                y: offsetY + inchesToPx(pt.y - spec.height / 2, scale),
-                width: inchesToPx(spec.width, scale),
-                height: inchesToPx(spec.height, scale),
-                rx: inchesToPx(spec.height / 2, scale),
-                ry: inchesToPx(spec.height / 2, scale),
-                fill: '#ffffff',
-                stroke: textColor,
-                'stroke-width': 1.25
-            }));
-        });
-        }
-
-        function getTagGeometry({
-            tagWidth,
-            tagHeight,
-            hasHoles = false,
-            holeDiameter = 0,
-            holeQuantity='No holes',
-            holeSizeValue=''
-        }) {
-            const baseMargins = getNoHoleMargins(tagWidth, tagHeight);
-            const selectedMargins = hasHoles ? getHoleSafeMargins(holeQuantity, holeSizeValue, tagWidth, tagHeight) :
-                baseMargins;
-            const effectiveHoleDiameter = hasHoles && holeDiameter > 0 ? holeDiameter : 0;
-            const holeCenterOffset = hasHoles ? getHoleCenterOffset(effectiveHoleDiameter) : 0;
-            return {
+            function getTagGeometry({
                 tagWidth,
                 tagHeight,
-                margins: selectedMargins,
-                holeDiameter: effectiveHoleDiameter,
-                holeCenterOffset,
-                safeArea: {
-                    x: roundToThreeDecimals(selectedMargins.left),
-                    y: roundToThreeDecimals(selectedMargins.top),
-                    width: roundToThreeDecimals(Math.max(0, tagWidth - selectedMargins.left - selectedMargins.right)),
-                    height: roundToThreeDecimals(Math.max(0, tagHeight - selectedMargins.top - selectedMargins.bottom))
-                }
-            };
-        }
+                hasHoles = false,
+                holeDiameter = 0,
+                holeQuantity = 'No holes',
+                holeSizeValue = ''
+            }) {
+                const baseMargins = getNoHoleMargins(tagWidth, tagHeight);
+                const selectedMargins = hasHoles ? getHoleSafeMargins(holeQuantity, holeSizeValue, tagWidth, tagHeight) :
+                    baseMargins;
+                const effectiveHoleDiameter = hasHoles && holeDiameter > 0 ? holeDiameter : 0;
+                const holeCenterOffset = hasHoles ? getHoleCenterOffset(effectiveHoleDiameter) : 0;
+                return {
+                    tagWidth,
+                    tagHeight,
+                    margins: selectedMargins,
+                    holeDiameter: effectiveHoleDiameter,
+                    holeCenterOffset,
+                    safeArea: {
+                        x: roundToThreeDecimals(selectedMargins.left),
+                        y: roundToThreeDecimals(selectedMargins.top),
+                        width: roundToThreeDecimals(Math.max(0, tagWidth - selectedMargins.left - selectedMargins.right)),
+                        height: roundToThreeDecimals(Math.max(0, tagHeight - selectedMargins.top - selectedMargins.bottom))
+                    }
+                };
+            }
 
-        function getPreviewScale(pw, ph, tw, th, pad = 24) {
-            return Math.min(Math.max(1, pw - pad * 2) / tw, Math.max(1, ph - pad * 2) / th);
-        }
+            function getPreviewScale(pw, ph, tw, th, pad = 24) {
+                return Math.min(Math.max(1, pw - pad * 2) / tw, Math.max(1, ph - pad * 2) / th);
+            }
 
-        function validateTextBounds(textBounds, safeArea) {
-            const tol = 0.06;
-            const oL = textBounds.x < (safeArea.x - tol),
-                oT = textBounds.y < (safeArea.y - tol),
-                oR = textBounds.x + textBounds.width > (safeArea.x + safeArea.width + tol),
-                oB = textBounds.y + textBounds.height > (safeArea.y + safeArea.height + tol);
-            const oX = oL || oR,
-                oY = oT || oB;
-            let message='';
-            if (oX && oY)
-                message='Text does not fit within the safe area. Try condensing, changing tag size, or text size.';
-            else if (oX)
-                message='Text is too wide for the safe area. Try condensing, changing tag size, or text size.';
-            else if (oY)
-                message='Text is too tall for the safe area. Try condensing, changing tag size, or text size.';
-            return {
-                fits: !oX && !oY,
-                message
-            };
-        }
+            function validateTextBounds(textBounds, safeArea) {
+                const tol = 0.06;
+                const oL = textBounds.x < (safeArea.x - tol),
+                    oT = textBounds.y < (safeArea.y - tol),
+                    oR = textBounds.x + textBounds.width > (safeArea.x + safeArea.width + tol),
+                    oB = textBounds.y + textBounds.height > (safeArea.y + safeArea.height + tol);
+                const oX = oL || oR,
+                    oY = oT || oB;
+                let message = '';
+                if (oX && oY)
+                    message = 'Text does not fit within the safe area. Try condensing, changing tag size, or text size.';
+                else if (oX)
+                    message = 'Text is too wide for the safe area. Try condensing, changing tag size, or text size.';
+                else if (oY)
+                    message = 'Text is too tall for the safe area. Try condensing, changing tag size, or text size.';
+                return {
+                    fits: !oX && !oY,
+                    message
+                };
+            }
 
-        function getSizeOptionsHtml(selectedValue) {
-            return ['1/16', '1/8', '3/16', '1/4', '5/16', '3/8', '7/16', '1/2', '9/16', '5/8', '3/4', '7/8', '1',
-                'custom'
-            ].map(o => '<option value="'+o+'"' + (selectedValue === o ? ' selected' : '') + '>' + (
-                o==='custom' ? 'Custom' : o + '"') + '</option>').join('');
-        }
+            function getSizeOptionsHtml(selectedValue) {
+                return ['1/16', '1/8', '3/16', '1/4', '5/16', '3/8', '7/16', '1/2', '9/16', '5/8', '3/4', '7/8', '1',
+                    'custom'
+                ].map(o => '<option value="' + o + '"' + (selectedValue === o ? ' selected' : '') + '>' + (
+                    o === 'custom' ? 'Custom' : o + '"') + '</option>').join('');
+            }
 
-        function alignIconSvg(type) {
-            if (type==='left'
-        ) return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="10" x2="14" y2="10"></line><line x1="4" y1="14" x2="18" y2="14"></line><line x1="4" y1="18" x2="12" y2="18"></line></svg>';
-        if (type==='right'
-        ) return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="10" y1="10" x2="20" y2="10"></line><line x1="6" y1="14" x2="20" y2="14"></line><line x1="12" y1="18" x2="20" y2="18"></line></svg>';
-        return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="10" x2="17" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="8" y1="18" x2="16" y2="18"></line></svg>';
-        }
+            function alignIconSvg(type) {
+                if (type === 'left'
+                ) return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="10" x2="14" y2="10"></line><line x1="4" y1="14" x2="18" y2="14"></line><line x1="4" y1="18" x2="12" y2="18"></line></svg>';
+                if (type === 'right'
+                ) return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="10" y1="10" x2="20" y2="10"></line><line x1="6" y1="14" x2="20" y2="14"></line><line x1="12" y1="18" x2="20" y2="18"></line></svg>';
+                return '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="10" x2="17" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="8" y1="18" x2="16" y2="18"></line></svg>';
+            }
 
-        function buildAlignControls(prefix='compact') {
-            return '<div class="'+prefix+'-align-group">' +
-                '<button type="button" class="'+prefix+'-align-btn entry-align-btn" data-align="left" title="Align left">' +
-                alignIconSvg('left') + '</button>' +
-                '<button type="button" class="'+prefix+'-align-btn entry-align-btn" data-align="center" title="Align center">' +
-                alignIconSvg('center') + '</button>' +
-                '<button type="button" class="'+prefix+'-align-btn entry-align-btn" data-align="right" title="Align right">' +
-                alignIconSvg('right') + '</button>' +
-                '</div>';
-        }
+            function buildAlignControls(prefix = 'compact') {
+                return '<div class="' + prefix + '-align-group">' +
+                    '<button type="button" class="' + prefix + '-align-btn entry-align-btn" data-align="left" title="Align left">' +
+                    alignIconSvg('left') + '</button>' +
+                    '<button type="button" class="' + prefix + '-align-btn entry-align-btn" data-align="center" title="Align center">' +
+                    alignIconSvg('center') + '</button>' +
+                    '<button type="button" class="' + prefix + '-align-btn entry-align-btn" data-align="right" title="Align right">' +
+                    alignIconSvg('right') + '</button>' +
+                    '</div>';
+            }
 
-        function buildInlineLineRow(lineText, index, style, state) {
-            const safeStyle = Object.assign({}, getDefaultLineStyle(), style || {});
-            const isActive = Boolean(state && state.isActive),
-                isSelected = Boolean(state && state.isSelected);
-            const labelText = lineText && lineText.length ? lineText : ('Blank line ' + (index + 1));
-            return '<div class="line-inline-row'+(isActive?' active':'')+(isSelected?' active':'')+'" data-line-index="'+index+'"' +
-                (isSelected ? ' data-line-selected="true"' : '') + ' >' +
-                '<div class="line-inline-label">Line ' + (index + 1) + ': ' + esc(labelText) + '</div>' +
-                '<label class="line-inline-bold"><input type="checkbox" class="line-inline-bold-input"' + (safeStyle
-                    .bold ? ' checked' : '') + ' />Bold</label>' +
-                '<div class="line-inline-height-wrap"><select class="line-inline-size">' + getSizeOptionsHtml(
-                    safeStyle.size || '1/4') + '</select>' +
-                '<input class="line-inline-custom'+(safeStyle.size==='custom'?' visible':' hidden')+'" type="text" value="'+esc(safeStyle.customSize||'')+'" placeholder="Custom" /></div>' +
-                '<button type="button" class="line-inline-apply-btn">Apply below</button>' +
-                '</div>';
-        }
+            function buildInlineLineRow(lineText, index, style, state) {
+                const safeStyle = Object.assign({}, getDefaultLineStyle(), style || {});
+                const isActive = Boolean(state && state.isActive),
+                    isSelected = Boolean(state && state.isSelected);
+                const labelText = lineText && lineText.length ? lineText : ('Blank line ' + (index + 1));
+                return '<div class="line-inline-row' + (isActive ? ' active' : '') + (isSelected ? ' active' : '') + '" data-line-index="' + index + '"' +
+                    (isSelected ? ' data-line-selected="true"' : '') + ' >' +
+                    '<div class="line-inline-label">Line ' + (index + 1) + ': ' + esc(labelText) + '</div>' +
+                    '<label class="line-inline-bold"><input type="checkbox" class="line-inline-bold-input"' + (safeStyle
+                        .bold ? ' checked' : '') + ' />Bold</label>' +
+                    '<div class="line-inline-height-wrap"><select class="line-inline-size">' + getSizeOptionsHtml(
+                        safeStyle.size || '1/4') + '</select>' +
+                    '<input class="line-inline-custom' + (safeStyle.size === 'custom' ? ' visible' : ' hidden') + '" type="text" value="' + esc(safeStyle.customSize || '') + '" placeholder="Custom" /></div>' +
+                    '<button type="button" class="line-inline-apply-btn">Apply below</button>' +
+                    '</div>';
+            }
 
-        // ── Color options helper ──
-        function buildColorOptions(selectedValue) {
-            const opts = [
-                ['black_white', 'Black / White'],
-                ['white_black', 'White / Black'],
-                ['white_red', 'White / Red'],
-                ['yellow_black', 'Yellow / Black'],
-                ['yellow_red', 'Yellow / Red'],
-                ['red_white', 'Red / White'],
-                ['green_white', 'Green / White'],
-                ['blue_white', 'Blue / White'],
-                ['gray_white', 'Grey / White'],
-                ['brown_white', 'Brown / White'],
-                ['orange_white', 'Orange / White'],
-                ['orange_black', 'Orange / Black'],
-                ['purple_white', 'Purple / White']
-            ];
-            return opts.map(([v, l]) => '<option value="'+v+'"' + (v === selectedValue ? ' selected' : '') + '>' + l +
-                '</option>').join('');
-        }
+            // ── Color options helper ──
+            function buildColorOptions(selectedValue) {
+                const opts = [
+                    ['black_white', 'Black / White'],
+                    ['white_black', 'White / Black'],
+                    ['white_red', 'White / Red'],
+                    ['yellow_black', 'Yellow / Black'],
+                    ['yellow_red', 'Yellow / Red'],
+                    ['red_white', 'Red / White'],
+                    ['green_white', 'Green / White'],
+                    ['blue_white', 'Blue / White'],
+                    ['gray_white', 'Grey / White'],
+                    ['brown_white', 'Brown / White'],
+                    ['orange_white', 'Orange / White'],
+                    ['orange_black', 'Orange / Black'],
+                    ['purple_white', 'Purple / White']
+                ];
+                return opts.map(([v, l]) => '<option value="' + v + '"' + (v === selectedValue ? ' selected' : '') + '>' + l +
+                    '</option>').join('');
+            }
 
-        function buildHoleOptions(selectedValue) {
-            const opts = ['No holes', '1 hole left', '1 hole right', '2 holes', '4 holes', '6 holes',
-                'Cable tie slots'
-            ];
-            return opts.map(o => '<option value="'+o+'"' + (o === selectedValue ? ' selected' : '') + '>' + o +
-                '</option>').join('');
-        }
+            function buildHoleOptions(selectedValue) {
+                const opts = ['No holes', '1 hole left', '1 hole right', '2 holes', '4 holes', '6 holes',
+                    'Cable tie slots'
+                ];
+                return opts.map(o => '<option value="' + o + '"' + (o === selectedValue ? ' selected' : '') + '>' + o +
+                    '</option>').join('');
+            }
 
-        function buildHoleSizeOptions(selectedValue, holeQty) {
-            if (holeQty==='No holes') return '<option value="N/A">N/A</option>';
-        if (holeQty==='Cable tie slots') return '<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
-        return ['1/8', '3/16', '1/4'].map(o => '<option value="'+o+'"' + (o === selectedValue ? ' selected' : '') +
-            '>' + o + '</option>').join('');
-        }
+            function buildHoleSizeOptions(selectedValue, holeQty) {
+                if (holeQty === 'No holes') return '<option value="N/A">N/A</option>';
+                if (holeQty === 'Cable tie slots') return '<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
+                return ['1/8', '3/16', '1/4'].map(o => '<option value="' + o + '"' + (o === selectedValue ? ' selected' : '') +
+                    '>' + o + '</option>').join('');
+            }
 
-        // ── Build sign card (with embedded Tag Details) ──
-        function buildSignCard(title, text='', qty = 1, width='', height='') {
-            const globalColor = getEl('globalColor') ? getEl('globalColor').value : 'black_white';
-            const globalHoles = getEl('holes') ? getEl('holes').value : 'No holes';
-            const globalHoleSize = getEl('holeSize') ? getEl('holeSize').value : '1/8';
-            const card = document.createElement('div');
-            card.className = 'sign-card sign-entry';
-            card.innerHTML = ''
-                +
-                '<div class="sign-card-header">' +
-                '  <div class="sign-card-title">' + esc(title) + '</div>' +
-                '  <div class="sign-card-controls">' +
-                '    <button type="button" class="sign-icon-btn sign-duplicate-btn" title="Duplicate tag"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="10" height="10" stroke="currentColor" stroke-width="2"></rect><rect x="5" y="5" width="10" height="10" stroke="currentColor" stroke-width="2"></rect></svg></button>' +
-                '    <button type="button" class="sign-icon-btn sign-delete-btn" title="Delete tag"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18" stroke="currentColor" stroke-width="2"></path><path d="M8 6V4h8v2" stroke="currentColor" stroke-width="2"></path><rect x="6" y="6" width="12" height="14" stroke="currentColor" stroke-width="2"></rect></svg></button>' +
-                '  </div>' +
-                '</div>' +
-                '<div class="sign-card-body">'
-                // ── Tag Details (collapsible) ──
-                +
-                '  <div class="tag-details-panel">' +
-                '    <div class="tag-details-toggle" tabindex="0" role="button" aria-expanded="false">' +
-                '      <span class="tag-details-toggle-label">Tag Details (color, holes, size)</span>' +
-                '      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>' +
-                '    </div>' +
-                '    <div class="tag-details-fields hidden">'
-                // color
-                +
-                '      <div class="field-grid-4" style="gap:8px;">' +
-                '        <div class="field"><label>Color</label><select class="tag-color-select">' +
-                buildColorOptions(globalColor) + '</select></div>' +
-                '        <div class="field"><label>Holes</label><select class="tag-holes-select">' +
-                buildHoleOptions(globalHoles) + '</select></div>' +
-                '        <div class="field"><label>Hole size</label><select class="tag-holesize-select"' + (
-                    globalHoles === 'No holes' ? ' disabled' : '') + '>' + buildHoleSizeOptions(globalHoleSize,
-                    globalHoles) + '</select></div>' +
-                '        <div class="field"><label>Corner radius</label><select class="tag-radius-select"><option value="no" selected>No</option><option value="yes">Yes (1/8")</option></select></div>' +
-                '      </div>' +
-                '      <div class="field-grid sign-size-row" style="max-width:370px; gap:8px; align-items:end;">' +
-                '        <div class="field sign-height-field"><label class="sign-height-label">Height (in.)</label><input class="sign-height" type="number" min="0.25" step="0.001" value="'+esc(String(height))+'" /></div>' +
-                '        <div class="field sign-width-field"><label class="sign-width-label">Width (in.)</label><input class="sign-width" type="number" min="0.25" step="0.001" value="'+esc(String(width))+'" /></div>' +
-                '        <button type="button" class="btn btn-secondary btn-small apply-size-below-btn" style="white-space:nowrap;">Apply size below</button>' +
-                '      </div>' +
-                '    </div>' +
-                '  </div>'
-                // ── Quantity ──
-                +
-                '  <div class="qty-row">' +
-                '    <div class="field"><label>Quantity</label><input class="sign-qty" type="number" min="1" step="1" value="'+esc(String(qty))+'" /></div>' +
-                '    <button type="button" class="btn btn-secondary btn-small apply-qty-below-btn">Apply qty below</button>' +
-                '  </div>'
-                // ── Line spacing + align ──
-                +
-                '  <div class="sign-global-controls">' +
-                '    <select class="sign-line-spacing" style="border:1px solid var(--line); border-radius:9px; padding:6px 8px; font-size:12px; font-family:inherit;">' +
-                '      <option value="tight">Tight</option><option value="half">Half</option><option value="full" selected>Full</option><option value="double">Double</option>' +
-                '    </select>' +
-                buildAlignControls('compact') +
-                '  </div>'
-                // ── Textarea ──
-                +
-                '  <div class="text-edit-wrap"><textarea class="sign-text" placeholder="Example:&#10;MAIN DISCONNECT&#10;480V"></textarea></div>'
-                // ── Condense (moved below text per email request) ──
-                +
-                '  <div class="condense-row">' +
-                '    <label>Condense text:</label>' +
-                '    <select class="tag-condense-select"><option value="no" selected>No</option><option value="yes">Yes</option></select>' +
-                '  </div>'
-                // ── Per-line style panel ──
-                +
-                '  <div class="line-inline-panel"></div>' +
-                '</div>';
-            card.querySelector('.sign-text').value = text;
-            card.dataset.align = 'center';
-            card.dataset.activeLineIndex = '0';
-            card.dataset.colorValue = globalColor;
-            card.dataset.holeQty = globalHoles;
-            card.dataset.holeSize = globalHoleSize;
-            card.dataset.condense = 'no';
-            card.dataset.cornerRadius = 'no';
-            return card;
-        }
+            // ── Build sign card (with embedded Tag Details) ──
+            function buildSignCard(title, text = '', qty = 1, width = '', height = '') {
+                const globalColor = getEl('globalColor') ? getEl('globalColor').value : 'black_white';
+                const globalHoles = getEl('holes') ? getEl('holes').value : 'No holes';
+                const globalHoleSize = getEl('holeSize') ? getEl('holeSize').value : '1/8';
+                const card = document.createElement('div');
+                card.className = 'sign-card sign-entry';
+                card.innerHTML = ''
+                    +
+                    '<div class="sign-card-header">' +
+                    '  <div class="sign-card-title">' + esc(title) + '</div>' +
+                    '  <div class="sign-card-controls">' +
+                    '    <button type="button" class="sign-icon-btn sign-duplicate-btn" title="Duplicate tag"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="10" height="10" stroke="currentColor" stroke-width="2"></rect><rect x="5" y="5" width="10" height="10" stroke="currentColor" stroke-width="2"></rect></svg></button>' +
+                    '    <button type="button" class="sign-icon-btn sign-delete-btn" title="Delete tag"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18" stroke="currentColor" stroke-width="2"></path><path d="M8 6V4h8v2" stroke="currentColor" stroke-width="2"></path><rect x="6" y="6" width="12" height="14" stroke="currentColor" stroke-width="2"></rect></svg></button>' +
+                    '  </div>' +
+                    '</div>' +
+                    '<div class="sign-card-body">'
+                    // ── Tag Details (collapsible) ──
+                    +
+                    '  <div class="tag-details-panel">' +
+                    '    <div class="tag-details-toggle" tabindex="0" role="button" aria-expanded="false">' +
+                    '      <span class="tag-details-toggle-label">Tag Details (color, holes, size)</span>' +
+                    '      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>' +
+                    '    </div>' +
+                    '    <div class="tag-details-fields hidden">'
+                    // color
+                    +
+                    '      <div class="field-grid-4" style="gap:8px;">' +
+                    '        <div class="field"><label>Color</label><select class="tag-color-select">' +
+                    buildColorOptions(globalColor) + '</select></div>' +
+                    '        <div class="field"><label>Holes</label><select class="tag-holes-select">' +
+                    buildHoleOptions(globalHoles) + '</select></div>' +
+                    '        <div class="field"><label>Hole size</label><select class="tag-holesize-select"' + (
+                        globalHoles === 'No holes' ? ' disabled' : '') + '>' + buildHoleSizeOptions(globalHoleSize,
+                            globalHoles) + '</select></div>' +
+                    '        <div class="field"><label>Corner radius</label><select class="tag-radius-select"><option value="no" selected>No</option><option value="yes">Yes (1/8")</option></select></div>' +
+                    '      </div>' +
+                    '      <div class="field-grid sign-size-row" style="max-width:370px; gap:8px; align-items:end;">' +
+                    '        <div class="field sign-height-field"><label class="sign-height-label">Height (in.)</label><input class="sign-height" type="number" min="0.25" step="0.001" value="' + esc(String(height)) + '" /></div>' +
+                    '        <div class="field sign-width-field"><label class="sign-width-label">Width (in.)</label><input class="sign-width" type="number" min="0.25" step="0.001" value="' + esc(String(width)) + '" /></div>' +
+                    '        <button type="button" class="btn btn-secondary btn-small apply-size-below-btn" style="white-space:nowrap;">Apply size below</button>' +
+                    '      </div>' +
+                    '    </div>' +
+                    '  </div>'
+                    // ── Quantity ──
+                    +
+                    '  <div class="qty-row">' +
+                    '    <div class="field"><label>Quantity</label><input class="sign-qty" type="number" min="1" step="1" value="' + esc(String(qty)) + '" /></div>' +
+                    '    <button type="button" class="btn btn-secondary btn-small apply-qty-below-btn">Apply qty below</button>' +
+                    '  </div>'
+                    // ── Line spacing + align ──
+                    +
+                    '  <div class="sign-global-controls">' +
+                    '    <select class="sign-line-spacing" style="border:1px solid var(--line); border-radius:9px; padding:6px 8px; font-size:12px; font-family:inherit;">' +
+                    '      <option value="tight">Tight</option><option value="half">Half</option><option value="full" selected>Full</option><option value="double">Double</option>' +
+                    '    </select>' +
+                    buildAlignControls('compact') +
+                    '  </div>'
+                    // ── Textarea ──
+                    +
+                    '  <div class="text-edit-wrap"><textarea class="sign-text" placeholder="Example:&#10;MAIN DISCONNECT&#10;480V"></textarea></div>'
+                    // ── Condense (moved below text per email request) ──
+                    +
+                    '  <div class="condense-row">' +
+                    '    <label>Condense text:</label>' +
+                    '    <select class="tag-condense-select"><option value="no" selected>No</option><option value="yes">Yes</option></select>' +
+                    '  </div>'
+                    // ── Per-line style panel ──
+                    +
+                    '  <div class="line-inline-panel"></div>' +
+                    '</div>';
+                card.querySelector('.sign-text').value = text;
+                card.dataset.align = 'center';
+                card.dataset.activeLineIndex = '0';
+                card.dataset.colorValue = globalColor;
+                card.dataset.holeQty = globalHoles;
+                card.dataset.holeSize = globalHoleSize;
+                card.dataset.condense = 'no';
+                card.dataset.cornerRadius = 'no';
+                return card;
+            }
 
-        function getLineSelectionRange(entry) {
-            const textarea = entry.querySelector('.sign-text');
-            const lines = splitLines(textarea ? textarea.value : '');
-            const maxIndex = Math.max(lines.length - 1, 0);
-            if (!textarea) return {
-                start: 0,
-                end: 0
-            };
-            const value = textarea.value || '',
-                ss = textarea.selectionStart || 0,
-                se = textarea.selectionEnd || 0;
-            const start = Math.max(0, Math.min(value.slice(0, ss).split(NEWLINE).length - 1, maxIndex));
-            const end = Math.max(0, Math.min(value.slice(0, se).split(NEWLINE).length - 1, maxIndex));
-            return {
-                start: Math.min(start, end),
-                end: Math.max(start, end)
-            };
-        }
+            function getLineSelectionRange(entry) {
+                const textarea = entry.querySelector('.sign-text');
+                const lines = splitLines(textarea ? textarea.value : '');
+                const maxIndex = Math.max(lines.length - 1, 0);
+                if (!textarea) return {
+                    start: 0,
+                    end: 0
+                };
+                const value = textarea.value || '',
+                    ss = textarea.selectionStart || 0,
+                    se = textarea.selectionEnd || 0;
+                const start = Math.max(0, Math.min(value.slice(0, ss).split(NEWLINE).length - 1, maxIndex));
+                const end = Math.max(0, Math.min(value.slice(0, se).split(NEWLINE).length - 1, maxIndex));
+                return {
+                    start: Math.min(start, end),
+                    end: Math.max(start, end)
+                };
+            }
 
-        function getActiveLineIndex(entry) {
-            const range = getLineSelectionRange(entry);
-            entry.dataset.activeLineIndex = String(range.start);
-            return range.start;
-        }
+            function getActiveLineIndex(entry) {
+                const range = getLineSelectionRange(entry);
+                entry.dataset.activeLineIndex = String(range.start);
+                return range.start;
+            }
 
-        function setActiveLineIndex(entry, nextIndex) {
-            const textarea = entry.querySelector('.sign-text');
-            const lines = splitLines(textarea ? textarea.value : '');
-            const maxIndex = Math.max(lines.length - 1, 0);
-            entry.dataset.activeLineIndex = String(Math.max(0, Math.min(nextIndex, maxIndex)));
-        }
+            function setActiveLineIndex(entry, nextIndex) {
+                const textarea = entry.querySelector('.sign-text');
+                const lines = splitLines(textarea ? textarea.value : '');
+                const maxIndex = Math.max(lines.length - 1, 0);
+                entry.dataset.activeLineIndex = String(Math.max(0, Math.min(nextIndex, maxIndex)));
+            }
 
-        function getSelectedLineIndexes(entry) {
-            const range = getLineSelectionRange(entry);
-            const indexes = [];
-            for (let i = range.start; i <= range.end; i++) indexes.push(i);
-            return indexes;
-        }
+            function getSelectedLineIndexes(entry) {
+                const range = getLineSelectionRange(entry);
+                const indexes = [];
+                for (let i = range.start; i <= range.end; i++) indexes.push(i);
+                return indexes;
+            }
 
-        function hasMultiLineSelection(entry) {
-            const range = getLineSelectionRange(entry);
-            return range.end > range.start;
-        }
+            function hasMultiLineSelection(entry) {
+                const range = getLineSelectionRange(entry);
+                return range.end > range.start;
+            }
 
-        function getCurrentLineStyle(entry, lineIndex) {
-            const current = getStoredLineStyles(entry);
-            return {
-                ...getDefaultLineStyle(),
-                ...(current[lineIndex] || {})
-            };
-        }
+            function getCurrentLineStyle(entry, lineIndex) {
+                const current = getStoredLineStyles(entry);
+                return {
+                    ...getDefaultLineStyle(),
+                    ...(current[lineIndex] || {})
+                };
+            }
 
-        function writeLineStyle(entry, lineIndex, patch) {
-            const current = getStoredLineStyles(entry);
-            current[lineIndex] = {
-                ...getDefaultLineStyle(),
-                ...(current[lineIndex] || {}),
-                ...patch
-            };
-            setStoredLineStyles(entry, current);
-        }
+            function writeLineStyle(entry, lineIndex, patch) {
+                const current = getStoredLineStyles(entry);
+                current[lineIndex] = {
+                    ...getDefaultLineStyle(),
+                    ...(current[lineIndex] || {}),
+                    ...patch
+                };
+                setStoredLineStyles(entry, current);
+            }
 
-        function updateAlignButtons(entry) {
-            const currentAlign = entry.dataset.align || 'center';
-            entry.querySelectorAll('.entry-align-btn').forEach(btn => {
-                const active = btn.dataset.align === currentAlign;
-                btn.classList.toggle('active', active);
-                btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-            });
-        }
+            function updateAlignButtons(entry) {
+                const currentAlign = entry.dataset.align || 'center';
+                entry.querySelectorAll('.entry-align-btn').forEach(btn => {
+                    const active = btn.dataset.align === currentAlign;
+                    btn.classList.toggle('active', active);
+                    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+                });
+            }
 
-        function syncLineStyleEditor(entry) {
-            const textarea = entry.querySelector('.sign-text');
-            if (!textarea) return;
-            const lines = splitLines(textarea.value);
-            const existing = getLineStylesForEntry(entry);
-            const nextStyles = lines.map((line, index) => ({
-                ...getDefaultLineStyle(),
-                ...(existing[index] || {})
-            }));
-            setStoredLineStyles(entry, nextStyles);
-            const activeIndex = getActiveLineIndex(entry);
-            const selectedIndexes = new Set(getSelectedLineIndexes(entry));
-            const inlinePanel = entry.querySelector('.line-inline-panel');
-            updateAlignButtons(entry);
-            if (inlinePanel) {
-                inlinePanel.innerHTML = nextStyles.map((style, index) => buildInlineLineRow(lines[index] || '', index,
-                    style, {
+            function syncLineStyleEditor(entry) {
+                const textarea = entry.querySelector('.sign-text');
+                if (!textarea) return;
+                const lines = splitLines(textarea.value);
+                const existing = getLineStylesForEntry(entry);
+                const nextStyles = lines.map((line, index) => ({
+                    ...getDefaultLineStyle(),
+                    ...(existing[index] || {})
+                }));
+                setStoredLineStyles(entry, nextStyles);
+                const activeIndex = getActiveLineIndex(entry);
+                const selectedIndexes = new Set(getSelectedLineIndexes(entry));
+                const inlinePanel = entry.querySelector('.line-inline-panel');
+                updateAlignButtons(entry);
+                if (inlinePanel) {
+                    inlinePanel.innerHTML = nextStyles.map((style, index) => buildInlineLineRow(lines[index] || '', index,
+                        style, {
                         isActive: index === activeIndex,
                         isSelected: selectedIndexes.has(index)
                     })).join('');
-            }
-        }
-
-        function syncTagHoleSizeFromHoles(entry) {
-            const holesSelect = entry.querySelector('.tag-holes-select');
-            const holeSizeSelect = entry.querySelector('.tag-holesize-select');
-            if (!holesSelect || !holeSizeSelect) return;
-            const qty = holesSelect.value;
-            if (qty==='No holes') {
-            holeSizeSelect.innerHTML='<option value="N/A">N/A</option>';
-            holeSizeSelect.disabled = true;
-        } else if (qty==='Cable tie slots') {
-            holeSizeSelect.innerHTML='<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
-            holeSizeSelect.disabled = false;
-        } else {
-            const prev=(holeSizeSelect.value==='N/A') ? '1/8' : holeSizeSelect.value;
-        holeSizeSelect.innerHTML = ['1/8', '3/16', '1/4'].map(o => '<option value="'+o+'"' + (o === prev ?
-            ' selected' : '') + '>' + o + '</option>').join('');
-        holeSizeSelect.disabled = false;
-        }
-        entry.dataset.holeQty = qty;
-        entry.dataset.holeSize = holeSizeSelect.value;
-        }
-
-        function getShapeSizingMode(shapeOverride) {
-            const shapeValue = (shapeOverride || getEl('shape').value || 'Rectangle').trim();
-            if (shapeValue==='Circle') return 'circle';
-        if (shapeValue==='Square') return 'square';
-        return 'free';
-        }
-
-        function normalizeDimensionsForShape(widthRaw, heightRaw, shapeValue) {
-            const width = roundToThreeDecimals(Math.max(Number(widthRaw || 0), 0)),
-                height = roundToThreeDecimals(Math.max(Number(heightRaw || 0), 0));
-            if (shapeValue==='Circle') return {
-            width,
-            height: width,
-            sizeLabel: width ? formatThreeDecimals(width) + '" diameter' : '—'
-        };
-        if (shapeValue==='Square') return {
-            width,
-            height: width,
-            sizeLabel: width ? formatThreeDecimals(width) + '" side' : '—'
-        };
-        return {
-            width,
-            height,
-            sizeLabel: width && height ? formatThreeDecimals(height) + '" × ' + formatThreeDecimals(width) + '"' : '—'
-        };
-        }
-
-        function getNewSignDefaultSize() {
-            const shapeMode = getShapeSizingMode();
-            const globalWidth = String(getEl('widthIn').value || '3.000'),
-                globalHeight = String(getEl('heightIn').value || '1.000');
-            // Auto mode always starts new tags at the global default (1x3) so auto-sizing calculates fresh
-            if (sameSizeMode.value==='auto') {
-            if (shapeMode==='circle' || shapeMode === 'square') return {
-            width: globalWidth,
-            height: globalWidth
-        };
-        return {
-            width: globalWidth,
-            height: globalHeight
-        };
-        }
-        if (sameSizeMode.value!=='custom') return {
-            width: globalWidth,
-            height: globalHeight
-        };
-        // Custom mode: inherit last entry's size as a convenience
-        const entries = Array.from(document.querySelectorAll('.sign-entry'));
-        const lastEntry = entries[entries.length - 1];
-        let width = globalWidth,
-            height = globalHeight;
-        if (lastEntry) {
-            const lw = lastEntry.querySelector('.sign-width'),
-                lh = lastEntry.querySelector('.sign-height');
-            if (lw && lw.value) width = String(lw.value);
-            if (lh && lh.value) height = String(lh.value);
-        }
-        if (shapeMode==='circle' || shapeMode === 'square') return {
-            width,
-            height: width
-        };
-        return {
-            width,
-            height
-        };
-        }
-
-        function renumberSignCards() {
-            Array.from(document.querySelectorAll('.sign-entry')).forEach((entry, index) => {
-                entry.dataset.signIndex = String(index + 1);
-                const title = entry.querySelector('.sign-card-title');
-                if (title) title.textContent='Sign ' + (index + 1);
-            });
-        }
-
-        function getSelectedPreviewEntry() {
-            const entries = Array.from(document.querySelectorAll('.sign-entry'));
-            return entries[selectedPreviewIndex] || entries[0] || null;
-        }
-
-        function rebuildPreviewSelector() {
-            const entries = Array.from(document.querySelectorAll('.sign-entry'));
-            previewSignSelect.innerHTML='';
-            entries.forEach((_, idx) => {
-                const o = document.createElement('option');
-                o.value = String(idx);
-                o.textContent='Sign ' + (idx + 1);
-                previewSignSelect.appendChild(o);
-            });
-            selectedPreviewIndex = Math.max(0, Math.min(selectedPreviewIndex, Math.max(entries.length - 1, 0)));
-            previewSignSelect.value = String(selectedPreviewIndex);
-        }
-
-        function updateSizeFieldPresentation() {
-            const mode = getShapeSizingMode();
-            const widthInput = getEl('widthIn'),
-                heightInput = getEl('heightIn');
-            if (mode==='circle') {
-            globalWidthLabel.textContent='Diameter (in.)';
-            toggleHidden(globalHeightField, true);
-            if (heightInput && widthInput) heightInput.value = widthInput.value;
-        } else if (mode==='square') {
-            globalWidthLabel.textContent='Side (in.)';
-            toggleHidden(globalHeightField, true);
-            if (heightInput && widthInput) heightInput.value = widthInput.value;
-        } else {
-            globalWidthLabel.textContent='Width (in.)';
-            globalHeightLabel.textContent='Height (in.)';
-            toggleHidden(globalHeightField, false);
-        }
-        document.querySelectorAll('.sign-entry').forEach(entry => {
-            const wl = entry.querySelector('.sign-width-label'),
-                hl = entry.querySelector('.sign-height-label'),
-                hf = entry.querySelector('.sign-height-field'),
-                wi = entry.querySelector('.sign-width'),
-                hi = entry.querySelector('.sign-height');
-            if (!wl || !hl || !hf || !wi || !hi) return;
-            if (mode==='circle') {
-            wl.textContent='Diameter (in.)';
-            toggleHidden(hf, true);
-            hi.value = wi.value || '';
-        } else if (mode==='square') {
-            wl.textContent='Side (in.)';
-            toggleHidden(hf, true);
-            hi.value = wi.value || '';
-        }
-        else {
-            wl.textContent='Width (in.)';
-            hl.textContent='Height (in.)';
-            toggleHidden(hf, false);
-        }
-        // Size row always visible — no hide/show needed
-        });
-        }
-
-        function syncSizeModeUI() {
-            if (sameSizeMode.value==='auto') applyAutomaticTagSizing();
-        // Global size fields only relevant when all tags share one size
-        if (globalSizeWrap) toggleHidden(globalSizeWrap, sameSizeMode.value !== 'same');
-        updateSizeFieldPresentation();
-        }
-
-        function addSignBox() {
-            const nextIndex = document.querySelectorAll('.sign-entry').length + 1;
-            const defaults = getNewSignDefaultSize();
-            const gw = getEl('widthIn') ? (getEl('widthIn').value || defaults.width) : defaults.width;
-            const gh = getEl('heightIn') ? (getEl('heightIn').value || defaults.height) : defaults.height;
-            const card = buildSignCard('Sign ' + nextIndex, '', 1, gw, gh);
-            signStack.appendChild(card);
-            syncLineStyleEditor(card);
-            bindSignInputs();
-            selectedPreviewIndex = nextIndex - 1;
-            rebuildPreviewSelector();
-            syncSizeModeUI();
-            updateSizeFieldPresentation();
-            queueLiveEstimateUpdate();
-        }
-
-        function removeSignCard(entry) {
-            const entries = Array.from(document.querySelectorAll('.sign-entry'));
-            if (entries.length <= 1) {
-                const textarea = entry.querySelector('.sign-text');
-                if (textarea) textarea.value='';
-                syncLineStyleEditor(entry);
-            } else {
-                const removedIndex = entries.indexOf(entry);
-                entry.remove();
-                if (selectedPreviewIndex >= removedIndex) selectedPreviewIndex = Math.max(0, selectedPreviewIndex - 1);
-            }
-            renumberSignCards();
-            bindSignInputs();
-            rebuildPreviewSelector();
-            queueLiveEstimateUpdate();
-        }
-
-        function duplicateSignCard(entry) {
-            const textarea = entry.querySelector('.sign-text'),
-                qtyInput = entry.querySelector('.sign-qty'),
-                widthInput = entry.querySelector('.sign-width'),
-                heightInput = entry.querySelector('.sign-height');
-            const styles = getStoredLineStyles(entry),
-                nextIndex = document.querySelectorAll('.sign-entry').length + 1;
-            const card = buildSignCard('Sign ' + nextIndex, textarea ? textarea.value : '', Number(qtyInput ? qtyInput
-                .value : 1), widthInput ? widthInput.value : '', heightInput ? heightInput.value : '');
-            card.dataset.align = entry.dataset.align || 'center';
-            card.dataset.colorValue = entry.dataset.colorValue || 'black_white';
-            card.dataset.holeQty = entry.dataset.holeQty || 'No holes';
-            card.dataset.holeSize = entry.dataset.holeSize || '1/8';
-            card.dataset.condense = entry.dataset.condense || 'no';
-            card.dataset.cornerRadius = entry.dataset.cornerRadius || 'no';
-            const spacingSelect = entry.querySelector('.sign-line-spacing'),
-                newSpacingSelect = card.querySelector('.sign-line-spacing');
-            if (newSpacingSelect && spacingSelect) newSpacingSelect.value = spacingSelect.value;
-            // sync per-tag controls in duplicate
-            const colorSel = card.querySelector('.tag-color-select');
-            if (colorSel) colorSel.value = entry.dataset.colorValue || 'black_white';
-            const holesSel = card.querySelector('.tag-holes-select');
-            if (holesSel) holesSel.value = entry.dataset.holeQty || 'No holes';
-            const condenseSel = card.querySelector('.tag-condense-select');
-            if (condenseSel) condenseSel.value = entry.dataset.condense || 'no';
-            const radSelDup = card.querySelector('.tag-radius-select');
-            if (radSelDup) radSelDup.value = entry.dataset.cornerRadius || 'no';
-            setStoredLineStyles(card, styles);
-            entry.after(card);
-            syncTagHoleSizeFromHoles(card);
-            syncLineStyleEditor(card);
-            bindSignInputs();
-            renumberSignCards();
-            rebuildPreviewSelector();
-            queueLiveEstimateUpdate();
-        }
-
-        function applyQuantityFromCard(entry) {
-            const qtyInput = entry.querySelector('.sign-qty');
-            if (!qtyInput) return;
-            const qty = Math.max(1, Number(qtyInput.value || 1) || 1);
-            qtyInput.value = String(qty);
-            const entries = Array.from(document.querySelectorAll('.sign-entry')),
-                si = entries.indexOf(entry);
-            entries.forEach((item, index) => {
-                if (index >= si) {
-                    const tq = item.querySelector('.sign-qty');
-                    if (tq) tq.value = String(qty);
                 }
-            });
-            queueLiveEstimateUpdate();
-        }
+            }
 
-        function applySizeFromCard(entry) {
-            const wi = entry.querySelector('.sign-width'),
-                hi = entry.querySelector('.sign-height');
-            if (!wi || !hi) return;
-            const width = String(wi.value || ''),
-                height = String(hi.value || '');
-            const entries = Array.from(document.querySelectorAll('.sign-entry')),
-                si = entries.indexOf(entry);
-            entries.forEach((item, index) => {
-                if (index >= si) {
-                    const tw = item.querySelector('.sign-width'),
-                        th = item.querySelector('.sign-height');
-                    if (tw) tw.value = width;
-                    if (th) th.value = height;
+            function syncTagHoleSizeFromHoles(entry) {
+                const holesSelect = entry.querySelector('.tag-holes-select');
+                const holeSizeSelect = entry.querySelector('.tag-holesize-select');
+                if (!holesSelect || !holeSizeSelect) return;
+                const qty = holesSelect.value;
+                if (qty === 'No holes') {
+                    holeSizeSelect.innerHTML = '<option value="N/A">N/A</option>';
+                    holeSizeSelect.disabled = true;
+                } else if (qty === 'Cable tie slots') {
+                    holeSizeSelect.innerHTML = '<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
+                    holeSizeSelect.disabled = false;
+                } else {
+                    const prev = (holeSizeSelect.value === 'N/A') ? '1/8' : holeSizeSelect.value;
+                    holeSizeSelect.innerHTML = ['1/8', '3/16', '1/4'].map(o => '<option value="' + o + '"' + (o === prev ?
+                        ' selected' : '') + '>' + o + '</option>').join('');
+                    holeSizeSelect.disabled = false;
                 }
-            });
-            queueLiveEstimateUpdate();
-        }
+                entry.dataset.holeQty = qty;
+                entry.dataset.holeSize = holeSizeSelect.value;
+            }
 
-        function bindSignInputs() {
-            Array.from(document.querySelectorAll('.sign-entry')).forEach(entry => {
+            function getShapeSizingMode(shapeOverride) {
+                const shapeValue = (shapeOverride || getEl('shape').value || 'Rectangle').trim();
+                if (shapeValue === 'Circle') return 'circle';
+                if (shapeValue === 'Square') return 'square';
+                return 'free';
+            }
+
+            function normalizeDimensionsForShape(widthRaw, heightRaw, shapeValue) {
+                const width = roundToThreeDecimals(Math.max(Number(widthRaw || 0), 0)),
+                    height = roundToThreeDecimals(Math.max(Number(heightRaw || 0), 0));
+                if (shapeValue === 'Circle') return {
+                    width,
+                    height: width,
+                    sizeLabel: width ? formatThreeDecimals(width) + '" diameter' : '—'
+                };
+                if (shapeValue === 'Square') return {
+                    width,
+                    height: width,
+                    sizeLabel: width ? formatThreeDecimals(width) + '" side' : '—'
+                };
+                return {
+                    width,
+                    height,
+                    sizeLabel: width && height ? formatThreeDecimals(height) + '" × ' + formatThreeDecimals(width) + '"' : '—'
+                };
+            }
+
+            function getNewSignDefaultSize() {
+                const shapeMode = getShapeSizingMode();
+                const globalWidth = String(getEl('widthIn').value || '3.000'),
+                    globalHeight = String(getEl('heightIn').value || '1.000');
+                // Auto mode always starts new tags at the global default (1x3) so auto-sizing calculates fresh
+                if (sameSizeMode.value === 'auto') {
+                    if (shapeMode === 'circle' || shapeMode === 'square') return {
+                        width: globalWidth,
+                        height: globalWidth
+                    };
+                    return {
+                        width: globalWidth,
+                        height: globalHeight
+                    };
+                }
+                if (sameSizeMode.value !== 'custom') return {
+                    width: globalWidth,
+                    height: globalHeight
+                };
+                // Custom mode: inherit last entry's size as a convenience
+                const entries = Array.from(document.querySelectorAll('.sign-entry'));
+                const lastEntry = entries[entries.length - 1];
+                let width = globalWidth,
+                    height = globalHeight;
+                if (lastEntry) {
+                    const lw = lastEntry.querySelector('.sign-width'),
+                        lh = lastEntry.querySelector('.sign-height');
+                    if (lw && lw.value) width = String(lw.value);
+                    if (lh && lh.value) height = String(lh.value);
+                }
+                if (shapeMode === 'circle' || shapeMode === 'square') return {
+                    width,
+                    height: width
+                };
+                return {
+                    width,
+                    height
+                };
+            }
+
+            function renumberSignCards() {
+                Array.from(document.querySelectorAll('.sign-entry')).forEach((entry, index) => {
+                    entry.dataset.signIndex = String(index + 1);
+                    const title = entry.querySelector('.sign-card-title');
+                    if (title) title.textContent = 'Sign ' + (index + 1);
+                });
+            }
+
+            function getSelectedPreviewEntry() {
+                const entries = Array.from(document.querySelectorAll('.sign-entry'));
+                return entries[selectedPreviewIndex] || entries[0] || null;
+            }
+
+            function rebuildPreviewSelector() {
+                const entries = Array.from(document.querySelectorAll('.sign-entry'));
+                previewSignSelect.innerHTML = '';
+                entries.forEach((_, idx) => {
+                    const o = document.createElement('option');
+                    o.value = String(idx);
+                    o.textContent = 'Sign ' + (idx + 1);
+                    previewSignSelect.appendChild(o);
+                });
+                selectedPreviewIndex = Math.max(0, Math.min(selectedPreviewIndex, Math.max(entries.length - 1, 0)));
+                previewSignSelect.value = String(selectedPreviewIndex);
+            }
+
+            function updateSizeFieldPresentation() {
+                const mode = getShapeSizingMode();
+                const widthInput = getEl('widthIn'),
+                    heightInput = getEl('heightIn');
+                if (mode === 'circle') {
+                    globalWidthLabel.textContent = 'Diameter (in.)';
+                    toggleHidden(globalHeightField, true);
+                    if (heightInput && widthInput) heightInput.value = widthInput.value;
+                } else if (mode === 'square') {
+                    globalWidthLabel.textContent = 'Side (in.)';
+                    toggleHidden(globalHeightField, true);
+                    if (heightInput && widthInput) heightInput.value = widthInput.value;
+                } else {
+                    globalWidthLabel.textContent = 'Width (in.)';
+                    globalHeightLabel.textContent = 'Height (in.)';
+                    toggleHidden(globalHeightField, false);
+                }
+                document.querySelectorAll('.sign-entry').forEach(entry => {
+                    const wl = entry.querySelector('.sign-width-label'),
+                        hl = entry.querySelector('.sign-height-label'),
+                        hf = entry.querySelector('.sign-height-field'),
+                        wi = entry.querySelector('.sign-width'),
+                        hi = entry.querySelector('.sign-height');
+                    if (!wl || !hl || !hf || !wi || !hi) return;
+                    if (mode === 'circle') {
+                        wl.textContent = 'Diameter (in.)';
+                        toggleHidden(hf, true);
+                        hi.value = wi.value || '';
+                    } else if (mode === 'square') {
+                        wl.textContent = 'Side (in.)';
+                        toggleHidden(hf, true);
+                        hi.value = wi.value || '';
+                    }
+                    else {
+                        wl.textContent = 'Width (in.)';
+                        hl.textContent = 'Height (in.)';
+                        toggleHidden(hf, false);
+                    }
+                    // Size row always visible — no hide/show needed
+                });
+            }
+
+            function syncSizeModeUI() {
+                if (sameSizeMode.value === 'auto') applyAutomaticTagSizing();
+                // Global size fields only relevant when all tags share one size
+                if (globalSizeWrap) toggleHidden(globalSizeWrap, sameSizeMode.value !== 'same');
+                updateSizeFieldPresentation();
+            }
+
+            function addSignBox() {
+                const nextIndex = document.querySelectorAll('.sign-entry').length + 1;
+                const defaults = getNewSignDefaultSize();
+                const gw = getEl('widthIn') ? (getEl('widthIn').value || defaults.width) : defaults.width;
+                const gh = getEl('heightIn') ? (getEl('heightIn').value || defaults.height) : defaults.height;
+                const card = buildSignCard('Sign ' + nextIndex, '', 1, gw, gh);
+                signStack.appendChild(card);
+                syncLineStyleEditor(card);
+                bindSignInputs();
+                selectedPreviewIndex = nextIndex - 1;
+                rebuildPreviewSelector();
+                syncSizeModeUI();
+                updateSizeFieldPresentation();
+                queueLiveEstimateUpdate();
+            }
+
+            function removeSignCard(entry) {
+                const entries = Array.from(document.querySelectorAll('.sign-entry'));
+                if (entries.length <= 1) {
+                    const textarea = entry.querySelector('.sign-text');
+                    if (textarea) textarea.value = '';
+                    syncLineStyleEditor(entry);
+                } else {
+                    const removedIndex = entries.indexOf(entry);
+                    entry.remove();
+                    if (selectedPreviewIndex >= removedIndex) selectedPreviewIndex = Math.max(0, selectedPreviewIndex - 1);
+                }
+                renumberSignCards();
+                bindSignInputs();
+                rebuildPreviewSelector();
+                queueLiveEstimateUpdate();
+            }
+
+            function duplicateSignCard(entry) {
+                const textarea = entry.querySelector('.sign-text'),
+                    qtyInput = entry.querySelector('.sign-qty'),
+                    widthInput = entry.querySelector('.sign-width'),
+                    heightInput = entry.querySelector('.sign-height');
+                const styles = getStoredLineStyles(entry),
+                    nextIndex = document.querySelectorAll('.sign-entry').length + 1;
+                const card = buildSignCard('Sign ' + nextIndex, textarea ? textarea.value : '', Number(qtyInput ? qtyInput
+                    .value : 1), widthInput ? widthInput.value : '', heightInput ? heightInput.value : '');
+                card.dataset.align = entry.dataset.align || 'center';
+                card.dataset.colorValue = entry.dataset.colorValue || 'black_white';
+                card.dataset.holeQty = entry.dataset.holeQty || 'No holes';
+                card.dataset.holeSize = entry.dataset.holeSize || '1/8';
+                card.dataset.condense = entry.dataset.condense || 'no';
+                card.dataset.cornerRadius = entry.dataset.cornerRadius || 'no';
+                const spacingSelect = entry.querySelector('.sign-line-spacing'),
+                    newSpacingSelect = card.querySelector('.sign-line-spacing');
+                if (newSpacingSelect && spacingSelect) newSpacingSelect.value = spacingSelect.value;
+                // sync per-tag controls in duplicate
+                const colorSel = card.querySelector('.tag-color-select');
+                if (colorSel) colorSel.value = entry.dataset.colorValue || 'black_white';
+                const holesSel = card.querySelector('.tag-holes-select');
+                if (holesSel) holesSel.value = entry.dataset.holeQty || 'No holes';
+                const condenseSel = card.querySelector('.tag-condense-select');
+                if (condenseSel) condenseSel.value = entry.dataset.condense || 'no';
+                const radSelDup = card.querySelector('.tag-radius-select');
+                if (radSelDup) radSelDup.value = entry.dataset.cornerRadius || 'no';
+                setStoredLineStyles(card, styles);
+                entry.after(card);
+                syncTagHoleSizeFromHoles(card);
+                syncLineStyleEditor(card);
+                bindSignInputs();
+                renumberSignCards();
+                rebuildPreviewSelector();
+                queueLiveEstimateUpdate();
+            }
+
+            function applyQuantityFromCard(entry) {
+                const qtyInput = entry.querySelector('.sign-qty');
+                if (!qtyInput) return;
+                const qty = Math.max(1, Number(qtyInput.value || 1) || 1);
+                qtyInput.value = String(qty);
+                const entries = Array.from(document.querySelectorAll('.sign-entry')),
+                    si = entries.indexOf(entry);
+                entries.forEach((item, index) => {
+                    if (index >= si) {
+                        const tq = item.querySelector('.sign-qty');
+                        if (tq) tq.value = String(qty);
+                    }
+                });
+                queueLiveEstimateUpdate();
+            }
+
+            function applySizeFromCard(entry) {
+                const wi = entry.querySelector('.sign-width'),
+                    hi = entry.querySelector('.sign-height');
+                if (!wi || !hi) return;
+                const width = String(wi.value || ''),
+                    height = String(hi.value || '');
+                const entries = Array.from(document.querySelectorAll('.sign-entry')),
+                    si = entries.indexOf(entry);
+                entries.forEach((item, index) => {
+                    if (index >= si) {
+                        const tw = item.querySelector('.sign-width'),
+                            th = item.querySelector('.sign-height');
+                        if (tw) tw.value = width;
+                        if (th) th.value = height;
+                    }
+                });
+                queueLiveEstimateUpdate();
+            }
+
+            function bindSignInputs() {
+                Array.from(document.querySelectorAll('.sign-entry')).forEach(entry => {
                     const textarea = entry.querySelector('.sign-text');
                     const spacingSelect = entry.querySelector('.sign-line-spacing');
                     const qtyInput = entry.querySelector('.sign-qty');
@@ -3440,1365 +3435,1365 @@
                         };
                         detailsToggle.onclick = toggleDetails;
                         detailsToggle.onkeydown = (e) => {
-                            if(e.key==='Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            toggleDetails();
-                        }
-                    };
-                }
-
-                // Per-tag color
-                if (tagColorSelect) {
-                    tagColorSelect.onchange = () => {
-                        entry.dataset.colorValue = tagColorSelect.value;
-                        queueLiveEstimateUpdate();
-                    };
-                }
-                // Per-tag holes
-                if (tagHolesSelect) {
-                    tagHolesSelect.onchange = () => {
-                        syncTagHoleSizeFromHoles(entry);
-                        queueLiveEstimateUpdate();
-                    };
-                }
-                const tagHoleSizeSelect = entry.querySelector('.tag-holesize-select');
-                if (tagHoleSizeSelect) {
-                    tagHoleSizeSelect.onchange = () => {
-                        entry.dataset.holeSize = tagHoleSizeSelect.value;
-                        queueLiveEstimateUpdate();
-                    };
-                }
-                // Per-tag condense
-                if (tagCondenseSelect) {
-                    tagCondenseSelect.onchange = () => {
-                        entry.dataset.condense = tagCondenseSelect.value;
-                        queueLiveEstimateUpdate();
-                    };
-                }
-                const tagRadiusSelect = entry.querySelector('.tag-radius-select');
-                if (tagRadiusSelect) {
-                    tagRadiusSelect.onchange = () => {
-                        entry.dataset.cornerRadius = tagRadiusSelect.value;
-                        queueLiveEstimateUpdate();
-                    };
-                }
-
-                const updateActiveLineFromTextarea = () => {
-                    setActiveLineIndex(entry, getLineSelectionRange(entry).start);
-                    syncLineStyleEditor(entry);
-                };
-                if (textarea) {
-                    const textHandler = () => {
-                        if(sameSizeMode.value==='auto' && entry.dataset.manualSizeOverride !== 'true'
-                    ) entry.dataset.autoSized='true';
-                    updateActiveLineFromTextarea();
-                    queueLiveEstimateUpdate();
-                }; textarea.oninput = textHandler; textarea.onchange = textHandler; textarea.onkeyup =
-                textHandler; textarea.onclick = updateActiveLineFromTextarea; textarea.onfocus = () => {
-                    const idx = Array.from(document.querySelectorAll('.sign-entry')).indexOf(entry);
-                    if (idx >= 0) {
-                        selectedPreviewIndex = idx;
-                        previewSignSelect.value = String(idx);
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                toggleDetails();
+                            }
+                        };
                     }
-                    updateActiveLineFromTextarea();
-                    renderDesignPreview();
-                };
-            }
-            compactAlignBtns.forEach(btn => {
-                btn.onclick = () => {
-                    entry.dataset.align = btn.dataset.align || 'center';
-                    updateAlignButtons(entry);
-                    syncLineStyleEditor(entry);
-                    queueLiveEstimateUpdate();
-                };
-            });
-            const inlinePanel = entry.querySelector('.line-inline-panel');
-            if (inlinePanel) {
-                inlinePanel.onmousedown = event => {
-                    const row = event.target.closest('.line-inline-row');
-                    if (!row) return;
-                    if (Boolean(event.target.closest('select,input,button,label,option'))) return;
-                    setActiveLineIndex(entry, Number(row.dataset.lineIndex || 0));
-                    syncLineStyleEditor(entry);
-                };
-                inlinePanel.onfocusin = event => {
-                    const row = event.target.closest('.line-inline-row');
-                    if (!row) return;
-                    setActiveLineIndex(entry, Number(row.dataset.lineIndex || 0));
-                };
-                inlinePanel.onchange = event => {
-                    const row = event.target.closest('.line-inline-row');
-                    if (!row) return;
-                    const lineIndex = Number(row.dataset.lineIndex || 0);
-                    setActiveLineIndex(entry, lineIndex);
-                    const sizeSelect = row.querySelector('.line-inline-size'),
-                        customInput = row.querySelector('.line-inline-custom'),
-                        boldInput = row.querySelector('.line-inline-bold-input');
-                    if (event.target === sizeSelect && customInput) {
-                        customInput.classList.toggle('hidden', sizeSelect.value !== 'custom');
-                        customInput.classList.toggle('visible', sizeSelect.value === 'custom');
+
+                    // Per-tag color
+                    if (tagColorSelect) {
+                        tagColorSelect.onchange = () => {
+                            entry.dataset.colorValue = tagColorSelect.value;
+                            queueLiveEstimateUpdate();
+                        };
                     }
-                    const selectedIndexes = getSelectedLineIndexes(entry);
-                    const targetIndexes = hasMultiLineSelection(entry) ? selectedIndexes : [lineIndex];
-                    const patch = {
-                        size: sizeSelect ? sizeSelect.value : '1/4',
-                        customSize: customInput ? customInput.value.trim() : '',
-                        bold: Boolean(boldInput && boldInput.checked)
-                    };
-                    targetIndexes.forEach(idx => writeLineStyle(entry, idx, patch));
-                    syncLineStyleEditor(entry);
-                    queueLiveEstimateUpdate();
-                };
-                inlinePanel.oninput = event => {
-                    const row = event.target.closest('.line-inline-row');
-                    if (!row) return;
-                    const lineIndex = Number(row.dataset.lineIndex || 0);
-                    setActiveLineIndex(entry, lineIndex);
-                    const customInput = row.querySelector('.line-inline-custom');
-                    if (event.target === customInput) {
-                        const si = getSelectedLineIndexes(entry);
-                        const ti = hasMultiLineSelection(entry) ? si : [lineIndex];
-                        ti.forEach(idx => writeLineStyle(entry, idx, {
-                            customSize: customInput.value.trim()
-                        }));
+                    // Per-tag holes
+                    if (tagHolesSelect) {
+                        tagHolesSelect.onchange = () => {
+                            syncTagHoleSizeFromHoles(entry);
+                            queueLiveEstimateUpdate();
+                        };
+                    }
+                    const tagHoleSizeSelect = entry.querySelector('.tag-holesize-select');
+                    if (tagHoleSizeSelect) {
+                        tagHoleSizeSelect.onchange = () => {
+                            entry.dataset.holeSize = tagHoleSizeSelect.value;
+                            queueLiveEstimateUpdate();
+                        };
+                    }
+                    // Per-tag condense
+                    if (tagCondenseSelect) {
+                        tagCondenseSelect.onchange = () => {
+                            entry.dataset.condense = tagCondenseSelect.value;
+                            queueLiveEstimateUpdate();
+                        };
+                    }
+                    const tagRadiusSelect = entry.querySelector('.tag-radius-select');
+                    if (tagRadiusSelect) {
+                        tagRadiusSelect.onchange = () => {
+                            entry.dataset.cornerRadius = tagRadiusSelect.value;
+                            queueLiveEstimateUpdate();
+                        };
+                    }
+
+                    const updateActiveLineFromTextarea = () => {
+                        setActiveLineIndex(entry, getLineSelectionRange(entry).start);
                         syncLineStyleEditor(entry);
-                        queueLiveEstimateUpdate();
+                    };
+                    if (textarea) {
+                        const textHandler = () => {
+                            if (sameSizeMode.value === 'auto' && entry.dataset.manualSizeOverride !== 'true'
+                            ) entry.dataset.autoSized = 'true';
+                            updateActiveLineFromTextarea();
+                            queueLiveEstimateUpdate();
+                        }; textarea.oninput = textHandler; textarea.onchange = textHandler; textarea.onkeyup =
+                            textHandler; textarea.onclick = updateActiveLineFromTextarea; textarea.onfocus = () => {
+                                const idx = Array.from(document.querySelectorAll('.sign-entry')).indexOf(entry);
+                                if (idx >= 0) {
+                                    selectedPreviewIndex = idx;
+                                    previewSignSelect.value = String(idx);
+                                }
+                                updateActiveLineFromTextarea();
+                                renderDesignPreview();
+                            };
                     }
-                };
-                inlinePanel.onclick = event => {
-                    const row = event.target.closest('.line-inline-row');
-                    if (!row) return;
-                    const lineIndex = Number(row.dataset.lineIndex || 0);
-                    const applyBtn = event.target.closest('.line-inline-apply-btn');
-                    if (!applyBtn) return;
-                    event.preventDefault();
-                    event.stopPropagation();
-                    const sizeSelect = row.querySelector('.line-inline-size'),
-                        customInput = row.querySelector('.line-inline-custom');
-                    const sourceSize = sizeSelect ? sizeSelect.value : '1/4',
-                        sourceCustomSize = customInput ? customInput.value.trim() : '';
-                    const current = getStoredLineStyles(entry);
-                    const next = current.map((style, idx) => idx < lineIndex ? {
-                        ...getDefaultLineStyle(),
-                        ...(style || {})
-                    } : {
-                        ...getDefaultLineStyle(),
-                        ...(style || {}),
-                        size: sourceSize,
-                        customSize: sourceCustomSize
+                    compactAlignBtns.forEach(btn => {
+                        btn.onclick = () => {
+                            entry.dataset.align = btn.dataset.align || 'center';
+                            updateAlignButtons(entry);
+                            syncLineStyleEditor(entry);
+                            queueLiveEstimateUpdate();
+                        };
                     });
-                    setStoredLineStyles(entry, next);
-                    entry.dataset.activeLineIndex = String(lineIndex);
-                    const ta = entry.querySelector('.sign-text');
-                    if (ta) {
-                        const rawLines = normalizeNewlines(ta.value || '').split(NEWLINE);
-                        let startPos = 0;
-                        for (let i = 0; i < lineIndex; i++) startPos += (rawLines[i] || '').length + 1;
-                        ta.focus();
-                        ta.setSelectionRange(startPos, startPos);
+                    const inlinePanel = entry.querySelector('.line-inline-panel');
+                    if (inlinePanel) {
+                        inlinePanel.onmousedown = event => {
+                            const row = event.target.closest('.line-inline-row');
+                            if (!row) return;
+                            if (Boolean(event.target.closest('select,input,button,label,option'))) return;
+                            setActiveLineIndex(entry, Number(row.dataset.lineIndex || 0));
+                            syncLineStyleEditor(entry);
+                        };
+                        inlinePanel.onfocusin = event => {
+                            const row = event.target.closest('.line-inline-row');
+                            if (!row) return;
+                            setActiveLineIndex(entry, Number(row.dataset.lineIndex || 0));
+                        };
+                        inlinePanel.onchange = event => {
+                            const row = event.target.closest('.line-inline-row');
+                            if (!row) return;
+                            const lineIndex = Number(row.dataset.lineIndex || 0);
+                            setActiveLineIndex(entry, lineIndex);
+                            const sizeSelect = row.querySelector('.line-inline-size'),
+                                customInput = row.querySelector('.line-inline-custom'),
+                                boldInput = row.querySelector('.line-inline-bold-input');
+                            if (event.target === sizeSelect && customInput) {
+                                customInput.classList.toggle('hidden', sizeSelect.value !== 'custom');
+                                customInput.classList.toggle('visible', sizeSelect.value === 'custom');
+                            }
+                            const selectedIndexes = getSelectedLineIndexes(entry);
+                            const targetIndexes = hasMultiLineSelection(entry) ? selectedIndexes : [lineIndex];
+                            const patch = {
+                                size: sizeSelect ? sizeSelect.value : '1/4',
+                                customSize: customInput ? customInput.value.trim() : '',
+                                bold: Boolean(boldInput && boldInput.checked)
+                            };
+                            targetIndexes.forEach(idx => writeLineStyle(entry, idx, patch));
+                            syncLineStyleEditor(entry);
+                            queueLiveEstimateUpdate();
+                        };
+                        inlinePanel.oninput = event => {
+                            const row = event.target.closest('.line-inline-row');
+                            if (!row) return;
+                            const lineIndex = Number(row.dataset.lineIndex || 0);
+                            setActiveLineIndex(entry, lineIndex);
+                            const customInput = row.querySelector('.line-inline-custom');
+                            if (event.target === customInput) {
+                                const si = getSelectedLineIndexes(entry);
+                                const ti = hasMultiLineSelection(entry) ? si : [lineIndex];
+                                ti.forEach(idx => writeLineStyle(entry, idx, {
+                                    customSize: customInput.value.trim()
+                                }));
+                                syncLineStyleEditor(entry);
+                                queueLiveEstimateUpdate();
+                            }
+                        };
+                        inlinePanel.onclick = event => {
+                            const row = event.target.closest('.line-inline-row');
+                            if (!row) return;
+                            const lineIndex = Number(row.dataset.lineIndex || 0);
+                            const applyBtn = event.target.closest('.line-inline-apply-btn');
+                            if (!applyBtn) return;
+                            event.preventDefault();
+                            event.stopPropagation();
+                            const sizeSelect = row.querySelector('.line-inline-size'),
+                                customInput = row.querySelector('.line-inline-custom');
+                            const sourceSize = sizeSelect ? sizeSelect.value : '1/4',
+                                sourceCustomSize = customInput ? customInput.value.trim() : '';
+                            const current = getStoredLineStyles(entry);
+                            const next = current.map((style, idx) => idx < lineIndex ? {
+                                ...getDefaultLineStyle(),
+                                ...(style || {})
+                            } : {
+                                ...getDefaultLineStyle(),
+                                ...(style || {}),
+                                size: sourceSize,
+                                customSize: sourceCustomSize
+                            });
+                            setStoredLineStyles(entry, next);
+                            entry.dataset.activeLineIndex = String(lineIndex);
+                            const ta = entry.querySelector('.sign-text');
+                            if (ta) {
+                                const rawLines = normalizeNewlines(ta.value || '').split(NEWLINE);
+                                let startPos = 0;
+                                for (let i = 0; i < lineIndex; i++) startPos += (rawLines[i] || '').length + 1;
+                                ta.focus();
+                                ta.setSelectionRange(startPos, startPos);
+                            }
+                            syncLineStyleEditor(entry);
+                            const reRows = Array.from(entry.querySelectorAll('.line-inline-row'));
+                            reRows.forEach((tr, idx) => {
+                                if (idx < lineIndex) return;
+                                const ts = tr.querySelector('.line-inline-size'),
+                                    tc = tr.querySelector('.line-inline-custom');
+                                if (ts) ts.value = sourceSize;
+                                if (tc) {
+                                    tc.value = sourceCustomSize;
+                                    tc.classList.toggle('hidden', sourceSize !== 'custom');
+                                    tc.classList.toggle('visible', sourceSize === 'custom');
+                                }
+                            });
+                            queueLiveEstimateUpdate();
+                        };
                     }
+                    if (spacingSelect) {
+                        spacingSelect.oninput = queueLiveEstimateUpdate;
+                        spacingSelect.onchange = () => {
+                            syncLineStyleEditor(entry);
+                            queueLiveEstimateUpdate();
+                        };
+                    }
+                    if (qtyInput) {
+                        qtyInput.oninput = queueLiveEstimateUpdate;
+                        qtyInput.onchange = queueLiveEstimateUpdate;
+                        qtyInput.onkeyup = queueLiveEstimateUpdate;
+                    }
+                    if (widthInput) {
+                        const wh = () => {
+                            if (sameSizeMode.value === 'auto') entry.dataset.manualSizeOverride = 'true';
+                            if (sameSizeMode.value === 'same') sameSizeMode.value = 'custom';
+                            updateSizeFieldPresentation();
+                            queueLiveEstimateUpdate();
+                        };
+                        widthInput.oninput = wh;
+                        widthInput.onchange = wh;
+                        widthInput.onkeyup = wh;
+                    }
+                    if (heightInput) {
+                        const hh = () => {
+                            if (sameSizeMode.value === 'auto') entry.dataset.manualSizeOverride = 'true';
+                            if (sameSizeMode.value === 'same') sameSizeMode.value = 'custom';
+                            queueLiveEstimateUpdate();
+                        };
+                        heightInput.oninput = hh;
+                        heightInput.onchange = hh;
+                        heightInput.onkeyup = hh;
+                    }
+                    const applySizeBtn = entry.querySelector('.apply-size-below-btn');
+                    if (applySizeBtn) applySizeBtn.onclick = () => applySizeFromCard(entry);
+                    if (applyQtyBtn) applyQtyBtn.onclick = () => applyQuantityFromCard(entry);
+                    if (deleteBtn) deleteBtn.onclick = () => removeSignCard(entry);
+                    if (duplicateBtn) duplicateBtn.onclick = () => duplicateSignCard(entry);
                     syncLineStyleEditor(entry);
-                    const reRows = Array.from(entry.querySelectorAll('.line-inline-row'));
-                    reRows.forEach((tr, idx) => {
-                        if (idx < lineIndex) return;
-                        const ts = tr.querySelector('.line-inline-size'),
-                            tc = tr.querySelector('.line-inline-custom');
-                        if (ts) ts.value = sourceSize;
-                        if (tc) {
-                            tc.value = sourceCustomSize;
-                            tc.classList.toggle('hidden', sourceSize !== 'custom');
-                            tc.classList.toggle('visible', sourceSize === 'custom');
-                        }
-                    });
-                    queueLiveEstimateUpdate();
-                };
+                });
             }
-            if (spacingSelect) {
-                spacingSelect.oninput = queueLiveEstimateUpdate;
-                spacingSelect.onchange = () => {
-                    syncLineStyleEditor(entry);
-                    queueLiveEstimateUpdate();
-                };
-            }
-            if (qtyInput) {
-                qtyInput.oninput = queueLiveEstimateUpdate;
-                qtyInput.onchange = queueLiveEstimateUpdate;
-                qtyInput.onkeyup = queueLiveEstimateUpdate;
-            }
-            if (widthInput) {
-                const wh = () => {
-                    if(sameSizeMode.value==='auto') entry.dataset.manualSizeOverride='true';
-                if(sameSizeMode.value==='same') sameSizeMode.value='custom';
-            updateSizeFieldPresentation();
-            queueLiveEstimateUpdate();
-        };
-        widthInput.oninput = wh;
-        widthInput.onchange = wh;
-        widthInput.onkeyup = wh;
-        }
-        if (heightInput) {
-            const hh = () => {
-                if(sameSizeMode.value==='auto') entry.dataset.manualSizeOverride='true';
-            if(sameSizeMode.value==='same') sameSizeMode.value='custom';
-        queueLiveEstimateUpdate();
-        };
-        heightInput.oninput = hh;
-        heightInput.onchange = hh;
-        heightInput.onkeyup = hh;
-        }
-        const applySizeBtn = entry.querySelector('.apply-size-below-btn');
-        if (applySizeBtn) applySizeBtn.onclick = () => applySizeFromCard(entry);
-        if (applyQtyBtn) applyQtyBtn.onclick = () => applyQuantityFromCard(entry);
-        if (deleteBtn) deleteBtn.onclick = () => removeSignCard(entry);
-        if (duplicateBtn) duplicateBtn.onclick = () => duplicateSignCard(entry);
-        syncLineStyleEditor(entry);
-        });
-        }
 
-        function getSignData() {
-            const isCustomSize = sameSizeMode.value==='custom' || sameSizeMode.value === 'auto';
-            const shapeValue = getEl('shape').value || 'Rectangle';
-            return Array.from(document.querySelectorAll('.sign-entry')).map((entry, index) => {
-                const raw = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text').value : '';
-                const lineTexts = splitLines(raw);
-                const storedStyles = getLineStylesForEntry(entry);
-                const lines = lineTexts.map((text, li) => ({
-                    text,
-                    bold: Boolean((storedStyles[li] || {}).bold),
-                    size: (storedStyles[li] || {}).size || '1/4',
-                    customSize: (storedStyles[li] || {}).customSize || ''
-                }));
-                const qty = Math.max(1, Number(entry.querySelector('.sign-qty') ? entry.querySelector(
-                    '.sign-qty').value : 1) || 1);
-                const lineSpacing = entry.querySelector('.sign-line-spacing') ? entry.querySelector(
-                    '.sign-line-spacing').value : 'full';
-                const tagWInput = entry.querySelector('.sign-width'),
-                    tagHInput = entry.querySelector('.sign-height');
-                const tagWVal = tagWInput && tagWInput.value ? Number(tagWInput.value) : 0;
-                const tagHVal = tagHInput && tagHInput.value ? Number(tagHInput.value) : 0;
-                const globalW = Number(getEl('widthIn').value || 0),
-                    globalH = Number(getEl('heightIn').value || 0);
-                const inputWidth = tagWVal > 0 ? tagWVal : globalW;
-                const inputHeight = tagHVal > 0 ? tagHVal : globalH;
-                const normalized = normalizeDimensionsForShape(inputWidth, inputHeight, shapeValue);
-                const condense = (entry.querySelector('.tag-condense-select') ? entry.querySelector(
-                    '.tag-condense-select').value : entry.dataset.condense) || 'no';
-                const cornerRadius = (entry.querySelector('.tag-radius-select') ? entry.querySelector(
-                    '.tag-radius-select').value : entry.dataset.cornerRadius) || 'no';
+            function getSignData() {
+                const isCustomSize = sameSizeMode.value === 'custom' || sameSizeMode.value === 'auto';
+                const shapeValue = getEl('shape').value || 'Rectangle';
+                return Array.from(document.querySelectorAll('.sign-entry')).map((entry, index) => {
+                    const raw = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text').value : '';
+                    const lineTexts = splitLines(raw);
+                    const storedStyles = getLineStylesForEntry(entry);
+                    const lines = lineTexts.map((text, li) => ({
+                        text,
+                        bold: Boolean((storedStyles[li] || {}).bold),
+                        size: (storedStyles[li] || {}).size || '1/4',
+                        customSize: (storedStyles[li] || {}).customSize || ''
+                    }));
+                    const qty = Math.max(1, Number(entry.querySelector('.sign-qty') ? entry.querySelector(
+                        '.sign-qty').value : 1) || 1);
+                    const lineSpacing = entry.querySelector('.sign-line-spacing') ? entry.querySelector(
+                        '.sign-line-spacing').value : 'full';
+                    const tagWInput = entry.querySelector('.sign-width'),
+                        tagHInput = entry.querySelector('.sign-height');
+                    const tagWVal = tagWInput && tagWInput.value ? Number(tagWInput.value) : 0;
+                    const tagHVal = tagHInput && tagHInput.value ? Number(tagHInput.value) : 0;
+                    const globalW = Number(getEl('widthIn').value || 0),
+                        globalH = Number(getEl('heightIn').value || 0);
+                    const inputWidth = tagWVal > 0 ? tagWVal : globalW;
+                    const inputHeight = tagHVal > 0 ? tagHVal : globalH;
+                    const normalized = normalizeDimensionsForShape(inputWidth, inputHeight, shapeValue);
+                    const condense = (entry.querySelector('.tag-condense-select') ? entry.querySelector(
+                        '.tag-condense-select').value : entry.dataset.condense) || 'no';
+                    const cornerRadius = (entry.querySelector('.tag-radius-select') ? entry.querySelector(
+                        '.tag-radius-select').value : entry.dataset.cornerRadius) || 'no';
+                    return {
+                        index: index + 1,
+                        color: entry.dataset.colorValue || 'black_white',
+                        raw,
+                        lines,
+                        qty,
+                        width: normalized.width,
+                        height: normalized.height,
+                        sizeLabel: normalized.sizeLabel,
+                        lineCount: lines.length || 1,
+                        charCount: countCharacters(raw),
+                        align: entry.dataset.align || 'center',
+                        lineSpacing,
+                        holes: entry.dataset.holeQty || 'No holes',
+                        holeSize: entry.dataset.holeSize || '1/8',
+                        condense,
+                        cornerRadius
+                    };
+                }).filter(item => item.raw.trim() !== '');
+            }
+
+            function calculateSingleTag(rawText, data, copiesPerTag, widthOverride, heightOverride) {
+                const widthIn = Math.max(0, Number(widthOverride || data.widthIn || 0) || 0),
+                    heightIn = Math.max(0, Number(heightOverride || data.heightIn || 0) || 0);
+                const safeQty = Math.max(1, Number(copiesPerTag || 1) || 1),
+                    unitPrice = widthIn * heightIn * PRICING.squareInchRate;
                 return {
-                    index: index + 1,
-                    color: entry.dataset.colorValue || 'black_white',
-                    raw,
+                    unitPrice: Number.isFinite(unitPrice) ? unitPrice : 0,
+                    widthIn,
+                    heightIn,
+                    subtotal: Number.isFinite(unitPrice * safeQty) ? unitPrice * safeQty : 0
+                };
+            }
+
+            function calculateQuote(data) {
+                const signData = getSignData();
+                const quoteItems = signData.map(tag => ({
+                    tag,
+                    calc: calculateSingleTag(tag.raw, data, tag.qty, tag.width, tag.height)
+                }));
+                const totalPieces = signData.reduce((sum, tag) => sum + tag.qty, 0);
+                const rawSubtotal = quoteItems.reduce((sum, item) => sum + item.calc.subtotal, 0);
+                const adjustedSubtotal = Math.max(rawSubtotal, PRICING.minimumOrder);
+                const sizeKeys = quoteItems.map(item => String(item.calc.widthIn) + 'x' + String(item.calc.heightIn));
+                const sameSize = sizeKeys.length ? sizeKeys.every(k => k === sizeKeys[0]) : false;
+                const firstItem = quoteItems[0] ? quoteItems[0].calc : null;
+                const firstWidth = firstItem ? firstItem.widthIn : Number(data.widthIn || 0),
+                    firstHeight = firstItem ? firstItem.heightIn : Number(data.heightIn || 0);
+                const firstSizeLabel = signData[0] ? signData[0].sizeLabel : (formatThreeDecimals(firstHeight) + '" × ' +
+                    formatThreeDecimals(firstWidth) + '"');
+                return {
+                    widthIn: firstWidth,
+                    heightIn: firstHeight,
+                    sizeLabel: firstSizeLabel,
+                    sameSize,
+                    totalPieces,
+                    material: data.material,
+                    rawSubtotal: Number(rawSubtotal.toFixed(2)),
+                    subtotal: Number(adjustedSubtotal.toFixed(2)),
+                    minimumApplied: rawSubtotal < PRICING.minimumOrder,
+                    minimumOrder: PRICING.minimumOrder,
+                    shipping: 0,
+                    total: Number(adjustedSubtotal.toFixed(2)),
+                    leadTime: getLeadTime(),
+                    quoteItems,
+                    signData
+                };
+            }
+
+            function updateSummary(data, result) {
+                setText('summarySize', result.sameSize ? result.sizeLabel : 'Mixed');
+                setText('summaryQty', String(result.totalPieces));
+                setText('summaryMaterial', materialLabel());
+                const colorValues = (result.signData || []).map(tag => tag.color || 'black_white');
+                const hasMixed = colorValues.length > 0 && !colorValues.every(v => v === colorValues[0]);
+                setText('summaryColor', hasMixed ? 'Mixed' : colorLabel(colorValues[0] || 'black_white'));
+                setText('summaryFont', fontLabel(data.fontFamily));
+                setText('summaryHoles', data.holes || '—');
+                setText('summaryHoleSize', data.holeSize || '—');
+                setText('summaryShape', data.shape || '—');
+            }
+
+            function setSummaryDefaults() {
+                ['summarySize', 'summaryQty', 'summaryMaterial', 'summaryColor', 'summaryFont', 'summaryHoles',
+                    'summaryHoleSize', 'summaryShape'
+                ].forEach(id => setText(id, '—'));
+            }
+
+            function getAutoSizingHoleDiameter(data, tagWidth, tagHeight) {
+                const hasHoles = Boolean(data.holes && data.holes !== 'No holes');
+                if (!hasHoles) return 0;
+                const spec = getSelectedHoleSpec(data.holes || 'No holes', data.holeSize || '', tagWidth, tagHeight);
+                if (spec && spec.type === 'round') return spec.diameter;
+                if (spec && spec.type === 'slot') return spec.height;
+                return getAutoHoleDiameter(tagWidth, tagHeight);
+            }
+
+            function getAutoSizingContentMetrics(entry, data) {
+                const raw = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text').value : '';
+                const lines = splitLines(raw),
+                    storedStyles = getLineStylesForEntry(entry);
+                const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                const spacingMultiplier = getLineSpacingMultiplier(entry.querySelector('.sign-line-spacing') ? entry
+                    .querySelector('.sign-line-spacing').value : 'full');
+                const naturalWidths = [],
+                    lineHeights = [],
+                    interlineGaps = [];
+                lines.forEach((lineText, index) => {
+                    const style = storedStyles[index] || getDefaultLineStyle();
+                    const fontInches = parseSizeValueToInches(getEffectiveLineSizeValue(style)) ||
+                        BASELINE_LINE_SIZE_IN;
+                    naturalWidths.push(measureTextWidthInches(lineText, fontInches, fontFamily, Boolean(style.bold),
+                        1));
+                    const xh = measureReferenceXHeightInches(fontInches, fontFamily, Boolean(style.bold));
+                    const lh = roundToThreeDecimals(xh * 1.05);
+                    lineHeights.push(lh);
+                    interlineGaps.push(roundToThreeDecimals(lh * spacingMultiplier * 0.5));
+                });
+                let totalTextHeight = 0;
+                if (lineHeights.length === 1) totalTextHeight = lineHeights[0];
+                else if (lineHeights.length > 1) totalTextHeight = lineHeights.reduce((s, v) => s + v, 0) + interlineGaps
+                    .slice(0, lineHeights.length - 1).reduce((s, v) => s + v, 0);
+                return {
                     lines,
-                    qty,
-                    width: normalized.width,
-                    height: normalized.height,
-                    sizeLabel: normalized.sizeLabel,
-                    lineCount: lines.length || 1,
-                    charCount: countCharacters(raw),
-                    align: entry.dataset.align || 'center',
-                    lineSpacing,
-                    holes: entry.dataset.holeQty || 'No holes',
-                    holeSize: entry.dataset.holeSize || '1/8',
-                    condense,
-                    cornerRadius
+                    widestTextWidth: Math.max(...naturalWidths, 0),
+                    totalTextHeight: roundToThreeDecimals(totalTextHeight)
                 };
-            }).filter(item => item.raw.trim()!=='');
-        }
+            }
 
-        function calculateSingleTag(rawText, data, copiesPerTag, widthOverride, heightOverride) {
-            const widthIn = Math.max(0, Number(widthOverride || data.widthIn || 0) || 0),
-                heightIn = Math.max(0, Number(heightOverride || data.heightIn || 0) || 0);
-            const safeQty = Math.max(1, Number(copiesPerTag || 1) || 1),
-                unitPrice = widthIn * heightIn * PRICING.squareInchRate;
-            return {
-                unitPrice: Number.isFinite(unitPrice) ? unitPrice : 0,
-                widthIn,
-                heightIn,
-                subtotal: Number.isFinite(unitPrice * safeQty) ? unitPrice * safeQty : 0
-            };
-        }
-
-        function calculateQuote(data) {
-            const signData = getSignData();
-            const quoteItems = signData.map(tag => ({
-                tag,
-                calc: calculateSingleTag(tag.raw, data, tag.qty, tag.width, tag.height)
-            }));
-            const totalPieces = signData.reduce((sum, tag) => sum + tag.qty, 0);
-            const rawSubtotal = quoteItems.reduce((sum, item) => sum + item.calc.subtotal, 0);
-            const adjustedSubtotal = Math.max(rawSubtotal, PRICING.minimumOrder);
-            const sizeKeys = quoteItems.map(item => String(item.calc.widthIn) + 'x' + String(item.calc.heightIn));
-            const sameSize = sizeKeys.length ? sizeKeys.every(k => k === sizeKeys[0]) : false;
-            const firstItem = quoteItems[0] ? quoteItems[0].calc : null;
-            const firstWidth = firstItem ? firstItem.widthIn : Number(data.widthIn || 0),
-                firstHeight = firstItem ? firstItem.heightIn : Number(data.heightIn || 0);
-            const firstSizeLabel = signData[0] ? signData[0].sizeLabel : (formatThreeDecimals(firstHeight) + '" × ' +
-                formatThreeDecimals(firstWidth) + '"');
-            return {
-                widthIn: firstWidth,
-                heightIn: firstHeight,
-                sizeLabel: firstSizeLabel,
-                sameSize,
-                totalPieces,
-                material: data.material,
-                rawSubtotal: Number(rawSubtotal.toFixed(2)),
-                subtotal: Number(adjustedSubtotal.toFixed(2)),
-                minimumApplied: rawSubtotal < PRICING.minimumOrder,
-                minimumOrder: PRICING.minimumOrder,
-                shipping: 0,
-                total: Number(adjustedSubtotal.toFixed(2)),
-                leadTime: getLeadTime(),
-                quoteItems,
-                signData
-            };
-        }
-
-        function updateSummary(data, result) {
-            setText('summarySize', result.sameSize ? result.sizeLabel : 'Mixed');
-            setText('summaryQty', String(result.totalPieces));
-            setText('summaryMaterial', materialLabel());
-            const colorValues = (result.signData || []).map(tag => tag.color || 'black_white');
-            const hasMixed = colorValues.length > 0 && !colorValues.every(v => v === colorValues[0]);
-            setText('summaryColor', hasMixed ? 'Mixed' : colorLabel(colorValues[0] || 'black_white'));
-            setText('summaryFont', fontLabel(data.fontFamily));
-            setText('summaryHoles', data.holes || '—');
-            setText('summaryHoleSize', data.holeSize || '—');
-            setText('summaryShape', data.shape || '—');
-        }
-
-        function setSummaryDefaults() {
-            ['summarySize', 'summaryQty', 'summaryMaterial', 'summaryColor', 'summaryFont', 'summaryHoles',
-                'summaryHoleSize', 'summaryShape'
-            ].forEach(id => setText(id, '—'));
-        }
-
-        function getAutoSizingHoleDiameter(data, tagWidth, tagHeight) {
-            const hasHoles=Boolean(data.holes&&data.holes!=='No holes');
-        if (!hasHoles) return 0;
-        const spec = getSelectedHoleSpec(data.holes || 'No holes', data.holeSize || '', tagWidth, tagHeight);
-        if (spec&&spec.type==='round') return spec.diameter;
-        if (spec&&spec.type==='slot') return spec.height;
-        return getAutoHoleDiameter(tagWidth, tagHeight);
-        }
-
-        function getAutoSizingContentMetrics(entry, data) {
-            const raw = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text').value : '';
-            const lines = splitLines(raw),
-                storedStyles = getLineStylesForEntry(entry);
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const spacingMultiplier = getLineSpacingMultiplier(entry.querySelector('.sign-line-spacing') ? entry
-                .querySelector('.sign-line-spacing').value : 'full');
-            const naturalWidths = [],
-                lineHeights = [],
-                interlineGaps = [];
-            lines.forEach((lineText, index) => {
-                const style = storedStyles[index] || getDefaultLineStyle();
-                const fontInches = parseSizeValueToInches(getEffectiveLineSizeValue(style)) ||
-                    BASELINE_LINE_SIZE_IN;
-                naturalWidths.push(measureTextWidthInches(lineText, fontInches, fontFamily, Boolean(style.bold),
-                    1));
-                const xh = measureReferenceXHeightInches(fontInches, fontFamily, Boolean(style.bold));
-                const lh = roundToThreeDecimals(xh * 1.05);
-                lineHeights.push(lh);
-                interlineGaps.push(roundToThreeDecimals(lh * spacingMultiplier * 0.5));
-            });
-            let totalTextHeight = 0;
-            if (lineHeights.length === 1) totalTextHeight = lineHeights[0];
-            else if (lineHeights.length > 1) totalTextHeight = lineHeights.reduce((s, v) => s + v, 0) + interlineGaps
-                .slice(0, lineHeights.length - 1).reduce((s, v) => s + v, 0);
-            return {
-                lines,
-                widestTextWidth: Math.max(...naturalWidths, 0),
-                totalTextHeight: roundToThreeDecimals(totalTextHeight)
-            };
-        }
-
-        function estimateAutoSizedTagDimensions(entry, data) {
-            const metrics = getAutoSizingContentMetrics(entry, data);
-            if (!metrics.lines.length) return {
-                width: roundToThreeDecimals(Number(getEl('widthIn').value || 3) || 3),
-                height: roundToThreeDecimals(Number(getEl('heightIn').value || 1) || 1)
-            };
-            const shapeValue = data.shape || 'Rectangle';
-            let width = Math.max(0.25, Number(entry.querySelector('.sign-width') ? entry.querySelector('.sign-width')
-                .value : getEl('widthIn').value || 3) || 3);
-            let height = Math.max(0.25, Number(entry.querySelector('.sign-height') ? entry.querySelector('.sign-height')
-                .value : getEl('heightIn').value || 1) || 1);
-            const hasHoles=Boolean(data.holes&&data.holes!=='No holes');
-        const condenseEnabled = (entry.querySelector('.tag-condense-select') ? entry.querySelector(
-            '.tag-condense-select').value : entry.dataset.condense || 'no') === 'yes';
-        for (let i = 0; i < 5; i++) {
-            const holeDiameter = getAutoSizingHoleDiameter(data, width, height);
-            const geometry = getTagGeometry({
-                tagWidth: width,
-                tagHeight: height,
-                hasHoles,
-                holeDiameter,
-                holeQuantity: data.holes || 'No holes',
-                holeSizeValue: data.holeSize || ''
-            });
-            // Always size to natural text width — condense is a rendering option, not a sizing option
-            let nextWidth = metrics.widestTextWidth + geometry.margins.left + geometry.margins.right;
-            let nextHeight = metrics.totalTextHeight + geometry.margins.top + geometry.margins.bottom;
-            nextWidth = roundToThreeDecimals(roundUpToIncrement(nextWidth));
-            nextHeight = roundToThreeDecimals(roundUpToIncrement(nextHeight));
-            if (shapeValue==='Circle' || shapeValue === 'Square') {
-            const side = roundToThreeDecimals(roundUpToIncrement(Math.max(nextWidth, nextHeight)));
-            nextWidth = side;
-            nextHeight = side;
-        }
-        width = Math.max(0.25, nextWidth);
-        height = Math.max(0.25, nextHeight);
-        }
-        return {
-            width: roundToThreeDecimals(width),
-            height: roundToThreeDecimals(height)
-        };
-        }
-
-        function applyAutomaticTagSizing(force = false) {
-            if (sameSizeMode.value!=='auto') return;
-        const data = Object.fromEntries(new FormData(form).entries());
-        document.querySelectorAll('.sign-entry').forEach(entry => {
-            const wi = entry.querySelector('.sign-width'),
-                hi = entry.querySelector('.sign-height');
-            if (!wi || !hi) return;
-            if (entry.dataset.manualSizeOverride==='true' && !force) return;
-        const calc = estimateAutoSizedTagDimensions(entry, data); wi.value = formatThreeDecimals(calc.width); hi
-        .value = formatThreeDecimals(calc.height); entry.dataset.autoSized='true';
-        if (force) entry.dataset.manualSizeOverride='false';
-        });
-        updateSizeFieldPresentation();
-        }
-
-        // ── Ruler helper ──
-        function renderRuler(svg, tagWidthIn, tagHeightIn, offsetX, offsetY, pxPerInch) {
-            const rulerGroup = createSvgEl('g');
-            const rulerColor = '#94a3b8';
-            const textColor = '#64748b';
-            const tickSmall = 4,
-                tickMid = 7,
-                tickBig = 10;
-            // Horizontal ruler (below tag)
-            const rulerY = offsetY + tagHeightIn * pxPerInch + 8;
-            rulerGroup.appendChild(createSvgEl('line', {
-                x1: offsetX,
-                y1: rulerY,
-                x2: offsetX + tagWidthIn * pxPerInch,
-                y2: rulerY,
-                stroke: rulerColor,
-                'stroke-width': 1
-            }));
-            // ticks at every 1/4"
-            for (let x = 0; x <= tagWidthIn; x += 0.25) {
-                const px = offsetX + x * pxPerInch;
-                const isWhole = Math.abs(x - Math.round(x)) < 0.01;
-                const isHalf = !isWhole && Math.abs((x * 2) - Math.round(x * 2)) < 0.01;
-                const tickLen = isWhole ? tickBig : isHalf ? tickMid : tickSmall;
-                rulerGroup.appendChild(createSvgEl('line', {
-                    x1: px,
-                    y1: rulerY,
-                    x2: px,
-                    y2: rulerY + tickLen,
-                    stroke: rulerColor,
-                    'stroke-width': 1
-                }));
-                if (isWhole && x > 0) {
-                    const lbl = createSvgEl('text', {
-                        x: px,
-                        y: rulerY + tickBig + 10,
-                        'text-anchor': 'middle',
-                        'font-size': 9,
-                        fill: textColor,
-                        'font-family': 'Arial, Helvetica, sans-serif'
+            function estimateAutoSizedTagDimensions(entry, data) {
+                const metrics = getAutoSizingContentMetrics(entry, data);
+                if (!metrics.lines.length) return {
+                    width: roundToThreeDecimals(Number(getEl('widthIn').value || 3) || 3),
+                    height: roundToThreeDecimals(Number(getEl('heightIn').value || 1) || 1)
+                };
+                const shapeValue = data.shape || 'Rectangle';
+                let width = Math.max(0.25, Number(entry.querySelector('.sign-width') ? entry.querySelector('.sign-width')
+                    .value : getEl('widthIn').value || 3) || 3);
+                let height = Math.max(0.25, Number(entry.querySelector('.sign-height') ? entry.querySelector('.sign-height')
+                    .value : getEl('heightIn').value || 1) || 1);
+                const hasHoles = Boolean(data.holes && data.holes !== 'No holes');
+                const condenseEnabled = (entry.querySelector('.tag-condense-select') ? entry.querySelector(
+                    '.tag-condense-select').value : entry.dataset.condense || 'no') === 'yes';
+                for (let i = 0; i < 5; i++) {
+                    const holeDiameter = getAutoSizingHoleDiameter(data, width, height);
+                    const geometry = getTagGeometry({
+                        tagWidth: width,
+                        tagHeight: height,
+                        hasHoles,
+                        holeDiameter,
+                        holeQuantity: data.holes || 'No holes',
+                        holeSizeValue: data.holeSize || ''
                     });
-                    lbl.textContent = x + '"';
-                    rulerGroup.appendChild(lbl);
+                    // Always size to natural text width — condense is a rendering option, not a sizing option
+                    let nextWidth = metrics.widestTextWidth + geometry.margins.left + geometry.margins.right;
+                    let nextHeight = metrics.totalTextHeight + geometry.margins.top + geometry.margins.bottom;
+                    nextWidth = roundToThreeDecimals(roundUpToIncrement(nextWidth));
+                    nextHeight = roundToThreeDecimals(roundUpToIncrement(nextHeight));
+                    if (shapeValue === 'Circle' || shapeValue === 'Square') {
+                        const side = roundToThreeDecimals(roundUpToIncrement(Math.max(nextWidth, nextHeight)));
+                        nextWidth = side;
+                        nextHeight = side;
+                    }
+                    width = Math.max(0.25, nextWidth);
+                    height = Math.max(0.25, nextHeight);
                 }
-            }
-            // Vertical ruler (right of tag)
-            const rulerX = offsetX + tagWidthIn * pxPerInch + 8;
-            rulerGroup.appendChild(createSvgEl('line', {
-                x1: rulerX,
-                y1: offsetY,
-                x2: rulerX,
-                y2: offsetY + tagHeightIn * pxPerInch,
-                stroke: rulerColor,
-                'stroke-width': 1
-            }));
-            for (let y = 0; y <= tagHeightIn; y += 0.25) {
-                const py = offsetY + y * pxPerInch;
-                const isWhole = Math.abs(y - Math.round(y)) < 0.01;
-                const isHalf = !isWhole && Math.abs((y * 2) - Math.round(y * 2)) < 0.01;
-                const tickLen = isWhole ? tickBig : isHalf ? tickMid : tickSmall;
-                rulerGroup.appendChild(createSvgEl('line', {
-                    x1: rulerX,
-                    y1: py,
-                    x2: rulerX + tickLen,
-                    y2: py,
-                    stroke: rulerColor,
-                    'stroke-width': 1
-                }));
-                if (isWhole && y > 0) {
-                    const lbl = createSvgEl('text', {
-                        x: rulerX + tickBig + 12,
-                        y: py + 3,
-                        'text-anchor': 'start',
-                        'font-size': 9,
-                        fill: textColor,
-                        'font-family': 'Arial, Helvetica, sans-serif'
-                    });
-                    lbl.textContent = y + '"';
-                    rulerGroup.appendChild(lbl);
-                }
-            }
-            svg.appendChild(rulerGroup);
-        }
-
-        function getTagOutlineStroke(bgColor) {
-            const hex = String(bgColor || '').replace('#', '');
-            if (hex.length !== 6) return 'none';
-            const r = parseInt(hex.slice(0, 2), 16),
-                g = parseInt(hex.slice(2, 4), 16),
-                b = parseInt(hex.slice(4, 6), 16);
-            if ([r, g, b].some(v => Number.isNaN(v))) return 'none';
-            const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-            // Show a border when the tag is light enough to blend into the white preview surface
-            return luminance > 0.72 ? '#b0b8c4' : 'none';
-        }
-
-        function renderPreviewShape(svg, shape, bgColor, radius, width, height, offsetX, offsetY) {
-            const stroke = getTagOutlineStroke(bgColor);
-            const strokeW = stroke === 'none' ? 0 : 1;
-            if (shape==='Circle') {
-            svg.appendChild(createSvgEl('circle', {
-                cx: offsetX + width / 2,
-                cy: offsetY + height / 2,
-                r: Math.min(width, height) / 2,
-                fill: bgColor,
-                stroke,
-                'stroke-width': strokeW
-            }));
-            return;
-        }
-        if (shape==='Square') {
-            const side = Math.min(width, height);
-            svg.appendChild(createSvgEl('rect', {
-                x: offsetX + (width - side) / 2,
-                y: offsetY + (height - side) / 2,
-                width: side,
-                height: side,
-                rx: radius,
-                fill: bgColor,
-                stroke,
-                'stroke-width': strokeW
-            }));
-            return;
-        }
-        svg.appendChild(createSvgEl('rect', {
-            x: offsetX,
-            y: offsetY,
-            width,
-            height,
-            rx: radius,
-            fill: bgColor,
-            stroke,
-            'stroke-width': strokeW
-        }));
-        }
-
-        function getContrastSafeAreaStroke(bgColor) {
-            const hex = String(bgColor || '').replace('#', '');
-            if (hex.length !== 6) return '#5d5d5d';
-            const r = parseInt(hex.slice(0, 2), 16),
-                g = parseInt(hex.slice(2, 4), 16),
-                b = parseInt(hex.slice(4, 6), 16);
-            if ([r, g, b].some(v => Number.isNaN(v))) return '#5d5d5d';
-            const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-            return luminance < 0.5 ? '#f8f8f2' : '#5d5d5d';
-        }
-
-        function getContrastErrorStroke(bgColor) {
-            const hex = String(bgColor || '').replace('#', '');
-            if (hex.length !== 6) return {
-                stroke: '#c62828',
-                strokeWidth: 2,
-                strokeDasharray: '6 3',
-                strokeOpacity: 0.96
-            };
-            const r = parseInt(hex.slice(0, 2), 16),
-                g = parseInt(hex.slice(2, 4), 16),
-                b = parseInt(hex.slice(4, 6), 16);
-            if ([r, g, b].some(v => Number.isNaN(v))) return {
-                stroke: '#c62828',
-                strokeWidth: 2,
-                strokeDasharray: '6 3',
-                strokeOpacity: 0.96
-            };
-            const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-            const isRedDominant = r >= 150 && g <= 90 && b <= 90;
-            const useLightWarning = luminance < 0.5 || isRedDominant;
-            return useLightWarning ? {
-                stroke: '#fff3b0',
-                strokeWidth: 2.25,
-                strokeDasharray: '7 3',
-                strokeOpacity: 1
-            } : {
-                stroke: '#c62828',
-                strokeWidth: 2,
-                strokeDasharray: '6 3',
-                strokeOpacity: 0.96
-            };
-        }
-
-        function renderDesignPreview() {
-            const data = Object.fromEntries(new FormData(form).entries());
-            const signData = getSignData();
-            const totalEntries = Math.max(document.querySelectorAll('.sign-entry').length, 1);
-            selectedPreviewIndex = Math.max(0, Math.min(selectedPreviewIndex, totalEntries - 1));
-            previewSignSelect.value = String(selectedPreviewIndex);
-            designPreviewSvg.innerHTML='';
-
-            // viewBox accommodates ruler: add ~40px right and ~40px bottom padding
-            const VBW = 460,
-                VBH = 300;
-            designPreviewSvg.setAttribute('viewBox', '0 0 ' + VBW + ' ' + VBH);
-
-            if (!signData.length) {
-                const emptyText = createSvgEl('text', {
-                    x: VBW / 2,
-                    y: VBH / 2,
-                    'text-anchor': 'middle',
-                    'font-size': 15,
-                    fill: '#64748b',
-                    'font-weight': 600,
-                    'font-family': 'Arial, Helvetica, sans-serif'
-                });
-                emptyText.textContent='Add sign text to preview the design';
-                designPreviewSvg.appendChild(emptyText);
-                designPreviewMeta.textContent='Start entering your sign details to see a live preview.';
-                previewWarning.classList.remove('show');
-                previewWarning.textContent='';
-                return;
-            }
-
-            const active = signData[Math.min(selectedPreviewIndex, signData.length - 1)] || signData[0];
-            const colorPairValue = colorPair(active.color || 'black_white');
-            const bgColor = colorPairValue[0],
-                textColor = colorPairValue[1];
-            const shapeValue = data.shape || 'Rectangle';
-            const widthIn = Math.max(Number(active.width || 0) || 3, 0.25);
-            const heightIn = Math.max(Number(active.height || 0) || 1, 0.25);
-
-            // Reserve ~40px for ruler on right and bottom
-            const rulerPad = 40;
-            const usableW = VBW - rulerPad - 16; // 16 left pad
-            const usableH = VBH - rulerPad - 16; // 16 top pad
-            const pxPerInch = Math.min(usableW / widthIn, usableH / heightIn);
-            const previewWidth = widthIn * pxPerInch,
-                previewHeight = heightIn * pxPerInch;
-            const offsetX = (usableW - previewWidth) / 2 + 8;
-            const offsetY = (usableH - previewHeight) / 2 + 8;
-            const cornerRadiusIn1 = (active.cornerRadius==='yes') ? 0.125: 0;
-        const radiusValue = cornerRadiusIn1 * pxPerInch;
-
-        // Shadow
-        designPreviewSvg.appendChild(createSvgEl('rect', {
-            x: offsetX + 5,
-            y: offsetY + 7,
-            width: previewWidth,
-            height: previewHeight,
-            rx: Math.min(radiusValue + 2, 18),
-            fill: 'rgba(15,23,42,0.10)'
-        }));
-        renderPreviewShape(designPreviewSvg, shapeValue, bgColor, radiusValue, previewWidth, previewHeight, offsetX,
-            offsetY);
-
-        const effectiveHoles = active.holes || 'No holes',
-            effectiveHoleSize = active.holeSize || '1/8';
-        const hasHoles=Boolean(effectiveHoles&&effectiveHoles!=='No holes');
-        const selectedHoleSpec = getSelectedHoleSpec(effectiveHoles, effectiveHoleSize, widthIn, heightIn);
-        const holeDiameter=selectedHoleSpec&&selectedHoleSpec.type==='round' ? selectedHoleSpec.diameter : (hasHoles ?
-            getAutoHoleDiameter(widthIn, heightIn) : 0);
-        const geometry = getTagGeometry({
-            tagWidth: widthIn,
-            tagHeight: heightIn,
-            hasHoles,
-            holeDiameter,
-            holeQuantity: effectiveHoles,
-            holeSizeValue: effectiveHoleSize
-        });
-        const safeAreaPx = {
-            x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
-            y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
-            width: inchesToPx(geometry.safeArea.width, pxPerInch),
-            height: inchesToPx(geometry.safeArea.height, pxPerInch)
-        };
-
-        const overlay = createSvgEl('g', {
-            id: 'safeAreaOverlay'
-        });
-        const safeRect = createSvgEl('rect', {
-            x: safeAreaPx.x,
-            y: safeAreaPx.y,
-            width: safeAreaPx.width,
-            height: safeAreaPx.height,
-            fill: 'none',
-            stroke: getContrastSafeAreaStroke(bgColor),
-            'stroke-dasharray': '4 3',
-            'stroke-width': 1
-        });
-        overlay.appendChild(safeRect);
-        renderHoleFeatures(overlay, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
-            textColor);
-        designPreviewSvg.appendChild(overlay);
-
-        // Ruler
-        renderRuler(designPreviewSvg, widthIn, heightIn, offsetX, offsetY, pxPerInch);
-
-        const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2,
-            safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
-        const align = active.align || 'center',
-            alignmentPadding = 10;
-        let textAnchor='middle', textX = safeAreaCenterX;
-        if (align==='left') {
-            textAnchor='start';
-            textX = safeAreaPx.x + alignmentPadding;
-        } else if (align==='right') {
-            textAnchor='end';
-            textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
-        }
-
-        const condensed = (active.condense || 'no') === 'yes';
-        const spacingMultiplier = getLineSpacingMultiplier(active.lineSpacing || 'full');
-        const lines = active.lines.length ? active.lines : [{
-            text: 'PREVIEW',
-            bold: false,
-            size: '1/4',
-            customSize: ''
-        }];
-        const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
-        const renderedLines = lines.map(line => {
-            const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
-                BASELINE_LINE_SIZE_IN;
-            const fontSize = Math.max(7, requestedHeightIn * PORTAL_FONT_PX_PER_IN * portalStageScale);
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const xMetrics = measureReferenceXMetrics(designPreviewSvg, fontSize, fontFamily, line.bold ? 700 :
-                400);
-            const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
-            const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
-            const ascent = xMetrics.ascent;
-            return {
-                ...line,
-                fontSize,
-                lineHeight,
-                interlineGap,
-                ascent,
-                textValue: line.text || ''
-            };
-        });
-        const totalBlockHeight = renderedLines.length <= 1 ? (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
-            renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
-            .reduce((s, l) => s + l.interlineGap, 0);
-        let currentY = safeAreaCenterY - totalBlockHeight / 2;
-        const textGroup = createSvgEl('g');
-        designPreviewSvg.appendChild(textGroup);
-        const renderedTextEls = [];
-        renderedLines.forEach((line, index) => {
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
-            const textEl = createSvgEl('text', {
-                x: textX,
-                y: baselineY,
-                'text-anchor': textAnchor,
-                'dominant-baseline': 'middle',
-                'font-size': line.fontSize,
-                fill: textColor,
-                'font-weight': line.bold ? 700 : 400,
-                'font-family': fontFamily
-            });
-            textEl.textContent = line.textValue;
-            textGroup.appendChild(textEl);
-            renderedTextEls.push({
-                line,
-                textEl,
-                baselineY
-            });
-            currentY += line.lineHeight;
-            if (index < renderedLines.length - 1) currentY += line.interlineGap;
-        });
-        let naturalTextWidth = 0;
-        renderedTextEls.forEach(item => {
-            try {
-                const box = item.textEl.getBBox();
-                item.naturalBox = box;
-                naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
-            } catch (_) {
-                item.naturalBox = {
-                    x: textX,
-                    y: item.baselineY,
-                    width: 0,
-                    height: item.line.fontSize
+                return {
+                    width: roundToThreeDecimals(width),
+                    height: roundToThreeDecimals(height)
                 };
             }
-        });
-        naturalTextWidth = Math.max(naturalTextWidth, 0.1);
-        const safeTextWidth = geometry.safeArea.width;
-        const naturalTextWidthIn = naturalTextWidth / pxPerInch;
-        const condenseRatio = condensed ? Math.min(1, safeTextWidth / Math.max(naturalTextWidthIn, 0.0001)) : 1;
-        renderedTextEls.forEach(item => {
-            if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
-                ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
-            else item.textEl.removeAttribute('transform');
-        });
-        let verticalOffset = 0;
-        try {
-            const groupBox = textGroup.getBBox();
-            const textCenterY = groupBox.y + groupBox.height / 2;
-            verticalOffset = safeAreaCenterY - textCenterY;
-            textGroup.setAttribute('transform', 'translate(0 ' + verticalOffset + ')');
-        } catch (_) {
-            textGroup.removeAttribute('transform');
-        }
-        let minX = Infinity,
-            minY = Infinity,
-            maxX = -Infinity,
-            maxY = -Infinity;
-        renderedTextEls.forEach(item => {
-                const box = item.naturalBox || {
-                    x: textX,
-                    y: item.baselineY,
-                    width: 0,
-                    height: item.line.fontSize
-                };
-                const finalWidth = box.width * condenseRatio;
-                let left = box.x;
-                if(textAnchor==='middle') left = textX - finalWidth / 2;
-            else if(textAnchor==='end') left = textX - finalWidth;
-        minX = Math.min(minX, left);
-        minY = Math.min(minY, box.y + verticalOffset);
-        maxX = Math.max(maxX, left + finalWidth);
-        maxY = Math.max(maxY, box.y + box.height + verticalOffset);
-        });
-        let validation = {
-            fits: true,
-            message: ''
-        };
-        if (minX !== Infinity) {
-            const textBoundsInches = {
-                x: (minX - offsetX) / pxPerInch,
-                y: (minY - offsetY) / pxPerInch,
-                width: (maxX - minX) / pxPerInch,
-                height: (maxY - minY) / pxPerInch
-            };
-            validation = validateTextBounds(textBoundsInches, geometry.safeArea);
-        }
-        const isAutoSizing = sameSizeMode.value === 'auto';
-        if (!validation.fits && !isAutoSizing) {
-            const es = getContrastErrorStroke(bgColor);
-            safeRect.setAttribute('stroke', es.stroke);
-            safeRect.setAttribute('stroke-width', String(es.strokeWidth));
-            safeRect.setAttribute('stroke-dasharray', es.strokeDasharray);
-            safeRect.setAttribute('stroke-opacity', String(es.strokeOpacity));
-            previewWarning.classList.add('show');
-            previewWarning.textContent = validation.message;
-        } else {
-            previewWarning.classList.remove('show');
-            previewWarning.textContent='';
-        }
-        designPreviewMeta.innerHTML = esc('Previewing Sign ' + active.index) + ' · ' + esc(shapeValue) + ' · ' + esc(
-                colorLabel(active.color || 'black_white')) + '<br>' + esc(active.sizeLabel || (formatThreeDecimals(
-                heightIn) + '" × ' + formatThreeDecimals(widthIn) + '"')) + ' · ' + esc(effectiveHoles) + ' · Qty ' +
-            esc(String(active.qty));
-        }
 
-        function updateLiveEstimate() {
-            const data = Object.fromEntries(new FormData(form).entries());
-            if (sameSizeMode.value==='auto') applyAutomaticTagSizing();
-        const signData = getSignData();
-        lineCountInput.value = String(signData.reduce((max, tag) => Math.max(max, tag.lineCount), 1));
-        if (!signData.length) {
-            setSummaryDefaults();
-            renderDesignPreview();
-            return;
-        }
-        const result = calculateQuote(data);
-        updateSummary(data, result);
-        renderDesignPreview();
-        }
-
-        function queueLiveEstimateUpdate() {
-            if (updateQueued) return;
-            updateQueued = true;
-            requestAnimationFrame(() => {
-                updateQueued = false;
-                updateLiveEstimate();
-            });
-        }
-
-        function validateQuoteSubmission(data) {
-            const signData = getSignData();
-            if (!data.customerName || !String(data.customerName).trim()) return 'Please enter your name.';
-            if (!data.email || !String(data.email).trim()) return 'Please enter your email address.';
-            if (!signData.length) return 'Please add at least one sign before generating a quote.';
-            const missingSize=(sameSizeMode.value==='custom' || sameSizeMode.value === 'auto') ? signData.some(
-            tag =>
-            Number(tag.width || 0) <= 0 || Number(tag.height || 0) <= 0): Number(data.widthIn || 0) <= 0 || (
-            getShapeSizingMode() === 'free' && Number(data.heightIn || 0) <= 0);
-        if (missingSize) return 'Please enter a valid tag size before generating a quote.';
-        if (previewWarning.classList.contains('show') && sameSizeMode.value !== 'auto') return previewWarning
-            .textContent || 'Please fix the preview warning before generating a quote.';
-        return '';
-        }
-
-        function getSafeQuoteField(value, fallback='—') {
-            if(value===null||value===undefined||value==='') return fallback;
-        return value;
-        }
-
-        function closeQuoteModal() {
-            quoteModalBackdrop.classList.remove('show');
-            quoteModalBackdrop.setAttribute('aria-hidden', 'true');
-        }
-
-        function closeQuoteLoading() {
-            if (quoteLoadingTimer) {
-                clearTimeout(quoteLoadingTimer);
-                quoteLoadingTimer = null;
-            }
-            quoteLoadingBackdrop.classList.remove('show');
-            quoteLoadingBackdrop.setAttribute('aria-hidden', 'true');
-        }
-
-        function openQuoteLoading() {
-            quoteLoadingBackdrop.classList.add('show');
-            quoteLoadingBackdrop.setAttribute('aria-hidden', 'false');
-        }
-
-        function openQuoteModal(payload) {
-            const result = payload && payload.result ? payload.result : {},
-                data = payload && payload.data ? payload.data : {};
-            const items = Array.isArray(result.quoteItems) ? result.quoteItems : [];
-            quoteModalTotal.textContent = currency(result.subtotal || 0);
-            quoteModalLeadTime.textContent='Product total only';
-            const quoteModalJobName = document.getElementById('quoteModalJobName');
-            if (quoteModalJobName) {
-                const jn = String(data.jobName || '').trim();
-                quoteModalJobName.textContent = jn ? 'Job: ' + jn : '';
-                quoteModalJobName.style.display = jn ? 'block' : 'none';
-            }
-            quoteModalMinimumNote.classList.toggle('hidden', !result.minimumApplied);
-            quoteModalMinimumNote.textContent='Minimum order applied ($' + getSafeQuoteField(result.minimumOrder,
-                25) + ')';
-            const quoteColorValues = (result.signData || []).map(tag => tag.color || 'black_white');
-            const quoteHasMixed = quoteColorValues.length > 0 && !quoteColorValues.every(v => v === quoteColorValues[
-                0]);
-            const quoteColorLabel = quoteHasMixed ? 'Mixed' : colorLabel(quoteColorValues[0] || 'black_white');
-            const jobNameDisplay = getSafeQuoteField(data.jobName);
-            const jobNameRowHtml = '<div class="quote-line" id="quoteJobNameRow">' +
-                '<span>Job name</span>' +
-                '<span style="position:relative; display:inline-flex; align-items:center; justify-content:flex-end;">' +
-                '<strong id="quoteJobNameDisplay" title="Double-click to rename" style="cursor:text; border-bottom:1px dashed #ccc;">' +
-                esc(jobNameDisplay) + '</strong>' +
-                '<input id="quoteJobNameInput" type="text" maxlength="80" placeholder="Enter job name…"' +
-                ' style="display:none; font-size:14px; font-weight:700; border:none; border-bottom:2px solid var(--brand); outline:none; background:transparent; text-align:right; min-width:140px; font-family:inherit; color:var(--ink); padding:0;" />' +
-                '</span>' +
-                '</div>';
-            quoteModalSummary.innerHTML = jobNameRowHtml + [
-                ['Subtotal', currency(result.rawSubtotal || 0)],
-                ['Adjusted subtotal', currency(result.subtotal || 0)],
-                ['Final total', currency(result.subtotal || 0)],
-                ['Pieces', String(result.totalPieces || 0)],
-                ['Material', materialLabel(data.material)],
-                ['Color', quoteColorLabel],
-                ['Shape', getSafeQuoteField(data.shape)],
-                ['Holes', getSafeQuoteField(data.holes)]
-            ].map(pair => '<div class="quote-line"><span>' + esc(pair[0]) + '</span><strong>' + esc(String(pair[
-                1])) + '</strong></div>').join('');
-
-            // Wire up double-click inline edit for job name in quote modal
-            (function() {
-                const nameEl = document.getElementById('quoteJobNameDisplay');
-                const inputEl = document.getElementById('quoteJobNameInput');
-                const formEl = document.getElementById('jobName');
-                const qlJNEl = document.getElementById('quoteModalJobName');
-                if (!nameEl || !inputEl) return;
-                let committing = false;
-
-                function openEdit() {
-                    const current = formEl ? formEl.value.trim() : '';
-                    inputEl.value = current;
-                    nameEl.style.display  = 'none';
-                    inputEl.style.display = 'inline-block';
-                    inputEl.focus();
-                    inputEl.select();
-                }
-
-                function commitEdit() {
-                    if (committing) return;
-                    committing = true;
-                    const val = inputEl.value.trim();
-                    if (formEl) {
-                        formEl.value = val;
-                        formEl.dispatchEvent(new Event('input', {
-                            bubbles: true
-                        }));
-                    }
-                    if (latestQuotePayload && latestQuotePayload.data) latestQuotePayload.data.jobName = val;
-                    nameEl.textContent = val || '—';
-                    nameEl.style.display  = '';
-                    inputEl.style.display = 'none';
-                    if (qlJNEl) {
-                        qlJNEl.textContent = val ? 'Job: ' + val : '';
-                        qlJNEl.style.display = val ? 'block' : 'none';
-                    }
-                    committing = false;
-                }
-
-                function cancelEdit() {
-                    nameEl.style.display  = '';
-                    inputEl.style.display = 'none';
-                }
-                nameEl.addEventListener('dblclick', openEdit);
-                inputEl.addEventListener('keydown', e => {
-                    if (e.key === 'Enter') {
-                        e.preventDefault();
-                        commitEdit();
-                    }
-                    if (e.key === 'Escape') {
-                        e.preventDefault();
-                        cancelEdit();
-                    }
-                });
-                inputEl.addEventListener('blur', () => {
-                    setTimeout(commitEdit, 100);
-                });
-            })();
-            quoteModalItems.innerHTML = items.length ? items.map((item, index) => {
-                const tag = item && item.tag ? item.tag : {},
-                    calc = item && item.calc ? item.calc : {};
-                return '<div class="quote-item"><div class="quote-item-title">' + esc('Sign ' + (tag
-                        .index || index + 1)) + '</div><div class="quote-item-meta">' + esc(tag.sizeLabel || (
-                        formatThreeDecimals(calc.heightIn || 0) + '" × ' + formatThreeDecimals(calc
-                            .widthIn || 0) + '"')) + ' · Qty ' + esc(String(tag.qty || 1)) +
-                    '</div><div class="quote-item-meta">' + esc((tag.lines || []).map(l => l.text).filter(
-                        Boolean).join(' / ') || 'No text entered') +
-                    '</div><div class="quote-line"><span>Item total</span><strong>' + esc(currency(calc
-                        .subtotal || 0)) + '</strong></div></div>';
-            }).join('') : '<div class="helper-text">No sign items were available for this quote.</div>';
-            quoteModalBackdrop.classList.add('show');
-            quoteModalBackdrop.setAttribute('aria-hidden', 'false');
-        }
-
-        function syncHoleSizeOptions() {
-            const quantityEl = getEl('holes'),
-                sizeEl = getEl('holeSize');
-            if (!quantityEl || !sizeEl) return;
-            const quantity = quantityEl.value || 'No holes';
-            if (quantity==='No holes') {
-            sizeEl.innerHTML='<option value="N/A">N/A</option>';
-            sizeEl.disabled = true;
-            return;
-        }
-        if (quantity==='Cable tie slots') {
-            sizeEl.innerHTML='<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
-            sizeEl.disabled = false;
-            return;
-        }
-        const previous=(sizeEl.value==='N/A') ? '1/8' : sizeEl.value;
-        sizeEl.innerHTML = ['1/8', '3/16', '1/4'].map(o => '<option value="'+o+'"' + (o === previous ? ' selected' :
-            '') + '>' + o + '</option>').join('');
-        if (!['1/8', '3/16', '1/4'].some(o => o === sizeEl.value)) sizeEl.value='1/8';
-        sizeEl.disabled = false;
-        }
-
-        // ── Auto-condense: uses renderDesignPreview to detect overflow — exact same logic as the red warning ──
-        const autoCondenseBtn = getEl('autoCondenseBtn');
-        if (autoCondenseBtn) {
-            autoCondenseBtn.addEventListener('click', () => {
-                const entries = Array.from(document.querySelectorAll('.sign-entry'));
-                const originalIndex = selectedPreviewIndex;
-                let fixed = 0;
-
-                entries.forEach((entry, idx) => {
-                    const txt = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text')
-                        .value : '';
-                    if (!txt.trim()) return; // skip empty tags
-                    if (entry.dataset.condense === 'yes') return; // already condensed
-
-                    // Temporarily render this tag's preview — this runs validateTextBounds internally
-                    selectedPreviewIndex = idx;
-                    renderDesignPreview();
-
-                    // previewWarning.classList.contains('show') means text overflows safe area
-                    if (previewWarning.classList.contains('show')) {
-                        entry.dataset.condense = 'yes';
-                        const cndSel = entry.querySelector('.tag-condense-select');
-                        if (cndSel) cndSel.value = 'yes';
-                        fixed++;
-                    }
-                });
-
-                // Restore original preview selection
-                selectedPreviewIndex = originalIndex;
-                previewSignSelect.value = String(originalIndex);
-                queueLiveEstimateUpdate();
-
-                const msg = fixed > 0 ?
-                    `\u2713 Condensed ${fixed} overflowing tag${fixed === 1 ? '' : 's'}.` :
-                    'No overflowing tags found \u2014 all text fits!';
-                autoCondenseBtn.textContent = msg;
-                setTimeout(() => {
-                    autoCondenseBtn.textContent = '\u26A1 Auto-condense overflowing tags';
-                }, 3000);
-            });
-        }
-
-        // ── Global settings — auto-push to all tags on change ──
-        const globalColorSelect = getEl('globalColor');
-        if (globalColorSelect) {
-            globalColorSelect.addEventListener('change', () => {
-                document.querySelectorAll('.sign-entry').forEach(entry => {
-                    entry.dataset.colorValue = globalColorSelect.value;
-                    const colorSel = entry.querySelector('.tag-color-select');
-                    if (colorSel) colorSel.value = globalColorSelect.value;
-                });
-                queueLiveEstimateUpdate();
-            });
-        }
-
-        const globalHolesSelect = getEl('holes');
-        const globalHoleSizeSelect = getEl('holeSize');
-
-        function pushGlobalHolesToTags() {
-            const globalHoles = globalHolesSelect ? globalHolesSelect.value : 'No holes';
-            const globalHoleSize = globalHoleSizeSelect ? globalHoleSizeSelect.value : '1/8';
-            document.querySelectorAll('.sign-entry').forEach(entry => {
-                entry.dataset.holeQty = globalHoles;
-                entry.dataset.holeSize = globalHoleSize;
-                const holesSel = entry.querySelector('.tag-holes-select');
-                if (holesSel) holesSel.value = globalHoles;
-                syncTagHoleSizeFromHoles(entry);
-                const hsEl = entry.querySelector('.tag-holesize-select');
-                if (hsEl && globalHoles!=='Cable tie slots' && globalHoles!=='No holes') hsEl.value =
-                    globalHoleSize;
-            });
-        }
-        if (globalHolesSelect) globalHolesSelect.addEventListener('change', () => {
-            syncHoleSizeOptions();
-            pushGlobalHolesToTags();
-            queueLiveEstimateUpdate();
-        });
-        if (globalHoleSizeSelect) globalHoleSizeSelect.addEventListener('change', () => {
-            pushGlobalHolesToTags();
-            queueLiveEstimateUpdate();
-        });
-
-        const globalCornerRadiusSelect = getEl('globalCornerRadius');
-        if (globalCornerRadiusSelect) {
-            globalCornerRadiusSelect.addEventListener('change', () => {
-                const val = globalCornerRadiusSelect.value;
-                document.querySelectorAll('.sign-entry').forEach(entry => {
-                    entry.dataset.cornerRadius = val;
-                    const radSel = entry.querySelector('.tag-radius-select');
-                    if (radSel) radSel.value = val;
-                });
-                queueLiveEstimateUpdate();
-            });
-        }
-
-        addSignBtn.addEventListener('click', addSignBox);
-
-        function handleGenerateQuote(event) {
-            if (event) event.preventDefault();
-            try {
+            function applyAutomaticTagSizing(force = false) {
+                if (sameSizeMode.value !== 'auto') return;
                 const data = Object.fromEntries(new FormData(form).entries());
-                const validationMessage = validateQuoteSubmission(data);
-                if (validationMessage) {
-                    window.alert(validationMessage);
-                    closeQuoteLoading();
-                    closeQuoteModal();
-                    return;
-                }
-                const result = calculateQuote(data);
-                latestQuotePayload = {
-                    data,
-                    result
-                };
-                // Auto-save draft immediately on quote generation (logged-in users only)
-                saveDraft();
-                closeQuoteModal();
-                openQuoteLoading();
-                quoteLoadingTimer = window.setTimeout(() => {
-                    closeQuoteLoading();
-                    openQuoteModal(latestQuotePayload);
-                }, 850);
-            } catch (error) {
-                console.error('generate-quote error', error);
-                window.alert('Quote generation hit an error. Check the console for details.');
-                closeQuoteLoading();
-                closeQuoteModal();
-            }
-        }
-        if (generateBtn) generateBtn.addEventListener('click', event => handleGenerateQuote(event));
-
-        resetBtn.addEventListener('click', () => {
-            closeQuoteLoading();
-            closeQuoteModal();
-            form.reset();
-            getEl('material').value = 'plastic';
-            getEl('globalColor').value = 'black_white';
-            getEl('holes').value = 'No holes';
-            getEl('shape').value = 'Rectangle';
-            getEl('fontFamily').value = 'Arial, Helvetica, sans-serif';
-            getEl('widthIn').value = '3.000';
-            getEl('heightIn').value = '1.000';
-            sameSizeMode.value='same';
-            signStack.innerHTML='';
-            addSignBox();
-            selectedPreviewIndex = 0;
-            setSummaryDefaults();
-            rebuildPreviewSelector();
-            syncSizeModeUI();
-            syncHoleSizeOptions();
-            renderDesignPreview();
-        });
-
-        previewSignSelect.addEventListener('change', () => {
-            selectedPreviewIndex = Number(previewSignSelect.value || 0);
-            renderDesignPreview();
-        });
-        form.addEventListener('input', queueLiveEstimateUpdate);
-        form.addEventListener('change', queueLiveEstimateUpdate);
-        form.addEventListener('keyup', queueLiveEstimateUpdate);
-
-        sameSizeMode.addEventListener('change', () => {
-                if (sameSizeMode.value==='custom') {
                 document.querySelectorAll('.sign-entry').forEach(entry => {
                     const wi = entry.querySelector('.sign-width'),
                         hi = entry.querySelector('.sign-height');
-                    if (wi && !wi.value) wi.value = getEl('widthIn').value || '3.000';
-                    if (hi && !hi.value) hi.value = getEl('heightIn').value || '1.000';
+                    if (!wi || !hi) return;
+                    if (entry.dataset.manualSizeOverride === 'true' && !force) return;
+                    const calc = estimateAutoSizedTagDimensions(entry, data); wi.value = formatThreeDecimals(calc.width); hi
+                        .value = formatThreeDecimals(calc.height); entry.dataset.autoSized = 'true';
+                    if (force) entry.dataset.manualSizeOverride = 'false';
+                });
+                updateSizeFieldPresentation();
+            }
+
+            // ── Ruler helper ──
+            function renderRuler(svg, tagWidthIn, tagHeightIn, offsetX, offsetY, pxPerInch) {
+                const rulerGroup = createSvgEl('g');
+                const rulerColor = '#94a3b8';
+                const textColor = '#64748b';
+                const tickSmall = 4,
+                    tickMid = 7,
+                    tickBig = 10;
+                // Horizontal ruler (below tag)
+                const rulerY = offsetY + tagHeightIn * pxPerInch + 8;
+                rulerGroup.appendChild(createSvgEl('line', {
+                    x1: offsetX,
+                    y1: rulerY,
+                    x2: offsetX + tagWidthIn * pxPerInch,
+                    y2: rulerY,
+                    stroke: rulerColor,
+                    'stroke-width': 1
+                }));
+                // ticks at every 1/4"
+                for (let x = 0; x <= tagWidthIn; x += 0.25) {
+                    const px = offsetX + x * pxPerInch;
+                    const isWhole = Math.abs(x - Math.round(x)) < 0.01;
+                    const isHalf = !isWhole && Math.abs((x * 2) - Math.round(x * 2)) < 0.01;
+                    const tickLen = isWhole ? tickBig : isHalf ? tickMid : tickSmall;
+                    rulerGroup.appendChild(createSvgEl('line', {
+                        x1: px,
+                        y1: rulerY,
+                        x2: px,
+                        y2: rulerY + tickLen,
+                        stroke: rulerColor,
+                        'stroke-width': 1
+                    }));
+                    if (isWhole && x > 0) {
+                        const lbl = createSvgEl('text', {
+                            x: px,
+                            y: rulerY + tickBig + 10,
+                            'text-anchor': 'middle',
+                            'font-size': 9,
+                            fill: textColor,
+                            'font-family': 'Arial, Helvetica, sans-serif'
+                        });
+                        lbl.textContent = x + '"';
+                        rulerGroup.appendChild(lbl);
+                    }
+                }
+                // Vertical ruler (right of tag)
+                const rulerX = offsetX + tagWidthIn * pxPerInch + 8;
+                rulerGroup.appendChild(createSvgEl('line', {
+                    x1: rulerX,
+                    y1: offsetY,
+                    x2: rulerX,
+                    y2: offsetY + tagHeightIn * pxPerInch,
+                    stroke: rulerColor,
+                    'stroke-width': 1
+                }));
+                for (let y = 0; y <= tagHeightIn; y += 0.25) {
+                    const py = offsetY + y * pxPerInch;
+                    const isWhole = Math.abs(y - Math.round(y)) < 0.01;
+                    const isHalf = !isWhole && Math.abs((y * 2) - Math.round(y * 2)) < 0.01;
+                    const tickLen = isWhole ? tickBig : isHalf ? tickMid : tickSmall;
+                    rulerGroup.appendChild(createSvgEl('line', {
+                        x1: rulerX,
+                        y1: py,
+                        x2: rulerX + tickLen,
+                        y2: py,
+                        stroke: rulerColor,
+                        'stroke-width': 1
+                    }));
+                    if (isWhole && y > 0) {
+                        const lbl = createSvgEl('text', {
+                            x: rulerX + tickBig + 12,
+                            y: py + 3,
+                            'text-anchor': 'start',
+                            'font-size': 9,
+                            fill: textColor,
+                            'font-family': 'Arial, Helvetica, sans-serif'
+                        });
+                        lbl.textContent = y + '"';
+                        rulerGroup.appendChild(lbl);
+                    }
+                }
+                svg.appendChild(rulerGroup);
+            }
+
+            function getTagOutlineStroke(bgColor) {
+                const hex = String(bgColor || '').replace('#', '');
+                if (hex.length !== 6) return 'none';
+                const r = parseInt(hex.slice(0, 2), 16),
+                    g = parseInt(hex.slice(2, 4), 16),
+                    b = parseInt(hex.slice(4, 6), 16);
+                if ([r, g, b].some(v => Number.isNaN(v))) return 'none';
+                const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+                // Show a border when the tag is light enough to blend into the white preview surface
+                return luminance > 0.72 ? '#b0b8c4' : 'none';
+            }
+
+            function renderPreviewShape(svg, shape, bgColor, radius, width, height, offsetX, offsetY) {
+                const stroke = getTagOutlineStroke(bgColor);
+                const strokeW = stroke === 'none' ? 0 : 1;
+                if (shape === 'Circle') {
+                    svg.appendChild(createSvgEl('circle', {
+                        cx: offsetX + width / 2,
+                        cy: offsetY + height / 2,
+                        r: Math.min(width, height) / 2,
+                        fill: bgColor,
+                        stroke,
+                        'stroke-width': strokeW
+                    }));
+                    return;
+                }
+                if (shape === 'Square') {
+                    const side = Math.min(width, height);
+                    svg.appendChild(createSvgEl('rect', {
+                        x: offsetX + (width - side) / 2,
+                        y: offsetY + (height - side) / 2,
+                        width: side,
+                        height: side,
+                        rx: radius,
+                        fill: bgColor,
+                        stroke,
+                        'stroke-width': strokeW
+                    }));
+                    return;
+                }
+                svg.appendChild(createSvgEl('rect', {
+                    x: offsetX,
+                    y: offsetY,
+                    width,
+                    height,
+                    rx: radius,
+                    fill: bgColor,
+                    stroke,
+                    'stroke-width': strokeW
+                }));
+            }
+
+            function getContrastSafeAreaStroke(bgColor) {
+                const hex = String(bgColor || '').replace('#', '');
+                if (hex.length !== 6) return '#5d5d5d';
+                const r = parseInt(hex.slice(0, 2), 16),
+                    g = parseInt(hex.slice(2, 4), 16),
+                    b = parseInt(hex.slice(4, 6), 16);
+                if ([r, g, b].some(v => Number.isNaN(v))) return '#5d5d5d';
+                const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+                return luminance < 0.5 ? '#f8f8f2' : '#5d5d5d';
+            }
+
+            function getContrastErrorStroke(bgColor) {
+                const hex = String(bgColor || '').replace('#', '');
+                if (hex.length !== 6) return {
+                    stroke: '#c62828',
+                    strokeWidth: 2,
+                    strokeDasharray: '6 3',
+                    strokeOpacity: 0.96
+                };
+                const r = parseInt(hex.slice(0, 2), 16),
+                    g = parseInt(hex.slice(2, 4), 16),
+                    b = parseInt(hex.slice(4, 6), 16);
+                if ([r, g, b].some(v => Number.isNaN(v))) return {
+                    stroke: '#c62828',
+                    strokeWidth: 2,
+                    strokeDasharray: '6 3',
+                    strokeOpacity: 0.96
+                };
+                const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+                const isRedDominant = r >= 150 && g <= 90 && b <= 90;
+                const useLightWarning = luminance < 0.5 || isRedDominant;
+                return useLightWarning ? {
+                    stroke: '#fff3b0',
+                    strokeWidth: 2.25,
+                    strokeDasharray: '7 3',
+                    strokeOpacity: 1
+                } : {
+                    stroke: '#c62828',
+                    strokeWidth: 2,
+                    strokeDasharray: '6 3',
+                    strokeOpacity: 0.96
+                };
+            }
+
+            function renderDesignPreview() {
+                const data = Object.fromEntries(new FormData(form).entries());
+                const signData = getSignData();
+                const totalEntries = Math.max(document.querySelectorAll('.sign-entry').length, 1);
+                selectedPreviewIndex = Math.max(0, Math.min(selectedPreviewIndex, totalEntries - 1));
+                previewSignSelect.value = String(selectedPreviewIndex);
+                designPreviewSvg.innerHTML = '';
+
+                // viewBox accommodates ruler: add ~40px right and ~40px bottom padding
+                const VBW = 460,
+                    VBH = 300;
+                designPreviewSvg.setAttribute('viewBox', '0 0 ' + VBW + ' ' + VBH);
+
+                if (!signData.length) {
+                    const emptyText = createSvgEl('text', {
+                        x: VBW / 2,
+                        y: VBH / 2,
+                        'text-anchor': 'middle',
+                        'font-size': 15,
+                        fill: '#64748b',
+                        'font-weight': 600,
+                        'font-family': 'Arial, Helvetica, sans-serif'
+                    });
+                    emptyText.textContent = 'Add sign text to preview the design';
+                    designPreviewSvg.appendChild(emptyText);
+                    designPreviewMeta.textContent = 'Start entering your sign details to see a live preview.';
+                    previewWarning.classList.remove('show');
+                    previewWarning.textContent = '';
+                    return;
+                }
+
+                const active = signData[Math.min(selectedPreviewIndex, signData.length - 1)] || signData[0];
+                const colorPairValue = colorPair(active.color || 'black_white');
+                const bgColor = colorPairValue[0],
+                    textColor = colorPairValue[1];
+                const shapeValue = data.shape || 'Rectangle';
+                const widthIn = Math.max(Number(active.width || 0) || 3, 0.25);
+                const heightIn = Math.max(Number(active.height || 0) || 1, 0.25);
+
+                // Reserve ~40px for ruler on right and bottom
+                const rulerPad = 40;
+                const usableW = VBW - rulerPad - 16; // 16 left pad
+                const usableH = VBH - rulerPad - 16; // 16 top pad
+                const pxPerInch = Math.min(usableW / widthIn, usableH / heightIn);
+                const previewWidth = widthIn * pxPerInch,
+                    previewHeight = heightIn * pxPerInch;
+                const offsetX = (usableW - previewWidth) / 2 + 8;
+                const offsetY = (usableH - previewHeight) / 2 + 8;
+                const cornerRadiusIn1 = (active.cornerRadius === 'yes') ? 0.125 : 0;
+                const radiusValue = cornerRadiusIn1 * pxPerInch;
+
+                // Shadow
+                designPreviewSvg.appendChild(createSvgEl('rect', {
+                    x: offsetX + 5,
+                    y: offsetY + 7,
+                    width: previewWidth,
+                    height: previewHeight,
+                    rx: Math.min(radiusValue + 2, 18),
+                    fill: 'rgba(15,23,42,0.10)'
+                }));
+                renderPreviewShape(designPreviewSvg, shapeValue, bgColor, radiusValue, previewWidth, previewHeight, offsetX,
+                    offsetY);
+
+                const effectiveHoles = active.holes || 'No holes',
+                    effectiveHoleSize = active.holeSize || '1/8';
+                const hasHoles = Boolean(effectiveHoles && effectiveHoles !== 'No holes');
+                const selectedHoleSpec = getSelectedHoleSpec(effectiveHoles, effectiveHoleSize, widthIn, heightIn);
+                const holeDiameter = selectedHoleSpec && selectedHoleSpec.type === 'round' ? selectedHoleSpec.diameter : (hasHoles ?
+                    getAutoHoleDiameter(widthIn, heightIn) : 0);
+                const geometry = getTagGeometry({
+                    tagWidth: widthIn,
+                    tagHeight: heightIn,
+                    hasHoles,
+                    holeDiameter,
+                    holeQuantity: effectiveHoles,
+                    holeSizeValue: effectiveHoleSize
+                });
+                const safeAreaPx = {
+                    x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
+                    y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
+                    width: inchesToPx(geometry.safeArea.width, pxPerInch),
+                    height: inchesToPx(geometry.safeArea.height, pxPerInch)
+                };
+
+                const overlay = createSvgEl('g', {
+                    id: 'safeAreaOverlay'
+                });
+                const safeRect = createSvgEl('rect', {
+                    x: safeAreaPx.x,
+                    y: safeAreaPx.y,
+                    width: safeAreaPx.width,
+                    height: safeAreaPx.height,
+                    fill: 'none',
+                    stroke: getContrastSafeAreaStroke(bgColor),
+                    'stroke-dasharray': '4 3',
+                    'stroke-width': 1
+                });
+                overlay.appendChild(safeRect);
+                renderHoleFeatures(overlay, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
+                    textColor);
+                designPreviewSvg.appendChild(overlay);
+
+                // Ruler
+                renderRuler(designPreviewSvg, widthIn, heightIn, offsetX, offsetY, pxPerInch);
+
+                const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2,
+                    safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
+                const align = active.align || 'center',
+                    alignmentPadding = 10;
+                let textAnchor = 'middle', textX = safeAreaCenterX;
+                if (align === 'left') {
+                    textAnchor = 'start';
+                    textX = safeAreaPx.x + alignmentPadding;
+                } else if (align === 'right') {
+                    textAnchor = 'end';
+                    textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
+                }
+
+                const condensed = (active.condense || 'no') === 'yes';
+                const spacingMultiplier = getLineSpacingMultiplier(active.lineSpacing || 'full');
+                const lines = active.lines.length ? active.lines : [{
+                    text: 'PREVIEW',
+                    bold: false,
+                    size: '1/4',
+                    customSize: ''
+                }];
+                const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
+                const renderedLines = lines.map(line => {
+                    const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
+                        BASELINE_LINE_SIZE_IN;
+                    const fontSize = Math.max(7, requestedHeightIn * PORTAL_FONT_PX_PER_IN * portalStageScale);
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const xMetrics = measureReferenceXMetrics(designPreviewSvg, fontSize, fontFamily, line.bold ? 700 :
+                        400);
+                    const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
+                    const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
+                    const ascent = xMetrics.ascent;
+                    return {
+                        ...line,
+                        fontSize,
+                        lineHeight,
+                        interlineGap,
+                        ascent,
+                        textValue: line.text || ''
+                    };
+                });
+                const totalBlockHeight = renderedLines.length <= 1 ? (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
+                    renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
+                        .reduce((s, l) => s + l.interlineGap, 0);
+                let currentY = safeAreaCenterY - totalBlockHeight / 2;
+                const textGroup = createSvgEl('g');
+                designPreviewSvg.appendChild(textGroup);
+                const renderedTextEls = [];
+                renderedLines.forEach((line, index) => {
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
+                    const textEl = createSvgEl('text', {
+                        x: textX,
+                        y: baselineY,
+                        'text-anchor': textAnchor,
+                        'dominant-baseline': 'middle',
+                        'font-size': line.fontSize,
+                        fill: textColor,
+                        'font-weight': line.bold ? 700 : 400,
+                        'font-family': fontFamily
+                    });
+                    textEl.textContent = line.textValue;
+                    textGroup.appendChild(textEl);
+                    renderedTextEls.push({
+                        line,
+                        textEl,
+                        baselineY
+                    });
+                    currentY += line.lineHeight;
+                    if (index < renderedLines.length - 1) currentY += line.interlineGap;
+                });
+                let naturalTextWidth = 0;
+                renderedTextEls.forEach(item => {
+                    try {
+                        const box = item.textEl.getBBox();
+                        item.naturalBox = box;
+                        naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
+                    } catch (_) {
+                        item.naturalBox = {
+                            x: textX,
+                            y: item.baselineY,
+                            width: 0,
+                            height: item.line.fontSize
+                        };
+                    }
+                });
+                naturalTextWidth = Math.max(naturalTextWidth, 0.1);
+                const safeTextWidth = geometry.safeArea.width;
+                const naturalTextWidthIn = naturalTextWidth / pxPerInch;
+                const condenseRatio = condensed ? Math.min(1, safeTextWidth / Math.max(naturalTextWidthIn, 0.0001)) : 1;
+                renderedTextEls.forEach(item => {
+                    if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
+                        ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
+                    else item.textEl.removeAttribute('transform');
+                });
+                let verticalOffset = 0;
+                try {
+                    const groupBox = textGroup.getBBox();
+                    const textCenterY = groupBox.y + groupBox.height / 2;
+                    verticalOffset = safeAreaCenterY - textCenterY;
+                    textGroup.setAttribute('transform', 'translate(0 ' + verticalOffset + ')');
+                } catch (_) {
+                    textGroup.removeAttribute('transform');
+                }
+                let minX = Infinity,
+                    minY = Infinity,
+                    maxX = -Infinity,
+                    maxY = -Infinity;
+                renderedTextEls.forEach(item => {
+                    const box = item.naturalBox || {
+                        x: textX,
+                        y: item.baselineY,
+                        width: 0,
+                        height: item.line.fontSize
+                    };
+                    const finalWidth = box.width * condenseRatio;
+                    let left = box.x;
+                    if (textAnchor === 'middle') left = textX - finalWidth / 2;
+                    else if (textAnchor === 'end') left = textX - finalWidth;
+                    minX = Math.min(minX, left);
+                    minY = Math.min(minY, box.y + verticalOffset);
+                    maxX = Math.max(maxX, left + finalWidth);
+                    maxY = Math.max(maxY, box.y + box.height + verticalOffset);
+                });
+                let validation = {
+                    fits: true,
+                    message: ''
+                };
+                if (minX !== Infinity) {
+                    const textBoundsInches = {
+                        x: (minX - offsetX) / pxPerInch,
+                        y: (minY - offsetY) / pxPerInch,
+                        width: (maxX - minX) / pxPerInch,
+                        height: (maxY - minY) / pxPerInch
+                    };
+                    validation = validateTextBounds(textBoundsInches, geometry.safeArea);
+                }
+                const isAutoSizing = sameSizeMode.value === 'auto';
+                if (!validation.fits && !isAutoSizing) {
+                    const es = getContrastErrorStroke(bgColor);
+                    safeRect.setAttribute('stroke', es.stroke);
+                    safeRect.setAttribute('stroke-width', String(es.strokeWidth));
+                    safeRect.setAttribute('stroke-dasharray', es.strokeDasharray);
+                    safeRect.setAttribute('stroke-opacity', String(es.strokeOpacity));
+                    previewWarning.classList.add('show');
+                    previewWarning.textContent = validation.message;
+                } else {
+                    previewWarning.classList.remove('show');
+                    previewWarning.textContent = '';
+                }
+                designPreviewMeta.innerHTML = esc('Previewing Sign ' + active.index) + ' · ' + esc(shapeValue) + ' · ' + esc(
+                    colorLabel(active.color || 'black_white')) + '<br>' + esc(active.sizeLabel || (formatThreeDecimals(
+                        heightIn) + '" × ' + formatThreeDecimals(widthIn) + '"')) + ' · ' + esc(effectiveHoles) + ' · Qty ' +
+                    esc(String(active.qty));
+            }
+
+            function updateLiveEstimate() {
+                const data = Object.fromEntries(new FormData(form).entries());
+                if (sameSizeMode.value === 'auto') applyAutomaticTagSizing();
+                const signData = getSignData();
+                lineCountInput.value = String(signData.reduce((max, tag) => Math.max(max, tag.lineCount), 1));
+                if (!signData.length) {
+                    setSummaryDefaults();
+                    renderDesignPreview();
+                    return;
+                }
+                const result = calculateQuote(data);
+                updateSummary(data, result);
+                renderDesignPreview();
+            }
+
+            function queueLiveEstimateUpdate() {
+                if (updateQueued) return;
+                updateQueued = true;
+                requestAnimationFrame(() => {
+                    updateQueued = false;
+                    updateLiveEstimate();
                 });
             }
-            if (sameSizeMode.value==='auto') {
-            document.querySelectorAll('.sign-entry').forEach(entry => {
-                entry.dataset.manualSizeOverride='false';
-            });
-            applyAutomaticTagSizing(true);
-        }
-        syncSizeModeUI();
-        queueLiveEstimateUpdate();
-        });
 
-        // holes and holeSize are handled by dedicated listeners above (pushGlobalHolesToTags)
-        ['material', 'widthIn', 'heightIn', 'shape', 'fontFamily'].forEach(fieldId => {
+            function validateQuoteSubmission(data) {
+                const signData = getSignData();
+                if (!data.customerName || !String(data.customerName).trim()) return 'Please enter your name.';
+                if (!data.email || !String(data.email).trim()) return 'Please enter your email address.';
+                if (!signData.length) return 'Please add at least one sign before generating a quote.';
+                const missingSize = (sameSizeMode.value === 'custom' || sameSizeMode.value === 'auto') ? signData.some(
+                    tag =>
+                        Number(tag.width || 0) <= 0 || Number(tag.height || 0) <= 0) : Number(data.widthIn || 0) <= 0 || (
+                            getShapeSizingMode() === 'free' && Number(data.heightIn || 0) <= 0);
+                if (missingSize) return 'Please enter a valid tag size before generating a quote.';
+                if (previewWarning.classList.contains('show') && sameSizeMode.value !== 'auto') return previewWarning
+                    .textContent || 'Please fix the preview warning before generating a quote.';
+                return '';
+            }
+
+            function getSafeQuoteField(value, fallback = '—') {
+                if (value === null || value === undefined || value === '') return fallback;
+                return value;
+            }
+
+            function closeQuoteModal() {
+                quoteModalBackdrop.classList.remove('show');
+                quoteModalBackdrop.setAttribute('aria-hidden', 'true');
+            }
+
+            function closeQuoteLoading() {
+                if (quoteLoadingTimer) {
+                    clearTimeout(quoteLoadingTimer);
+                    quoteLoadingTimer = null;
+                }
+                quoteLoadingBackdrop.classList.remove('show');
+                quoteLoadingBackdrop.setAttribute('aria-hidden', 'true');
+            }
+
+            function openQuoteLoading() {
+                quoteLoadingBackdrop.classList.add('show');
+                quoteLoadingBackdrop.setAttribute('aria-hidden', 'false');
+            }
+
+            function openQuoteModal(payload) {
+                const result = payload && payload.result ? payload.result : {},
+                    data = payload && payload.data ? payload.data : {};
+                const items = Array.isArray(result.quoteItems) ? result.quoteItems : [];
+                quoteModalTotal.textContent = currency(result.subtotal || 0);
+                quoteModalLeadTime.textContent = 'Product total only';
+                const quoteModalJobName = document.getElementById('quoteModalJobName');
+                if (quoteModalJobName) {
+                    const jn = String(data.jobName || '').trim();
+                    quoteModalJobName.textContent = jn ? 'Job: ' + jn : '';
+                    quoteModalJobName.style.display = jn ? 'block' : 'none';
+                }
+                quoteModalMinimumNote.classList.toggle('hidden', !result.minimumApplied);
+                quoteModalMinimumNote.textContent = 'Minimum order applied ($' + getSafeQuoteField(result.minimumOrder,
+                    25) + ')';
+                const quoteColorValues = (result.signData || []).map(tag => tag.color || 'black_white');
+                const quoteHasMixed = quoteColorValues.length > 0 && !quoteColorValues.every(v => v === quoteColorValues[
+                    0]);
+                const quoteColorLabel = quoteHasMixed ? 'Mixed' : colorLabel(quoteColorValues[0] || 'black_white');
+                const jobNameDisplay = getSafeQuoteField(data.jobName);
+                const jobNameRowHtml = '<div class="quote-line" id="quoteJobNameRow">' +
+                    '<span>Job name</span>' +
+                    '<span style="position:relative; display:inline-flex; align-items:center; justify-content:flex-end;">' +
+                    '<strong id="quoteJobNameDisplay" title="Double-click to rename" style="cursor:text; border-bottom:1px dashed #ccc;">' +
+                    esc(jobNameDisplay) + '</strong>' +
+                    '<input id="quoteJobNameInput" type="text" maxlength="80" placeholder="Enter job name…"' +
+                    ' style="display:none; font-size:14px; font-weight:700; border:none; border-bottom:2px solid var(--brand); outline:none; background:transparent; text-align:right; min-width:140px; font-family:inherit; color:var(--ink); padding:0;" />' +
+                    '</span>' +
+                    '</div>';
+                quoteModalSummary.innerHTML = jobNameRowHtml + [
+                    ['Subtotal', currency(result.rawSubtotal || 0)],
+                    ['Adjusted subtotal', currency(result.subtotal || 0)],
+                    ['Final total', currency(result.subtotal || 0)],
+                    ['Pieces', String(result.totalPieces || 0)],
+                    ['Material', materialLabel(data.material)],
+                    ['Color', quoteColorLabel],
+                    ['Shape', getSafeQuoteField(data.shape)],
+                    ['Holes', getSafeQuoteField(data.holes)]
+                ].map(pair => '<div class="quote-line"><span>' + esc(pair[0]) + '</span><strong>' + esc(String(pair[
+                    1])) + '</strong></div>').join('');
+
+                // Wire up double-click inline edit for job name in quote modal
+                (function () {
+                    const nameEl = document.getElementById('quoteJobNameDisplay');
+                    const inputEl = document.getElementById('quoteJobNameInput');
+                    const formEl = document.getElementById('jobName');
+                    const qlJNEl = document.getElementById('quoteModalJobName');
+                    if (!nameEl || !inputEl) return;
+                    let committing = false;
+
+                    function openEdit() {
+                        const current = formEl ? formEl.value.trim() : '';
+                        inputEl.value = current;
+                        nameEl.style.display = 'none';
+                        inputEl.style.display = 'inline-block';
+                        inputEl.focus();
+                        inputEl.select();
+                    }
+
+                    function commitEdit() {
+                        if (committing) return;
+                        committing = true;
+                        const val = inputEl.value.trim();
+                        if (formEl) {
+                            formEl.value = val;
+                            formEl.dispatchEvent(new Event('input', {
+                                bubbles: true
+                            }));
+                        }
+                        if (latestQuotePayload && latestQuotePayload.data) latestQuotePayload.data.jobName = val;
+                        nameEl.textContent = val || '—';
+                        nameEl.style.display = '';
+                        inputEl.style.display = 'none';
+                        if (qlJNEl) {
+                            qlJNEl.textContent = val ? 'Job: ' + val : '';
+                            qlJNEl.style.display = val ? 'block' : 'none';
+                        }
+                        committing = false;
+                    }
+
+                    function cancelEdit() {
+                        nameEl.style.display = '';
+                        inputEl.style.display = 'none';
+                    }
+                    nameEl.addEventListener('dblclick', openEdit);
+                    inputEl.addEventListener('keydown', e => {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            commitEdit();
+                        }
+                        if (e.key === 'Escape') {
+                            e.preventDefault();
+                            cancelEdit();
+                        }
+                    });
+                    inputEl.addEventListener('blur', () => {
+                        setTimeout(commitEdit, 100);
+                    });
+                })();
+                quoteModalItems.innerHTML = items.length ? items.map((item, index) => {
+                    const tag = item && item.tag ? item.tag : {},
+                        calc = item && item.calc ? item.calc : {};
+                    return '<div class="quote-item"><div class="quote-item-title">' + esc('Sign ' + (tag
+                        .index || index + 1)) + '</div><div class="quote-item-meta">' + esc(tag.sizeLabel || (
+                            formatThreeDecimals(calc.heightIn || 0) + '" × ' + formatThreeDecimals(calc
+                                .widthIn || 0) + '"')) + ' · Qty ' + esc(String(tag.qty || 1)) +
+                        '</div><div class="quote-item-meta">' + esc((tag.lines || []).map(l => l.text).filter(
+                            Boolean).join(' / ') || 'No text entered') +
+                        '</div><div class="quote-line"><span>Item total</span><strong>' + esc(currency(calc
+                            .subtotal || 0)) + '</strong></div></div>';
+                }).join('') : '<div class="helper-text">No sign items were available for this quote.</div>';
+                quoteModalBackdrop.classList.add('show');
+                quoteModalBackdrop.setAttribute('aria-hidden', 'false');
+            }
+
+            function syncHoleSizeOptions() {
+                const quantityEl = getEl('holes'),
+                    sizeEl = getEl('holeSize');
+                if (!quantityEl || !sizeEl) return;
+                const quantity = quantityEl.value || 'No holes';
+                if (quantity === 'No holes') {
+                    sizeEl.innerHTML = '<option value="N/A">N/A</option>';
+                    sizeEl.disabled = true;
+                    return;
+                }
+                if (quantity === 'Cable tie slots') {
+                    sizeEl.innerHTML = '<option value="3/16 x 1/4" selected>3/16 x 1/4</option>';
+                    sizeEl.disabled = false;
+                    return;
+                }
+                const previous = (sizeEl.value === 'N/A') ? '1/8' : sizeEl.value;
+                sizeEl.innerHTML = ['1/8', '3/16', '1/4'].map(o => '<option value="' + o + '"' + (o === previous ? ' selected' :
+                    '') + '>' + o + '</option>').join('');
+                if (!['1/8', '3/16', '1/4'].some(o => o === sizeEl.value)) sizeEl.value = '1/8';
+                sizeEl.disabled = false;
+            }
+
+            // ── Auto-condense: uses renderDesignPreview to detect overflow — exact same logic as the red warning ──
+            const autoCondenseBtn = getEl('autoCondenseBtn');
+            if (autoCondenseBtn) {
+                autoCondenseBtn.addEventListener('click', () => {
+                    const entries = Array.from(document.querySelectorAll('.sign-entry'));
+                    const originalIndex = selectedPreviewIndex;
+                    let fixed = 0;
+
+                    entries.forEach((entry, idx) => {
+                        const txt = entry.querySelector('.sign-text') ? entry.querySelector('.sign-text')
+                            .value : '';
+                        if (!txt.trim()) return; // skip empty tags
+                        if (entry.dataset.condense === 'yes') return; // already condensed
+
+                        // Temporarily render this tag's preview — this runs validateTextBounds internally
+                        selectedPreviewIndex = idx;
+                        renderDesignPreview();
+
+                        // previewWarning.classList.contains('show') means text overflows safe area
+                        if (previewWarning.classList.contains('show')) {
+                            entry.dataset.condense = 'yes';
+                            const cndSel = entry.querySelector('.tag-condense-select');
+                            if (cndSel) cndSel.value = 'yes';
+                            fixed++;
+                        }
+                    });
+
+                    // Restore original preview selection
+                    selectedPreviewIndex = originalIndex;
+                    previewSignSelect.value = String(originalIndex);
+                    queueLiveEstimateUpdate();
+
+                    const msg = fixed > 0 ?
+                        `\u2713 Condensed ${fixed} overflowing tag${fixed === 1 ? '' : 's'}.` :
+                        'No overflowing tags found \u2014 all text fits!';
+                    autoCondenseBtn.textContent = msg;
+                    setTimeout(() => {
+                        autoCondenseBtn.textContent = '\u26A1 Auto-condense overflowing tags';
+                    }, 3000);
+                });
+            }
+
+            // ── Global settings — auto-push to all tags on change ──
+            const globalColorSelect = getEl('globalColor');
+            if (globalColorSelect) {
+                globalColorSelect.addEventListener('change', () => {
+                    document.querySelectorAll('.sign-entry').forEach(entry => {
+                        entry.dataset.colorValue = globalColorSelect.value;
+                        const colorSel = entry.querySelector('.tag-color-select');
+                        if (colorSel) colorSel.value = globalColorSelect.value;
+                    });
+                    queueLiveEstimateUpdate();
+                });
+            }
+
+            const globalHolesSelect = getEl('holes');
+            const globalHoleSizeSelect = getEl('holeSize');
+
+            function pushGlobalHolesToTags() {
+                const globalHoles = globalHolesSelect ? globalHolesSelect.value : 'No holes';
+                const globalHoleSize = globalHoleSizeSelect ? globalHoleSizeSelect.value : '1/8';
+                document.querySelectorAll('.sign-entry').forEach(entry => {
+                    entry.dataset.holeQty = globalHoles;
+                    entry.dataset.holeSize = globalHoleSize;
+                    const holesSel = entry.querySelector('.tag-holes-select');
+                    if (holesSel) holesSel.value = globalHoles;
+                    syncTagHoleSizeFromHoles(entry);
+                    const hsEl = entry.querySelector('.tag-holesize-select');
+                    if (hsEl && globalHoles !== 'Cable tie slots' && globalHoles !== 'No holes') hsEl.value =
+                        globalHoleSize;
+                });
+            }
+            if (globalHolesSelect) globalHolesSelect.addEventListener('change', () => {
+                syncHoleSizeOptions();
+                pushGlobalHolesToTags();
+                queueLiveEstimateUpdate();
+            });
+            if (globalHoleSizeSelect) globalHoleSizeSelect.addEventListener('change', () => {
+                pushGlobalHolesToTags();
+                queueLiveEstimateUpdate();
+            });
+
+            const globalCornerRadiusSelect = getEl('globalCornerRadius');
+            if (globalCornerRadiusSelect) {
+                globalCornerRadiusSelect.addEventListener('change', () => {
+                    const val = globalCornerRadiusSelect.value;
+                    document.querySelectorAll('.sign-entry').forEach(entry => {
+                        entry.dataset.cornerRadius = val;
+                        const radSel = entry.querySelector('.tag-radius-select');
+                        if (radSel) radSel.value = val;
+                    });
+                    queueLiveEstimateUpdate();
+                });
+            }
+
+            addSignBtn.addEventListener('click', addSignBox);
+
+            function handleGenerateQuote(event) {
+                if (event) event.preventDefault();
+                try {
+                    const data = Object.fromEntries(new FormData(form).entries());
+                    const validationMessage = validateQuoteSubmission(data);
+                    if (validationMessage) {
+                        window.alert(validationMessage);
+                        closeQuoteLoading();
+                        closeQuoteModal();
+                        return;
+                    }
+                    const result = calculateQuote(data);
+                    latestQuotePayload = {
+                        data,
+                        result
+                    };
+                    // Auto-save draft immediately on quote generation (logged-in users only)
+                    saveDraft();
+                    closeQuoteModal();
+                    openQuoteLoading();
+                    quoteLoadingTimer = window.setTimeout(() => {
+                        closeQuoteLoading();
+                        openQuoteModal(latestQuotePayload);
+                    }, 850);
+                } catch (error) {
+                    console.error('generate-quote error', error);
+                    window.alert('Quote generation hit an error. Check the console for details.');
+                    closeQuoteLoading();
+                    closeQuoteModal();
+                }
+            }
+            if (generateBtn) generateBtn.addEventListener('click', event => handleGenerateQuote(event));
+
+            resetBtn.addEventListener('click', () => {
+                closeQuoteLoading();
+                closeQuoteModal();
+                form.reset();
+                getEl('material').value = 'plastic';
+                getEl('globalColor').value = 'black_white';
+                getEl('holes').value = 'No holes';
+                getEl('shape').value = 'Rectangle';
+                getEl('fontFamily').value = 'Arial, Helvetica, sans-serif';
+                getEl('widthIn').value = '3.000';
+                getEl('heightIn').value = '1.000';
+                sameSizeMode.value = 'same';
+                signStack.innerHTML = '';
+                addSignBox();
+                selectedPreviewIndex = 0;
+                setSummaryDefaults();
+                rebuildPreviewSelector();
+                syncSizeModeUI();
+                syncHoleSizeOptions();
+                renderDesignPreview();
+            });
+
+            previewSignSelect.addEventListener('change', () => {
+                selectedPreviewIndex = Number(previewSignSelect.value || 0);
+                renderDesignPreview();
+            });
+            form.addEventListener('input', queueLiveEstimateUpdate);
+            form.addEventListener('change', queueLiveEstimateUpdate);
+            form.addEventListener('keyup', queueLiveEstimateUpdate);
+
+            sameSizeMode.addEventListener('change', () => {
+                if (sameSizeMode.value === 'custom') {
+                    document.querySelectorAll('.sign-entry').forEach(entry => {
+                        const wi = entry.querySelector('.sign-width'),
+                            hi = entry.querySelector('.sign-height');
+                        if (wi && !wi.value) wi.value = getEl('widthIn').value || '3.000';
+                        if (hi && !hi.value) hi.value = getEl('heightIn').value || '1.000';
+                    });
+                }
+                if (sameSizeMode.value === 'auto') {
+                    document.querySelectorAll('.sign-entry').forEach(entry => {
+                        entry.dataset.manualSizeOverride = 'false';
+                    });
+                    applyAutomaticTagSizing(true);
+                }
+                syncSizeModeUI();
+                queueLiveEstimateUpdate();
+            });
+
+            // holes and holeSize are handled by dedicated listeners above (pushGlobalHolesToTags)
+            ['material', 'widthIn', 'heightIn', 'shape', 'fontFamily'].forEach(fieldId => {
                 const el = getEl(fieldId);
                 if (!el) return;
                 const handler = e => {
-                    if(e&&e.target&&e.target.id==='shape') {
-                    const shapeVal = e.target.value;
-                    if(shapeVal==='Rectangle') {
-                    getEl('widthIn').value = '3.000';
-                    getEl('heightIn').value = '1.000';
-                    document.querySelectorAll('.sign-entry').forEach(entry => {
-                        const w = entry.querySelector('.sign-width'),
-                            h = entry.querySelector('.sign-height');
-                        if (w) w.value='3.000';
-                        if (h) h.value='1.000';
-                        entry.dataset.manualSizeOverride='false';
-                    });
+                    if (e && e.target && e.target.id === 'shape') {
+                        const shapeVal = e.target.value;
+                        if (shapeVal === 'Rectangle') {
+                            getEl('widthIn').value = '3.000';
+                            getEl('heightIn').value = '1.000';
+                            document.querySelectorAll('.sign-entry').forEach(entry => {
+                                const w = entry.querySelector('.sign-width'),
+                                    h = entry.querySelector('.sign-height');
+                                if (w) w.value = '3.000';
+                                if (h) h.value = '1.000';
+                                entry.dataset.manualSizeOverride = 'false';
+                            });
+                        }
+                    }
+                    if (sameSizeMode.value === 'auto') applyAutomaticTagSizing();
+                    updateSizeFieldPresentation();
+                    queueLiveEstimateUpdate();
+                };
+                el.addEventListener('input', handler);
+                el.addEventListener('change', handler);
+                el.addEventListener('keyup', handler);
+            });
+            form.addEventListener('submit', handleGenerateQuote);
+
+            if (quoteModalClose) quoteModalClose.addEventListener('click', closeQuoteModal);
+            if (quoteModalCancel) quoteModalCancel.addEventListener('click', closeQuoteModal);
+            if (quoteModalBackdrop) quoteModalBackdrop.addEventListener('click', e => {
+                if (e.target === quoteModalBackdrop) closeQuoteModal();
+            });
+
+            if (downloadQuoteBtn) downloadQuoteBtn.addEventListener('click', () => {
+                const payload = latestQuotePayload;
+                if (!payload) return;
+                const result = payload.result || {},
+                    data = payload.data || {};
+                const quoteItems = Array.isArray(result.quoteItems) ? result.quoteItems : [];
+                const signData = Array.isArray(result.signData) ? result.signData : [];
+
+                function q(s) {
+                    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;');
                 }
-            }
-            if(sameSizeMode.value==='auto') applyAutomaticTagSizing();
-        updateSizeFieldPresentation();
-        queueLiveEstimateUpdate();
-        };
-        el.addEventListener('input', handler);
-        el.addEventListener('change', handler);
-        el.addEventListener('keyup', handler);
-        });
-        form.addEventListener('submit', handleGenerateQuote);
 
-        if (quoteModalClose) quoteModalClose.addEventListener('click', closeQuoteModal);
-        if (quoteModalCancel) quoteModalCancel.addEventListener('click', closeQuoteModal);
-        if (quoteModalBackdrop) quoteModalBackdrop.addEventListener('click', e => {
-            if (e.target === quoteModalBackdrop) closeQuoteModal();
-        });
+                function cur(n) {
+                    return '$' + Number(n || 0).toFixed(2);
+                }
 
-        if (downloadQuoteBtn) downloadQuoteBtn.addEventListener('click', () => {
-            const payload = latestQuotePayload;
-            if (!payload) return;
-            const result = payload.result || {},
-                data = payload.data || {};
-            const quoteItems = Array.isArray(result.quoteItems) ? result.quoteItems : [];
-            const signData = Array.isArray(result.signData) ? result.signData : [];
+                // ── Color dot hex ──
+                const colorHexMap = {
+                    'black_white': '#000000',
+                    'white_black': '#ffffff',
+                    'white_red': '#ffffff',
+                    'yellow_black': '#F5E800',
+                    'yellow_red': '#F5E800',
+                    'red_white': '#ef1111',
+                    'green_white': '#0b8f10',
+                    'blue_white': '#004F86',
+                    'gray_white': '#4F565B',
+                    'brown_white': '#523D2A',
+                    'orange_white': '#B84717',
+                    'orange_black': '#D24912',
+                    'purple_white': '#5b34b1'
+                };
 
-            function q(s) {
-                return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-                    .replace(/"/g, '&quot;');
-            }
-
-            function cur(n) {
-                return '$' + Number(n || 0).toFixed(2);
-            }
-
-            // ── Color dot hex ──
-            const colorHexMap = {
-                'black_white': '#000000',
-                'white_black': '#ffffff',
-                'white_red': '#ffffff',
-                'yellow_black': '#F5E800',
-                'yellow_red': '#F5E800',
-                'red_white': '#ef1111',
-                'green_white': '#0b8f10',
-                'blue_white': '#004F86',
-                'gray_white': '#4F565B',
-                'brown_white': '#523D2A',
-                'orange_white': '#B84717',
-                'orange_black': '#D24912',
-                'purple_white': '#5b34b1'
-            };
-
-            // ── Build tag rows — one row per unique sign ──
-            const tagRows = signData.map((tag, i) => {
-                const dotColor = colorHexMap[tag.color || 'black_white'] || '#000000';
-                const border = (tag.color || '').startsWith('white') ? 'border:1px solid #d1d5db;' : '';
-                const clabel = q(colorLabel(tag.color || 'black_white'));
-                const content = (tag.lines || []).map(l => q(l.text || '')).filter(Boolean).join(
-                    ' / ') || '—';
-                const unitPrice = (Number(tag.width || 0) * Number(tag.height || 0) * 0.75);
-                const subtotal = unitPrice * Number(tag.qty || 1);
-                return `<tr>
-        <td>${i+1}</td>
-        <td>${q(String(tag.qty||1))}</td>
-        <td>${q(tag.sizeLabel||(tag.height+'" × '+tag.width+'"'))}</td>
+                // ── Build tag rows — one row per unique sign ──
+                const tagRows = signData.map((tag, i) => {
+                    const dotColor = colorHexMap[tag.color || 'black_white'] || '#000000';
+                    const border = (tag.color || '').startsWith('white') ? 'border:1px solid #d1d5db;' : '';
+                    const clabel = q(colorLabel(tag.color || 'black_white'));
+                    const content = (tag.lines || []).map(l => q(l.text || '')).filter(Boolean).join(
+                        ' / ') || '—';
+                    const unitPrice = (Number(tag.width || 0) * Number(tag.height || 0) * 0.75);
+                    const subtotal = unitPrice * Number(tag.qty || 1);
+                    return `<tr>
+        <td>${i + 1}</td>
+        <td>${q(String(tag.qty || 1))}</td>
+        <td>${q(tag.sizeLabel || (tag.height + '" × ' + tag.width + '"'))}</td>
         <td><span class="color-pill"><span class="color-dot" style="background:${dotColor};${border}"></span>${clabel}</span></td>
-        <td>${q(tag.holes||'None')}</td>
+        <td>${q(tag.holes || 'None')}</td>
         <td>${content}</td>
         <td style="text-align:right;">${cur(unitPrice)}</td>
         <td style="text-align:right;">${cur(subtotal)}</td>
       </tr>`;
-            }).join('');
+                }).join('');
 
-            const jobName = q(data.jobName || '');
-            const custName = q(data.customerName || '—');
-            const custEmail = q(data.email || '—');
-            const quoteDate = new Date().toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            const quoteNum  = 'Q-' + Date.now().toString(36).toUpperCase();
-            const totalPcs = result.totalPieces || 0;
-            const fontName = q((data.fontFamily || 'Arial').split(',')[0].replace(/'/g, '').trim());
-            const shapeName = q(data.shape || 'Rectangle');
-            const minNote = result.minimumApplied ?
-                `<div class="total-row"><span>Minimum applied</span><strong>${cur(result.minimumOrder||25)}</strong></div>` :
-                '';
+                const jobName = q(data.jobName || '');
+                const custName = q(data.customerName || '—');
+                const custEmail = q(data.email || '—');
+                const quoteDate = new Date().toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                const quoteNum = 'Q-' + Date.now().toString(36).toUpperCase();
+                const totalPcs = result.totalPieces || 0;
+                const fontName = q((data.fontFamily || 'Arial').split(',')[0].replace(/'/g, '').trim());
+                const shapeName = q(data.shape || 'Rectangle');
+                const minNote = result.minimumApplied ?
+                    `<div class="total-row"><span>Minimum applied</span><strong>${cur(result.minimumOrder || 25)}</strong></div>` :
+                    '';
 
-            const html = `<!DOCTYPE html>
+                const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -4866,7 +4861,7 @@
     <div class="info-grid">
       <div class="info-item"><label>Name</label><span>${custName}</span></div>
       <div class="info-item"><label>Email</label><span>${custEmail}</span></div>
-      ${jobName?`<div class="info-item"><label>Job Name</label><span>${jobName}</span></div>`:''}
+      ${jobName ? `<div class="info-item"><label>Job Name</label><span>${jobName}</span></div>` : ''}
       <div class="info-item"><label>Total Pieces</label><span>${totalPcs}</span></div>
       <div class="info-item"><label>Material</label><span>Laser-engraved plastic</span></div>
       <div class="info-item"><label>Font</label><span>${fontName}</span></div>
@@ -4892,10 +4887,10 @@
   <div class="section">
     <p class="section-title">Pricing Summary</p>
     <div class="totals">
-      <div class="total-row"><span>Product subtotal</span><strong>${cur(result.rawSubtotal||0)}</strong></div>
+      <div class="total-row"><span>Product subtotal</span><strong>${cur(result.rawSubtotal || 0)}</strong></div>
       ${minNote}
-      <div class="total-row"><span>Product total</span><strong>${cur(result.subtotal||0)}</strong></div>
-      <div class="total-row"><span>Grand Total</span><strong>${cur(result.subtotal||0)}</strong></div>
+      <div class="total-row"><span>Product total</span><strong>${cur(result.subtotal || 0)}</strong></div>
+      <div class="total-row"><span>Grand Total</span><strong>${cur(result.subtotal || 0)}</strong></div>
     </div>
   </div>
 
@@ -4906,1243 +4901,1250 @@
 </body>
 </html>`;
 
-            const win = window.open('', '_blank', 'width=900,height=800');
-            if (!win) {
-                window.alert('Popup blocked — please allow popups and try again.');
-                return;
+                const win = window.open('', '_blank', 'width=900,height=800');
+                if (!win) {
+                    window.alert('Popup blocked — please allow popups and try again.');
+                    return;
+                }
+                win.document.open();
+                win.document.write(html);
+                win.document.close();
+            });
+            if (emailQuoteBtn) emailQuoteBtn.addEventListener('click', () => {
+                emailInline.classList.toggle('hidden');
+            });
+            if (sendQuoteEmailBtn) sendQuoteEmailBtn.addEventListener('click', () => {
+                const email = quoteEmailInput.value.trim();
+                if (!email) {
+                    window.alert('Please enter an email');
+                    return;
+                }
+                window.alert('Quote ready to be emailed (backend not connected yet).');
+            });
+
+            // ── Order Modal ──
+            const orderModal = document.getElementById('orderModalBackdrop'),
+                orderClose = document.getElementById('orderModalClose'),
+                orderBackToQuote = document.getElementById('orderBackToQuote'),
+                continueToProofBtn = document.getElementById('continueToProofBtn'),
+                placeOrderBtn = document.getElementById('placeOrderBtn'),
+                orderInfoStep = document.getElementById('orderInfoStep'),
+                proofReviewStep = document.getElementById('proofReviewStep'),
+                proofSheetContainer = document.getElementById('proofSheetContainer'),
+                proofSummaryBlock = document.getElementById('proofSummaryBlock'),
+                proofZoomRange = document.getElementById('proofZoomRange'),
+                proofZoomValue = document.getElementById('proofZoomValue'),
+                downloadProofBtn = document.getElementById('downloadProofBtn'),
+                proofApprovalCheckbox = document.getElementById('proofApprovalCheckbox'),
+                proofValidationMessage = document.getElementById('proofValidationMessage'),
+                backToOrderInfoBtn = document.getElementById('backToOrderInfoBtn');
+            const orderName = document.getElementById('orderName'),
+                orderCompany = document.getElementById('orderCompany'),
+                orderEmail = document.getElementById('orderEmail'),
+                orderPhone = document.getElementById('orderPhone'),
+                orderShipping = document.getElementById('orderShipping'),
+                orderTotals = document.getElementById('orderTotals'),
+                orderAddress = document.getElementById('orderAddress'),
+                orderCity = document.getElementById('orderCity'),
+                orderState = document.getElementById('orderState'),
+                orderZip = document.getElementById('orderZip'),
+                paymentCardholder = document.getElementById('paymentCardholder'),
+                paymentCardNumber = document.getElementById('paymentCardNumber'),
+                paymentExpiry = document.getElementById('paymentExpiry'),
+                paymentCvv = document.getElementById('paymentCvv'),
+                paymentBillingZip = document.getElementById('paymentBillingZip'),
+                orderValidationMessage = document.getElementById('orderValidationMessage'),
+                billingSameAsShipping = document.getElementById('billingSameAsShipping'),
+                billingAddressFields = document.getElementById('billingAddressFields'),
+                billingAddress = document.getElementById('billingAddress'),
+                billingCity = document.getElementById('billingCity'),
+                billingState = document.getElementById('billingState'),
+                billingZip = document.getElementById('billingZip');
+
+            function closeOrderModal() {
+                if (!orderModal) return;
+                orderModal.style.display = 'none';
+                orderModal.setAttribute('aria-hidden', 'true');
+                if (orderValidationMessage) {
+                    orderValidationMessage.textContent = '';
+                    orderValidationMessage.classList.remove('show');
+                }
+                if (proofValidationMessage) {
+                    proofValidationMessage.textContent = '';
+                    proofValidationMessage.classList.remove('show');
+                }
+                if (proofApprovalCheckbox) proofApprovalCheckbox.checked = false;
+                if (placeOrderBtn) placeOrderBtn.disabled = true;
+                if (orderInfoStep) orderInfoStep.classList.remove('hidden');
+                if (proofReviewStep) proofReviewStep.classList.add('hidden');
             }
-            win.document.open();
-            win.document.write(html);
-            win.document.close();
-        });
-        if (emailQuoteBtn) emailQuoteBtn.addEventListener('click', () => {
-            emailInline.classList.toggle('hidden');
-        });
-        if (sendQuoteEmailBtn) sendQuoteEmailBtn.addEventListener('click', () => {
-            const email = quoteEmailInput.value.trim();
-            if (!email) {
-                window.alert('Please enter an email');
-                return;
+
+            function setOrderValidationMessage(msg) {
+                if (!orderValidationMessage) return;
+                orderValidationMessage.textContent = msg || '';
+                orderValidationMessage.classList.toggle('show', Boolean(msg));
             }
-            window.alert('Quote ready to be emailed (backend not connected yet).');
-        });
 
-        // ── Order Modal ──
-        const orderModal = document.getElementById('orderModalBackdrop'),
-            orderClose = document.getElementById('orderModalClose'),
-            orderBackToQuote = document.getElementById('orderBackToQuote'),
-            continueToProofBtn = document.getElementById('continueToProofBtn'),
-            placeOrderBtn = document.getElementById('placeOrderBtn'),
-            orderInfoStep = document.getElementById('orderInfoStep'),
-            proofReviewStep = document.getElementById('proofReviewStep'),
-            proofSheetContainer = document.getElementById('proofSheetContainer'),
-            proofSummaryBlock = document.getElementById('proofSummaryBlock'),
-            proofZoomRange = document.getElementById('proofZoomRange'),
-            proofZoomValue = document.getElementById('proofZoomValue'),
-            downloadProofBtn = document.getElementById('downloadProofBtn'),
-            proofApprovalCheckbox = document.getElementById('proofApprovalCheckbox'),
-            proofValidationMessage = document.getElementById('proofValidationMessage'),
-            backToOrderInfoBtn = document.getElementById('backToOrderInfoBtn');
-        const orderName = document.getElementById('orderName'),
-            orderCompany = document.getElementById('orderCompany'),
-            orderEmail = document.getElementById('orderEmail'),
-            orderPhone = document.getElementById('orderPhone'),
-            orderShipping = document.getElementById('orderShipping'),
-            orderTotals = document.getElementById('orderTotals'),
-            orderAddress = document.getElementById('orderAddress'),
-            orderCity = document.getElementById('orderCity'),
-            orderState = document.getElementById('orderState'),
-            orderZip = document.getElementById('orderZip'),
-            paymentCardholder = document.getElementById('paymentCardholder'),
-            paymentCardNumber = document.getElementById('paymentCardNumber'),
-            paymentExpiry = document.getElementById('paymentExpiry'),
-            paymentCvv = document.getElementById('paymentCvv'),
-            paymentBillingZip = document.getElementById('paymentBillingZip'),
-            orderValidationMessage = document.getElementById('orderValidationMessage'),
-            billingSameAsShipping = document.getElementById('billingSameAsShipping'),
-            billingAddressFields = document.getElementById('billingAddressFields'),
-            billingAddress = document.getElementById('billingAddress'),
-            billingCity = document.getElementById('billingCity'),
-            billingState = document.getElementById('billingState'),
-            billingZip = document.getElementById('billingZip');
-
-        function closeOrderModal() {
-            if (!orderModal) return;
-            orderModal.style.display='none';
-            orderModal.setAttribute('aria-hidden', 'true');
-            if(orderValidationMessage){orderValidationMessage.textContent='';
-            orderValidationMessage.classList.remove('show');
-        }
-        if(proofValidationMessage){proofValidationMessage.textContent='';
-        proofValidationMessage.classList.remove('show');
-        }
-        if (proofApprovalCheckbox) proofApprovalCheckbox.checked = false;
-        if (placeOrderBtn) placeOrderBtn.disabled = true;
-        if (orderInfoStep) orderInfoStep.classList.remove('hidden');
-        if (proofReviewStep) proofReviewStep.classList.add('hidden');
-        }
-
-        function setOrderValidationMessage(msg) {
-            if (!orderValidationMessage) return;
-            orderValidationMessage.textContent = msg || '';
-            orderValidationMessage.classList.toggle('show', Boolean(msg));
-        }
-
-        function validateOrderStep() {
-            const missingAddress = [orderAddress, orderCity, orderState, orderZip].some(f => !f || !String(f.value ||
-                '').trim());
-            if (missingAddress) return 'Please enter your shipping address.';
-            const usingSameBilling = !billingSameAsShipping || billingSameAsShipping.checked;
-            if (!usingSameBilling) {
-                const mb = [billingAddress, billingCity, billingState, billingZip].some(f => !f || !String(f.value ||
+            function validateOrderStep() {
+                const missingAddress = [orderAddress, orderCity, orderState, orderZip].some(f => !f || !String(f.value ||
                     '').trim());
-                if (mb) return 'Please enter your billing address.';
-            }
-            const mp = [paymentCardholder, paymentCardNumber, paymentExpiry, paymentCvv, paymentBillingZip].some(f => !
-                f || !String(f.value || '').trim());
-            if (mp) return 'Please complete the payment information.';
-            return '';
-        }
-
-        function updatePlaceOrderState() {
-            const vm = validateOrderStep();
-            if (continueToProofBtn) continueToProofBtn.disabled = Boolean(vm);
-            if (!vm) setOrderValidationMessage('');
-        }
-
-        function updateProofApprovalState() {
-            const approved = Boolean(proofApprovalCheckbox && proofApprovalCheckbox.checked);
-            if (placeOrderBtn) placeOrderBtn.disabled = !approved;
-            if(approved&&proofValidationMessage){proofValidationMessage.textContent='';
-            proofValidationMessage.classList.remove('show');
-        }
-        }
-
-        function buildProofLayoutPages(payload) {
-            const result = payload?.result || {},
-                data = payload?.data || {};
-            const signData = Array.isArray(result.signData) ? result.signData : [];
-
-            // ── Sheet constants — mirror the laser file layout ──
-            const sheetWidthIn = 24,
-                sheetHeightIn = 12;
-            const leftBias = 0.25; // left bias — matches laser LEFT_BIAS
-            const innerMargin = 0.25; // right/bottom margin — matches laser INNER_MARGIN
-            const gapIn = 0.25; // tag-to-tag gap — matches laser GAP
-            const tagStartY = 1.65; // y below proof header text (inches)
-            const bottomMargin = 0.4; // space for footer
-            const maxColH = sheetHeightIn - tagStartY - bottomMargin;
-            const maxAreaW = sheetWidthIn - leftBias - innerMargin;
-
-            // ── Group tags by color (same sort as laser file) ──
-            function groupKey(tag) {
-                const color = tag.color || 'black_white';
-                const w = Number(tag.width || 0).toFixed(3);
-                const h = Number(tag.height || 0).toFixed(3);
-                const lines = Array.isArray(tag.lines) ? tag.lines.filter(l => String(l.text || '').trim()).length : 0;
-                const holes = (tag.holes && tag.holes !== 'No holes') ? 'holes' : 'no-holes';
-                const radius = (tag.cornerRadius === 'no') ? 'square' : 'rounded';
-                return color + '|' + w + 'x' + h + '|' + lines + 'lines|' + holes + '|' + radius;
+                if (missingAddress) return 'Please enter your shipping address.';
+                const usingSameBilling = !billingSameAsShipping || billingSameAsShipping.checked;
+                if (!usingSameBilling) {
+                    const mb = [billingAddress, billingCity, billingState, billingZip].some(f => !f || !String(f.value ||
+                        '').trim());
+                    if (mb) return 'Please enter your billing address.';
+                }
+                const mp = [paymentCardholder, paymentCardNumber, paymentExpiry, paymentCvv, paymentBillingZip].some(f => !
+                    f || !String(f.value || '').trim());
+                if (mp) return 'Please complete the payment information.';
+                return '';
             }
 
-            const colorOrder = ['black_white', 'white_black', 'white_red', 'yellow_black', 'yellow_red', 'red_white',
-                'green_white', 'blue_white', 'gray_white', 'brown_white', 'orange_white', 'orange_black',
-                'purple_white'
-            ];
-            const sortedSignData = [...signData].sort((a, b) => {
-                const ka = groupKey(a),
-                    kb = groupKey(b);
-                if (ka === kb) return 0;
-                const ca = colorOrder.indexOf(a.color || 'black_white'),
-                    cb = colorOrder.indexOf(b.color || 'black_white');
-                if (ca !== cb) return ca - cb;
-                const ha = Number(a.height || 0),
-                    hb = Number(b.height || 0);
-                if (ha !== hb) return ha - hb;
-                const wa = Number(a.width || 0),
-                    wb = Number(b.width || 0);
-                if (wa !== wb) return wa - wb;
-                const la = Array.isArray(a.lines) ? a.lines.filter(l => String(l.text || '').trim()).length : 0;
-                const lb = Array.isArray(b.lines) ? b.lines.filter(l => String(l.text || '').trim()).length : 0;
-                if (la !== lb) return la - lb;
-                const hoa=(a.holes&&a.holes!=='No holes') ? 1 : 0, hob=(b.holes&&b.holes!=='No holes') ? 1 : 0;
-            return hoa - hob;
-        });
-
-        // Expand by qty — preserve original entry order for proof and production sheet
-        // (color sorting is only needed for the laser file, which groups by color for cutting)
-        const placements = [];
-        signData.forEach(tag => {
-            const repeat = Math.max(1, Number(tag.qty || 1));
-            for (let i = 0; i < repeat; i++) placements.push({
-                tag,
-                key: groupKey(tag)
-            });
-        });
-
-        // ── Column-first packing (Sign 1 top-left, Sign 2 below, etc.) ──
-        const pages = [];
-        let currentPage = [],
-            colX = leftBias,
-            colY = tagStartY,
-            colW = 0;
-        let currentKey = placements.length ? placements[0].key : null;
-
-        placements.forEach((placement, index) => {
-            const tag = placement.tag;
-            const tagWidth = Math.max(0.25, Number(tag.width || 0.25));
-            const tagHeight = Math.max(0.25, Number(tag.height || 0.25));
-            const keyChanged = placement.key !== currentKey;
-
-            // New color group → new page
-            if (keyChanged && currentPage.length) {
-                pages.push(currentPage);
-                currentPage = [];
-                colX = leftBias;
-                colY = tagStartY;
-                colW = 0;
-                currentKey = placement.key;
+            function updatePlaceOrderState() {
+                const vm = validateOrderStep();
+                if (continueToProofBtn) continueToProofBtn.disabled = Boolean(vm);
+                if (!vm) setOrderValidationMessage('');
             }
 
-            // Column full → start new column
-            if (colY > tagStartY && colY + tagHeight > sheetHeightIn - bottomMargin + 0.001) {
-                colX += colW + gapIn;
-                colY = tagStartY;
-                colW = 0;
+            function updateProofApprovalState() {
+                const approved = Boolean(proofApprovalCheckbox && proofApprovalCheckbox.checked);
+                if (placeOrderBtn) placeOrderBtn.disabled = !approved;
+                if (approved && proofValidationMessage) {
+                    proofValidationMessage.textContent = '';
+                    proofValidationMessage.classList.remove('show');
+                }
             }
 
-            // Page full → new page
-            if (currentPage.length > 0 && colX + tagWidth > sheetWidthIn - innerMargin + 0.001) {
-                pages.push(currentPage);
-                currentPage = [];
-                colX = leftBias;
-                colY = tagStartY;
-                colW = 0;
-            }
+            function buildProofLayoutPages(payload) {
+                const result = payload?.result || {},
+                    data = payload?.data || {};
+                const signData = Array.isArray(result.signData) ? result.signData : [];
 
-            currentPage.push({
-                tag,
-                x: colX,
-                y: colY,
-                copyIndex: index + 1
-            });
-            colW = Math.max(colW, tagWidth);
-            colY += tagHeight + gapIn;
-            currentKey = placement.key;
-        });
+                // ── Sheet constants — mirror the laser file layout ──
+                const sheetWidthIn = 24,
+                    sheetHeightIn = 12;
+                const leftBias = 0.25; // left bias — matches laser LEFT_BIAS
+                const innerMargin = 0.25; // right/bottom margin — matches laser INNER_MARGIN
+                const gapIn = 0.25; // tag-to-tag gap — matches laser GAP
+                const tagStartY = 1.65; // y below proof header text (inches)
+                const bottomMargin = 0.4; // space for footer
+                const maxColH = sheetHeightIn - tagStartY - bottomMargin;
+                const maxAreaW = sheetWidthIn - leftBias - innerMargin;
 
-        if (currentPage.length) pages.push(currentPage);
+                // ── Group tags by color (same sort as laser file) ──
+                function groupKey(tag) {
+                    const color = tag.color || 'black_white';
+                    const w = Number(tag.width || 0).toFixed(3);
+                    const h = Number(tag.height || 0).toFixed(3);
+                    const lines = Array.isArray(tag.lines) ? tag.lines.filter(l => String(l.text || '').trim()).length : 0;
+                    const holes = (tag.holes && tag.holes !== 'No holes') ? 'holes' : 'no-holes';
+                    const radius = (tag.cornerRadius === 'no') ? 'square' : 'rounded';
+                    return color + '|' + w + 'x' + h + '|' + lines + 'lines|' + holes + '|' + radius;
+                }
 
-        // Attach group label to each page
-        pages.forEach(page => {
-            if (!page.length) return;
-            const t = page[0].tag;
-            const cl = colorLabel(t.color || 'black_white');
-            const w = formatThreeDecimals(Number(t.width || 0));
-            const h = formatThreeDecimals(Number(t.height || 0));
-            const lc = Array.isArray(t.lines) ? t.lines.filter(l => String(l.text || '').trim()).length : 0;
-            const hl = (t.holes && t.holes !== 'No holes') ? ' · ' + t.holes : ' · No holes';
-            const rl = (t.cornerRadius === 'no') ? ' · Square corners' : ' · Rounded corners';
-            page.groupLabel = cl + ' · ' + h + '" × ' + w + '" · ' + lc + ' line' + (lc === 1 ? '' : 's') + hl +
-                rl;
-        });
-
-        return {
-            pages,
-            sheetWidthIn,
-            sheetHeightIn,
-            data,
-            result
-        };
-        }
-
-        function buildTagPreviewFragment(tag, data, targetSvg, options = {}) {
-            const colorPairValue = colorPair(tag.color || 'black_white'),
-                bgColor = colorPairValue[0],
-                textColor = colorPairValue[1];
-            const shapeValue = data.shape || 'Rectangle',
-                widthIn = Math.max(Number(tag.width || 0) || 3, 0.25),
-                heightIn = Math.max(Number(tag.height || 0) || 1, 0.25);
-            const effectiveHoles = tag.holes || 'No holes',
-                effectiveHoleSize = tag.holeSize || '1/8';
-            const proofMode = Boolean(options.proofMode);
-            const pxPerInch = proofMode ? (options.pxPerInch || 72) : getPreviewScale(options.viewBoxWidth || 420,
-                options.viewBoxHeight || 260, widthIn, heightIn);
-            const previewWidth = widthIn * pxPerInch,
-                previewHeight = heightIn * pxPerInch;
-            const offsetX = proofMode ? 0 : (options.viewBoxWidth || 420 - previewWidth) / 2,
-                offsetY = proofMode ? 0 : ((options.viewBoxHeight || 260) - previewHeight) / 2;
-            const cornerRadiusIn2 = (options.cornerRadius==='yes') ? 0.125: 0;
-        const radiusValue = cornerRadiusIn2 * pxPerInch;
-        const wrapper = createSvgEl('g');
-        if (!proofMode) wrapper.appendChild(createSvgEl('rect', {
-            x: offsetX + 5,
-            y: offsetY + 7,
-            width: previewWidth,
-            height: previewHeight,
-            rx: Math.min(radiusValue + 2, 18),
-            fill: 'rgba(15,23,42,0.10)'
-        }));
-        renderPreviewShape(wrapper, shapeValue, bgColor, radiusValue, previewWidth, previewHeight, offsetX, offsetY);
-        const hasHoles=Boolean(effectiveHoles&&effectiveHoles!=='No holes'), selectedHoleSpec = getSelectedHoleSpec(
-            effectiveHoles, effectiveHoleSize, widthIn, heightIn);
-        const holeDiameter=selectedHoleSpec&&selectedHoleSpec.type==='round' ? selectedHoleSpec.diameter : (hasHoles ?
-            getAutoHoleDiameter(widthIn, heightIn) : 0);
-        const geometry = getTagGeometry({
-            tagWidth: widthIn,
-            tagHeight: heightIn,
-            hasHoles,
-            holeDiameter,
-            holeQuantity: effectiveHoles,
-            holeSizeValue: effectiveHoleSize
-        });
-        const safeAreaPx = {
-            x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
-            y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
-            width: inchesToPx(geometry.safeArea.width, pxPerInch),
-            height: inchesToPx(geometry.safeArea.height, pxPerInch)
-        };
-        if (options.showSafeArea) {
-            const ov = createSvgEl('g');
-            ov.appendChild(createSvgEl('rect', {
-                x: safeAreaPx.x,
-                y: safeAreaPx.y,
-                width: safeAreaPx.width,
-                height: safeAreaPx.height,
-                fill: 'none',
-                stroke: getContrastSafeAreaStroke(bgColor),
-                'stroke-dasharray': '4 3',
-                'stroke-width': 1
-            }));
-            renderHoleFeatures(ov, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
-                textColor);
-            wrapper.appendChild(ov);
-        } else {
-            renderHoleFeatures(wrapper, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY,
-                pxPerInch, textColor);
-        }
-        const defs = createSvgEl('defs'),
-            clipPath = createSvgEl('clipPath', {
-                id: options.clipId || ('tagClip_' + Math.random().toString(36).slice(2))
-            });
-        renderPreviewShape(clipPath, shapeValue, '#000001', radiusValue, previewWidth, previewHeight, offsetX, offsetY);
-        defs.appendChild(clipPath);
-        wrapper.appendChild(defs);
-        const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2,
-            safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
-        const align = tag.align || 'center',
-            alignmentPadding = 10;
-        let textAnchor='middle', textX = safeAreaCenterX;
-        if(align==='left') {
-            textAnchor = 'start';
-            textX = safeAreaPx.x + alignmentPadding;
-        } else if(align==='right') {
-            textAnchor = 'end';
-            textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
-        }
-        const condensed = (tag.condense || 'no') === 'yes',
-            spacingMultiplier = getLineSpacingMultiplier(tag.lineSpacing || 'full');
-        const lines = tag.lines && tag.lines.length ? tag.lines : [{
-            text: 'PREVIEW',
-            bold: false,
-            size: '1/4',
-            customSize: ''
-        }];
-        const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
-        const renderedLines = lines.map(line => {
-            const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
-                BASELINE_LINE_SIZE_IN;
-            const fontSize = proofMode ? Math.max(4, requestedHeightIn * PORTAL_FONT_PX_PER_IN *
-                portalStageScale) : Math.max(7, requestedHeightIn * PORTAL_FONT_PX_PER_IN *
-                portalStageScale);
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const xMetrics = measureReferenceXMetrics(targetSvg, fontSize, fontFamily, line.bold ? 700 : 400);
-            const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
-            const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
-            return {
-                ...line,
-                fontSize,
-                lineHeight,
-                interlineGap,
-                ascent: xMetrics.ascent,
-                textValue: line.text || ''
-            };
-        });
-        const totalBlockHeight = renderedLines.length <= 1 ? (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
-            renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
-            .reduce((s, l) => s + l.interlineGap, 0);
-        let currentY = safeAreaCenterY - totalBlockHeight / 2;
-        const textGroup = createSvgEl('g');
-        wrapper.appendChild(textGroup);
-        const renderedTextEls = [];
-        renderedLines.forEach((line, index) => {
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
-            const textEl = createSvgEl('text', {
-                x: textX,
-                y: baselineY,
-                'text-anchor': textAnchor,
-                'font-size': line.fontSize,
-                fill: textColor,
-                'font-weight': line.bold ? 700 : 400,
-                'font-family': fontFamily
-            });
-            textEl.textContent = line.textValue;
-            textGroup.appendChild(textEl);
-            renderedTextEls.push({
-                line,
-                textEl,
-                baselineY
-            });
-            currentY += line.lineHeight;
-            if (index < renderedLines.length - 1) currentY += line.interlineGap;
-        });
-        // Temporarily attach wrapper to targetSvg so getBBox() works (requires live DOM)
-        const _measParent = targetSvg || document.body;
-        _measParent.appendChild(wrapper);
-        let naturalTextWidth = 0;
-        renderedTextEls.forEach(item => {
-            try {
-                const box = item.textEl.getBBox();
-                item.naturalBox = box;
-                naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
-            } catch (_) {
-                item.naturalBox = {
-                    x: textX,
-                    y: item.baselineY,
-                    width: 0,
-                    height: item.line.fontSize
-                };
-            }
-        });
-        _measParent.removeChild(wrapper);
-        naturalTextWidth = Math.max(naturalTextWidth, 0.1);
-        const condenseRatio = condensed ? Math.min(1, safeAreaPx.width / Math.max(naturalTextWidth, 0.0001)) : 1;
-        renderedTextEls.forEach(item => {
-            if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
-                ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
-            else item.textEl.removeAttribute('transform');
-        });
-        if (!proofMode) {
-            try {
-                const gb = textGroup.getBBox();
-                const tcy = gb.y + gb.height / 2;
-                const vo = safeAreaCenterY - tcy;
-                textGroup.setAttribute('transform', 'translate(0 ' + vo + ')');
-            } catch (_) {
-                textGroup.removeAttribute('transform');
-            }
-        }
-        return {
-            wrapper,
-            clipId: clipPath.getAttribute('id'),
-            widthIn,
-            heightIn,
-            viewBoxWidth: options.viewBoxWidth || 420,
-            viewBoxHeight: options.viewBoxHeight || 260,
-            previewWidth,
-            previewHeight,
-            offsetX,
-            offsetY
-        };
-        }
-
-        function renderTagContentToGroup(group, measureSvg, tag, data, xIn, yIn, scale, options = {}) {
-            const proofMode = Boolean(options.proofMode);
-            const fragment = buildTagPreviewFragment(tag, data, measureSvg, {
-                proofMode,
-                pxPerInch: proofMode ? scale : undefined,
-                viewBoxWidth: proofMode ? (Math.max(Number(tag.width || 0.25), 0.25) * scale) : (options
-                    .viewBoxWidth || 420),
-                viewBoxHeight: proofMode ? (Math.max(Number(tag.height || 0.25), 0.25) * scale) : (options
-                    .viewBoxHeight || 260),
-                showSafeArea: Boolean(options.showSafeArea),
-                clipId: options.clipId,
-                cornerRadius: tag.cornerRadius || 'no'
-            });
-            const sourceGroup = fragment.wrapper;
-            if (proofMode) {
-                sourceGroup.setAttribute('transform', 'translate(' + (xIn * scale) + ' ' + (yIn * scale) + ')');
-            } else {
-                const targetWidthPx = fragment.widthIn * scale,
-                    targetHeightPx = fragment.heightIn * scale,
-                    translateX = (xIn * scale) - ((fragment.offsetX / fragment.viewBoxWidth) * targetWidthPx),
-                    translateY = (yIn * scale) - ((fragment.offsetY / fragment.viewBoxHeight) * targetHeightPx),
-                    scaleX = targetWidthPx / fragment.viewBoxWidth,
-                    scaleY = targetHeightPx / fragment.viewBoxHeight;
-                sourceGroup.setAttribute('transform', 'translate(' + translateX + ' ' + translateY + ') scale(' +
-                    scaleX + ' ' + scaleY + ')');
-            }
-            group.appendChild(sourceGroup);
-            return {
-                textNodeCount: sourceGroup.querySelectorAll('text').length
-            };
-        }
-
-        function renderProofTagToGroup(group, liveSvg, tag, data, xIn, yIn, scale, opts = {}) {
-            // Direct port of renderDesignPreview logic — renders into live DOM SVG so getBBox works
-            const colorPairValue = colorPair(tag.color || 'black_white');
-            const bgColor = colorPairValue[0],
-                textColor = colorPairValue[1];
-            const shapeValue = data.shape || 'Rectangle';
-            const widthIn = Math.max(Number(tag.width || 0) || 1, 0.25);
-            const heightIn = Math.max(Number(tag.height || 0) || 1, 0.25);
-            const pxPerInch = scale;
-            const previewWidth = widthIn * pxPerInch,
-                previewHeight = heightIn * pxPerInch;
-            const offsetX = xIn * scale,
-                offsetY = yIn * scale;
-
-            // Background shape
-            const proofCornerRadiusIn = (opts.cornerRadius==='yes') ? 0.125: 0;
-        const proofRadiusValue = proofCornerRadiusIn * scale;
-        renderPreviewShape(group, shapeValue, bgColor, proofRadiusValue, previewWidth, previewHeight, offsetX, offsetY);
-
-        // Holes
-        const effectiveHoles = tag.holes || 'No holes',
-            effectiveHoleSize = tag.holeSize || '1/8';
-        const hasHoles = Boolean(effectiveHoles && effectiveHoles !== 'No holes');
-        const selectedHoleSpec = getSelectedHoleSpec(effectiveHoles, effectiveHoleSize, widthIn, heightIn);
-        const holeDiameter = selectedHoleSpec && selectedHoleSpec.type==='round' ? selectedHoleSpec.diameter : (
-            hasHoles ? getAutoHoleDiameter(widthIn, heightIn) : 0);
-        const geometry = getTagGeometry({
-            tagWidth: widthIn,
-            tagHeight: heightIn,
-            hasHoles,
-            holeDiameter,
-            holeQuantity: effectiveHoles,
-            holeSizeValue: effectiveHoleSize
-        });
-        renderHoleFeatures(group, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
-            textColor);
-
-        // Safe area in px
-        const safeAreaPx = {
-            x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
-            y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
-            width: inchesToPx(geometry.safeArea.width, pxPerInch),
-            height: inchesToPx(geometry.safeArea.height, pxPerInch)
-        };
-        const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2;
-        const safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
-
-        // Text alignment
-        const align = tag.align || 'center';
-        const alignmentPadding = pxPerInch * 0.0625;
-        let textAnchor = 'middle', textX = safeAreaCenterX;
-        if (align==='left') {
-            textAnchor='start';
-            textX = safeAreaPx.x + alignmentPadding;
-        } else if (align==='right') {
-            textAnchor='end';
-            textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
-        }
-
-        // Font/spacing — identical to live preview
-        const condensed = (tag.condense || 'no') === 'yes';
-        const spacingMultiplier = getLineSpacingMultiplier(tag.lineSpacing || 'full');
-        const lines = tag.lines && tag.lines.length ? tag.lines : [{
-            text: 'PREVIEW',
-            bold: false,
-            size: '1/4',
-            customSize: ''
-        }];
-        // In proof mode font size must be based on actual physical inches * pxPerInch
-        // not on portalStageScale which compresses fonts to fit the small proof tag
-        const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
-
-        const renderedLines = lines.map(line => {
-            const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
-                BASELINE_LINE_SIZE_IN;
-            const fontSize = Math.max(4, requestedHeightIn * pxPerInch);
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const xMetrics = measureReferenceXMetrics(liveSvg, fontSize, fontFamily, line.bold ? 700 : 400);
-            const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
-            const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
-            return {
-                ...line,
-                fontSize,
-                lineHeight,
-                interlineGap,
-                ascent: xMetrics.ascent,
-                textValue: line.text || ''
-            };
-        });
-
-        const totalBlockHeight = renderedLines.length <= 1 ?
-            (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
-            renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
-            .reduce((s, l) => s + l.interlineGap, 0);
-
-        let currentY = safeAreaCenterY - totalBlockHeight / 2;
-
-        // Render text directly into liveSvg (must be in DOM for getBBox)
-        const textGroup = createSvgEl('g');
-        liveSvg.appendChild(textGroup);
-        const renderedTextEls = [];
-
-        renderedLines.forEach((line, index) => {
-            const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
-            const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
-            const textEl = createSvgEl('text', {
-                x: textX,
-                y: baselineY,
-                'text-anchor': textAnchor,
-                'font-size': line.fontSize,
-                fill: textColor,
-                'font-weight': line.bold ? 700 : 400,
-                'font-family': fontFamily
-            });
-            textEl.textContent = line.textValue;
-            textGroup.appendChild(textEl);
-            renderedTextEls.push({
-                line,
-                textEl,
-                baselineY
-            });
-            currentY += line.lineHeight;
-            if (index < renderedLines.length - 1) currentY += line.interlineGap;
-        });
-
-        // Measure natural text width — works because textGroup is in live DOM
-        let naturalTextWidth = 0;
-        renderedTextEls.forEach(item => {
-            try {
-                const box = item.textEl.getBBox();
-                item.naturalBox = box;
-                naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
-            } catch (_) {
-                item.naturalBox = {
-                    x: textX,
-                    y: item.baselineY,
-                    width: 0,
-                    height: item.line.fontSize
-                };
-            }
-        });
-        naturalTextWidth = Math.max(naturalTextWidth, 0.1);
-
-        // Condense — identical to live preview
-        const safeTextWidth = geometry.safeArea.width;
-        const naturalTextWidthIn = naturalTextWidth / pxPerInch;
-        const condenseRatio = condensed ? Math.min(1, safeTextWidth / Math.max(naturalTextWidthIn, 0.0001)) : 1;
-        renderedTextEls.forEach(item => {
-            if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
-                ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
-            else item.textEl.removeAttribute('transform');
-        });
-
-        // Vertical centering — identical to live preview
-        try {
-            const groupBox = textGroup.getBBox();
-            const textCenterY = groupBox.y + groupBox.height / 2;
-            const verticalOffset = safeAreaCenterY - textCenterY;
-            textGroup.setAttribute('transform', 'translate(0 ' + verticalOffset + ')');
-        } catch (_) {
-            textGroup.removeAttribute('transform');
-        }
-
-        // Move textGroup into the caller's group now that measuring is done
-        group.appendChild(textGroup);
-        }
-
-        function renderProofSheets() {
-            if (!proofSheetContainer || !latestQuotePayload) return;
-            const layout = buildProofLayoutPages(latestQuotePayload),
-                scale = 96;
-            const GAP_IN = 0.25; // must match buildProofLayoutPages gapIn
-            proofSheetContainer.innerHTML='';
-            layout.pages.forEach((pagePlacements, pageIndex) => {
-                const page = document.createElement('div');
-                page.className='proof-sheet-page';
-                const svgW = layout.sheetWidthIn * scale,
-                    svgH = layout.sheetHeightIn * scale;
-                const svg = createSvgEl('svg', {
-                    viewBox: '0 0 ' + svgW + ' ' + svgH,
-                    xmlns: SVG_NS
+                const colorOrder = ['black_white', 'white_black', 'white_red', 'yellow_black', 'yellow_red', 'red_white',
+                    'green_white', 'blue_white', 'gray_white', 'brown_white', 'orange_white', 'orange_black',
+                    'purple_white'
+                ];
+                const sortedSignData = [...signData].sort((a, b) => {
+                    const ka = groupKey(a),
+                        kb = groupKey(b);
+                    if (ka === kb) return 0;
+                    const ca = colorOrder.indexOf(a.color || 'black_white'),
+                        cb = colorOrder.indexOf(b.color || 'black_white');
+                    if (ca !== cb) return ca - cb;
+                    const ha = Number(a.height || 0),
+                        hb = Number(b.height || 0);
+                    if (ha !== hb) return ha - hb;
+                    const wa = Number(a.width || 0),
+                        wb = Number(b.width || 0);
+                    if (wa !== wb) return wa - wb;
+                    const la = Array.isArray(a.lines) ? a.lines.filter(l => String(l.text || '').trim()).length : 0;
+                    const lb = Array.isArray(b.lines) ? b.lines.filter(l => String(l.text || '').trim()).length : 0;
+                    if (la !== lb) return la - lb;
+                    const hoa = (a.holes && a.holes !== 'No holes') ? 1 : 0, hob = (b.holes && b.holes !== 'No holes') ? 1 : 0;
+                    return hoa - hob;
                 });
-                svg.appendChild(createSvgEl('rect', {
-                    x: 0,
-                    y: 0,
-                    width: svgW,
-                    height: svgH,
-                    fill: '#ffffff'
+
+                // Expand by qty — preserve original entry order for proof and production sheet
+                // (color sorting is only needed for the laser file, which groups by color for cutting)
+                const placements = [];
+                signData.forEach(tag => {
+                    const repeat = Math.max(1, Number(tag.qty || 1));
+                    for (let i = 0; i < repeat; i++) placements.push({
+                        tag,
+                        key: groupKey(tag)
+                    });
+                });
+
+                // ── Column-first packing (Sign 1 top-left, Sign 2 below, etc.) ──
+                const pages = [];
+                let currentPage = [],
+                    colX = leftBias,
+                    colY = tagStartY,
+                    colW = 0;
+                let currentKey = placements.length ? placements[0].key : null;
+
+                placements.forEach((placement, index) => {
+                    const tag = placement.tag;
+                    const tagWidth = Math.max(0.25, Number(tag.width || 0.25));
+                    const tagHeight = Math.max(0.25, Number(tag.height || 0.25));
+                    const keyChanged = placement.key !== currentKey;
+
+                    // New color group → new page
+                    if (keyChanged && currentPage.length) {
+                        pages.push(currentPage);
+                        currentPage = [];
+                        colX = leftBias;
+                        colY = tagStartY;
+                        colW = 0;
+                        currentKey = placement.key;
+                    }
+
+                    // Column full → start new column
+                    if (colY > tagStartY && colY + tagHeight > sheetHeightIn - bottomMargin + 0.001) {
+                        colX += colW + gapIn;
+                        colY = tagStartY;
+                        colW = 0;
+                    }
+
+                    // Page full → new page
+                    if (currentPage.length > 0 && colX + tagWidth > sheetWidthIn - innerMargin + 0.001) {
+                        pages.push(currentPage);
+                        currentPage = [];
+                        colX = leftBias;
+                        colY = tagStartY;
+                        colW = 0;
+                    }
+
+                    currentPage.push({
+                        tag,
+                        x: colX,
+                        y: colY,
+                        copyIndex: index + 1
+                    });
+                    colW = Math.max(colW, tagWidth);
+                    colY += tagHeight + gapIn;
+                    currentKey = placement.key;
+                });
+
+                if (currentPage.length) pages.push(currentPage);
+
+                // Attach group label to each page
+                pages.forEach(page => {
+                    if (!page.length) return;
+                    const t = page[0].tag;
+                    const cl = colorLabel(t.color || 'black_white');
+                    const w = formatThreeDecimals(Number(t.width || 0));
+                    const h = formatThreeDecimals(Number(t.height || 0));
+                    const lc = Array.isArray(t.lines) ? t.lines.filter(l => String(l.text || '').trim()).length : 0;
+                    const hl = (t.holes && t.holes !== 'No holes') ? ' · ' + t.holes : ' · No holes';
+                    const rl = (t.cornerRadius === 'no') ? ' · Square corners' : ' · Rounded corners';
+                    page.groupLabel = cl + ' · ' + h + '" × ' + w + '" · ' + lc + ' line' + (lc === 1 ? '' : 's') + hl +
+                        rl;
+                });
+
+                return {
+                    pages,
+                    sheetWidthIn,
+                    sheetHeightIn,
+                    data,
+                    result
+                };
+            }
+
+            function buildTagPreviewFragment(tag, data, targetSvg, options = {}) {
+                const colorPairValue = colorPair(tag.color || 'black_white'),
+                    bgColor = colorPairValue[0],
+                    textColor = colorPairValue[1];
+                const shapeValue = data.shape || 'Rectangle',
+                    widthIn = Math.max(Number(tag.width || 0) || 3, 0.25),
+                    heightIn = Math.max(Number(tag.height || 0) || 1, 0.25);
+                const effectiveHoles = tag.holes || 'No holes',
+                    effectiveHoleSize = tag.holeSize || '1/8';
+                const proofMode = Boolean(options.proofMode);
+                const pxPerInch = proofMode ? (options.pxPerInch || 72) : getPreviewScale(options.viewBoxWidth || 420,
+                    options.viewBoxHeight || 260, widthIn, heightIn);
+                const previewWidth = widthIn * pxPerInch,
+                    previewHeight = heightIn * pxPerInch;
+                const offsetX = proofMode ? 0 : (options.viewBoxWidth || 420 - previewWidth) / 2,
+                    offsetY = proofMode ? 0 : ((options.viewBoxHeight || 260) - previewHeight) / 2;
+                const cornerRadiusIn2 = (options.cornerRadius === 'yes') ? 0.125 : 0;
+                const radiusValue = cornerRadiusIn2 * pxPerInch;
+                const wrapper = createSvgEl('g');
+                if (!proofMode) wrapper.appendChild(createSvgEl('rect', {
+                    x: offsetX + 5,
+                    y: offsetY + 7,
+                    width: previewWidth,
+                    height: previewHeight,
+                    rx: Math.min(radiusValue + 2, 18),
+                    fill: 'rgba(15,23,42,0.10)'
                 }));
-
-                // ── Header — top centre ──
-                const cx = svgW / 2;
-                const jobNameVal = String((layout.data && layout.data.jobName) || '').trim();
-                // orderNum only exists after Place Order — omit from proof if not yet assigned
-                const orderNumVal = String((latestQuotePayload && latestQuotePayload.orderNum) ||
-                    (layout.data && layout.data.orderNum) || '').trim();
-
-                // Line 1: Company name
-                const hdrTitle = createSvgEl('text', {
-                    x: cx,
-                    y: 44,
-                    'text-anchor': 'middle',
-                    'font-size': 22,
-                    'font-weight': 700,
-                    fill: '#111827',
-                    'font-family': 'Arial, Helvetica, sans-serif'
+                renderPreviewShape(wrapper, shapeValue, bgColor, radiusValue, previewWidth, previewHeight, offsetX, offsetY);
+                const hasHoles = Boolean(effectiveHoles && effectiveHoles !== 'No holes'), selectedHoleSpec = getSelectedHoleSpec(
+                    effectiveHoles, effectiveHoleSize, widthIn, heightIn);
+                const holeDiameter = selectedHoleSpec && selectedHoleSpec.type === 'round' ? selectedHoleSpec.diameter : (hasHoles ?
+                    getAutoHoleDiameter(widthIn, heightIn) : 0);
+                const geometry = getTagGeometry({
+                    tagWidth: widthIn,
+                    tagHeight: heightIn,
+                    hasHoles,
+                    holeDiameter,
+                    holeQuantity: effectiveHoles,
+                    holeSizeValue: effectiveHoleSize
                 });
-                hdrTitle.textContent='Accurate Signs & Engraving';
-                svg.appendChild(hdrTitle);
-
-                // Line 2: Order · Job · Page
-                let subParts = [];
-                if (orderNumVal) subParts.push(orderNumVal);
-                if (jobNameVal) subParts.push('Job: ' + jobNameVal);
-                subParts.push('Page ' + (pageIndex + 1) + ' of ' + layout.pages.length);
-                const hdrSub = createSvgEl('text', {
-                    x: cx,
-                    y: 70,
-                    'text-anchor': 'middle',
-                    'font-size': 16,
-                    fill: '#640100',
-                    'font-family': 'Arial, Helvetica, sans-serif'
+                const safeAreaPx = {
+                    x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
+                    y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
+                    width: inchesToPx(geometry.safeArea.width, pxPerInch),
+                    height: inchesToPx(geometry.safeArea.height, pxPerInch)
+                };
+                if (options.showSafeArea) {
+                    const ov = createSvgEl('g');
+                    ov.appendChild(createSvgEl('rect', {
+                        x: safeAreaPx.x,
+                        y: safeAreaPx.y,
+                        width: safeAreaPx.width,
+                        height: safeAreaPx.height,
+                        fill: 'none',
+                        stroke: getContrastSafeAreaStroke(bgColor),
+                        'stroke-dasharray': '4 3',
+                        'stroke-width': 1
+                    }));
+                    renderHoleFeatures(ov, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
+                        textColor);
+                    wrapper.appendChild(ov);
+                } else {
+                    renderHoleFeatures(wrapper, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY,
+                        pxPerInch, textColor);
+                }
+                const defs = createSvgEl('defs'),
+                    clipPath = createSvgEl('clipPath', {
+                        id: options.clipId || ('tagClip_' + Math.random().toString(36).slice(2))
+                    });
+                renderPreviewShape(clipPath, shapeValue, '#000001', radiusValue, previewWidth, previewHeight, offsetX, offsetY);
+                defs.appendChild(clipPath);
+                wrapper.appendChild(defs);
+                const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2,
+                    safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
+                const align = tag.align || 'center',
+                    alignmentPadding = 10;
+                let textAnchor = 'middle', textX = safeAreaCenterX;
+                if (align === 'left') {
+                    textAnchor = 'start';
+                    textX = safeAreaPx.x + alignmentPadding;
+                } else if (align === 'right') {
+                    textAnchor = 'end';
+                    textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
+                }
+                const condensed = (tag.condense || 'no') === 'yes',
+                    spacingMultiplier = getLineSpacingMultiplier(tag.lineSpacing || 'full');
+                const lines = tag.lines && tag.lines.length ? tag.lines : [{
+                    text: 'PREVIEW',
+                    bold: false,
+                    size: '1/4',
+                    customSize: ''
+                }];
+                const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
+                const renderedLines = lines.map(line => {
+                    const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
+                        BASELINE_LINE_SIZE_IN;
+                    const fontSize = proofMode ? Math.max(4, requestedHeightIn * PORTAL_FONT_PX_PER_IN *
+                        portalStageScale) : Math.max(7, requestedHeightIn * PORTAL_FONT_PX_PER_IN *
+                            portalStageScale);
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const xMetrics = measureReferenceXMetrics(targetSvg, fontSize, fontFamily, line.bold ? 700 : 400);
+                    const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
+                    const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
+                    return {
+                        ...line,
+                        fontSize,
+                        lineHeight,
+                        interlineGap,
+                        ascent: xMetrics.ascent,
+                        textValue: line.text || ''
+                    };
                 });
-                hdrSub.textContent = subParts.join(' · ');
-                svg.appendChild(hdrSub);
+                const totalBlockHeight = renderedLines.length <= 1 ? (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
+                    renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
+                        .reduce((s, l) => s + l.interlineGap, 0);
+                let currentY = safeAreaCenterY - totalBlockHeight / 2;
+                const textGroup = createSvgEl('g');
+                wrapper.appendChild(textGroup);
+                const renderedTextEls = [];
+                renderedLines.forEach((line, index) => {
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
+                    const textEl = createSvgEl('text', {
+                        x: textX,
+                        y: baselineY,
+                        'text-anchor': textAnchor,
+                        'font-size': line.fontSize,
+                        fill: textColor,
+                        'font-weight': line.bold ? 700 : 400,
+                        'font-family': fontFamily
+                    });
+                    textEl.textContent = line.textValue;
+                    textGroup.appendChild(textEl);
+                    renderedTextEls.push({
+                        line,
+                        textEl,
+                        baselineY
+                    });
+                    currentY += line.lineHeight;
+                    if (index < renderedLines.length - 1) currentY += line.interlineGap;
+                });
+                // Temporarily attach wrapper to targetSvg so getBBox() works (requires live DOM)
+                const _measParent = targetSvg || document.body;
+                _measParent.appendChild(wrapper);
+                let naturalTextWidth = 0;
+                renderedTextEls.forEach(item => {
+                    try {
+                        const box = item.textEl.getBBox();
+                        item.naturalBox = box;
+                        naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
+                    } catch (_) {
+                        item.naturalBox = {
+                            x: textX,
+                            y: item.baselineY,
+                            width: 0,
+                            height: item.line.fontSize
+                        };
+                    }
+                });
+                _measParent.removeChild(wrapper);
+                naturalTextWidth = Math.max(naturalTextWidth, 0.1);
+                const condenseRatio = condensed ? Math.min(1, safeAreaPx.width / Math.max(naturalTextWidth, 0.0001)) : 1;
+                renderedTextEls.forEach(item => {
+                    if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
+                        ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
+                    else item.textEl.removeAttribute('transform');
+                });
+                if (!proofMode) {
+                    try {
+                        const gb = textGroup.getBBox();
+                        const tcy = gb.y + gb.height / 2;
+                        const vo = safeAreaCenterY - tcy;
+                        textGroup.setAttribute('transform', 'translate(0 ' + vo + ')');
+                    } catch (_) {
+                        textGroup.removeAttribute('transform');
+                    }
+                }
+                return {
+                    wrapper,
+                    clipId: clipPath.getAttribute('id'),
+                    widthIn,
+                    heightIn,
+                    viewBoxWidth: options.viewBoxWidth || 420,
+                    viewBoxHeight: options.viewBoxHeight || 260,
+                    previewWidth,
+                    previewHeight,
+                    offsetX,
+                    offsetY
+                };
+            }
 
-                page.appendChild(svg);
-                proofSheetContainer.appendChild(page);
+            function renderTagContentToGroup(group, measureSvg, tag, data, xIn, yIn, scale, options = {}) {
+                const proofMode = Boolean(options.proofMode);
+                const fragment = buildTagPreviewFragment(tag, data, measureSvg, {
+                    proofMode,
+                    pxPerInch: proofMode ? scale : undefined,
+                    viewBoxWidth: proofMode ? (Math.max(Number(tag.width || 0.25), 0.25) * scale) : (options
+                        .viewBoxWidth || 420),
+                    viewBoxHeight: proofMode ? (Math.max(Number(tag.height || 0.25), 0.25) * scale) : (options
+                        .viewBoxHeight || 260),
+                    showSafeArea: Boolean(options.showSafeArea),
+                    clipId: options.clipId,
+                    cornerRadius: tag.cornerRadius || 'no'
+                });
+                const sourceGroup = fragment.wrapper;
+                if (proofMode) {
+                    sourceGroup.setAttribute('transform', 'translate(' + (xIn * scale) + ' ' + (yIn * scale) + ')');
+                } else {
+                    const targetWidthPx = fragment.widthIn * scale,
+                        targetHeightPx = fragment.heightIn * scale,
+                        translateX = (xIn * scale) - ((fragment.offsetX / fragment.viewBoxWidth) * targetWidthPx),
+                        translateY = (yIn * scale) - ((fragment.offsetY / fragment.viewBoxHeight) * targetHeightPx),
+                        scaleX = targetWidthPx / fragment.viewBoxWidth,
+                        scaleY = targetHeightPx / fragment.viewBoxHeight;
+                    sourceGroup.setAttribute('transform', 'translate(' + translateX + ' ' + translateY + ') scale(' +
+                        scaleX + ' ' + scaleY + ')');
+                }
+                group.appendChild(sourceGroup);
+                return {
+                    textNodeCount: sourceGroup.querySelectorAll('text').length
+                };
+            }
 
-                // ── Tags + per-tag label in the gap below ──
-                pagePlacements.forEach(placement => {
-                    const tg = createSvgEl('g');
-                    svg.appendChild(tg);
-                    renderProofTagToGroup(tg, svg, placement.tag, layout.data, placement.x, placement.y,
-                        scale, {
-                            cornerRadius: placement.tag.cornerRadius || 'no'
-                        });
-                    const tagW = Math.max(0.25, Number(placement.tag.width || 0.25));
-                    const tagH = Math.max(0.25, Number(placement.tag.height || 0.25));
+            function renderProofTagToGroup(group, liveSvg, tag, data, xIn, yIn, scale, opts = {}) {
+                // Direct port of renderDesignPreview logic — renders into live DOM SVG so getBBox works
+                const colorPairValue = colorPair(tag.color || 'black_white');
+                const bgColor = colorPairValue[0],
+                    textColor = colorPairValue[1];
+                const shapeValue = data.shape || 'Rectangle';
+                const widthIn = Math.max(Number(tag.width || 0) || 1, 0.25);
+                const heightIn = Math.max(Number(tag.height || 0) || 1, 0.25);
+                const pxPerInch = scale;
+                const previewWidth = widthIn * pxPerInch,
+                    previewHeight = heightIn * pxPerInch;
+                const offsetX = xIn * scale,
+                    offsetY = yIn * scale;
 
-                    // Label centred in the 0.25" gap below the tag
-                    const labelCX = (placement.x + tagW / 2) * scale;
-                    const labelY = (placement.y + tagH) * scale + (GAP_IN / 2 *
-                        scale); // vertical centre of gap
-                    const tagColor = colorLabel(placement.tag.color || 'black_white');
-                    const labelTxt = 'Sign ' + placement.tag.index + ' · ' + formatThreeDecimals(
-                        tagH) + '" × ' + formatThreeDecimals(tagW) + '" · ' + tagColor;
-                    const lbl = createSvgEl('text', {
-                        x: labelCX,
-                        y: labelY,
+                // Background shape
+                const proofCornerRadiusIn = (opts.cornerRadius === 'yes') ? 0.125 : 0;
+                const proofRadiusValue = proofCornerRadiusIn * scale;
+                renderPreviewShape(group, shapeValue, bgColor, proofRadiusValue, previewWidth, previewHeight, offsetX, offsetY);
+
+                // Holes
+                const effectiveHoles = tag.holes || 'No holes',
+                    effectiveHoleSize = tag.holeSize || '1/8';
+                const hasHoles = Boolean(effectiveHoles && effectiveHoles !== 'No holes');
+                const selectedHoleSpec = getSelectedHoleSpec(effectiveHoles, effectiveHoleSize, widthIn, heightIn);
+                const holeDiameter = selectedHoleSpec && selectedHoleSpec.type === 'round' ? selectedHoleSpec.diameter : (
+                    hasHoles ? getAutoHoleDiameter(widthIn, heightIn) : 0);
+                const geometry = getTagGeometry({
+                    tagWidth: widthIn,
+                    tagHeight: heightIn,
+                    hasHoles,
+                    holeDiameter,
+                    holeQuantity: effectiveHoles,
+                    holeSizeValue: effectiveHoleSize
+                });
+                renderHoleFeatures(group, effectiveHoles, effectiveHoleSize, widthIn, heightIn, offsetX, offsetY, pxPerInch,
+                    textColor);
+
+                // Safe area in px
+                const safeAreaPx = {
+                    x: offsetX + inchesToPx(geometry.safeArea.x, pxPerInch),
+                    y: offsetY + inchesToPx(geometry.safeArea.y, pxPerInch),
+                    width: inchesToPx(geometry.safeArea.width, pxPerInch),
+                    height: inchesToPx(geometry.safeArea.height, pxPerInch)
+                };
+                const safeAreaCenterX = safeAreaPx.x + safeAreaPx.width / 2;
+                const safeAreaCenterY = safeAreaPx.y + safeAreaPx.height / 2;
+
+                // Text alignment
+                const align = tag.align || 'center';
+                const alignmentPadding = pxPerInch * 0.0625;
+                let textAnchor = 'middle', textX = safeAreaCenterX;
+                if (align === 'left') {
+                    textAnchor = 'start';
+                    textX = safeAreaPx.x + alignmentPadding;
+                } else if (align === 'right') {
+                    textAnchor = 'end';
+                    textX = safeAreaPx.x + safeAreaPx.width - alignmentPadding;
+                }
+
+                // Font/spacing — identical to live preview
+                const condensed = (tag.condense || 'no') === 'yes';
+                const spacingMultiplier = getLineSpacingMultiplier(tag.lineSpacing || 'full');
+                const lines = tag.lines && tag.lines.length ? tag.lines : [{
+                    text: 'PREVIEW',
+                    bold: false,
+                    size: '1/4',
+                    customSize: ''
+                }];
+                // In proof mode font size must be based on actual physical inches * pxPerInch
+                // not on portalStageScale which compresses fonts to fit the small proof tag
+                const portalStageScale = previewWidth / Math.max(widthIn * PORTAL_TAG_PX_PER_IN, 1);
+
+                const renderedLines = lines.map(line => {
+                    const requestedHeightIn = parseSizeValueToInches(getEffectiveLineSizeValue(line)) ||
+                        BASELINE_LINE_SIZE_IN;
+                    const fontSize = Math.max(4, requestedHeightIn * pxPerInch);
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const xMetrics = measureReferenceXMetrics(liveSvg, fontSize, fontFamily, line.bold ? 700 : 400);
+                    const lineHeight = Math.max(xMetrics.height * 1.0, xMetrics.height + 2);
+                    const interlineGap = Math.max(0, lineHeight * spacingMultiplier * 0.5);
+                    return {
+                        ...line,
+                        fontSize,
+                        lineHeight,
+                        interlineGap,
+                        ascent: xMetrics.ascent,
+                        textValue: line.text || ''
+                    };
+                });
+
+                const totalBlockHeight = renderedLines.length <= 1 ?
+                    (renderedLines[0] ? renderedLines[0].lineHeight : 0) :
+                    renderedLines.reduce((s, l) => s + l.lineHeight, 0) + renderedLines.slice(0, renderedLines.length - 1)
+                        .reduce((s, l) => s + l.interlineGap, 0);
+
+                let currentY = safeAreaCenterY - totalBlockHeight / 2;
+
+                // Render text directly into liveSvg (must be in DOM for getBBox)
+                const textGroup = createSvgEl('g');
+                liveSvg.appendChild(textGroup);
+                const renderedTextEls = [];
+
+                renderedLines.forEach((line, index) => {
+                    const fontFamily = data.fontFamily || 'Arial, Helvetica, sans-serif';
+                    const baselineY = currentY + ((line.lineHeight - line.fontSize) / 2) + line.ascent;
+                    const textEl = createSvgEl('text', {
+                        x: textX,
+                        y: baselineY,
+                        'text-anchor': textAnchor,
+                        'font-size': line.fontSize,
+                        fill: textColor,
+                        'font-weight': line.bold ? 700 : 400,
+                        'font-family': fontFamily
+                    });
+                    textEl.textContent = line.textValue;
+                    textGroup.appendChild(textEl);
+                    renderedTextEls.push({
+                        line,
+                        textEl,
+                        baselineY
+                    });
+                    currentY += line.lineHeight;
+                    if (index < renderedLines.length - 1) currentY += line.interlineGap;
+                });
+
+                // Measure natural text width — works because textGroup is in live DOM
+                let naturalTextWidth = 0;
+                renderedTextEls.forEach(item => {
+                    try {
+                        const box = item.textEl.getBBox();
+                        item.naturalBox = box;
+                        naturalTextWidth = Math.max(naturalTextWidth, box.width || 0);
+                    } catch (_) {
+                        item.naturalBox = {
+                            x: textX,
+                            y: item.baselineY,
+                            width: 0,
+                            height: item.line.fontSize
+                        };
+                    }
+                });
+                naturalTextWidth = Math.max(naturalTextWidth, 0.1);
+
+                // Condense — identical to live preview
+                const safeTextWidth = geometry.safeArea.width;
+                const naturalTextWidthIn = naturalTextWidth / pxPerInch;
+                const condenseRatio = condensed ? Math.min(1, safeTextWidth / Math.max(naturalTextWidthIn, 0.0001)) : 1;
+                renderedTextEls.forEach(item => {
+                    if (condenseRatio !== 1) item.textEl.setAttribute('transform', 'translate(' + safeAreaCenterX +
+                        ',0) scale(' + condenseRatio + ',1) translate(' + (-safeAreaCenterX) + ',0)');
+                    else item.textEl.removeAttribute('transform');
+                });
+
+                // Vertical centering — identical to live preview
+                try {
+                    const groupBox = textGroup.getBBox();
+                    const textCenterY = groupBox.y + groupBox.height / 2;
+                    const verticalOffset = safeAreaCenterY - textCenterY;
+                    textGroup.setAttribute('transform', 'translate(0 ' + verticalOffset + ')');
+                } catch (_) {
+                    textGroup.removeAttribute('transform');
+                }
+
+                // Move textGroup into the caller's group now that measuring is done
+                group.appendChild(textGroup);
+            }
+
+            function renderProofSheets() {
+                if (!proofSheetContainer || !latestQuotePayload) return;
+                const layout = buildProofLayoutPages(latestQuotePayload),
+                    scale = 96;
+                const GAP_IN = 0.25; // must match buildProofLayoutPages gapIn
+                proofSheetContainer.innerHTML = '';
+                layout.pages.forEach((pagePlacements, pageIndex) => {
+                    const page = document.createElement('div');
+                    page.className = 'proof-sheet-page';
+                    const svgW = layout.sheetWidthIn * scale,
+                        svgH = layout.sheetHeightIn * scale;
+                    const svg = createSvgEl('svg', {
+                        viewBox: '0 0 ' + svgW + ' ' + svgH,
+                        xmlns: SVG_NS
+                    });
+                    svg.appendChild(createSvgEl('rect', {
+                        x: 0,
+                        y: 0,
+                        width: svgW,
+                        height: svgH,
+                        fill: '#ffffff'
+                    }));
+
+                    // ── Header — top centre ──
+                    const cx = svgW / 2;
+                    const jobNameVal = String((layout.data && layout.data.jobName) || '').trim();
+                    // orderNum only exists after Place Order — omit from proof if not yet assigned
+                    const orderNumVal = String((latestQuotePayload && latestQuotePayload.orderNum) ||
+                        (layout.data && layout.data.orderNum) || '').trim();
+
+                    // Line 1: Company name
+                    const hdrTitle = createSvgEl('text', {
+                        x: cx,
+                        y: 44,
                         'text-anchor': 'middle',
-                        'dominant-baseline': 'middle',
-                        'font-size': 9.5 * (scale / 96),
-                        fill: '#6b7280',
+                        'font-size': 22,
+                        'font-weight': 700,
+                        fill: '#111827',
                         'font-family': 'Arial, Helvetica, sans-serif'
                     });
-                    lbl.textContent = labelTxt;
-                    svg.appendChild(lbl);
+                    hdrTitle.textContent = 'Accurate Signs & Engraving';
+                    svg.appendChild(hdrTitle);
+
+                    // Line 2: Order · Job · Page
+                    let subParts = [];
+                    if (orderNumVal) subParts.push(orderNumVal);
+                    if (jobNameVal) subParts.push('Job: ' + jobNameVal);
+                    subParts.push('Page ' + (pageIndex + 1) + ' of ' + layout.pages.length);
+                    const hdrSub = createSvgEl('text', {
+                        x: cx,
+                        y: 70,
+                        'text-anchor': 'middle',
+                        'font-size': 16,
+                        fill: '#640100',
+                        'font-family': 'Arial, Helvetica, sans-serif'
+                    });
+                    hdrSub.textContent = subParts.join(' · ');
+                    svg.appendChild(hdrSub);
+
+                    page.appendChild(svg);
+                    proofSheetContainer.appendChild(page);
+
+                    // ── Tags + per-tag label in the gap below ──
+                    pagePlacements.forEach(placement => {
+                        const tg = createSvgEl('g');
+                        svg.appendChild(tg);
+                        renderProofTagToGroup(tg, svg, placement.tag, layout.data, placement.x, placement.y,
+                            scale, {
+                            cornerRadius: placement.tag.cornerRadius || 'no'
+                        });
+                        const tagW = Math.max(0.25, Number(placement.tag.width || 0.25));
+                        const tagH = Math.max(0.25, Number(placement.tag.height || 0.25));
+
+                        // Label centred in the 0.25" gap below the tag
+                        const labelCX = (placement.x + tagW / 2) * scale;
+                        const labelY = (placement.y + tagH) * scale + (GAP_IN / 2 *
+                            scale); // vertical centre of gap
+                        const tagColor = colorLabel(placement.tag.color || 'black_white');
+                        const labelTxt = 'Sign ' + placement.tag.index + ' · ' + formatThreeDecimals(
+                            tagH) + '" × ' + formatThreeDecimals(tagW) + '" · ' + tagColor;
+                        const lbl = createSvgEl('text', {
+                            x: labelCX,
+                            y: labelY,
+                            'text-anchor': 'middle',
+                            'dominant-baseline': 'middle',
+                            'font-size': 9.5 * (scale / 96),
+                            fill: '#6b7280',
+                            'font-family': 'Arial, Helvetica, sans-serif'
+                        });
+                        lbl.textContent = labelTxt;
+                        svg.appendChild(lbl);
+                    });
+                });
+                const zoomValue = Number(proofZoomRange && proofZoomRange.value ? proofZoomRange.value : 150);
+                proofSheetContainer.style.transform = 'scale(' + (zoomValue / 100) + ')';
+            }
+
+            function openProofReviewStep() {
+                if (proofSummaryBlock && latestQuotePayload) {
+                    const result = latestQuotePayload.result || {},
+                        data = latestQuotePayload.data || {};
+                    const pcv = (result.signData || []).map(tag => tag.color || 'black_white');
+                    const phm = pcv.length > 0 && !pcv.every(v => v === pcv[0]);
+                    proofSummaryBlock.innerHTML = [
+                        ['Job name', getSafeQuoteField(data.jobName)],
+                        ['Total pieces', result.totalPieces],
+                        ['Size', result.sameSize ? result.sizeLabel : 'Mixed'],
+                        ['Material', materialLabel(data.material)],
+                        ['Color', phm ? 'Mixed' : colorLabel(pcv[0] || 'black_white')],
+                        ['Holes', data.holes],
+                        ['Product total', currency(result.subtotal || 0)]
+                    ].map(p => '<div class="quote-line"><span>' + esc(p[0]) + '</span><strong>' + esc(String(p[1] ||
+                        '—')) + '</strong></div>').join('');
+                }
+                if (orderInfoStep) orderInfoStep.classList.add('hidden');
+                if (proofReviewStep) proofReviewStep.classList.remove('hidden');
+                if (proofApprovalCheckbox) proofApprovalCheckbox.checked = false;
+                updateProofApprovalState();
+                // Render AFTER proof step is visible so getBBox works correctly
+                requestAnimationFrame(() => renderProofSheets());
+            }
+
+            function backToOrderInfoStep() {
+                if (proofReviewStep) proofReviewStep.classList.add('hidden');
+                if (orderInfoStep) orderInfoStep.classList.remove('hidden');
+                if (proofValidationMessage) {
+                    proofValidationMessage.textContent = '';
+                    proofValidationMessage.classList.remove('show');
+                }
+            }
+
+            function getSelectedOrderShippingCost() {
+                if (!orderShipping) return 0;
+                const subtotal = latestQuotePayload ? (latestQuotePayload.result || {}).subtotal || 0 : 0;
+                const method = orderShipping.value;
+                // Orders over $100 get free UPS Ground
+                if (method === 'ground' && subtotal >= 100) return 0;
+                return PRICING.shippingRates[method] ?? 0;
+            }
+
+            function syncBillingAddressState() {
+                const same = !billingSameAsShipping || billingSameAsShipping.checked;
+                if (billingAddressFields) billingAddressFields.classList.toggle('hidden', same);
+                [billingAddress, billingCity, billingState, billingZip].forEach(f => {
+                    if (!f) return;
+                    f.disabled = same;
+                });
+                if (same) {
+                    if (billingAddress) billingAddress.value = orderAddress ? orderAddress.value : '';
+                    if (billingCity) billingCity.value = orderCity ? orderCity.value : '';
+                    if (billingState) billingState.value = orderState ? orderState.value : '';
+                    if (billingZip) billingZip.value = orderZip ? orderZip.value : '';
+                }
+            }
+
+            function refreshOrderTotals() {
+                if (!orderTotals || !latestQuotePayload) return;
+                const result = latestQuotePayload.result || {};
+                const subtotal = result.subtotal || 0;
+                const method = orderShipping ? orderShipping.value : 'ground';
+                const baseShipping = PRICING.shippingRates[method] ?? 0;
+                const freeGround = method === 'ground' && subtotal >= 100;
+                const shippingCost = freeGround ? 0 : baseShipping;
+                const rows = [
+                    ['Subtotal', currency(result.rawSubtotal || 0)],
+                    result.minimumApplied ? ['Minimum applied', '$25'] : null,
+                    ['Product total', currency(subtotal)],
+                    freeGround ? ['UPS Ground', 'Free — orders over $100'] : ['Shipping', currency(shippingCost)],
+                    ['Final total', currency(subtotal + shippingCost)]
+                ].filter(Boolean);
+                orderTotals.innerHTML = rows.map(p => '<div class="quote-line"><span>' + esc(p[0]) + '</span><strong>' +
+                    esc(String(p[1])) + '</strong></div>').join('');
+            }
+
+            if (orderClose) orderClose.onclick = closeOrderModal;
+            if (orderBackToQuote) orderBackToQuote.onclick = () => {
+                closeOrderModal();
+                if (latestQuotePayload) openQuoteModal(latestQuotePayload);
+            };
+            if (orderModal) orderModal.onclick = e => {
+                if (e.target === orderModal) closeOrderModal();
+            };
+            if (orderShipping) orderShipping.onchange = () => {
+                refreshOrderTotals();
+                updatePlaceOrderState();
+            };
+            [orderAddress, orderCity, orderState, orderZip, billingAddress, billingCity, billingState, billingZip,
+                paymentCardholder, paymentCardNumber, paymentExpiry, paymentCvv, paymentBillingZip
+            ].forEach(field => {
+                if (!field) return;
+                field.addEventListener('input', () => {
+                    syncBillingAddressState();
+                    updatePlaceOrderState();
+                    checkSaveAddressNudge();
+                    checkSaveBillingAddressNudge();
+                });
+                field.addEventListener('change', () => {
+                    syncBillingAddressState();
+                    updatePlaceOrderState();
+                    checkSaveAddressNudge();
+                    checkSaveBillingAddressNudge();
                 });
             });
-            const zoomValue = Number(proofZoomRange && proofZoomRange.value ? proofZoomRange.value : 150);
-            proofSheetContainer.style.transform='scale(' + (zoomValue / 100) + ')';
-        }
 
-        function openProofReviewStep() {
-            if (proofSummaryBlock && latestQuotePayload) {
-                const result = latestQuotePayload.result || {},
-                    data = latestQuotePayload.data || {};
-                const pcv = (result.signData || []).map(tag => tag.color || 'black_white');
-                const phm = pcv.length > 0 && !pcv.every(v => v === pcv[0]);
-                proofSummaryBlock.innerHTML = [
-                    ['Job name', getSafeQuoteField(data.jobName)],
-                    ['Total pieces', result.totalPieces],
-                    ['Size', result.sameSize ? result.sizeLabel : 'Mixed'],
-                    ['Material', materialLabel(data.material)],
-                    ['Color', phm ? 'Mixed' : colorLabel(pcv[0] || 'black_white')],
-                    ['Holes', data.holes],
-                    ['Product total', currency(result.subtotal || 0)]
-                ].map(p => '<div class="quote-line"><span>' + esc(p[0]) + '</span><strong>' + esc(String(p[1] ||
-                    '—')) + '</strong></div>').join('');
-            }
-            if (orderInfoStep) orderInfoStep.classList.add('hidden');
-            if (proofReviewStep) proofReviewStep.classList.remove('hidden');
-            if (proofApprovalCheckbox) proofApprovalCheckbox.checked = false;
-            updateProofApprovalState();
-            // Render AFTER proof step is visible so getBBox works correctly
-            requestAnimationFrame(() => renderProofSheets());
-        }
+            // ── Smart save-address nudge ──
+            const saveAddressNudge = document.getElementById('saveAddressNudge');
+            const nudgeSaveAddressBtn = document.getElementById('nudgeSaveAddressBtn');
+            const nudgeDismissAddressBtn = document.getElementById('nudgeDismissAddressBtn');
+            let addressNudgeDismissed = false;
 
-        function backToOrderInfoStep() {
-            if (proofReviewStep) proofReviewStep.classList.add('hidden');
-            if (orderInfoStep) orderInfoStep.classList.remove('hidden');
-            if(proofValidationMessage){proofValidationMessage.textContent='';
-            proofValidationMessage.classList.remove('show');
-        }
-        }
-
-        function getSelectedOrderShippingCost() {
-            if (!orderShipping) return 0;
-            const subtotal = latestQuotePayload ? (latestQuotePayload.result || {}).subtotal || 0 : 0;
-            const method = orderShipping.value;
-            // Orders over $100 get free UPS Ground
-            if (method === 'ground' && subtotal >= 100) return 0;
-            return PRICING.shippingRates[method] ?? 0;
-        }
-
-        function syncBillingAddressState() {
-            const same = !billingSameAsShipping || billingSameAsShipping.checked;
-            if (billingAddressFields) billingAddressFields.classList.toggle('hidden', same);
-            [billingAddress, billingCity, billingState, billingZip].forEach(f => {
-                if (!f) return;
-                f.disabled = same;
-            });
-            if (same) {
-                if (billingAddress) billingAddress.value = orderAddress ? orderAddress.value : '';
-                if (billingCity) billingCity.value = orderCity ? orderCity.value : '';
-                if (billingState) billingState.value = orderState ? orderState.value : '';
-                if (billingZip) billingZip.value = orderZip ? orderZip.value : '';
-            }
-        }
-
-        function refreshOrderTotals() {
-            if (!orderTotals || !latestQuotePayload) return;
-            const result = latestQuotePayload.result || {};
-            const subtotal = result.subtotal || 0;
-            const method = orderShipping ? orderShipping.value : 'ground';
-            const baseShipping = PRICING.shippingRates[method] ?? 0;
-            const freeGround=method==='ground' && subtotal >= 100;
-            const shippingCost = freeGround ? 0 : baseShipping;
-            const rows = [
-                ['Subtotal', currency(result.rawSubtotal || 0)],
-                result.minimumApplied ? ['Minimum applied', '$25'] : null,
-                ['Product total', currency(subtotal)],
-                freeGround ? ['UPS Ground', 'Free — orders over $100'] : ['Shipping', currency(shippingCost)],
-                ['Final total', currency(subtotal + shippingCost)]
-            ].filter(Boolean);
-            orderTotals.innerHTML = rows.map(p => '<div class="quote-line"><span>' + esc(p[0]) + '</span><strong>' +
-                esc(String(p[1])) + '</strong></div>').join('');
-        }
-
-        if (orderClose) orderClose.onclick = closeOrderModal;
-        if (orderBackToQuote) orderBackToQuote.onclick = () => {
-            closeOrderModal();
-            if (latestQuotePayload) openQuoteModal(latestQuotePayload);
-        };
-        if (orderModal) orderModal.onclick = e => {
-            if (e.target === orderModal) closeOrderModal();
-        };
-        if (orderShipping) orderShipping.onchange = () => {
-            refreshOrderTotals();
-            updatePlaceOrderState();
-        };
-        [orderAddress, orderCity, orderState, orderZip, billingAddress, billingCity, billingState, billingZip,
-            paymentCardholder, paymentCardNumber, paymentExpiry, paymentCvv, paymentBillingZip
-        ].forEach(field => {
-            if (!field) return;
-            field.addEventListener('input', () => {
-                syncBillingAddressState();
-                updatePlaceOrderState();
-                checkSaveAddressNudge();
-                checkSaveBillingAddressNudge();
-            });
-            field.addEventListener('change', () => {
-                syncBillingAddressState();
-                updatePlaceOrderState();
-                checkSaveAddressNudge();
-                checkSaveBillingAddressNudge();
-            });
-        });
-
-        // ── Smart save-address nudge ──
-        const saveAddressNudge = document.getElementById('saveAddressNudge');
-        const nudgeSaveAddressBtn = document.getElementById('nudgeSaveAddressBtn');
-        const nudgeDismissAddressBtn = document.getElementById('nudgeDismissAddressBtn');
-        let addressNudgeDismissed = false;
-
-        function addressFieldsFilled() {
-            return [orderAddress, orderCity, orderState, orderZip].every(f => f && String(f.value || '').trim().length >
-                0);
-        }
-
-        async function checkSaveAddressNudge() {
-            if (!saveAddressNudge) return;
-            if (!authUser) {
-                saveAddressNudge.classList.add('hidden');
-                saveAddressNudge.style.display='none';
-                return;
-            }
-            if (addressNudgeDismissed) return;
-            if (!addressFieldsFilled()) {
-                saveAddressNudge.classList.add('hidden');
-                saveAddressNudge.style.display='none';
-                return;
+            function addressFieldsFilled() {
+                return [orderAddress, orderCity, orderState, orderZip].every(f => f && String(f.value || '').trim().length >
+                    0);
             }
 
-            // Check if this address is already saved
-            const street = orderAddress ? orderAddress.value.trim().toLowerCase() : '';
-            const zip = orderZip ? orderZip.value.trim() : '';
-            const addresses = await wpGetMeta(META_ADDRESSES) || [];
-            const alreadySaved = addresses.some(a =>
-                (a.street || '').toLowerCase() === street && (a.zip || '') === zip
-            );
+            async function checkSaveAddressNudge() {
+                if (!saveAddressNudge) return;
+                if (!authUser) {
+                    saveAddressNudge.classList.add('hidden');
+                    saveAddressNudge.style.display = 'none';
+                    return;
+                }
+                if (addressNudgeDismissed) return;
+                if (!addressFieldsFilled()) {
+                    saveAddressNudge.classList.add('hidden');
+                    saveAddressNudge.style.display = 'none';
+                    return;
+                }
 
-            if (alreadySaved) {
-                saveAddressNudge.classList.add('hidden');
-                saveAddressNudge.style.display='none';
-            } else {
-                saveAddressNudge.classList.remove('hidden');
-                saveAddressNudge.style.display='flex';
-            }
-        }
-
-        if (nudgeDismissAddressBtn) {
-            nudgeDismissAddressBtn.addEventListener('click', () => {
-                addressNudgeDismissed = true;
-                saveAddressNudge.classList.add('hidden');
-                saveAddressNudge.style.display='none';
-            });
-        }
-
-        if (nudgeSaveAddressBtn) {
-            nudgeSaveAddressBtn.addEventListener('click', async () => {
-                const street = orderAddress ? orderAddress.value.trim() : '';
-                const city = orderCity ? orderCity.value.trim() : '';
-                const state = orderState ? orderState.value.trim() : '';
+                // Check if this address is already saved
+                const street = orderAddress ? orderAddress.value.trim().toLowerCase() : '';
                 const zip = orderZip ? orderZip.value.trim() : '';
-                if (!street) return;
-                const nickname = window.prompt('Give this address a nickname (e.g. "Main Office"):', city ?
-                    city + ' Location' : '');
-                if (nickname === null) return;
-                const newAddr = {
-                    nickname: nickname.trim() || city + ' Location',
-                    street,
-                    city,
-                    state,
-                    zip
-                };
-                let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                addresses.unshift(newAddr);
-                await wpSetMeta(META_ADDRESSES, addresses);
-                populateSavedAddressPicker(addresses);
-                saveAddressNudge.classList.add('hidden');
-                saveAddressNudge.style.display='none';
-                addressNudgeDismissed = true;
-                // Brief confirmation
-                nudgeSaveAddressBtn.textContent = 'Saved ✓';
-                setTimeout(() => {
-                    nudgeSaveAddressBtn.textContent = 'Save';
-                }, 2000);
-            });
-        }
-
-        // Reset nudge dismissed state each time the order modal opens (handled in quoteModalContinue click above)
-
-        // ── Billing address: saved picker + save nudge ──
-        const savedBillingAddressPicker = document.getElementById('savedBillingAddressPicker');
-        const saveBillingAddressNudge = document.getElementById('saveBillingAddressNudge');
-        const nudgeSaveBillingAddressBtn = document.getElementById('nudgeSaveBillingAddressBtn');
-        const nudgeDismissBillingAddressBtn = document.getElementById('nudgeDismissBillingAddressBtn');
-        let billingNudgeDismissed = false;
-
-        // Apply selected saved address to billing fields
-        if (savedBillingAddressPicker) {
-            savedBillingAddressPicker.addEventListener('change', async () => {
-                const idx = parseInt(savedBillingAddressPicker.value, 10);
-                if (isNaN(idx)) return;
                 const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                const a = addresses[idx];
-                if (!a) return;
-                if (billingAddress) billingAddress.value = a.street || '';
-                if (billingCity) billingCity.value = a.city || '';
-                if (billingState) billingState.value = a.state || '';
-                if (billingZip) billingZip.value = a.zip || '';
+                const alreadySaved = addresses.some(a =>
+                    (a.street || '').toLowerCase() === street && (a.zip || '') === zip
+                );
+
+                if (alreadySaved) {
+                    saveAddressNudge.classList.add('hidden');
+                    saveAddressNudge.style.display = 'none';
+                } else {
+                    saveAddressNudge.classList.remove('hidden');
+                    saveAddressNudge.style.display = 'flex';
+                }
+            }
+
+            if (nudgeDismissAddressBtn) {
+                nudgeDismissAddressBtn.addEventListener('click', () => {
+                    addressNudgeDismissed = true;
+                    saveAddressNudge.classList.add('hidden');
+                    saveAddressNudge.style.display = 'none';
+                });
+            }
+
+            if (nudgeSaveAddressBtn) {
+                nudgeSaveAddressBtn.addEventListener('click', async () => {
+                    const street = orderAddress ? orderAddress.value.trim() : '';
+                    const city = orderCity ? orderCity.value.trim() : '';
+                    const state = orderState ? orderState.value.trim() : '';
+                    const zip = orderZip ? orderZip.value.trim() : '';
+                    if (!street) return;
+                    const nickname = window.prompt('Give this address a nickname (e.g. "Main Office"):', city ?
+                        city + ' Location' : '');
+                    if (nickname === null) return;
+                    const newAddr = {
+                        nickname: nickname.trim() || city + ' Location',
+                        street,
+                        city,
+                        state,
+                        zip
+                    };
+                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
+                    addresses.unshift(newAddr);
+                    await wpSetMeta(META_ADDRESSES, addresses);
+                    populateSavedAddressPicker(addresses);
+                    saveAddressNudge.classList.add('hidden');
+                    saveAddressNudge.style.display = 'none';
+                    addressNudgeDismissed = true;
+                    // Brief confirmation
+                    nudgeSaveAddressBtn.textContent = 'Saved ✓';
+                    setTimeout(() => {
+                        nudgeSaveAddressBtn.textContent = 'Save';
+                    }, 2000);
+                });
+            }
+
+            // Reset nudge dismissed state each time the order modal opens (handled in quoteModalContinue click above)
+
+            // ── Billing address: saved picker + save nudge ──
+            const savedBillingAddressPicker = document.getElementById('savedBillingAddressPicker');
+            const saveBillingAddressNudge = document.getElementById('saveBillingAddressNudge');
+            const nudgeSaveBillingAddressBtn = document.getElementById('nudgeSaveBillingAddressBtn');
+            const nudgeDismissBillingAddressBtn = document.getElementById('nudgeDismissBillingAddressBtn');
+            let billingNudgeDismissed = false;
+
+            // Apply selected saved address to billing fields
+            if (savedBillingAddressPicker) {
+                savedBillingAddressPicker.addEventListener('change', async () => {
+                    const idx = parseInt(savedBillingAddressPicker.value, 10);
+                    if (isNaN(idx)) return;
+                    const addresses = await wpGetMeta(META_ADDRESSES) || [];
+                    const a = addresses[idx];
+                    if (!a) return;
+                    if (billingAddress) billingAddress.value = a.street || '';
+                    if (billingCity) billingCity.value = a.city || '';
+                    if (billingState) billingState.value = a.state || '';
+                    if (billingZip) billingZip.value = a.zip || '';
+                    syncBillingAddressState();
+                    updatePlaceOrderState();
+                    checkSaveBillingAddressNudge();
+                    setTimeout(() => {
+                        savedBillingAddressPicker.value = '';
+                    }, 300);
+                });
+            }
+
+            function billingFieldsFilled() {
+                return [billingAddress, billingCity, billingState, billingZip].every(f => f && String(f.value || '').trim()
+                    .length > 0);
+            }
+
+            async function checkSaveBillingAddressNudge() {
+                if (!saveBillingAddressNudge) return;
+                // Only show when billing fields are visible (not same-as-shipping)
+                const billingVisible = billingSameAsShipping && !billingSameAsShipping.checked;
+                if (!authUser || !billingVisible || billingNudgeDismissed || !billingFieldsFilled()) {
+                    saveBillingAddressNudge.classList.add('hidden');
+                    saveBillingAddressNudge.style.display = 'none';
+                    return;
+                }
+                const street = billingAddress ? billingAddress.value.trim().toLowerCase() : '';
+                const zip = billingZip ? billingZip.value.trim() : '';
+                const addresses = await wpGetMeta(META_ADDRESSES) || [];
+                const alreadySaved = addresses.some(a => (a.street || '').toLowerCase() === street && (a.zip || '') ===
+                    zip);
+                if (alreadySaved) {
+                    saveBillingAddressNudge.classList.add('hidden');
+                    saveBillingAddressNudge.style.display = 'none';
+                } else {
+                    saveBillingAddressNudge.classList.remove('hidden');
+                    saveBillingAddressNudge.style.display = 'flex';
+                }
+            }
+
+            if (nudgeDismissBillingAddressBtn) {
+                nudgeDismissBillingAddressBtn.addEventListener('click', () => {
+                    billingNudgeDismissed = true;
+                    saveBillingAddressNudge.classList.add('hidden');
+                    saveBillingAddressNudge.style.display = 'none';
+                });
+            }
+
+            if (nudgeSaveBillingAddressBtn) {
+                nudgeSaveBillingAddressBtn.addEventListener('click', async () => {
+                    const street = billingAddress ? billingAddress.value.trim() : '';
+                    const city = billingCity ? billingCity.value.trim() : '';
+                    const state = billingState ? billingState.value.trim() : '';
+                    const zip = billingZip ? billingZip.value.trim() : '';
+                    if (!street) return;
+                    const nickname = window.prompt('Give this address a nickname (e.g. "Billing Office"):',
+                        city ? city + ' Billing' : '');
+                    if (nickname === null) return;
+                    const newAddr = {
+                        nickname: nickname.trim() || city + ' Billing',
+                        street,
+                        city,
+                        state,
+                        zip
+                    };
+                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
+                    addresses.unshift(newAddr);
+                    await wpSetMeta(META_ADDRESSES, addresses);
+                    populateSavedAddressPicker(addresses);
+                    saveBillingAddressNudge.classList.add('hidden');
+                    saveBillingAddressNudge.style.display = 'none';
+                    billingNudgeDismissed = true;
+                    nudgeSaveBillingAddressBtn.textContent = 'Saved ✓';
+                    setTimeout(() => {
+                        nudgeSaveBillingAddressBtn.textContent = 'Save address';
+                    }, 2000);
+                });
+            }
+            if (billingSameAsShipping) billingSameAsShipping.addEventListener('change', () => {
                 syncBillingAddressState();
                 updatePlaceOrderState();
-                checkSaveBillingAddressNudge();
-                setTimeout(() => {
-                    savedBillingAddressPicker.value = '';
-                }, 300);
             });
-        }
-
-        function billingFieldsFilled() {
-            return [billingAddress, billingCity, billingState, billingZip].every(f => f && String(f.value || '').trim()
-                .length > 0);
-        }
-
-        async function checkSaveBillingAddressNudge() {
-            if (!saveBillingAddressNudge) return;
-            // Only show when billing fields are visible (not same-as-shipping)
-            const billingVisible = billingSameAsShipping && !billingSameAsShipping.checked;
-            if (!authUser || !billingVisible || billingNudgeDismissed || !billingFieldsFilled()) {
-                saveBillingAddressNudge.classList.add('hidden');
-                saveBillingAddressNudge.style.display='none';
-                return;
-            }
-            const street = billingAddress ? billingAddress.value.trim().toLowerCase() : '';
-            const zip = billingZip ? billingZip.value.trim() : '';
-            const addresses = await wpGetMeta(META_ADDRESSES) || [];
-            const alreadySaved = addresses.some(a => (a.street || '').toLowerCase() === street && (a.zip || '') ===
-                zip);
-            if (alreadySaved) {
-                saveBillingAddressNudge.classList.add('hidden');
-                saveBillingAddressNudge.style.display='none';
-            } else {
-                saveBillingAddressNudge.classList.remove('hidden');
-                saveBillingAddressNudge.style.display='flex';
-            }
-        }
-
-        if (nudgeDismissBillingAddressBtn) {
-            nudgeDismissBillingAddressBtn.addEventListener('click', () => {
-                billingNudgeDismissed = true;
-                saveBillingAddressNudge.classList.add('hidden');
-                saveBillingAddressNudge.style.display='none';
+            if (continueToProofBtn) continueToProofBtn.onclick = () => {
+                const vm = validateOrderStep();
+                if (vm) {
+                    setOrderValidationMessage(vm);
+                    updatePlaceOrderState();
+                    return;
+                }
+                setOrderValidationMessage('');
+                openProofReviewStep();
+            };
+            if (backToOrderInfoBtn) backToOrderInfoBtn.onclick = backToOrderInfoStep;
+            if (proofApprovalCheckbox) proofApprovalCheckbox.addEventListener('change', updateProofApprovalState);
+            if (proofZoomRange) proofZoomRange.addEventListener('input', () => {
+                const zv = Number(proofZoomRange.value || 100);
+                if (proofZoomValue) proofZoomValue.textContent = `${zv}%`;
+                if (proofSheetContainer) proofSheetContainer.style.transform = `scale(${zv / 100})`;
             });
-        }
+            if (downloadProofBtn) downloadProofBtn.addEventListener('click', () => {
+                if (!latestQuotePayload) return;
 
-        if (nudgeSaveBillingAddressBtn) {
-            nudgeSaveBillingAddressBtn.addEventListener('click', async () => {
-                const street = billingAddress ? billingAddress.value.trim() : '';
-                const city = billingCity ? billingCity.value.trim() : '';
-                const state = billingState ? billingState.value.trim() : '';
-                const zip = billingZip ? billingZip.value.trim() : '';
-                if (!street) return;
-                const nickname = window.prompt('Give this address a nickname (e.g. "Billing Office"):',
-                    city ? city + ' Billing' : '');
-                if (nickname === null) return;
-                const newAddr = {
-                    nickname: nickname.trim() || city + ' Billing',
-                    street,
-                    city,
-                    state,
-                    zip
+                // Grab the SVGs already rendered in the proof sheet container
+                const renderedPages = Array.from(proofSheetContainer.querySelectorAll('.proof-sheet-page svg'));
+                if (!renderedPages.length) {
+                    window.alert(
+                        'Please open the proof review first so the proof can render, then click Download Proof.'
+                    );
+                    return;
+                }
+
+                const customerName = (latestQuotePayload.data && latestQuotePayload.data.customerName) ?
+                    String(latestQuotePayload.data.customerName) : 'Proof';
+                const dateStr = new Date().toLocaleDateString();
+
+                // Serialize each already-rendered SVG to a string
+                const serializer = new XMLSerializer();
+                const pagesDivs = renderedPages.map(function (svg, i) {
+                    // Clone so we don't mutate the displayed proof
+                    const clone = svg.cloneNode(true);
+                    // Make sure it fills the page width
+                    clone.style.cssText = 'width:100%;height:auto;display:block;';
+                    clone.removeAttribute('width');
+                    clone.removeAttribute('height');
+                    const svgStr = serializer.serializeToString(clone);
+                    const breakStyle = i < renderedPages.length - 1 ?
+                        'page-break-after:always;' : '';
+                    return '<div style="' + breakStyle + 'width:100%;padding:0;margin:0;">' + svgStr +
+                        '</div>';
+                }).join('');
+
+                const printHtml = '<!DOCTYPE html><html><head>' +
+                    '<meta charset="UTF-8">' +
+                    '<title>Proof - ' + customerName + '</title>' +
+                    '<style>' +
+                    '* { box-sizing:border-box; margin:0; padding:0; }' +
+                    'body { background:#fff; font-family:Arial,Helvetica,sans-serif; }' +
+                    '#toolbar { background:#640100; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; }' +
+                    '#toolbar p { font-size:14px; font-weight:700; margin:0; }' +
+                    '#toolbar small { font-size:12px; font-weight:400; opacity:0.85; }' +
+                    '#pdfBtn { background:#fff; color:#640100; border:none; border-radius:8px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; white-space:nowrap; }' +
+                    '#pdfBtn:hover { background:#f5f5f5; }' +
+                    'svg { width:100%; height:auto; display:block; }' +
+                    '@media print { #toolbar { display:none; } }' +
+                    '@page { size:landscape; margin:0.25in; }' +
+                    '</style>' +
+                    '</head><body>' +
+                    '<div id="toolbar">' +
+                    '  <div>' +
+                    '    <p>Accurate Signs &amp; Engraving &mdash; Proof for ' + customerName + ' &mdash; ' +
+                    dateStr + '</p>' +
+                    '    <small>Click &ldquo;Save as PDF&rdquo; below &rarr; in the print dialog, set destination to <strong>Save as PDF</strong></small>' +
+                    '  </div>' +
+                    '  <button id="pdfBtn" onclick="window.print()">&#x2193; Save as PDF</button>' +
+                    '</div>' +
+                    pagesDivs +
+                    '</body></html>';
+
+                const printWin = window.open('', '_blank', 'width=1200,height=850');
+                if (!printWin) {
+                    window.alert('Popup was blocked. Please allow popups for this page and try again.');
+                    return;
+                }
+                printWin.document.open();
+                printWin.document.write(printHtml);
+                printWin.document.close();
+            });
+            if (placeOrderBtn) placeOrderBtn.onclick = () => {
+                if (!proofApprovalCheckbox || !proofApprovalCheckbox.checked) {
+                    if (proofValidationMessage) {
+                        proofValidationMessage.textContent = 'Please approve the proof before placing your order.'
+                            ;
+                        proofValidationMessage.classList.add('show');
+                    }
+                    updateProofApprovalState();
+                    return;
+                }
+                if (proofValidationMessage) {
+                    proofValidationMessage.textContent = '';
+                    proofValidationMessage.classList.remove('show');
+                }
+
+                const orderInfo = {
+                    name: orderName ? orderName.value : '',
+                    company: orderCompany ? orderCompany.value : '',
+                    email: orderEmail ? orderEmail.value : '',
+                    phone: orderPhone ? orderPhone.value : '',
+                    address: orderAddress ? orderAddress.value : '',
+                    city: orderCity ? orderCity.value : '',
+                    state: orderState ? orderState.value : '',
+                    zip: orderZip ? orderZip.value : '',
+                    shipping: orderShipping ? orderShipping.value : 'ground',
+                    shippingCost: getSelectedOrderShippingCost(),
+                    cardholder: paymentCardholder ? paymentCardholder.value : '',
+                    cardLast4: paymentCardNumber ? String(paymentCardNumber.value || '').replace(/\s/g, '').slice(-4) : '',
+                    expiry: paymentExpiry ? paymentExpiry.value : '',
                 };
-                let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                addresses.unshift(newAddr);
-                await wpSetMeta(META_ADDRESSES, addresses);
-                populateSavedAddressPicker(addresses);
-                saveBillingAddressNudge.classList.add('hidden');
-                saveBillingAddressNudge.style.display='none';
-                billingNudgeDismissed = true;
-                nudgeSaveBillingAddressBtn.textContent = 'Saved ✓';
-                setTimeout(() => {
-                    nudgeSaveBillingAddressBtn.textContent = 'Save address';
-                }, 2000);
-            });
-        }
-        if (billingSameAsShipping) billingSameAsShipping.addEventListener('change', () => {
-            syncBillingAddressState();
-            updatePlaceOrderState();
-        });
-        if (continueToProofBtn) continueToProofBtn.onclick = () => {
-            const vm = validateOrderStep();
-            if (vm) {
-                setOrderValidationMessage(vm);
-                updatePlaceOrderState();
-                return;
-            }
-            setOrderValidationMessage('');
-            openProofReviewStep();
-        };
-        if (backToOrderInfoBtn) backToOrderInfoBtn.onclick = backToOrderInfoStep;
-        if (proofApprovalCheckbox) proofApprovalCheckbox.addEventListener('change', updateProofApprovalState);
-        if (proofZoomRange) proofZoomRange.addEventListener('input', () => {
-            const zv = Number(proofZoomRange.value || 100);
-            if (proofZoomValue) proofZoomValue.textContent = `${zv}%`;
-            if (proofSheetContainer) proofSheetContainer.style.transform = `scale(${zv/100})`;
-        });
-        if (downloadProofBtn) downloadProofBtn.addEventListener('click', () => {
-            if (!latestQuotePayload) return;
+                const enrichedPayload = Object.assign({}, latestQuotePayload, {
+                    orderInfo
+                });
+                const payloadJson = JSON.stringify(enrichedPayload);
 
-            // Grab the SVGs already rendered in the proof sheet container
-            const renderedPages = Array.from(proofSheetContainer.querySelectorAll('.proof-sheet-page svg'));
-            if (!renderedPages.length) {
-                window.alert(
-                    'Please open the proof review first so the proof can render, then click Download Proof.'
-                );
-                return;
-            }
+                const prodWin = window.open('', '_blank', 'width=1200,height=900');
+                if (!prodWin) {
+                    window.alert('Popup was blocked. Please allow popups for this page and try again.');
+                    return;
+                }
 
-            const customerName = (latestQuotePayload.data && latestQuotePayload.data.customerName) ?
-                String(latestQuotePayload.data.customerName) : 'Proof';
-            const dateStr = new Date().toLocaleDateString();
+                const prodHtml = buildProductionSheetHtml(payloadJson);
+                prodWin.document.open();
+                prodWin.document.write(prodHtml);
+                prodWin.document.close();
 
-            // Serialize each already-rendered SVG to a string
-            const serializer = new XMLSerializer();
-            const pagesDivs = renderedPages.map(function(svg, i) {
-                // Clone so we don't mutate the displayed proof
-                const clone = svg.cloneNode(true);
-                // Make sure it fills the page width
-                clone.style.cssText = 'width:100%;height:auto;display:block;';
-                clone.removeAttribute('width');
-                clone.removeAttribute('height');
-                const svgStr = serializer.serializeToString(clone);
-                const breakStyle = i < renderedPages.length - 1 ?
-                    'page-break-after:always;' : '';
-                return '<div style="'+breakStyle+'width:100%;padding:0;margin:0;">' + svgStr +
-                    '</div>';
-            }).join('');
-
-            const printHtml = '<!DOCTYPE html><html><head>' +
-                '<meta charset="UTF-8">' +
-                '<title>Proof - ' + customerName + '</title>' +
-                '<style>' +
-                '* { box-sizing:border-box; margin:0; padding:0; }' +
-                'body { background:#fff; font-family:Arial,Helvetica,sans-serif; }' +
-                '#toolbar { background:#640100; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; }' +
-                '#toolbar p { font-size:14px; font-weight:700; margin:0; }' +
-                '#toolbar small { font-size:12px; font-weight:400; opacity:0.85; }' +
-                '#pdfBtn { background:#fff; color:#640100; border:none; border-radius:8px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; white-space:nowrap; }' +
-                '#pdfBtn:hover { background:#f5f5f5; }' +
-                'svg { width:100%; height:auto; display:block; }' +
-                '@media print { #toolbar { display:none; } }' +
-                '@page { size:landscape; margin:0.25in; }' +
-                '</style>' +
-                '</head><body>' +
-                '<div id="toolbar">' +
-                '  <div>' +
-                '    <p>Accurate Signs &amp; Engraving &mdash; Proof for ' + customerName + ' &mdash; ' +
-                dateStr + '</p>' +
-                '    <small>Click &ldquo;Save as PDF&rdquo; below &rarr; in the print dialog, set destination to <strong>Save as PDF</strong></small>' +
-                '  </div>' +
-                '  <button id="pdfBtn" onclick="window.print()">&#x2193; Save as PDF</button>' +
-                '</div>' +
-                pagesDivs +
-                '</body></html>';
-
-            const printWin = window.open('', '_blank', 'width=1200,height=850');
-            if (!printWin) {
-                window.alert('Popup was blocked. Please allow popups for this page and try again.');
-                return;
-            }
-            printWin.document.open();
-            printWin.document.write(printHtml);
-            printWin.document.close();
-        });
-        if (placeOrderBtn) placeOrderBtn.onclick = () => {
-            if(!proofApprovalCheckbox||!proofApprovalCheckbox.checked){if(proofValidationMessage){proofValidationMessage.textContent='Please approve the proof before placing your order.'
-            ;
-            proofValidationMessage.classList.add('show');
-        }
-        updateProofApprovalState();
-        return;
-        }
-        if(proofValidationMessage){proofValidationMessage.textContent='';
-        proofValidationMessage.classList.remove('show');
-        }
-
-        const orderInfo = {
-            name: orderName ? orderName.value : '',
-            company: orderCompany ? orderCompany.value : '',
-            email: orderEmail ? orderEmail.value : '',
-            phone: orderPhone ? orderPhone.value : '',
-            address: orderAddress ? orderAddress.value : '',
-            city: orderCity ? orderCity.value : '',
-            state: orderState ? orderState.value : '',
-            zip: orderZip ? orderZip.value : '',
-            shipping: orderShipping ? orderShipping.value : 'ground',
-            shippingCost: getSelectedOrderShippingCost(),
-            cardholder: paymentCardholder ? paymentCardholder.value : '',
-            cardLast4: paymentCardNumber ? String(paymentCardNumber.value || '').replace(/\s/g, '').slice(-4) : '',
-            expiry: paymentExpiry ? paymentExpiry.value : '',
-        };
-        const enrichedPayload = Object.assign({}, latestQuotePayload, {
-            orderInfo
-        });
-        const payloadJson = JSON.stringify(enrichedPayload);
-
-        const prodWin = window.open('', '_blank', 'width=1200,height=900');
-        if (!prodWin) {
-            window.alert('Popup was blocked. Please allow popups for this page and try again.');
-            return;
-        }
-
-        const prodHtml = buildProductionSheetHtml(payloadJson);
-        prodWin.document.open();
-        prodWin.document.write(prodHtml);
-        prodWin.document.close();
-
-        closeOrderModal();
-        document.dispatchEvent(new CustomEvent('ac:orderPlaced', {
-            detail: {
-                payload: enrichedPayload
-            }
-        }));
-        };
-
-        // ── Production sheet builder ──
-        function buildProductionSheetHtml(payloadJson) {
-            // Serialise the proof SVG pages that are already rendered in the DOM
-            const serializer = new XMLSerializer();
-            const renderedPages = proofSheetContainer ? Array.from(proofSheetContainer.querySelectorAll(
-                '.proof-sheet-page svg')) : [];
-            const proofSvgStrings = renderedPages.map(svg => {
-                const clone = svg.cloneNode(true);
-                clone.style.cssText = 'width:100%;height:auto;display:block;';
-                clone.removeAttribute('width');
-                clone.removeAttribute('height');
-                return serializer.serializeToString(clone);
-            });
-
-            // Safely parse what we need for the header — all rendering in the new window
-            let p = {};
-            try {
-                p = JSON.parse(payloadJson);
-            } catch (_) {}
-            const result = p.result || {};
-            const data = p.data || {};
-            const oi = p.orderInfo || {};
-            const dateStr = new Date().toLocaleString();
-            const orderNum = 'ORD-' + Date.now().toString(36).toUpperCase();
-            const enrichedForLaser = Object.assign({}, p, {
-                orderNum
-            });
-
-            const SHIPPING_LABELS = {
-                pickup: 'Pickup (Free)',
-                ground: 'UPS Ground',
-                '2day': 'UPS 2-Day',
-                overnight: 'Overnight'
+                closeOrderModal();
+                document.dispatchEvent(new CustomEvent('ac:orderPlaced', {
+                    detail: {
+                        payload: enrichedPayload
+                    }
+                }));
             };
 
-            function esc2(s) {
-                return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g,
-                    '&quot;');
-            }
+            // ── Production sheet builder ──
+            function buildProductionSheetHtml(payloadJson) {
+                // Serialise the proof SVG pages that are already rendered in the DOM
+                const serializer = new XMLSerializer();
+                const renderedPages = proofSheetContainer ? Array.from(proofSheetContainer.querySelectorAll(
+                    '.proof-sheet-page svg')) : [];
+                const proofSvgStrings = renderedPages.map(svg => {
+                    const clone = svg.cloneNode(true);
+                    clone.style.cssText = 'width:100%;height:auto;display:block;';
+                    clone.removeAttribute('width');
+                    clone.removeAttribute('height');
+                    return serializer.serializeToString(clone);
+                });
 
-            function cur2(n) {
-                return '$' + Number(n || 0).toFixed(2);
-            }
+                // Safely parse what we need for the header — all rendering in the new window
+                let p = {};
+                try {
+                    p = JSON.parse(payloadJson);
+                } catch (_) { }
+                const result = p.result || {};
+                const data = p.data || {};
+                const oi = p.orderInfo || {};
+                const dateStr = new Date().toLocaleString();
+                const orderNum = 'ORD-' + Date.now().toString(36).toUpperCase();
+                const enrichedForLaser = Object.assign({}, p, {
+                    orderNum
+                });
 
-            function ml(m) {
-                return m==='plastic' ? 'Laser-engraved plastic' : String(m || '');
-            }
+                const SHIPPING_LABELS = {
+                    pickup: 'Pickup (Free)',
+                    ground: 'UPS Ground',
+                    '2day': 'UPS 2-Day',
+                    overnight: 'Overnight'
+                };
 
-            // Build sign rows for the production table
-            const signRows = (result.signData || []).map((tag, i) => {
-                const lines = (tag.lines || []).map(l => esc2(l.text || '')).filter(Boolean).join('<br>');
-                const heights = (tag.lines || []).filter(l => String(l.text || '').trim()).map(l => {
-                    if (!l.size || l.size==='custom') return esc2(l.customSize || '?') + '"';
-                    return esc2(l.size) + '"';
-                }).join('<br>');
-                return `<tr>
-        <td>${i+1}</td>
-        <td>${tag.qty||1}</td>
-        <td>${esc2(tag.sizeLabel||((tag.height||'?')+'" × '+(tag.width||'?')+'"'))}</td>
-        <td>${esc2(tag.color||data.color||'black_white').replace(/_/g,' / ')}</td>
-        <td>${esc2(tag.holes||data.holes||'No holes')}</td>
-        <td style="font-size:12px;line-height:1.5;">${lines||'—'}</td>
-        <td style="font-size:12px;line-height:1.5;white-space:nowrap;">${heights||'—'}</td>
+                function esc2(s) {
+                    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g,
+                        '&quot;');
+                }
+
+                function cur2(n) {
+                    return '$' + Number(n || 0).toFixed(2);
+                }
+
+                function ml(m) {
+                    return m === 'plastic' ? 'Laser-engraved plastic' : String(m || '');
+                }
+
+                // Build sign rows for the production table
+                const signRows = (result.signData || []).map((tag, i) => {
+                    const lines = (tag.lines || []).map(l => esc2(l.text || '')).filter(Boolean).join('<br>');
+                    const heights = (tag.lines || []).filter(l => String(l.text || '').trim()).map(l => {
+                        if (!l.size || l.size === 'custom') return esc2(l.customSize || '?') + '"';
+                        return esc2(l.size) + '"';
+                    }).join('<br>');
+                    return `<tr>
+        <td>${i + 1}</td>
+        <td>${tag.qty || 1}</td>
+        <td>${esc2(tag.sizeLabel || ((tag.height || '?') + '" × ' + (tag.width || '?') + '"'))}</td>
+        <td>${esc2(tag.color || data.color || 'black_white').replace(/_/g, ' / ')}</td>
+        <td>${esc2(tag.holes || data.holes || 'No holes')}</td>
+        <td style="font-size:12px;line-height:1.5;">${lines || '—'}</td>
+        <td style="font-size:12px;line-height:1.5;white-space:nowrap;">${heights || '—'}</td>
       </tr>`;
-            }).join('');
+                }).join('');
 
-            // Build proof SVG blocks
-            const proofBlocks = proofSvgStrings.length ?
-                proofSvgStrings.map((svgStr, i) => `
+                // Build proof SVG blocks
+                const proofBlocks = proofSvgStrings.length ?
+                    proofSvgStrings.map((svgStr, i) => `
           <div class="proof-page">
-            <p class="proof-label">Proof — Page ${i+1} of ${proofSvgStrings.length}</p>
+            <p class="proof-label">Proof — Page ${i + 1} of ${proofSvgStrings.length}</p>
             ${svgStr}
           </div>`).join('') :
-                '<p style="color:#6b7280;font-size:13px;">Proof not available — re-open proof review to regenerate.</p>';
+                    '<p style="color:#6b7280;font-size:13px;">Proof not available — re-open proof review to regenerate.</p>';
 
-            return `<!DOCTYPE html>
+                return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6208,17 +6210,17 @@
     <p class="section-title">Order information</p>
     <div class="info-grid">
       <div class="info-item"><label>Date</label><span>${esc2(dateStr)}</span></div>
-      <div class="info-item"><label>Job name</label><span>${esc2(data.jobName||'—')}</span></div>
-      <div class="info-item"><label>Customer</label><span>${esc2(oi.name||data.customerName||'—')}</span></div>
-      <div class="info-item"><label>Company</label><span>${esc2(oi.company||data.companyName||'—')}</span></div>
-      <div class="info-item"><label>Email</label><span>${esc2(oi.email||data.email||'—')}</span></div>
-      <div class="info-item"><label>Phone</label><span>${esc2(oi.phone||data.phone||'—')}</span></div>
-      <div class="info-item"><label>Shipping address</label><span>${esc2([oi.address,oi.city,oi.state,oi.zip].filter(Boolean).join(', ')||'—')}</span></div>
-      <div class="info-item"><label>Shipping method</label><span>${esc2(SHIPPING_LABELS[oi.shipping]||oi.shipping||'—')}</span></div>
+      <div class="info-item"><label>Job name</label><span>${esc2(data.jobName || '—')}</span></div>
+      <div class="info-item"><label>Customer</label><span>${esc2(oi.name || data.customerName || '—')}</span></div>
+      <div class="info-item"><label>Company</label><span>${esc2(oi.company || data.companyName || '—')}</span></div>
+      <div class="info-item"><label>Email</label><span>${esc2(oi.email || data.email || '—')}</span></div>
+      <div class="info-item"><label>Phone</label><span>${esc2(oi.phone || data.phone || '—')}</span></div>
+      <div class="info-item"><label>Shipping address</label><span>${esc2([oi.address, oi.city, oi.state, oi.zip].filter(Boolean).join(', ') || '—')}</span></div>
+      <div class="info-item"><label>Shipping method</label><span>${esc2(SHIPPING_LABELS[oi.shipping] || oi.shipping || '—')}</span></div>
       <div class="info-item"><label>Material</label><span>${esc2(ml(data.material))}</span></div>
-      <div class="info-item"><label>Font</label><span>${esc2((data.fontFamily||'Arial').split(',')[0].replace(/'/g,''))}</span></div>
-      <div class="info-item"><label>Shape</label><span>${esc2(data.shape||'Rectangle')}</span></div>
-      <div class="info-item"><label>Total pieces</label><span>${esc2(result.totalPieces||'—')}</span></div>
+      <div class="info-item"><label>Font</label><span>${esc2((data.fontFamily || 'Arial').split(',')[0].replace(/'/g, ''))}</span></div>
+      <div class="info-item"><label>Shape</label><span>${esc2(data.shape || 'Rectangle')}</span></div>
+      <div class="info-item"><label>Total pieces</label><span>${esc2(result.totalPieces || '—')}</span></div>
     </div>
   </div>
 
@@ -6248,15 +6250,15 @@
     <p class="section-title">Order totals</p>
     <div class="totals-grid">
       <div>
-        <div class="total-line"><span>Subtotal</span><strong>${esc2(cur2(result.rawSubtotal||0))}</strong></div>
+        <div class="total-line"><span>Subtotal</span><strong>${esc2(cur2(result.rawSubtotal || 0))}</strong></div>
         ${result.minimumApplied ? '<div class="total-line"><span>Minimum applied</span><strong>$25.00</strong></div>' : ''}
-        <div class="total-line"><span>Product total</span><strong>${esc2(cur2(result.subtotal||0))}</strong></div>
-        <div class="total-line"><span>Shipping (${esc2(SHIPPING_LABELS[oi.shipping]||oi.shipping||'')})</span><strong>${esc2(cur2(oi.shippingCost||0))}</strong></div>
-        <div class="total-line"><span>Grand total</span><strong>${esc2(cur2((result.subtotal||0)+(oi.shippingCost||0)))}</strong></div>
+        <div class="total-line"><span>Product total</span><strong>${esc2(cur2(result.subtotal || 0))}</strong></div>
+        <div class="total-line"><span>Shipping (${esc2(SHIPPING_LABELS[oi.shipping] || oi.shipping || '')})</span><strong>${esc2(cur2(oi.shippingCost || 0))}</strong></div>
+        <div class="total-line"><span>Grand total</span><strong>${esc2(cur2((result.subtotal || 0) + (oi.shippingCost || 0)))}</strong></div>
       </div>
       <div>
-        <div class="info-item" style="margin-bottom:10px;"><label>Payment</label><span>Card ending in ${esc2(oi.cardLast4||'****')} &nbsp; Exp ${esc2(oi.expiry||'—')}</span></div>
-        <div class="info-item"><label>Cardholder</label><span>${esc2(oi.cardholder||'—')}</span></div>
+        <div class="info-item" style="margin-bottom:10px;"><label>Payment</label><span>Card ending in ${esc2(oi.cardLast4 || '****')} &nbsp; Exp ${esc2(oi.expiry || '—')}</span></div>
+        <div class="info-item"><label>Cardholder</label><span>${esc2(oi.cardholder || '—')}</span></div>
         <div style="margin-top:16px;"><div class="status-stamp">PROOF APPROVED</div></div>
       </div>
     </div>
@@ -6270,7 +6272,7 @@
 
 </div>
 
-<script id="laserPayload" type="application/json">${JSON.stringify(enrichedForLaser).replace(/<\/script>/gi,'<\\/script>')}<\/script>
+<script id="laserPayload" type="application/json">${JSON.stringify(enrichedForLaser).replace(/<\/script>/gi, '<\\/script>')}<\/script>
 
 <script>
 // ══════════════════════════════════════════════════════════════
@@ -6880,611 +6882,721 @@
 </div>
 </body>
 </html>`;
-  }
-
-  if(quoteModalContinue) quoteModalContinue.addEventListener('click',()=>{
-    closeQuoteModal();
-    const payload=latestQuotePayload; if(!payload) return;
-    const result=payload.result||{}, data=payload.data||{};
-    const summaryBlock=document.getElementById('orderSummaryBlock');
-    if(summaryBlock) summaryBlock.innerHTML=[['Job name',getSafeQuoteField(data.jobName)],['Total pieces',result.totalPieces],['Size',result.sizeLabel],['Material',materialLabel(data.material)],['Holes',data.holes],['Shape',data.shape]].map(p=>'<div class="quote-line"><span>'+esc(p[0])+'</span><strong>'+esc(String(p[1]||'—'))+'</strong></div>').join('');
-    if(orderName) orderName.value=data.customerName||'';
-    if(orderCompany) orderCompany.value=data.companyName||'';
-    if(orderEmail) orderEmail.value=data.email||'';
-    if(orderPhone) orderPhone.value=data.phone||'';
-    if(orderShipping) orderShipping.value=orderShipping.value||'ground';
-    if(billingSameAsShipping) billingSameAsShipping.checked=true;
-    // Reset nudge so it can appear fresh on this order
-    addressNudgeDismissed = false;
-    billingNudgeDismissed = false;
-    if(saveAddressNudge){ saveAddressNudge.classList.add('hidden'); saveAddressNudge.style.display='none'; }
-    if(saveBillingAddressNudge){ saveBillingAddressNudge.classList.add('hidden'); saveBillingAddressNudge.style.display='none'; }
-    syncBillingAddressState(); refreshOrderTotals(); updatePlaceOrderState();
-    if(orderInfoStep) orderInfoStep.classList.remove('hidden');
-    if(proofReviewStep) proofReviewStep.classList.add('hidden');
-    if(proofApprovalCheckbox) proofApprovalCheckbox.checked=false;
-    updateProofApprovalState();
-    if(orderModal){orderModal.style.display='flex';orderModal.setAttribute('aria-hidden','false');}
-  });
-
-  // ══════════════════════════════════════════════════════════
-  //  AUTH SYSTEM  —  WordPress REST API + JWT
-  //  Requires plugin: "JWT Authentication for WP REST API"
-  //  https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
-  // ══════════════════════════════════════════════════════════
-
-  // ── Config ──
-  // DEV_BYPASS = true  → no real network calls; localStorage only; any email+password works.
-  // Set to false (or remove) when the WordPress backend + JWT plugin are live.
-  // const DEV_BYPASS = true;
-  // const WP_BASE = (window.acPortalConfig && window.acPortalConfig.wpBase) || 'https://accuratesigns.com';
-  // const WP_JWT  = WP_BASE + '/wp-json/jwt-auth/v1/token';
-  // const WP_USERS = WP_BASE + '/wp-json/wp/v2/users/me';
-
-  const API_BASE = '/api';
-  let authToken  = localStorage.getItem('ase_token') || null;
-  let authUser   = null;
-
-  // ── Auth state ──
-  // let authToken  = localStorage.getItem('ac_jwt') || null;
-  // let authUser   = null;   // { id, name, email, company, firstName }
-  let draftTimer = null;
-  let draftSaveQueued = false;
-
-  // ── DOM refs ──
-  const authBar           = document.getElementById('authBar');
-  const authGuestState    = document.getElementById('authGuestState');
-  const authUserState     = document.getElementById('authUserState');
-  const authAvatar        = document.getElementById('authAvatar');
-  const authUserNameEl    = document.getElementById('authUserName');
-  const authShowLogin     = document.getElementById('authShowLogin');
-  const authShowRegister  = document.getElementById('authShowRegister');
-  const authLogoutBtn     = document.getElementById('authLogoutBtn');
-  const authAccountBtn    = document.getElementById('authAccountBtn');
-  const authModalBackdrop = document.getElementById('authModalBackdrop');
-  const authModalClose    = document.getElementById('authModalClose');
-  const authModalTitle    = document.getElementById('authModalTitle');
-  const authModalSub      = document.getElementById('authModalSub');
-  const authModalError    = document.getElementById('authModalError');
-  const authLoginForm     = document.getElementById('authLoginForm');
-  const authRegForm       = document.getElementById('authRegisterForm');
-  const authLoginLoading  = document.getElementById('authLoginLoading');
-  const authRegLoading    = document.getElementById('authRegLoading');
-  const authFooterLoginMsg    = document.getElementById('authFooterLoginMsg');
-  const authFooterRegisterMsg = document.getElementById('authFooterRegisterMsg');
-  const authSwitchToRegister  = document.getElementById('authSwitchToRegister');
-  const authSwitchToLogin     = document.getElementById('authSwitchToLogin');
-  const accountModalBackdrop  = document.getElementById('accountModalBackdrop');
-  const accountModalClose     = document.getElementById('accountModalClose');
-  const draftStatusEl     = document.getElementById('draftStatus');
-  const draftDotEl        = document.getElementById('draftDot');
-  const draftStatusText   = document.getElementById('draftStatusText');
-  const saveTemplateBtn   = document.getElementById('saveTemplateBtn');
-  const saveTemplateNameInput = document.getElementById('saveTemplateName');
-  const templateListEl    = document.getElementById('templateList');
-  const draftListEl       = document.getElementById('draftList');
-  const orderHistoryListEl= document.getElementById('orderHistoryList');
-
-  // ── Utilities ──
-  //function authHeaders() { return { 'Content-Type':'application/json', 'Authorization': 'Bearer ' + authToken }; }
-  function authHeaders() {
-  const headers = {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-  };
-
-  if (authToken) {
-    headers.Authorization = 'Bearer ' + authToken;
-  }
-
-  return headers;
-}
-
-  function normalizeAuthUser(user) {
-  user = user || {};
-
-  return {
-    id: user.id,
-    name: user.name || '',
-    firstName: user.first_name || user.firstName || '',
-    lastName: user.last_name || user.lastName || '',
-    email: user.email || '',
-    company: user.company || '',
-    phone: user.phone || '',
-    status: user.status || 'active'
-  };
-}
-
-  function setAuthError(msg) { if(!authModalError) return; authModalError.textContent = msg||''; authModalError.classList.toggle('show', Boolean(msg)); }
-
-  // ── Serialize entire form state ──
-  function serializeFormState() {
-    const state = {
-      jobName:     (getEl('jobName')||{}).value || '',
-      globalColor: (getEl('globalColor')||{}).value || 'black_white',
-      holes:       (getEl('holes')||{}).value || 'No holes',
-      holeSize:    (getEl('holeSize')||{}).value || 'N/A',
-      shape:       (getEl('shape')||{}).value || 'Rectangle',
-      material:    (getEl('material')||{}).value || 'plastic',
-      fontFamily:  (getEl('fontFamily')||{}).value || 'Arial, Helvetica, sans-serif',
-      widthIn:     (getEl('widthIn')||{}).value || '3.000',
-      heightIn:    (getEl('heightIn')||{}).value || '1.000',
-      sameSizeMode:(getEl('sameSizeMode')||{}).value || 'same',
-      customerName:(getEl('customerName')||{}).value || '',
-      companyName: (getEl('companyName')||{}).value || '',
-      email:       (getEl('email')||{}).value || '',
-      phone:       (getEl('phone')||{}).value || '',
-      tags: Array.from(document.querySelectorAll('.sign-entry')).map(entry => ({
-        text:    (entry.querySelector('.sign-text')||{}).value || '',
-        qty:     (entry.querySelector('.sign-qty')||{}).value || '1',
-        width:   (entry.querySelector('.sign-width')||{}).value || '',
-        height:  (entry.querySelector('.sign-height')||{}).value || '',
-        color:   entry.dataset.colorValue || 'black_white',
-        holes:   entry.dataset.holeQty || 'No holes',
-        holeSize:entry.dataset.holeSize || '1/8',
-        align:   entry.dataset.align || 'center',
-        condense:entry.dataset.condense || 'no',
-        cornerRadius:entry.dataset.cornerRadius || 'no',
-        spacing: (entry.querySelector('.sign-line-spacing')||{}).value || 'full',
-        lineStyles: getStoredLineStyles(entry)
-      }))
-    };
-    return state;
-  }
-
-  // ── Restore form from saved state ──
-  function restoreFormState(state) {
-    if (!state) return;
-    const set = (id, val) => { const el = getEl(id); if (el && val !== undefined) el.value = val; };
-    set('jobName', state.jobName);
-    set('globalColor', state.globalColor);
-    set('holes', state.holes);
-    set('shape', state.shape);
-    set('material', state.material);
-    set('fontFamily', state.fontFamily);
-    set('widthIn', state.widthIn);
-    set('heightIn', state.heightIn);
-    set('sameSizeMode', state.sameSizeMode);
-    set('customerName', state.customerName);
-    set('companyName', state.companyName);
-    set('email', state.email);
-    set('phone', state.phone);
-    syncHoleSizeOptions();
-    set('holeSize', state.holeSize);
-
-    // rebuild tags
-    if (Array.isArray(state.tags) && state.tags.length) {
-      signStack.innerHTML = '';
-      state.tags.forEach((tagData, i) => {
-        const card = buildSignCard('Sign ' + (i + 1), tagData.text || '', Number(tagData.qty) || 1, tagData.width || '', tagData.height || '');
-
-        // ── Restore dataset values (read by getSignData) ──
-        card.dataset.colorValue   = tagData.color        || 'black_white';
-        card.dataset.holeQty      = tagData.holes        || 'No holes';
-        card.dataset.holeSize     = tagData.holeSize     || '1/8';
-        card.dataset.align        = tagData.align        || 'center';
-        card.dataset.condense     = tagData.condense     || 'no';
-        card.dataset.cornerRadius = tagData.cornerRadius || 'no';
-
-        // ── Sync all visible dropdowns to match dataset ──
-        const ss  = card.querySelector('.sign-line-spacing');  if (ss)  ss.value  = tagData.spacing      || 'full';
-        const cs  = card.querySelector('.tag-color-select');   if (cs)  cs.value  = tagData.color        || 'black_white';
-        const hs  = card.querySelector('.tag-holes-select');   if (hs)  hs.value  = tagData.holes        || 'No holes';
-        const rs  = card.querySelector('.tag-radius-select');  if (rs)  rs.value  = tagData.cornerRadius || 'no';
-        const cds = card.querySelector('.tag-condense-select');if (cds) cds.value = tagData.condense     || 'no';
-
-        // ── Restore per-line font/size styles ──
-        if (Array.isArray(tagData.lineStyles)) setStoredLineStyles(card, tagData.lineStyles);
-
-        signStack.appendChild(card);
-        syncTagHoleSizeFromHoles(card);
-        syncLineStyleEditor(card);           // also calls updateAlignButtons → refreshes align button visuals
-      });
-      bindSignInputs();
-      renumberSignCards();
-      rebuildPreviewSelector();
-      syncSizeModeUI();
-      updateSizeFieldPresentation();
-      queueLiveEstimateUpdate();
-      renderDesignPreview();
-    }
-  }
-
-  // ── WP User meta key helpers ──
-  const META_TEMPLATES    = 'ac_portal_templates';
-  const META_DRAFTS       = 'ac_portal_drafts';
-  const META_ORDER_HISTORY= 'ac_portal_orders';
-  const META_ADDRESSES     = 'ac_portal_addresses';
-
-  // In bypass mode ALL data goes to localStorage keyed by user id.
-  // In production mode, localStorage is still the fallback if the REST endpoint isn't live yet.
-  async function wpGetMeta(key) {
-    const lsKey = 'ac_' + key + '_' + (authUser ? authUser.id : 'guest');
-    if (DEV_BYPASS) {
-      const raw = localStorage.getItem(lsKey);
-      return raw ? JSON.parse(raw) : null;
-    }
-    try {
-      const res = await fetch(WP_BASE + '/wp-json/accurate-signs/v1/meta?key=' + encodeURIComponent(key), { headers: authHeaders() });
-      if (!res.ok) throw new Error('meta_fetch_failed');
-      const json = await res.json();
-      return json.value || null;
-    } catch(_) {
-      const raw = localStorage.getItem(lsKey);
-      return raw ? JSON.parse(raw) : null;
-    }
-  }
-  async function wpSetMeta(key, value) {
-    const lsKey = 'ac_' + key + '_' + (authUser ? authUser.id : 'guest');
-    localStorage.setItem(lsKey, JSON.stringify(value));
-    if (DEV_BYPASS) return;
-    try {
-      await fetch(WP_BASE + '/wp-json/accurate-signs/v1/meta', {
-        method: 'POST',
-        headers: authHeaders(),
-        body: JSON.stringify({ key, value })
-      });
-    } catch(_) {}
-  }
-
-  // ── Update UI based on auth state ──
-  function updateAuthUI() {
-    const loggedIn = Boolean(authUser);
-    authGuestState.style.display = loggedIn ? 'none' : 'flex';
-    if (loggedIn) {
-      authUserState.classList.add('visible');
-      const initials = ((authUser.firstName||'?')[0] + (authUser.lastName||'')[0]).toUpperCase();
-      authAvatar.textContent = initials || '?';
-      authUserNameEl.textContent = authUser.firstName || authUser.name || authUser.email;
-      draftStatusEl.classList.remove('hidden');
-      // Auto-fill contact if empty
-      const nameEl = getEl('customerName'), emailEl = getEl('email'), compEl = getEl('companyName');
-      if (nameEl && !nameEl.value && authUser.name) nameEl.value = authUser.name;
-      if (emailEl && !emailEl.value && authUser.email) emailEl.value = authUser.email;
-      if (compEl && !compEl.value && authUser.company) compEl.value = authUser.company;
-      startDraftAutoSave();
-    } else {
-      authUserState.classList.remove('visible');
-      draftStatusEl.classList.add('hidden');
-      stopDraftAutoSave();
-      // Hide address picker when logged out
-      if (savedAddressPickerWrap) { savedAddressPickerWrap.classList.add('hidden'); savedAddressPickerWrap.style.display='none'; }
-      if (saveCurrentAddressBtn) saveCurrentAddressBtn.classList.add('hidden');
-    }
-  }
-
-  // ── JWT Login ──
-  async function doLogin(email, password) {
-  setAuthError('');
-  authLoginLoading.classList.remove('hidden');
-
-  try {
-    const res = await fetch(API_BASE + '/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    });
-
-    const json = await res.json();
-
-    if (!res.ok || !json.success) {
-      const msg =
-        json.message ||
-        json.errors?.email?.[0] ||
-        json.errors?.password?.[0] ||
-        'Invalid email or password.';
-
-      throw new Error(msg);
-    }
-
-    authToken = json.data.token;
-    authUser = normalizeAuthUser(json.data.user);
-
-    localStorage.setItem('ase_token', authToken);
-
-    closeAuthModal();
-    updateAuthUI();
-    await loadAccountData();
-    runPendingAction();
-
-    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
-  } catch (err) {
-    setAuthError(err.message || 'Sign in failed. Please check your credentials.');
-  } finally {
-    authLoginLoading.classList.add('hidden');
-  }
-}
-async function doLogin(email, password) {
-  setAuthError('');
-  authLoginLoading.classList.remove('hidden');
-
-  try {
-    const res = await fetch(API_BASE + '/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ email, password })
-    });
-
-    const text = await res.text();
-    let json = null;
-
-    try {
-      json = JSON.parse(text);
-    } catch (e) {
-      console.error('Login non-JSON response:', text);
-      throw new Error('Login API returned HTML instead of JSON. Please check backend route/error.');
-    }
-
-    if (!res.ok || !json.success) {
-      const msg =
-        json.message ||
-        json.errors?.email?.[0] ||
-        json.errors?.password?.[0] ||
-        'Invalid email or password.';
-
-      throw new Error(msg);
-    }
-
-    authToken = json.data.token;
-    authUser = normalizeAuthUser(json.data.user);
-
-    localStorage.setItem('ase_token', authToken);
-
-    closeAuthModal();
-    updateAuthUI();
-    await loadAccountData();
-    runPendingAction();
-
-    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
-  } catch (err) {
-    setAuthError(err.message || 'Sign in failed. Please check your credentials.');
-  } finally {
-    authLoginLoading.classList.add('hidden');
-  }
-}
-  // ── Registration ──
-  async function doRegister(firstName, lastName, email, password, company) {
-  setAuthError('');
-  authRegLoading.classList.remove('hidden');
-
-  try {
-    const res = await fetch(API_BASE + '/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        first_name: firstName,
-        last_name: lastName,
-        email,
-        password,
-        company
-      })
-    });
-
-    const json = await res.json();
-
-    if (!res.ok || !json.success) {
-      const msg =
-        json.message ||
-        json.errors?.email?.[0] ||
-        json.errors?.password?.[0] ||
-        json.errors?.first_name?.[0] ||
-        'Registration failed.';
-
-      throw new Error(msg);
-    }
-
-    authToken = json.data.token;
-    authUser = normalizeAuthUser(json.data.user);
-
-    localStorage.setItem('ase_token', authToken);
-
-    closeAuthModal();
-    updateAuthUI();
-    await loadAccountData();
-    runPendingAction();
-
-    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
-  } catch (err) {
-    setAuthError(err.message || 'Registration failed. Please try again.');
-  } finally {
-    authRegLoading.classList.add('hidden');
-  }
-}
-
-  // ── Fetch current user profile ──
-  async function fetchAuthUser() {
-  if (!authToken) return;
-
-  try {
-    const res = await fetch(API_BASE + '/me', {
-      method: 'GET',
-      headers: authHeaders()
-    });
-
-    const json = await res.json();
-
-    if (!res.ok || !json.success) {
-      doLogout();
-      return;
-    }
-
-    authUser = normalizeAuthUser(json.data.user);
-  } catch (_) {
-    doLogout();
-  }
-}
-
-  // ── Logout ──
-  async function doLogout() {
-  try {
-    if (authToken) {
-      await fetch(API_BASE + '/logout', {
-        method: 'POST',
-        headers: authHeaders()
-      });
-    }
-  } catch (_) {}
-
-  authToken = null;
-  authUser = null;
-
-  localStorage.removeItem('ase_token');
-  localStorage.removeItem('ac_jwt');
-  localStorage.removeItem('ac_dev_active_user');
-
-  updateAuthUI();
-}
-
-  // ── On init: restore session if token stored ──
-  async function initAuth() {
-  if (authToken) {
-    await fetchAuthUser();
-    updateAuthUI();
-
-    if (authUser) {
-      await loadAccountData();
-    }
-
-    return;
-  }
-
-  updateAuthUI();
-}
-
-  // ── Auth modal helpers ──
-  // pendingAction fires once immediately after a successful login/register
-  let pendingAction = null;
-
-  function openAuthModal(mode, intent) {
-    setAuthError('');
-    if (intent) pendingAction = intent;
-    const isLogin = mode !== 'register';
-    authLoginForm.classList.toggle('hidden', !isLogin);
-    authRegForm.classList.toggle('hidden', isLogin);
-    authFooterLoginMsg.classList.toggle('hidden', !isLogin);
-    authFooterRegisterMsg.classList.toggle('hidden', isLogin);
-    authModalTitle.textContent = isLogin ? 'Sign In' : 'Create Account';
-    authModalSub.textContent   = intent === 'save_template'
-      ? (isLogin ? 'Sign in to save this as a template.' : 'Create an account to save this as a template.')
-      : (isLogin ? 'Access your saved templates and order history.' : 'Create a free account to save templates and reorder easily.');
-    authModalBackdrop.classList.add('show');
-    authModalBackdrop.setAttribute('aria-hidden', 'false');
-    setTimeout(() => {
-      const firstInput = (isLogin ? authLoginForm : authRegForm).querySelector('input');
-      if (firstInput) firstInput.focus();
-    }, 80);
-  }
-
-  function runPendingAction() {
-    const action = pendingAction;
-    pendingAction = null;
-    if (action === 'save_template') openAccountModalOnTemplates();
-  }
-  function closeAuthModal() {
-    authModalBackdrop.classList.remove('show');
-    authModalBackdrop.setAttribute('aria-hidden', 'true');
-    setAuthError('');
-  }
-
-  // ── Account panel ──
-  function openAccountModal() {
-    accountModalBackdrop.classList.add('show');
-    accountModalBackdrop.setAttribute('aria-hidden', 'false');
-    loadAccountData();
-  }
-  function openAccountModalOnTemplates() {
-    // Switch to the Templates tab
-    document.querySelectorAll('.account-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.account-panel').forEach(p => p.classList.remove('active'));
-    const templatesTab = document.querySelector('.account-tab[data-panel="templates"]');
-    const templatesPanel = document.getElementById('panelTemplates');
-    if (templatesTab) templatesTab.classList.add('active');
-    if (templatesPanel) templatesPanel.classList.add('active');
-    accountModalBackdrop.classList.add('show');
-    accountModalBackdrop.setAttribute('aria-hidden', 'false');
-    loadAccountData().then(() => {
-      // Pre-fill the template name field and focus it
-      const jobName = (getEl('jobName') || {}).value.trim();
-      if (saveTemplateNameInput) {
-        saveTemplateNameInput.value = jobName || '';
-        setTimeout(() => saveTemplateNameInput.focus(), 120);
-      }
-    });
-  }
-  function closeAccountModal() {
-    accountModalBackdrop.classList.remove('show');
-    accountModalBackdrop.setAttribute('aria-hidden', 'true');
-  }
-
-  // ── Tab switching ──
-  document.querySelectorAll('.account-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.account-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.account-panel').forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      const panelId = 'panel' + tab.dataset.panel.charAt(0).toUpperCase() + tab.dataset.panel.slice(1);
-      const panel = document.getElementById(panelId);
-      if (panel) panel.classList.add('active');
-    });
-  });
-
-  // ── Load all account data ──
-  async function loadAccountData() {
-    if (!authUser) return;
-    const [templates, drafts, orders, addresses] = await Promise.all([
-      wpGetMeta(META_TEMPLATES),
-      wpGetMeta(META_DRAFTS),
-      wpGetMeta(META_ORDER_HISTORY),
-      wpGetMeta(META_ADDRESSES)
-    ]);
-    renderTemplateList(templates || []);
-    renderDraftList(drafts || []);
-    renderOrderHistory(orders || []);
-    renderAddressList(addresses || []);
-    populateSavedAddressPicker(addresses || []);
-  }
-
-  // ── Render template list ──
-  function renderTemplateList(templates) {
-    if (!templateListEl) return;
-    if (!templates.length) {
-      templateListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📋</div>No saved templates yet.<br>Fill out the form and save it as a template to reuse later.</div>';
-      return;
-    }
-    templateListEl.innerHTML = templates.map((t, i) => `
+            }
+
+            if (quoteModalContinue) quoteModalContinue.addEventListener('click', () => {
+                closeQuoteModal();
+                const payload = latestQuotePayload; if (!payload) return;
+                const result = payload.result || {}, data = payload.data || {};
+                const summaryBlock = document.getElementById('orderSummaryBlock');
+                if (summaryBlock) summaryBlock.innerHTML = [['Job name', getSafeQuoteField(data.jobName)], ['Total pieces', result.totalPieces], ['Size', result.sizeLabel], ['Material', materialLabel(data.material)], ['Holes', data.holes], ['Shape', data.shape]].map(p => '<div class="quote-line"><span>' + esc(p[0]) + '</span><strong>' + esc(String(p[1] || '—')) + '</strong></div>').join('');
+                if (orderName) orderName.value = data.customerName || '';
+                if (orderCompany) orderCompany.value = data.companyName || '';
+                if (orderEmail) orderEmail.value = data.email || '';
+                if (orderPhone) orderPhone.value = data.phone || '';
+                if (orderShipping) orderShipping.value = orderShipping.value || 'ground';
+                if (billingSameAsShipping) billingSameAsShipping.checked = true;
+                // Reset nudge so it can appear fresh on this order
+                addressNudgeDismissed = false;
+                billingNudgeDismissed = false;
+                if (saveAddressNudge) { saveAddressNudge.classList.add('hidden'); saveAddressNudge.style.display = 'none'; }
+                if (saveBillingAddressNudge) { saveBillingAddressNudge.classList.add('hidden'); saveBillingAddressNudge.style.display = 'none'; }
+                syncBillingAddressState(); refreshOrderTotals(); updatePlaceOrderState();
+                if (orderInfoStep) orderInfoStep.classList.remove('hidden');
+                if (proofReviewStep) proofReviewStep.classList.add('hidden');
+                if (proofApprovalCheckbox) proofApprovalCheckbox.checked = false;
+                updateProofApprovalState();
+                if (orderModal) { orderModal.style.display = 'flex'; orderModal.setAttribute('aria-hidden', 'false'); }
+            });
+
+            // ══════════════════════════════════════════════════════════
+            //  AUTH SYSTEM  —  WordPress REST API + JWT
+            //  Requires plugin: "JWT Authentication for WP REST API"
+            //  https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
+            // ══════════════════════════════════════════════════════════
+
+            // ── Config ──
+            // DEV_BYPASS = true  → no real network calls; localStorage only; any email+password works.
+            // Set to false (or remove) when the WordPress backend + JWT plugin are live.
+            // const DEV_BYPASS = true;
+            // const WP_BASE = (window.acPortalConfig && window.acPortalConfig.wpBase) || 'https://accuratesigns.com';
+            // const WP_JWT  = WP_BASE + '/wp-json/jwt-auth/v1/token';
+            // const WP_USERS = WP_BASE + '/wp-json/wp/v2/users/me';
+
+            const API_BASE = '/api';
+            let authToken = localStorage.getItem('ase_token') || null;
+            let authUser = null;
+
+            // ── Auth state ──
+            // let authToken  = localStorage.getItem('ac_jwt') || null;
+            // let authUser   = null;   // { id, name, email, company, firstName }
+            let draftTimer = null;
+            let draftSaveQueued = false;
+
+            // ── DOM refs ──
+            const authBar = document.getElementById('authBar');
+            const authGuestState = document.getElementById('authGuestState');
+            const authUserState = document.getElementById('authUserState');
+            const authAvatar = document.getElementById('authAvatar');
+            const authUserNameEl = document.getElementById('authUserName');
+            const authShowLogin = document.getElementById('authShowLogin');
+            const authShowRegister = document.getElementById('authShowRegister');
+            const authLogoutBtn = document.getElementById('authLogoutBtn');
+            const authAccountBtn = document.getElementById('authAccountBtn');
+            const authModalBackdrop = document.getElementById('authModalBackdrop');
+            const authModalClose = document.getElementById('authModalClose');
+            const authModalTitle = document.getElementById('authModalTitle');
+            const authModalSub = document.getElementById('authModalSub');
+            const authModalError = document.getElementById('authModalError');
+            const authLoginForm = document.getElementById('authLoginForm');
+            const authRegForm = document.getElementById('authRegisterForm');
+            const authLoginLoading = document.getElementById('authLoginLoading');
+            const authRegLoading = document.getElementById('authRegLoading');
+            const authFooterLoginMsg = document.getElementById('authFooterLoginMsg');
+            const authFooterRegisterMsg = document.getElementById('authFooterRegisterMsg');
+            const authSwitchToRegister = document.getElementById('authSwitchToRegister');
+            const authSwitchToLogin = document.getElementById('authSwitchToLogin');
+            const accountModalBackdrop = document.getElementById('accountModalBackdrop');
+            const accountModalClose = document.getElementById('accountModalClose');
+            const draftStatusEl = document.getElementById('draftStatus');
+            const draftDotEl = document.getElementById('draftDot');
+            const draftStatusText = document.getElementById('draftStatusText');
+            const saveTemplateBtn = document.getElementById('saveTemplateBtn');
+            const saveTemplateNameInput = document.getElementById('saveTemplateName');
+            const templateListEl = document.getElementById('templateList');
+            const draftListEl = document.getElementById('draftList');
+            const orderHistoryListEl = document.getElementById('orderHistoryList');
+
+            // ── Utilities ──
+            //function authHeaders() { return { 'Content-Type':'application/json', 'Authorization': 'Bearer ' + authToken }; }
+            function authHeaders() {
+                const headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                };
+
+                if (authToken) {
+                    headers.Authorization = 'Bearer ' + authToken;
+                }
+
+                return headers;
+            }
+
+            async function apiGetTemplates() {
+                const res = await fetch(API_BASE + '/templates', {
+                    method: 'GET',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to load templates.');
+                }
+
+                return json.data.templates || [];
+            }
+
+            async function apiSaveTemplate(payload) {
+                const res = await fetch(API_BASE + '/templates', {
+                    method: 'POST',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to save template.');
+                }
+
+                return json.data.template;
+            }
+
+            async function apiDeleteTemplate(id) {
+                const res = await fetch(API_BASE + '/templates/' + id, {
+                    method: 'DELETE',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to delete template.');
+                }
+
+                return true;
+            }
+            async function saveCurrentTemplate(templateName) {
+                if (!authUser) {
+                    openAuthModal('login', 'save_template');
+                    return;
+                }
+
+                const state = serializeFormState();
+                const name = (templateName || state.jobName || 'Untitled Template').trim();
+
+                if (!name) {
+                    window.alert('Please enter a template name.');
+                    return;
+                }
+
+                const totalTags = Array.isArray(state.tags) ? state.tags.length : 0;
+                const totalPieces = Array.isArray(state.tags)
+                    ? state.tags.reduce((sum, tag) => sum + Number(tag.qty || 0), 0)
+                    : 0;
+
+                try {
+                    const saved = await apiSaveTemplate({
+                        name: name,
+                        job_name: state.jobName || null,
+                        payload: state,
+                        total_tags: totalTags,
+                        total_pieces: totalPieces
+                    });
+
+                    savedTemplatesCache.unshift(saved);
+                    renderTemplateList(savedTemplatesCache);
+
+                    if (saveTemplateNameInput) saveTemplateNameInput.value = '';
+                    if (saveTemplateInlineName) saveTemplateInlineName.value = '';
+                    if (saveTemplateInline) saveTemplateInline.classList.add('hidden');
+
+                    window.alert('Template saved successfully.');
+                } catch (err) {
+                    window.alert(err.message || 'Failed to save template.');
+                }
+            }
+
+            function normalizeAuthUser(user) {
+                user = user || {};
+
+                return {
+                    id: user.id,
+                    name: user.name || '',
+                    firstName: user.first_name || user.firstName || '',
+                    lastName: user.last_name || user.lastName || '',
+                    email: user.email || '',
+                    company: user.company || '',
+                    phone: user.phone || '',
+                    status: user.status || 'active'
+                };
+            }
+
+            function setAuthError(msg) { if (!authModalError) return; authModalError.textContent = msg || ''; authModalError.classList.toggle('show', Boolean(msg)); }
+
+            // ── Serialize entire form state ──
+            function serializeFormState() {
+                const state = {
+                    jobName: (getEl('jobName') || {}).value || '',
+                    globalColor: (getEl('globalColor') || {}).value || 'black_white',
+                    holes: (getEl('holes') || {}).value || 'No holes',
+                    holeSize: (getEl('holeSize') || {}).value || 'N/A',
+                    shape: (getEl('shape') || {}).value || 'Rectangle',
+                    material: (getEl('material') || {}).value || 'plastic',
+                    fontFamily: (getEl('fontFamily') || {}).value || 'Arial, Helvetica, sans-serif',
+                    widthIn: (getEl('widthIn') || {}).value || '3.000',
+                    heightIn: (getEl('heightIn') || {}).value || '1.000',
+                    sameSizeMode: (getEl('sameSizeMode') || {}).value || 'same',
+                    customerName: (getEl('customerName') || {}).value || '',
+                    companyName: (getEl('companyName') || {}).value || '',
+                    email: (getEl('email') || {}).value || '',
+                    phone: (getEl('phone') || {}).value || '',
+                    tags: Array.from(document.querySelectorAll('.sign-entry')).map(entry => ({
+                        text: (entry.querySelector('.sign-text') || {}).value || '',
+                        qty: (entry.querySelector('.sign-qty') || {}).value || '1',
+                        width: (entry.querySelector('.sign-width') || {}).value || '',
+                        height: (entry.querySelector('.sign-height') || {}).value || '',
+                        color: entry.dataset.colorValue || 'black_white',
+                        holes: entry.dataset.holeQty || 'No holes',
+                        holeSize: entry.dataset.holeSize || '1/8',
+                        align: entry.dataset.align || 'center',
+                        condense: entry.dataset.condense || 'no',
+                        cornerRadius: entry.dataset.cornerRadius || 'no',
+                        spacing: (entry.querySelector('.sign-line-spacing') || {}).value || 'full',
+                        lineStyles: getStoredLineStyles(entry)
+                    }))
+                };
+                return state;
+            }
+
+            // ── Restore form from saved state ──
+            function restoreFormState(state) {
+                if (!state) return;
+                const set = (id, val) => { const el = getEl(id); if (el && val !== undefined) el.value = val; };
+                set('jobName', state.jobName);
+                set('globalColor', state.globalColor);
+                set('holes', state.holes);
+                set('shape', state.shape);
+                set('material', state.material);
+                set('fontFamily', state.fontFamily);
+                set('widthIn', state.widthIn);
+                set('heightIn', state.heightIn);
+                set('sameSizeMode', state.sameSizeMode);
+                set('customerName', state.customerName);
+                set('companyName', state.companyName);
+                set('email', state.email);
+                set('phone', state.phone);
+                syncHoleSizeOptions();
+                set('holeSize', state.holeSize);
+
+                // rebuild tags
+                if (Array.isArray(state.tags) && state.tags.length) {
+                    signStack.innerHTML = '';
+                    state.tags.forEach((tagData, i) => {
+                        const card = buildSignCard('Sign ' + (i + 1), tagData.text || '', Number(tagData.qty) || 1, tagData.width || '', tagData.height || '');
+
+                        // ── Restore dataset values (read by getSignData) ──
+                        card.dataset.colorValue = tagData.color || 'black_white';
+                        card.dataset.holeQty = tagData.holes || 'No holes';
+                        card.dataset.holeSize = tagData.holeSize || '1/8';
+                        card.dataset.align = tagData.align || 'center';
+                        card.dataset.condense = tagData.condense || 'no';
+                        card.dataset.cornerRadius = tagData.cornerRadius || 'no';
+
+                        // ── Sync all visible dropdowns to match dataset ──
+                        const ss = card.querySelector('.sign-line-spacing'); if (ss) ss.value = tagData.spacing || 'full';
+                        const cs = card.querySelector('.tag-color-select'); if (cs) cs.value = tagData.color || 'black_white';
+                        const hs = card.querySelector('.tag-holes-select'); if (hs) hs.value = tagData.holes || 'No holes';
+                        const rs = card.querySelector('.tag-radius-select'); if (rs) rs.value = tagData.cornerRadius || 'no';
+                        const cds = card.querySelector('.tag-condense-select'); if (cds) cds.value = tagData.condense || 'no';
+
+                        // ── Restore per-line font/size styles ──
+                        if (Array.isArray(tagData.lineStyles)) setStoredLineStyles(card, tagData.lineStyles);
+
+                        signStack.appendChild(card);
+                        syncTagHoleSizeFromHoles(card);
+                        syncLineStyleEditor(card);           // also calls updateAlignButtons → refreshes align button visuals
+                    });
+                    bindSignInputs();
+                    renumberSignCards();
+                    rebuildPreviewSelector();
+                    syncSizeModeUI();
+                    updateSizeFieldPresentation();
+                    queueLiveEstimateUpdate();
+                    renderDesignPreview();
+                }
+            }
+
+            // ── WP User meta key helpers ──
+            const META_TEMPLATES = 'ac_portal_templates';
+            const META_DRAFTS = 'ac_portal_drafts';
+            const META_ORDER_HISTORY = 'ac_portal_orders';
+            const META_ADDRESSES = 'ac_portal_addresses';
+
+            // In bypass mode ALL data goes to localStorage keyed by user id.
+            // In production mode, localStorage is still the fallback if the REST endpoint isn't live yet.
+            async function wpGetMeta(key) {
+                const lsKey = 'ac_' + key + '_' + (authUser ? authUser.id : 'guest');
+                if (DEV_BYPASS) {
+                    const raw = localStorage.getItem(lsKey);
+                    return raw ? JSON.parse(raw) : null;
+                }
+                try {
+                    const res = await fetch(WP_BASE + '/wp-json/accurate-signs/v1/meta?key=' + encodeURIComponent(key), { headers: authHeaders() });
+                    if (!res.ok) throw new Error('meta_fetch_failed');
+                    const json = await res.json();
+                    return json.value || null;
+                } catch (_) {
+                    const raw = localStorage.getItem(lsKey);
+                    return raw ? JSON.parse(raw) : null;
+                }
+            }
+            async function wpSetMeta(key, value) {
+                const lsKey = 'ac_' + key + '_' + (authUser ? authUser.id : 'guest');
+                localStorage.setItem(lsKey, JSON.stringify(value));
+                if (DEV_BYPASS) return;
+                try {
+                    await fetch(WP_BASE + '/wp-json/accurate-signs/v1/meta', {
+                        method: 'POST',
+                        headers: authHeaders(),
+                        body: JSON.stringify({ key, value })
+                    });
+                } catch (_) { }
+            }
+
+            // ── Update UI based on auth state ──
+            function updateAuthUI() {
+                const loggedIn = Boolean(authUser);
+                authGuestState.style.display = loggedIn ? 'none' : 'flex';
+                if (loggedIn) {
+                    authUserState.classList.add('visible');
+                    const initials = ((authUser.firstName || '?')[0] + (authUser.lastName || '')[0]).toUpperCase();
+                    authAvatar.textContent = initials || '?';
+                    authUserNameEl.textContent = authUser.firstName || authUser.name || authUser.email;
+                    draftStatusEl.classList.remove('hidden');
+                    // Auto-fill contact if empty
+                    const nameEl = getEl('customerName'), emailEl = getEl('email'), compEl = getEl('companyName');
+                    if (nameEl && !nameEl.value && authUser.name) nameEl.value = authUser.name;
+                    if (emailEl && !emailEl.value && authUser.email) emailEl.value = authUser.email;
+                    if (compEl && !compEl.value && authUser.company) compEl.value = authUser.company;
+                    startDraftAutoSave();
+                } else {
+                    authUserState.classList.remove('visible');
+                    draftStatusEl.classList.add('hidden');
+                    stopDraftAutoSave();
+                    // Hide address picker when logged out
+                    if (savedAddressPickerWrap) { savedAddressPickerWrap.classList.add('hidden'); savedAddressPickerWrap.style.display = 'none'; }
+                    if (saveCurrentAddressBtn) saveCurrentAddressBtn.classList.add('hidden');
+                }
+            }
+
+            // ── JWT Login ──
+            async function doLogin(email, password) {
+                setAuthError('');
+                authLoginLoading.classList.remove('hidden');
+
+                try {
+                    const res = await fetch(API_BASE + '/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const json = await res.json();
+
+                    if (!res.ok || !json.success) {
+                        const msg =
+                            json.message ||
+                            json.errors?.email?.[0] ||
+                            json.errors?.password?.[0] ||
+                            'Invalid email or password.';
+
+                        throw new Error(msg);
+                    }
+
+                    authToken = json.data.token;
+                    authUser = normalizeAuthUser(json.data.user);
+
+                    localStorage.setItem('ase_token', authToken);
+
+                    closeAuthModal();
+                    updateAuthUI();
+                    await loadAccountData();
+                    runPendingAction();
+
+                    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
+                } catch (err) {
+                    setAuthError(err.message || 'Sign in failed. Please check your credentials.');
+                } finally {
+                    authLoginLoading.classList.add('hidden');
+                }
+            }
+            async function doLogin(email, password) {
+                setAuthError('');
+                authLoginLoading.classList.remove('hidden');
+
+                try {
+                    const res = await fetch(API_BASE + '/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const text = await res.text();
+                    let json = null;
+
+                    try {
+                        json = JSON.parse(text);
+                    } catch (e) {
+                        console.error('Login non-JSON response:', text);
+                        throw new Error('Login API returned HTML instead of JSON. Please check backend route/error.');
+                    }
+
+                    if (!res.ok || !json.success) {
+                        const msg =
+                            json.message ||
+                            json.errors?.email?.[0] ||
+                            json.errors?.password?.[0] ||
+                            'Invalid email or password.';
+
+                        throw new Error(msg);
+                    }
+
+                    authToken = json.data.token;
+                    authUser = normalizeAuthUser(json.data.user);
+
+                    localStorage.setItem('ase_token', authToken);
+
+                    closeAuthModal();
+                    updateAuthUI();
+                    await loadAccountData();
+                    runPendingAction();
+
+                    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
+                } catch (err) {
+                    setAuthError(err.message || 'Sign in failed. Please check your credentials.');
+                } finally {
+                    authLoginLoading.classList.add('hidden');
+                }
+            }
+            // ── Registration ──
+            async function doRegister(firstName, lastName, email, password, company) {
+                setAuthError('');
+                authRegLoading.classList.remove('hidden');
+
+                try {
+                    const res = await fetch(API_BASE + '/register', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            first_name: firstName,
+                            last_name: lastName,
+                            email,
+                            password,
+                            company
+                        })
+                    });
+
+                    const json = await res.json();
+
+                    if (!res.ok || !json.success) {
+                        const msg =
+                            json.message ||
+                            json.errors?.email?.[0] ||
+                            json.errors?.password?.[0] ||
+                            json.errors?.first_name?.[0] ||
+                            'Registration failed.';
+
+                        throw new Error(msg);
+                    }
+
+                    authToken = json.data.token;
+                    authUser = normalizeAuthUser(json.data.user);
+
+                    localStorage.setItem('ase_token', authToken);
+
+                    closeAuthModal();
+                    updateAuthUI();
+                    await loadAccountData();
+                    runPendingAction();
+
+                    document.dispatchEvent(new CustomEvent('ac:userLoggedIn'));
+                } catch (err) {
+                    setAuthError(err.message || 'Registration failed. Please try again.');
+                } finally {
+                    authRegLoading.classList.add('hidden');
+                }
+            }
+
+            // ── Fetch current user profile ──
+            async function fetchAuthUser() {
+                if (!authToken) return;
+
+                try {
+                    const res = await fetch(API_BASE + '/me', {
+                        method: 'GET',
+                        headers: authHeaders()
+                    });
+
+                    const json = await res.json();
+
+                    if (!res.ok || !json.success) {
+                        doLogout();
+                        return;
+                    }
+
+                    authUser = normalizeAuthUser(json.data.user);
+                } catch (_) {
+                    doLogout();
+                }
+            }
+
+            // ── Logout ──
+            async function doLogout() {
+                try {
+                    if (authToken) {
+                        await fetch(API_BASE + '/logout', {
+                            method: 'POST',
+                            headers: authHeaders()
+                        });
+                    }
+                } catch (_) { }
+
+                authToken = null;
+                authUser = null;
+
+                localStorage.removeItem('ase_token');
+                localStorage.removeItem('ac_jwt');
+                localStorage.removeItem('ac_dev_active_user');
+
+                updateAuthUI();
+            }
+
+            // ── On init: restore session if token stored ──
+            async function initAuth() {
+                if (authToken) {
+                    await fetchAuthUser();
+                    updateAuthUI();
+
+                    if (authUser) {
+                        await loadAccountData();
+                    }
+
+                    return;
+                }
+
+                updateAuthUI();
+            }
+
+            // ── Auth modal helpers ──
+            // pendingAction fires once immediately after a successful login/register
+            let pendingAction = null;
+
+            function openAuthModal(mode, intent) {
+                setAuthError('');
+                if (intent) pendingAction = intent;
+                const isLogin = mode !== 'register';
+                authLoginForm.classList.toggle('hidden', !isLogin);
+                authRegForm.classList.toggle('hidden', isLogin);
+                authFooterLoginMsg.classList.toggle('hidden', !isLogin);
+                authFooterRegisterMsg.classList.toggle('hidden', isLogin);
+                authModalTitle.textContent = isLogin ? 'Sign In' : 'Create Account';
+                authModalSub.textContent = intent === 'save_template'
+                    ? (isLogin ? 'Sign in to save this as a template.' : 'Create an account to save this as a template.')
+                    : (isLogin ? 'Access your saved templates and order history.' : 'Create a free account to save templates and reorder easily.');
+                authModalBackdrop.classList.add('show');
+                authModalBackdrop.setAttribute('aria-hidden', 'false');
+                setTimeout(() => {
+                    const firstInput = (isLogin ? authLoginForm : authRegForm).querySelector('input');
+                    if (firstInput) firstInput.focus();
+                }, 80);
+            }
+
+            function runPendingAction() {
+                const action = pendingAction;
+                pendingAction = null;
+                if (action === 'save_template') openAccountModalOnTemplates();
+            }
+            function closeAuthModal() {
+                authModalBackdrop.classList.remove('show');
+                authModalBackdrop.setAttribute('aria-hidden', 'true');
+                setAuthError('');
+            }
+
+            // ── Account panel ──
+            function openAccountModal() {
+                accountModalBackdrop.classList.add('show');
+                accountModalBackdrop.setAttribute('aria-hidden', 'false');
+                loadAccountData();
+            }
+            function openAccountModalOnTemplates() {
+                // Switch to the Templates tab
+                document.querySelectorAll('.account-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.account-panel').forEach(p => p.classList.remove('active'));
+                const templatesTab = document.querySelector('.account-tab[data-panel="templates"]');
+                const templatesPanel = document.getElementById('panelTemplates');
+                if (templatesTab) templatesTab.classList.add('active');
+                if (templatesPanel) templatesPanel.classList.add('active');
+                accountModalBackdrop.classList.add('show');
+                accountModalBackdrop.setAttribute('aria-hidden', 'false');
+                loadAccountData().then(() => {
+                    // Pre-fill the template name field and focus it
+                    const jobName = (getEl('jobName') || {}).value.trim();
+                    if (saveTemplateNameInput) {
+                        saveTemplateNameInput.value = jobName || '';
+                        setTimeout(() => saveTemplateNameInput.focus(), 120);
+                    }
+                });
+            }
+            function closeAccountModal() {
+                accountModalBackdrop.classList.remove('show');
+                accountModalBackdrop.setAttribute('aria-hidden', 'true');
+            }
+
+            // ── Tab switching ──
+            document.querySelectorAll('.account-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.account-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.account-panel').forEach(p => p.classList.remove('active'));
+                    tab.classList.add('active');
+                    const panelId = 'panel' + tab.dataset.panel.charAt(0).toUpperCase() + tab.dataset.panel.slice(1);
+                    const panel = document.getElementById(panelId);
+                    if (panel) panel.classList.add('active');
+                });
+            });
+
+            // ── Load all account data ──
+            async function loadAccountData() {
+                if (!authUser) return;
+
+                try {
+                    const templates = await apiGetTemplates();
+                    savedTemplatesCache = templates;
+                    renderTemplateList(templates || []);
+                } catch (err) {
+                    console.error(err);
+                    savedTemplatesCache = [];
+                    renderTemplateList([]);
+                }
+
+                // Old features ekhono wp meta/local logic e thakuk.
+                // Next step e drafts/orders/addresses API te convert korbo.
+                try {
+                    const [drafts, orders, addresses] = await Promise.all([
+                        wpGetMeta(META_DRAFTS),
+                        wpGetMeta(META_ORDER_HISTORY),
+                        wpGetMeta(META_ADDRESSES)
+                    ]);
+
+                    renderDraftList(drafts || []);
+                    renderOrderHistory(orders || []);
+                    renderAddressList(addresses || []);
+                    populateSavedAddressPicker(addresses || []);
+                } catch (err) {
+                    console.error('Account secondary data load failed:', err);
+                }
+            }
+
+            // ── Render template list ──
+            function renderTemplateList(templates) {
+                if (!templateListEl) return;
+
+                if (!templates.length) {
+                    templateListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📋</div>No saved templates yet.<br>Fill out the form and save it as a template to reuse later.</div>';
+                    return;
+                }
+
+                templateListEl.innerHTML = templates.map((t, i) => {
+                    const tagCount = t.total_tags || (t.payload && t.payload.tags ? t.payload.tags.length : 0);
+                    const jobName = t.job_name || (t.payload ? t.payload.jobName : '') || '—';
+                    const dateText = t.created_at ? new Date(t.created_at).toLocaleDateString() : '';
+
+                    return `
       <div class="account-item">
         <div class="account-item-head">
-          <div class="account-item-title">${esc(t.name || 'Template ' + (i+1))}</div>
-          <div class="account-item-meta">${esc(t.savedAt ? new Date(t.savedAt).toLocaleDateString() : '')}</div>
+          <div class="account-item-title">${esc(t.name || 'Template ' + (i + 1))}</div>
+          <div class="account-item-meta">${esc(dateText)}</div>
         </div>
-        <div class="account-item-meta">${esc(String(t.state && t.state.tags ? t.state.tags.length : 0))} tag(s) · ${esc(t.state && t.state.jobName ? t.state.jobName : '—')}</div>
+        <div class="account-item-meta">${esc(String(tagCount))} tag(s) · ${esc(jobName)}</div>
         <div class="account-item-actions">
           <button type="button" class="account-action-btn" onclick="loadTemplate(${i})">Load</button>
           <button type="button" class="account-action-btn danger" onclick="deleteTemplate(${i})">Delete</button>
         </div>
-      </div>`).join('');
-  }
+      </div>`;
+                }).join('');
+            }
 
-  // ── Render draft list ──
-  function renderDraftList(drafts) {
-    if (!draftListEl) return;
-    if (!drafts.length) {
-      draftListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📝</div>No drafts saved yet.<br>Start building a quote and it will be auto-saved here.</div>';
-      return;
-    }
-    draftListEl.innerHTML = drafts.map((d, i) => `
+            // ── Render draft list ──
+            function renderDraftList(drafts) {
+                if (!draftListEl) return;
+                if (!drafts.length) {
+                    draftListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📝</div>No drafts saved yet.<br>Start building a quote and it will be auto-saved here.</div>';
+                    return;
+                }
+                draftListEl.innerHTML = drafts.map((d, i) => `
       <div class="account-item" id="draftItem_${i}">
         <div class="account-item-head">
           <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:0;">
-            <div class="account-item-title draft-name-display" id="draftNameDisplay_${i}" ondblclick="startRenameDraft(${i})" title="Double-click to rename" style="cursor:text;">${esc(d.name || 'Draft ' + (i+1))}</div>
+            <div class="account-item-title draft-name-display" id="draftNameDisplay_${i}" ondblclick="startRenameDraft(${i})" title="Double-click to rename" style="cursor:text;">${esc(d.name || 'Draft ' + (i + 1))}</div>
           </div>
           <div class="account-item-meta" style="white-space:nowrap;">${esc(d.savedAt ? new Date(d.savedAt).toLocaleString() : '')}</div>
         </div>
         <div class="draft-rename-row hidden" id="draftRenameRow_${i}" style="display:none; gap:6px; align-items:center;">
-          <input type="text" class="save-template-input" id="draftRenameInput_${i}" value="${esc(d.name || 'Draft ' + (i+1))}" maxlength="60" placeholder="Job name…" style="flex:1;" />
+          <input type="text" class="save-template-input" id="draftRenameInput_${i}" value="${esc(d.name || 'Draft ' + (i + 1))}" maxlength="60" placeholder="Job name…" style="flex:1;" />
           <button type="button" class="account-action-btn" onclick="confirmRenameDraft(${i})">Save</button>
           <button type="button" class="account-action-btn" onclick="cancelRenameDraft(${i})">Cancel</button>
         </div>
@@ -7494,54 +7606,54 @@ async function doLogin(email, password) {
           <button type="button" class="account-action-btn danger" onclick="deleteDraft(${i})">Delete</button>
         </div>
       </div>`).join('');
-  }
+            }
 
-  window.startRenameDraft = function(index) {
-    const nameDisplay = document.getElementById('draftNameDisplay_' + index);
-    const renameRow   = document.getElementById('draftRenameRow_' + index);
-    const input       = document.getElementById('draftRenameInput_' + index);
-    if (nameDisplay) nameDisplay.style.display = 'none';
-    if (renameRow)   { renameRow.classList.remove('hidden'); renameRow.style.display = 'flex'; }
-    if (input)       { input.focus(); input.select(); }
-    if (input) {
-      input.onkeydown = e => {
-        if (e.key === 'Enter')  { e.preventDefault(); window.confirmRenameDraft(index); }
-        if (e.key === 'Escape') { e.preventDefault(); window.cancelRenameDraft(index); }
-      };
-    }
-  };
+            window.startRenameDraft = function (index) {
+                const nameDisplay = document.getElementById('draftNameDisplay_' + index);
+                const renameRow = document.getElementById('draftRenameRow_' + index);
+                const input = document.getElementById('draftRenameInput_' + index);
+                if (nameDisplay) nameDisplay.style.display = 'none';
+                if (renameRow) { renameRow.classList.remove('hidden'); renameRow.style.display = 'flex'; }
+                if (input) { input.focus(); input.select(); }
+                if (input) {
+                    input.onkeydown = e => {
+                        if (e.key === 'Enter') { e.preventDefault(); window.confirmRenameDraft(index); }
+                        if (e.key === 'Escape') { e.preventDefault(); window.cancelRenameDraft(index); }
+                    };
+                }
+            };
 
-  window.cancelRenameDraft = function(index) {
-    const nameDisplay = document.getElementById('draftNameDisplay_' + index);
-    const renameRow   = document.getElementById('draftRenameRow_' + index);
-    if (nameDisplay) nameDisplay.style.display = '';
-    if (renameRow)   { renameRow.classList.add('hidden'); renameRow.style.display = 'none'; }
-  };
+            window.cancelRenameDraft = function (index) {
+                const nameDisplay = document.getElementById('draftNameDisplay_' + index);
+                const renameRow = document.getElementById('draftRenameRow_' + index);
+                if (nameDisplay) nameDisplay.style.display = '';
+                if (renameRow) { renameRow.classList.add('hidden'); renameRow.style.display = 'none'; }
+            };
 
-  window.confirmRenameDraft = async function(index) {
-    const input = document.getElementById('draftRenameInput_' + index);
-    const newName = input ? input.value.trim() : '';
-    if (!newName) { if (input) input.focus(); return; }
-    let drafts = await wpGetMeta(META_DRAFTS) || [];
-    if (!drafts[index]) return;
-    drafts[index].name = newName;
-    // Also sync job name in the stored state so it matches
-    if (drafts[index].state) drafts[index].state.jobName = newName;
-    await wpSetMeta(META_DRAFTS, drafts);
-    renderDraftList(drafts);
-  };
+            window.confirmRenameDraft = async function (index) {
+                const input = document.getElementById('draftRenameInput_' + index);
+                const newName = input ? input.value.trim() : '';
+                if (!newName) { if (input) input.focus(); return; }
+                let drafts = await wpGetMeta(META_DRAFTS) || [];
+                if (!drafts[index]) return;
+                drafts[index].name = newName;
+                // Also sync job name in the stored state so it matches
+                if (drafts[index].state) drafts[index].state.jobName = newName;
+                await wpSetMeta(META_DRAFTS, drafts);
+                renderDraftList(drafts);
+            };
 
-  // ── Render order history ──
-  function renderOrderHistory(orders) {
-    if (!orderHistoryListEl) return;
-    if (!orders.length) {
-      orderHistoryListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📦</div>No orders yet.<br>Your submitted orders will appear here.</div>';
-      return;
-    }
-    orderHistoryListEl.innerHTML = orders.map((o, i) => `
+            // ── Render order history ──
+            function renderOrderHistory(orders) {
+                if (!orderHistoryListEl) return;
+                if (!orders.length) {
+                    orderHistoryListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📦</div>No orders yet.<br>Your submitted orders will appear here.</div>';
+                    return;
+                }
+                orderHistoryListEl.innerHTML = orders.map((o, i) => `
       <div class="account-item">
         <div class="account-item-head">
-          <div class="account-item-title">${esc(o.orderNum || 'Order ' + (i+1))}</div>
+          <div class="account-item-title">${esc(o.orderNum || 'Order ' + (i + 1))}</div>
           <div class="account-item-meta">${esc(o.date ? new Date(o.date).toLocaleDateString() : '')}</div>
         </div>
         <div class="account-item-meta">${esc(o.jobName || '—')} · ${esc(String(o.totalPieces || '?'))} pieces · <strong>${esc(o.total || '$?')}</strong></div>
@@ -7549,210 +7661,226 @@ async function doLogin(email, password) {
           <button type="button" class="account-action-btn" onclick="reorder(${i})">Reorder</button>
         </div>
       </div>`).join('');
-  }
+            }
 
-  // ── Save current form as a named template ──
-  window.loadTemplate = async function(index) {
-    const templates = await wpGetMeta(META_TEMPLATES) || [];
-    const t = templates[index];
-    if (!t || !t.state) return;
-    restoreFormState(t.state);
-    closeAccountModal();
-  };
-  window.deleteTemplate = async function(index) {
-    const templates = await wpGetMeta(META_TEMPLATES) || [];
-    templates.splice(index, 1);
-    await wpSetMeta(META_TEMPLATES, templates);
-    renderTemplateList(templates);
-  };
-  window.loadDraft = async function(index) {
-    const drafts = await wpGetMeta(META_DRAFTS) || [];
-    const d = drafts[index];
-    if (!d || !d.state) return;
-    restoreFormState(d.state);
-    closeAccountModal();
-  };
-  window.deleteDraft = async function(index) {
-    const drafts = await wpGetMeta(META_DRAFTS) || [];
-    drafts.splice(index, 1);
-    await wpSetMeta(META_DRAFTS, drafts);
-    renderDraftList(drafts);
-  };
-  window.reorder = async function(index) {
-    const orders = await wpGetMeta(META_ORDER_HISTORY) || [];
-    const o = orders[index];
-    if (!o || !o.state) return;
-    restoreFormState(o.state);
-    closeAccountModal();
-  };
+            // ── Save current form as a named template ──
+            window.loadTemplate = async function (index) {
+                const t = savedTemplatesCache[index];
 
-  // ── Draft auto-save ──
-  function showDraftSaving() {
-    if (!draftDotEl || !draftStatusText) return;
-    draftDotEl.className = 'draft-dot saving';
-    draftStatusText.textContent = 'Saving…';
-  }
-  function showDraftSaved() {
-    if (!draftDotEl || !draftStatusText) return;
-    draftDotEl.className = 'draft-dot saved';
-    draftStatusText.textContent = 'Draft saved';
-    setTimeout(() => { if (draftDotEl) draftDotEl.className = 'draft-dot'; }, 3000);
-  }
-  async function saveDraft() {
-    if (!authUser) return;
-    showDraftSaving();
-    const state = serializeFormState();
-    const jobName = state.jobName || 'Untitled';
-    let drafts = await wpGetMeta(META_DRAFTS) || [];
-    // Upsert: replace existing draft with same job name (or first slot if unnamed)
-    const existingIdx = drafts.findIndex(d => d.name === jobName);
-    const draft = { name: jobName, savedAt: new Date().toISOString(), state };
-    if (existingIdx >= 0) drafts[existingIdx] = draft;
-    else drafts.unshift(draft);
-    if (drafts.length > 20) drafts = drafts.slice(0, 20); // keep max 20 drafts
-    await wpSetMeta(META_DRAFTS, drafts);
-    showDraftSaved();
-  }
-  function startDraftAutoSave() {
-    stopDraftAutoSave();
-    draftTimer = setInterval(saveDraft, 30000);
-  }
-  function stopDraftAutoSave() {
-    if (draftTimer) { clearInterval(draftTimer); draftTimer = null; }
-  }
+                if (!t || !t.payload) return;
 
-  // ── Save order to history (called after Place Order) ──
-  async function saveOrderToHistory(payload) {
-    if (!authUser) return;
-    const result = payload.result || {}, data = payload.data || {};
-    let orders = await wpGetMeta(META_ORDER_HISTORY) || [];
-    orders.unshift({
-      orderNum:    'ORD-' + Date.now().toString(36).toUpperCase(),
-      date:        new Date().toISOString(),
-      jobName:     data.jobName || '—',
-      totalPieces: result.totalPieces || 0,
-      total:       '$' + Number((result.subtotal || 0) + (payload.orderInfo && payload.orderInfo.shippingCost || 0)).toFixed(2),
-      state:       serializeFormState()
-    });
-    if (orders.length > 50) orders = orders.slice(0, 50);
-    await wpSetMeta(META_ORDER_HISTORY, orders);
-  }
+                restoreFormState(t.payload);
+                closeAccountModal();
+            };
 
-  // ── Save as Template (main page inline flow) ──
-  const saveAsTemplateBtn      = document.getElementById('saveAsTemplateBtn');
-  const saveTemplateInline     = document.getElementById('saveTemplateInline');
-  const saveTemplateInlineName = document.getElementById('saveTemplateInlineName');
-  const saveTemplateInlineConfirm = document.getElementById('saveTemplateInlineConfirm');
-  const saveTemplateInlineCancel  = document.getElementById('saveTemplateInlineCancel');
+            window.deleteTemplate = async function (index) {
+                const t = savedTemplatesCache[index];
 
-  function openInlineTemplateSave() {
-    if (!authUser) { openAuthModal('login', 'save_template'); return; }
-    openAccountModalOnTemplates();
-  }
-  function closeInlineTemplateSave() {
-    saveTemplateInline.classList.add('hidden');
-    saveTemplateInline.style.display = 'none';
-  }
+                if (!t || !t.id) return;
 
-  if (saveAsTemplateBtn) saveAsTemplateBtn.addEventListener('click', openInlineTemplateSave);
-  if (saveTemplateInlineCancel) saveTemplateInlineCancel.addEventListener('click', closeInlineTemplateSave);
-  if (saveTemplateInlineConfirm) saveTemplateInlineConfirm.addEventListener('click', async () => {
-    const name = (saveTemplateInlineName ? saveTemplateInlineName.value.trim() : '') || 'My Template';
-    saveTemplateInlineConfirm.textContent = 'Saving…';
-    saveTemplateInlineConfirm.disabled = true;
-    const state = serializeFormState();
-    let templates = await wpGetMeta(META_TEMPLATES) || [];
-    const existing = templates.findIndex(t => t.name === name);
-    const entry = { name, savedAt: new Date().toISOString(), state };
-    if (existing >= 0) templates[existing] = entry;
-    else templates.unshift(entry);
-    if (templates.length > 50) templates = templates.slice(0, 50);
-    await wpSetMeta(META_TEMPLATES, templates);
-    renderTemplateList(templates);
-    saveTemplateInlineConfirm.textContent = 'Saved ✓';
-    setTimeout(() => {
-      saveTemplateInlineConfirm.textContent = 'Save';
-      saveTemplateInlineConfirm.disabled = false;
-      closeInlineTemplateSave();
-    }, 1500);
-  });
-  // Also allow Enter key in the name field
-  if (saveTemplateInlineName) saveTemplateInlineName.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { e.preventDefault(); saveTemplateInlineConfirm && saveTemplateInlineConfirm.click(); }
-    if (e.key === 'Escape') closeInlineTemplateSave();
-  });
+                if (!window.confirm('Delete this template?')) return;
 
-  // ══════════════════════════════════════════════════════════
-  //  SAVED ADDRESSES
-  // ══════════════════════════════════════════════════════════
+                try {
+                    await apiDeleteTemplate(t.id);
+                    savedTemplatesCache.splice(index, 1);
+                    renderTemplateList(savedTemplatesCache);
+                } catch (err) {
+                    window.alert(err.message || 'Failed to delete template.');
+                }
+            };
 
-  let editingAddressIndex = -1; // -1 = new, >=0 = editing existing
+            window.loadDraft = async function (index) {
+                const drafts = await wpGetMeta(META_DRAFTS) || [];
+                const d = drafts[index];
+                if (!d || !d.state) return;
+                restoreFormState(d.state);
+                closeAccountModal();
+            };
+            window.deleteDraft = async function (index) {
+                const drafts = await wpGetMeta(META_DRAFTS) || [];
+                drafts.splice(index, 1);
+                await wpSetMeta(META_DRAFTS, drafts);
+                renderDraftList(drafts);
+            };
+            window.reorder = async function (index) {
+                const orders = await wpGetMeta(META_ORDER_HISTORY) || [];
+                const o = orders[index];
+                if (!o || !o.state) return;
+                restoreFormState(o.state);
+                closeAccountModal();
+            };
 
-  const addAddressBtn       = document.getElementById('addAddressBtn');
-  const addressFormWrap     = document.getElementById('addressFormWrap');
-  const addressFormTitle    = document.getElementById('addressFormTitle');
-  const saveAddressBtn      = document.getElementById('saveAddressBtn');
-  const cancelAddressBtn    = document.getElementById('cancelAddressBtn');
-  const addressListEl       = document.getElementById('addressList');
-  const savedAddressPickerWrap = document.getElementById('savedAddressPickerWrap');
-  const savedAddressPicker  = document.getElementById('savedAddressPicker');
-  const saveCurrentAddressBtn = document.getElementById('saveCurrentAddressBtn');
+            // ── Draft auto-save ──
+            function showDraftSaving() {
+                if (!draftDotEl || !draftStatusText) return;
+                draftDotEl.className = 'draft-dot saving';
+                draftStatusText.textContent = 'Saving…';
+            }
+            function showDraftSaved() {
+                if (!draftDotEl || !draftStatusText) return;
+                draftDotEl.className = 'draft-dot saved';
+                draftStatusText.textContent = 'Draft saved';
+                setTimeout(() => { if (draftDotEl) draftDotEl.className = 'draft-dot'; }, 3000);
+            }
+            async function saveDraft() {
+                if (!authUser) return;
+                showDraftSaving();
+                const state = serializeFormState();
+                const jobName = state.jobName || 'Untitled';
+                let drafts = await wpGetMeta(META_DRAFTS) || [];
+                // Upsert: replace existing draft with same job name (or first slot if unnamed)
+                const existingIdx = drafts.findIndex(d => d.name === jobName);
+                const draft = { name: jobName, savedAt: new Date().toISOString(), state };
+                if (existingIdx >= 0) drafts[existingIdx] = draft;
+                else drafts.unshift(draft);
+                if (drafts.length > 20) drafts = drafts.slice(0, 20); // keep max 20 drafts
+                await wpSetMeta(META_DRAFTS, drafts);
+                showDraftSaved();
+            }
+            function startDraftAutoSave() {
+                stopDraftAutoSave();
+                draftTimer = setInterval(saveDraft, 30000);
+            }
+            function stopDraftAutoSave() {
+                if (draftTimer) { clearInterval(draftTimer); draftTimer = null; }
+            }
 
-  function getAddressFormValues() {
-    return {
-      nickname: (document.getElementById('addrNickname')||{}).value.trim(),
-      street:   (document.getElementById('addrStreet')||{}).value.trim(),
-      city:     (document.getElementById('addrCity')||{}).value.trim(),
-      state:    (document.getElementById('addrState')||{}).value.trim().toUpperCase(),
-      zip:      (document.getElementById('addrZip')||{}).value.trim(),
-      contact:  (document.getElementById('addrContact')||{}).value.trim(),
-      phone:    (document.getElementById('addrPhone')||{}).value.trim(),
-    };
-  }
-  function clearAddressForm() {
-    ['addrNickname','addrStreet','addrCity','addrState','addrZip','addrContact','addrPhone'].forEach(id => {
-      const el = document.getElementById(id); if (el) el.value = '';
-    });
-  }
-  function fillAddressForm(addr) {
-    const set = (id, val) => { const el = document.getElementById(id); if (el) el.value = val || ''; };
-    set('addrNickname', addr.nickname);
-    set('addrStreet',   addr.street);
-    set('addrCity',     addr.city);
-    set('addrState',    addr.state);
-    set('addrZip',      addr.zip);
-    set('addrContact',  addr.contact);
-    set('addrPhone',    addr.phone);
-  }
-  function openAddressForm(mode, index, addr) {
-    editingAddressIndex = (mode === 'edit') ? index : -1;
-    addressFormTitle.textContent = (mode === 'edit') ? 'Edit address' : 'New address';
-    if (mode === 'edit' && addr) fillAddressForm(addr);
-    else clearAddressForm();
-    addressFormWrap.classList.remove('hidden');
-    addressFormWrap.style.display = 'grid';
-    const ni = document.getElementById('addrNickname'); if (ni) ni.focus();
-    // scroll form into view inside modal
-    addressFormWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-  function closeAddressForm() {
-    addressFormWrap.classList.add('hidden');
-    addressFormWrap.style.display = 'none';
-    editingAddressIndex = -1;
-  }
+            // ── Save order to history (called after Place Order) ──
+            async function saveOrderToHistory(payload) {
+                if (!authUser) return;
+                const result = payload.result || {}, data = payload.data || {};
+                let orders = await wpGetMeta(META_ORDER_HISTORY) || [];
+                orders.unshift({
+                    orderNum: 'ORD-' + Date.now().toString(36).toUpperCase(),
+                    date: new Date().toISOString(),
+                    jobName: data.jobName || '—',
+                    totalPieces: result.totalPieces || 0,
+                    total: '$' + Number((result.subtotal || 0) + (payload.orderInfo && payload.orderInfo.shippingCost || 0)).toFixed(2),
+                    state: serializeFormState()
+                });
+                if (orders.length > 50) orders = orders.slice(0, 50);
+                await wpSetMeta(META_ORDER_HISTORY, orders);
+            }
 
-  function renderAddressList(addresses) {
-    if (!addressListEl) return;
-    if (!addresses.length) {
-      addressListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📍</div>No saved addresses yet.<br>Add delivery locations to quickly fill in shipping details when ordering.</div>';
-      return;
-    }
-    addressListEl.innerHTML = addresses.map((a, i) => {
-      const line2 = [a.street, a.city, a.state, a.zip].filter(Boolean).join(', ');
-      const line3 = [a.contact, a.phone].filter(Boolean).join(' · ');
-      return `<div class="account-item">
+            // ── Save as Template (main page inline flow) ──
+            const saveAsTemplateBtn = document.getElementById('saveAsTemplateBtn');
+            const saveTemplateInline = document.getElementById('saveTemplateInline');
+            const saveTemplateInlineName = document.getElementById('saveTemplateInlineName');
+            const saveTemplateInlineConfirm = document.getElementById('saveTemplateInlineConfirm');
+            const saveTemplateInlineCancel = document.getElementById('saveTemplateInlineCancel');
+
+            function openInlineTemplateSave() {
+                if (!authUser) { openAuthModal('login', 'save_template'); return; }
+                openAccountModalOnTemplates();
+            }
+            function closeInlineTemplateSave() {
+                saveTemplateInline.classList.add('hidden');
+                saveTemplateInline.style.display = 'none';
+            }
+
+            if (saveAsTemplateBtn) saveAsTemplateBtn.addEventListener('click', openInlineTemplateSave);
+            if (saveTemplateInlineCancel) saveTemplateInlineCancel.addEventListener('click', closeInlineTemplateSave);
+            if (saveTemplateInlineConfirm) {
+                saveTemplateInlineConfirm.addEventListener('click', async () => {
+                    const name = (saveTemplateInlineName ? saveTemplateInlineName.value.trim() : '') || 'My Template';
+
+                    saveTemplateInlineConfirm.textContent = 'Saving…';
+                    saveTemplateInlineConfirm.disabled = true;
+
+                    try {
+                        await saveCurrentTemplate(name);
+
+                        saveTemplateInlineConfirm.textContent = 'Saved ✓';
+
+                        setTimeout(() => {
+                            saveTemplateInlineConfirm.textContent = 'Save';
+                            saveTemplateInlineConfirm.disabled = false;
+                            closeInlineTemplateSave();
+                        }, 1000);
+                    } catch (err) {
+                        saveTemplateInlineConfirm.textContent = 'Save';
+                        saveTemplateInlineConfirm.disabled = false;
+                        window.alert(err.message || 'Failed to save template.');
+                    }
+                });
+            }
+            // Also allow Enter key in the name field
+            if (saveTemplateInlineName) saveTemplateInlineName.addEventListener('keydown', e => {
+                if (e.key === 'Enter') { e.preventDefault(); saveTemplateInlineConfirm && saveTemplateInlineConfirm.click(); }
+                if (e.key === 'Escape') closeInlineTemplateSave();
+            });
+
+            // ══════════════════════════════════════════════════════════
+            //  SAVED ADDRESSES
+            // ══════════════════════════════════════════════════════════
+
+            let editingAddressIndex = -1; // -1 = new, >=0 = editing existing
+
+            const addAddressBtn = document.getElementById('addAddressBtn');
+            const addressFormWrap = document.getElementById('addressFormWrap');
+            const addressFormTitle = document.getElementById('addressFormTitle');
+            const saveAddressBtn = document.getElementById('saveAddressBtn');
+            const cancelAddressBtn = document.getElementById('cancelAddressBtn');
+            const addressListEl = document.getElementById('addressList');
+            const savedAddressPickerWrap = document.getElementById('savedAddressPickerWrap');
+            const savedAddressPicker = document.getElementById('savedAddressPicker');
+            const saveCurrentAddressBtn = document.getElementById('saveCurrentAddressBtn');
+
+            function getAddressFormValues() {
+                return {
+                    nickname: (document.getElementById('addrNickname') || {}).value.trim(),
+                    street: (document.getElementById('addrStreet') || {}).value.trim(),
+                    city: (document.getElementById('addrCity') || {}).value.trim(),
+                    state: (document.getElementById('addrState') || {}).value.trim().toUpperCase(),
+                    zip: (document.getElementById('addrZip') || {}).value.trim(),
+                    contact: (document.getElementById('addrContact') || {}).value.trim(),
+                    phone: (document.getElementById('addrPhone') || {}).value.trim(),
+                };
+            }
+            function clearAddressForm() {
+                ['addrNickname', 'addrStreet', 'addrCity', 'addrState', 'addrZip', 'addrContact', 'addrPhone'].forEach(id => {
+                    const el = document.getElementById(id); if (el) el.value = '';
+                });
+            }
+            function fillAddressForm(addr) {
+                const set = (id, val) => { const el = document.getElementById(id); if (el) el.value = val || ''; };
+                set('addrNickname', addr.nickname);
+                set('addrStreet', addr.street);
+                set('addrCity', addr.city);
+                set('addrState', addr.state);
+                set('addrZip', addr.zip);
+                set('addrContact', addr.contact);
+                set('addrPhone', addr.phone);
+            }
+            function openAddressForm(mode, index, addr) {
+                editingAddressIndex = (mode === 'edit') ? index : -1;
+                addressFormTitle.textContent = (mode === 'edit') ? 'Edit address' : 'New address';
+                if (mode === 'edit' && addr) fillAddressForm(addr);
+                else clearAddressForm();
+                addressFormWrap.classList.remove('hidden');
+                addressFormWrap.style.display = 'grid';
+                const ni = document.getElementById('addrNickname'); if (ni) ni.focus();
+                // scroll form into view inside modal
+                addressFormWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            function closeAddressForm() {
+                addressFormWrap.classList.add('hidden');
+                addressFormWrap.style.display = 'none';
+                editingAddressIndex = -1;
+            }
+
+            function renderAddressList(addresses) {
+                if (!addressListEl) return;
+                if (!addresses.length) {
+                    addressListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📍</div>No saved addresses yet.<br>Add delivery locations to quickly fill in shipping details when ordering.</div>';
+                    return;
+                }
+                addressListEl.innerHTML = addresses.map((a, i) => {
+                    const line2 = [a.street, a.city, a.state, a.zip].filter(Boolean).join(', ');
+                    const line3 = [a.contact, a.phone].filter(Boolean).join(' · ');
+                    return `<div class="account-item">
         <div class="account-item-head">
-          <div class="account-item-title">${esc(a.nickname || 'Address ' + (i+1))}</div>
+          <div class="account-item-title">${esc(a.nickname || 'Address ' + (i + 1))}</div>
         </div>
         <div class="account-item-meta">${esc(line2 || '—')}</div>
         ${line3 ? `<div class="account-item-meta">${esc(line3)}</div>` : ''}
@@ -7761,244 +7889,258 @@ async function doLogin(email, password) {
           <button type="button" class="account-action-btn danger" onclick="deleteAddress(${i})">Delete</button>
         </div>
       </div>`;
-    }).join('');
-  }
+                }).join('');
+            }
 
-  function populateSavedAddressPicker(addresses) {
-    if (!savedAddressPicker) return;
-    // Show the picker only when logged in and there are saved addresses
-    const show = authUser && addresses.length > 0;
-    if (savedAddressPickerWrap) {
-      savedAddressPickerWrap.classList.toggle('hidden', !show);
-      savedAddressPickerWrap.style.display = show ? 'flex' : 'none';
-    }
-    if (saveCurrentAddressBtn) {
-      saveCurrentAddressBtn.classList.toggle('hidden', !authUser);
-    }
-    const opts = '<option value="">— Use a saved address —</option>'
-      + addresses.map((a, i) => `<option value="${i}">${esc(a.nickname || 'Address ' + (i+1))}</option>`).join('');
-    savedAddressPicker.innerHTML = opts;
+            function populateSavedAddressPicker(addresses) {
+                if (!savedAddressPicker) return;
+                // Show the picker only when logged in and there are saved addresses
+                const show = authUser && addresses.length > 0;
+                if (savedAddressPickerWrap) {
+                    savedAddressPickerWrap.classList.toggle('hidden', !show);
+                    savedAddressPickerWrap.style.display = show ? 'flex' : 'none';
+                }
+                if (saveCurrentAddressBtn) {
+                    saveCurrentAddressBtn.classList.toggle('hidden', !authUser);
+                }
+                const opts = '<option value="">— Use a saved address —</option>'
+                    + addresses.map((a, i) => `<option value="${i}">${esc(a.nickname || 'Address ' + (i + 1))}</option>`).join('');
+                savedAddressPicker.innerHTML = opts;
 
-    // ── Also populate billing picker ──
-    const billingPickerWrap = document.getElementById('savedBillingAddressPickerWrap');
-    const billingPicker     = document.getElementById('savedBillingAddressPicker');
-    if (billingPicker) billingPicker.innerHTML = opts;
-    if (billingPickerWrap) {
-      billingPickerWrap.classList.toggle('hidden', !show);
-      billingPickerWrap.style.display = show ? 'block' : 'none';
-    }
-  }
+                // ── Also populate billing picker ──
+                const billingPickerWrap = document.getElementById('savedBillingAddressPickerWrap');
+                const billingPicker = document.getElementById('savedBillingAddressPicker');
+                if (billingPicker) billingPicker.innerHTML = opts;
+                if (billingPickerWrap) {
+                    billingPickerWrap.classList.toggle('hidden', !show);
+                    billingPickerWrap.style.display = show ? 'block' : 'none';
+                }
+            }
 
-  // Apply selected saved address to shipping fields
-  if (savedAddressPicker) {
-    savedAddressPicker.addEventListener('change', async () => {
-      const idx = parseInt(savedAddressPicker.value, 10);
-      if (isNaN(idx)) return;
-      const addresses = await wpGetMeta(META_ADDRESSES) || [];
-      const a = addresses[idx];
-      if (!a) return;
-      if (orderAddress) orderAddress.value = a.street || '';
-      if (orderCity)    orderCity.value    = a.city   || '';
-      if (orderState)   orderState.value   = a.state  || '';
-      if (orderZip)     orderZip.value     = a.zip    || '';
-      syncBillingAddressState();
-      updatePlaceOrderState();
-      // Reset picker back to placeholder after applying
-      setTimeout(() => { savedAddressPicker.value = ''; }, 300);
-    });
-  }
+            // Apply selected saved address to shipping fields
+            if (savedAddressPicker) {
+                savedAddressPicker.addEventListener('change', async () => {
+                    const idx = parseInt(savedAddressPicker.value, 10);
+                    if (isNaN(idx)) return;
+                    const addresses = await wpGetMeta(META_ADDRESSES) || [];
+                    const a = addresses[idx];
+                    if (!a) return;
+                    if (orderAddress) orderAddress.value = a.street || '';
+                    if (orderCity) orderCity.value = a.city || '';
+                    if (orderState) orderState.value = a.state || '';
+                    if (orderZip) orderZip.value = a.zip || '';
+                    syncBillingAddressState();
+                    updatePlaceOrderState();
+                    // Reset picker back to placeholder after applying
+                    setTimeout(() => { savedAddressPicker.value = ''; }, 300);
+                });
+            }
 
-  // "Save this address" from the order modal shipping section
-  if (saveCurrentAddressBtn) {
-    saveCurrentAddressBtn.addEventListener('click', async () => {
-      const street = orderAddress ? orderAddress.value.trim() : '';
-      const city   = orderCity   ? orderCity.value.trim()    : '';
-      const state  = orderState  ? orderState.value.trim()   : '';
-      const zip    = orderZip    ? orderZip.value.trim()     : '';
-      if (!street) { window.alert('Please enter a shipping address first.'); return; }
-      const nickname = window.prompt('Give this address a nickname (e.g. "Tucson Location"):', city ? city + ' Location' : '');
-      if (nickname === null) return; // cancelled
-      const newAddr = { nickname: nickname.trim() || city + ' Location', street, city, state, zip, contact: '', phone: '' };
-      let addresses = await wpGetMeta(META_ADDRESSES) || [];
-      addresses.unshift(newAddr);
-      await wpSetMeta(META_ADDRESSES, addresses);
-      populateSavedAddressPicker(addresses);
-      saveCurrentAddressBtn.textContent = 'Saved ✓';
-      setTimeout(() => { saveCurrentAddressBtn.textContent = '+ Save this address to My Addresses'; }, 2000);
-    });
-  }
+            // "Save this address" from the order modal shipping section
+            if (saveCurrentAddressBtn) {
+                saveCurrentAddressBtn.addEventListener('click', async () => {
+                    const street = orderAddress ? orderAddress.value.trim() : '';
+                    const city = orderCity ? orderCity.value.trim() : '';
+                    const state = orderState ? orderState.value.trim() : '';
+                    const zip = orderZip ? orderZip.value.trim() : '';
+                    if (!street) { window.alert('Please enter a shipping address first.'); return; }
+                    const nickname = window.prompt('Give this address a nickname (e.g. "Tucson Location"):', city ? city + ' Location' : '');
+                    if (nickname === null) return; // cancelled
+                    const newAddr = { nickname: nickname.trim() || city + ' Location', street, city, state, zip, contact: '', phone: '' };
+                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
+                    addresses.unshift(newAddr);
+                    await wpSetMeta(META_ADDRESSES, addresses);
+                    populateSavedAddressPicker(addresses);
+                    saveCurrentAddressBtn.textContent = 'Saved ✓';
+                    setTimeout(() => { saveCurrentAddressBtn.textContent = '+ Save this address to My Addresses'; }, 2000);
+                });
+            }
 
-  // Add address button
-  if (addAddressBtn) addAddressBtn.addEventListener('click', () => openAddressForm('new'));
-  if (cancelAddressBtn) cancelAddressBtn.addEventListener('click', closeAddressForm);
+            // Add address button
+            if (addAddressBtn) addAddressBtn.addEventListener('click', () => openAddressForm('new'));
+            if (cancelAddressBtn) cancelAddressBtn.addEventListener('click', closeAddressForm);
 
-  // Save address form
-  if (saveAddressBtn) saveAddressBtn.addEventListener('click', async () => {
-    const vals = getAddressFormValues();
-    if (!vals.nickname) { document.getElementById('addrNickname').focus(); return; }
-    if (!vals.street)   { document.getElementById('addrStreet').focus();   return; }
-    saveAddressBtn.textContent = 'Saving…';
-    saveAddressBtn.disabled = true;
-    let addresses = await wpGetMeta(META_ADDRESSES) || [];
-    if (editingAddressIndex >= 0) {
-      addresses[editingAddressIndex] = vals;
-    } else {
-      addresses.unshift(vals);
-    }
-    await wpSetMeta(META_ADDRESSES, addresses);
-    renderAddressList(addresses);
-    populateSavedAddressPicker(addresses);
-    closeAddressForm();
-    saveAddressBtn.textContent = 'Save address';
-    saveAddressBtn.disabled = false;
-  });
+            // Save address form
+            if (saveAddressBtn) saveAddressBtn.addEventListener('click', async () => {
+                const vals = getAddressFormValues();
+                if (!vals.nickname) { document.getElementById('addrNickname').focus(); return; }
+                if (!vals.street) { document.getElementById('addrStreet').focus(); return; }
+                saveAddressBtn.textContent = 'Saving…';
+                saveAddressBtn.disabled = true;
+                let addresses = await wpGetMeta(META_ADDRESSES) || [];
+                if (editingAddressIndex >= 0) {
+                    addresses[editingAddressIndex] = vals;
+                } else {
+                    addresses.unshift(vals);
+                }
+                await wpSetMeta(META_ADDRESSES, addresses);
+                renderAddressList(addresses);
+                populateSavedAddressPicker(addresses);
+                closeAddressForm();
+                saveAddressBtn.textContent = 'Save address';
+                saveAddressBtn.disabled = false;
+            });
 
-  // Global helpers for inline onclick in address list
-  window.editAddress = async function(index) {
-    const addresses = await wpGetMeta(META_ADDRESSES) || [];
-    openAddressForm('edit', index, addresses[index]);
-  };
-  window.deleteAddress = async function(index) {
-    if (!window.confirm('Delete this address?')) return;
-    let addresses = await wpGetMeta(META_ADDRESSES) || [];
-    addresses.splice(index, 1);
-    await wpSetMeta(META_ADDRESSES, addresses);
-    renderAddressList(addresses);
-    populateSavedAddressPicker(addresses);
-  };
+            // Global helpers for inline onclick in address list
+            window.editAddress = async function (index) {
+                const addresses = await wpGetMeta(META_ADDRESSES) || [];
+                openAddressForm('edit', index, addresses[index]);
+            };
+            window.deleteAddress = async function (index) {
+                if (!window.confirm('Delete this address?')) return;
+                let addresses = await wpGetMeta(META_ADDRESSES) || [];
+                addresses.splice(index, 1);
+                await wpSetMeta(META_ADDRESSES, addresses);
+                renderAddressList(addresses);
+                populateSavedAddressPicker(addresses);
+            };
 
-  // ── Wire up auth bar events ──
-  if (authShowLogin) authShowLogin.addEventListener('click', () => openAuthModal('login'));
-  if (authShowRegister) authShowRegister.addEventListener('click', () => openAuthModal('register'));
-  if (authModalClose) authModalClose.addEventListener('click', closeAuthModal);
-  if (authSwitchToRegister) authSwitchToRegister.addEventListener('click', () => openAuthModal('register'));
-  if (authSwitchToLogin) authSwitchToLogin.addEventListener('click', () => openAuthModal('login'));
-  if (authLogoutBtn) authLogoutBtn.addEventListener('click', doLogout);
-  if (authAccountBtn) authAccountBtn.addEventListener('click', openAccountModal);
-  if (accountModalClose) accountModalClose.addEventListener('click', closeAccountModal);
-  if (accountModalBackdrop) accountModalBackdrop.addEventListener('click', e => { if (e.target === accountModalBackdrop) closeAccountModal(); });
-  if (authModalBackdrop) authModalBackdrop.addEventListener('click', e => { if (e.target === authModalBackdrop) closeAuthModal(); });
+            // ── Wire up auth bar events ──
+            if (authShowLogin) authShowLogin.addEventListener('click', () => openAuthModal('login'));
+            if (authShowRegister) authShowRegister.addEventListener('click', () => openAuthModal('register'));
+            if (authModalClose) authModalClose.addEventListener('click', closeAuthModal);
+            if (authSwitchToRegister) authSwitchToRegister.addEventListener('click', () => openAuthModal('register'));
+            if (authSwitchToLogin) authSwitchToLogin.addEventListener('click', () => openAuthModal('login'));
+            if (authLogoutBtn) authLogoutBtn.addEventListener('click', doLogout);
+            if (authAccountBtn) authAccountBtn.addEventListener('click', openAccountModal);
+            if (accountModalClose) accountModalClose.addEventListener('click', closeAccountModal);
+            if (accountModalBackdrop) accountModalBackdrop.addEventListener('click', e => { if (e.target === accountModalBackdrop) closeAccountModal(); });
+            if (authModalBackdrop) authModalBackdrop.addEventListener('click', e => { if (e.target === authModalBackdrop) closeAuthModal(); });
 
-  // ── Login form submit ──
-  if (authLoginForm) authLoginForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const email = document.getElementById('authLoginEmail').value.trim();
-    const pass  = document.getElementById('authLoginPassword').value;
-    doLogin(email, pass);
-  });
+            // ── Login form submit ──
+            if (authLoginForm) authLoginForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const email = document.getElementById('authLoginEmail').value.trim();
+                const pass = document.getElementById('authLoginPassword').value;
+                doLogin(email, pass);
+            });
 
-  // ── Register form submit ──
-  if (authRegForm) authRegForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const firstName = document.getElementById('authRegFirstName').value.trim();
-    const lastName  = document.getElementById('authRegLastName').value.trim();
-    const email     = document.getElementById('authRegEmail').value.trim();
-    const pass      = document.getElementById('authRegPassword').value;
-    const company   = document.getElementById('authRegCompany').value.trim();
-    doRegister(firstName, lastName, email, pass, company);
-  });
+            // ── Register form submit ──
+            if (authRegForm) authRegForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const firstName = document.getElementById('authRegFirstName').value.trim();
+                const lastName = document.getElementById('authRegLastName').value.trim();
+                const email = document.getElementById('authRegEmail').value.trim();
+                const pass = document.getElementById('authRegPassword').value;
+                const company = document.getElementById('authRegCompany').value.trim();
+                doRegister(firstName, lastName, email, pass, company);
+            });
 
-  // ── Save template button ──
-  if (saveTemplateBtn) saveTemplateBtn.addEventListener('click', async () => {
-    if (!authUser) { openAuthModal('login'); return; }
-    const name = (saveTemplateNameInput ? saveTemplateNameInput.value.trim() : '') || (getEl('jobName') ? getEl('jobName').value.trim() : '') || 'My Template';
-    saveTemplateBtn.textContent = 'Saving…';
-    saveTemplateBtn.disabled = true;
-    const state = serializeFormState();
-    let templates = await wpGetMeta(META_TEMPLATES) || [];
-    const existing = templates.findIndex(t => t.name === name);
-    const entry = { name, savedAt: new Date().toISOString(), state };
-    if (existing >= 0) templates[existing] = entry;
-    else templates.unshift(entry);
-    if (templates.length > 50) templates = templates.slice(0, 50);
-    await wpSetMeta(META_TEMPLATES, templates);
-    renderTemplateList(templates);
-    saveTemplateBtn.textContent = 'Saved ✓';
-    setTimeout(() => { saveTemplateBtn.textContent = 'Save current'; saveTemplateBtn.disabled = false; }, 2000);
-  });
+            // ── Save template button ──
+            if (saveTemplateBtn) {
+                saveTemplateBtn.addEventListener('click', async () => {
+                    if (!authUser) {
+                        openAuthModal('login', 'save_template');
+                        return;
+                    }
 
-  // ── Hook into Place Order to record order history ──
-  const _origPlaceOrderHandler = () => {};
-  document.addEventListener('ac:orderPlaced', async (e) => {
-    if (e.detail && e.detail.payload) await saveOrderToHistory(e.detail.payload);
-  });
+                    const name =
+                        (saveTemplateNameInput ? saveTemplateNameInput.value.trim() : '') ||
+                        (getEl('jobName') ? getEl('jobName').value.trim() : '') ||
+                        'My Template';
 
-  // ── Init auth ──
-  initAuth();
+                    saveTemplateBtn.textContent = 'Saving…';
+                    saveTemplateBtn.disabled = true;
+
+                    try {
+                        await saveCurrentTemplate(name);
+
+                        saveTemplateBtn.textContent = 'Saved ✓';
+
+                        setTimeout(() => {
+                            saveTemplateBtn.textContent = 'Save current';
+                            saveTemplateBtn.disabled = false;
+                        }, 1200);
+                    } catch (err) {
+                        saveTemplateBtn.textContent = 'Save current';
+                        saveTemplateBtn.disabled = false;
+                        window.alert(err.message || 'Failed to save template.');
+                    }
+                });
+            }
+            // ── Hook into Place Order to record order history ──
+            const _origPlaceOrderHandler = () => { };
+            document.addEventListener('ac:orderPlaced', async (e) => {
+                if (e.detail && e.detail.payload) await saveOrderToHistory(e.detail.payload);
+            });
+
+            // ── Init auth ──
+            initAuth();
 
 
 
-  // ── Account nudge on email blur ──
-  (function() {
-    const nudge        = document.getElementById('accountNudge');
-    const emailField   = document.getElementById('email');
-    const dismissBtn   = document.getElementById('nudgeDismissBtn');
-    const createBtn    = document.getElementById('nudgeCreateAccountBtn');
-    let nudgeDismissed = false;
+            // ── Account nudge on email blur ──
+            (function () {
+                const nudge = document.getElementById('accountNudge');
+                const emailField = document.getElementById('email');
+                const dismissBtn = document.getElementById('nudgeDismissBtn');
+                const createBtn = document.getElementById('nudgeCreateAccountBtn');
+                let nudgeDismissed = false;
 
-    function checkNudge() {
-      if (!nudge || nudgeDismissed || authUser) return;
-      const emailVal = emailField ? emailField.value.trim() : '';
-      const hasEmail = emailVal.length > 3 && emailVal.includes('@');
-      nudge.classList.toggle('hidden', !hasEmail);
-      nudge.style.display = hasEmail ? 'flex' : 'none';
-    }
+                function checkNudge() {
+                    if (!nudge || nudgeDismissed || authUser) return;
+                    const emailVal = emailField ? emailField.value.trim() : '';
+                    const hasEmail = emailVal.length > 3 && emailVal.includes('@');
+                    nudge.classList.toggle('hidden', !hasEmail);
+                    nudge.style.display = hasEmail ? 'flex' : 'none';
+                }
 
-    if (emailField) {
-      emailField.addEventListener('blur',   checkNudge);
-      emailField.addEventListener('input',  checkNudge);
-    }
+                if (emailField) {
+                    emailField.addEventListener('blur', checkNudge);
+                    emailField.addEventListener('input', checkNudge);
+                }
 
-    if (dismissBtn) {
-      dismissBtn.addEventListener('click', () => {
-        nudgeDismissed = true;
-        nudge.classList.add('hidden');
-        nudge.style.display = 'none';
-      });
-    }
+                if (dismissBtn) {
+                    dismissBtn.addEventListener('click', () => {
+                        nudgeDismissed = true;
+                        nudge.classList.add('hidden');
+                        nudge.style.display = 'none';
+                    });
+                }
 
-    if (createBtn) {
-      createBtn.addEventListener('click', () => {
-        // Pre-fill the register form with whatever's already typed
-        const name    = (getEl('customerName') || {}).value.trim() || '';
-        const company = (getEl('companyName')  || {}).value.trim() || '';
-        const email   = (getEl('email')        || {}).value.trim() || '';
-        const parts   = name.split(' ');
-        const firstName = parts[0] || '';
-        const lastName  = parts.slice(1).join(' ') || '';
-        openAuthModal('register', null);
-        // Give the modal a moment to render before filling fields
-        setTimeout(() => {
-          const fn = document.getElementById('authRegFirstName');
-          const ln = document.getElementById('authRegLastName');
-          const em = document.getElementById('authRegEmail');
-          const co = document.getElementById('authRegCompany');
-          if (fn) fn.value = firstName;
-          if (ln) ln.value = lastName;
-          if (em) em.value = email;
-          if (co) co.value = company;
-          // Focus password field since everything else is filled
-          const pw = document.getElementById('authRegPassword');
-          if (pw) pw.focus();
-        }, 80);
-      });
-    }
+                if (createBtn) {
+                    createBtn.addEventListener('click', () => {
+                        // Pre-fill the register form with whatever's already typed
+                        const name = (getEl('customerName') || {}).value.trim() || '';
+                        const company = (getEl('companyName') || {}).value.trim() || '';
+                        const email = (getEl('email') || {}).value.trim() || '';
+                        const parts = name.split(' ');
+                        const firstName = parts[0] || '';
+                        const lastName = parts.slice(1).join(' ') || '';
+                        openAuthModal('register', null);
+                        // Give the modal a moment to render before filling fields
+                        setTimeout(() => {
+                            const fn = document.getElementById('authRegFirstName');
+                            const ln = document.getElementById('authRegLastName');
+                            const em = document.getElementById('authRegEmail');
+                            const co = document.getElementById('authRegCompany');
+                            if (fn) fn.value = firstName;
+                            if (ln) ln.value = lastName;
+                            if (em) em.value = email;
+                            if (co) co.value = company;
+                            // Focus password field since everything else is filled
+                            const pw = document.getElementById('authRegPassword');
+                            if (pw) pw.focus();
+                        }, 80);
+                    });
+                }
 
-    // Hide nudge immediately if user logs in
-    document.addEventListener('ac:userLoggedIn', () => {
-      if (nudge) { nudge.classList.add('hidden'); nudge.style.display = 'none'; }
-    });
-  })();
+                // Hide nudge immediately if user logs in
+                document.addEventListener('ac:userLoggedIn', () => {
+                    if (nudge) { nudge.classList.add('hidden'); nudge.style.display = 'none'; }
+                });
+            })();
 
-  // ── Init ──
-  setSummaryDefaults();
-  addSignBox();
-  rebuildPreviewSelector();
-  syncSizeModeUI();
-  syncHoleSizeOptions();
-  renderDesignPreview();
-  queueLiveEstimateUpdate();
-});
-</script>
+            // ── Init ──
+            setSummaryDefaults();
+            addSignBox();
+            rebuildPreviewSelector();
+            syncSizeModeUI();
+            syncHoleSizeOptions();
+            renderDesignPreview();
+            queueLiveEstimateUpdate();
+        });
+    </script>
 </body>
+
 </html>
