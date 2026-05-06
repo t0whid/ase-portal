@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
-use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -14,24 +14,24 @@ class AuthController extends Controller
     {
         $data = $request->validate([
             'first_name' => ['required', 'string', 'max:100'],
-            'last_name'  => ['nullable', 'string', 'max:100'],
-            'email'      => ['required', 'email', 'max:255', 'unique:users,email'],
-            'password'   => ['required', 'string', 'min:8'],
-            'company'    => ['nullable', 'string', 'max:255'],
-            'phone'      => ['nullable', 'string', 'max:50'],
+            'last_name' => ['nullable', 'string', 'max:100'],
+            'email' => ['required', 'email', 'max:255', 'unique:users,email'],
+            'password' => ['required', 'string', 'min:8'],
+            'company' => ['nullable', 'string', 'max:255'],
+            'phone' => ['nullable', 'string', 'max:50'],
         ]);
 
-        $fullName = trim($data['first_name'] . ' ' . ($data['last_name'] ?? ''));
+        $fullName = trim($data['first_name'].' '.($data['last_name'] ?? ''));
 
         $user = User::create([
             'first_name' => $data['first_name'],
-            'last_name'  => $data['last_name'] ?? null,
-            'name'       => $fullName,
-            'email'      => strtolower($data['email']),
-            'password'   => $data['password'],
-            'company'    => $data['company'] ?? null,
-            'phone'      => $data['phone'] ?? null,
-            'status'     => 'active',
+            'last_name' => $data['last_name'] ?? null,
+            'name' => $fullName,
+            'email' => strtolower($data['email']),
+            'password' => $data['password'],
+            'company' => $data['company'] ?? null,
+            'phone' => $data['phone'] ?? null,
+            'status' => 'active',
         ]);
 
         $token = $user->createToken('portal-token')->plainTextToken;
@@ -49,19 +49,19 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $data = $request->validate([
-            'email'    => ['required', 'email'],
+            'email' => ['required', 'email'],
             'password' => ['required', 'string'],
         ]);
 
         $user = User::where('email', strtolower($data['email']))->first();
 
-        if (!$user || !Hash::check($data['password'], $user->password)) {
+        if (! $user || ! Hash::check($data['password'], $user->password)) {
             throw ValidationException::withMessages([
                 'email' => ['Invalid email or password.'],
             ]);
         }
 
-        if (!$user->isActive()) {
+        if (! $user->isActive()) {
             return response()->json([
                 'success' => false,
                 'message' => 'Your account is not active.',
