@@ -2277,18 +2277,11 @@
                     </div>
                 </div>
                 <div class="quote-modal-card">
-                    <p class="summary-section-title">Payment information</p>
-                    <div class="field-grid">
-                        <div class="field"><label>Cardholder name</label><input id="paymentCardholder" /></div>
-                        <div class="field"><label>Card number</label><input id="paymentCardNumber" inputmode="numeric"
-                                autocomplete="cc-number" /></div>
-                        <div class="field"><label>Expiration</label><input id="paymentExpiry" placeholder="MM/YY"
-                                autocomplete="cc-exp" /></div>
-                        <div class="field"><label>CVV</label><input id="paymentCvv" inputmode="numeric"
-                                autocomplete="cc-csc" /></div>
-                        <div class="field"><label>Billing zip</label><input id="paymentBillingZip" inputmode="numeric"
-                                autocomplete="postal-code" /></div>
-                    </div>
+                    <p class="summary-section-title">Secure Payment</p>
+                    <p class="helper-text" style="margin-top:8px;color:#8b2a2a;">
+                        You will be redirected to Stripe’s secure checkout page to complete payment.
+                        We do not store full card details.
+                    </p>
                 </div>
                 <div class="quote-modal-card">
                     <p class="summary-section-title">Final total</p>
@@ -2337,9 +2330,14 @@
                     <div class="quote-actions-bottom">
                         <button type="button" class="btn btn-link-lite" id="backToOrderInfoBtn">Back to Order
                             Info</button>
-                        <button type="button" class="btn btn-primary btn-primary-strong" id="placeOrderBtn"
-                            disabled>Place Order</button>
+                        <button type="button" class="btn btn-primary btn-primary-strong" id="placeOrderBtn" disabled>Pay
+                            &amp; Place Order</button>
                     </div>
+
+                    <p class="helper-text" style="margin-top:8px;color:#8b2a2a;">
+                        You will be redirected to Stripe’s secure checkout page to complete payment. We do not store
+                        full card details.
+                    </p>
                 </div>
             </div>
         </div>
@@ -5026,18 +5024,26 @@
             }
 
             function validateOrderStep() {
-                const missingAddress = [orderAddress, orderCity, orderState, orderZip].some(f => !f || !String(f.value ||
-                    '').trim());
-                if (missingAddress) return 'Please enter your shipping address.';
-                const usingSameBilling = !billingSameAsShipping || billingSameAsShipping.checked;
-                if (!usingSameBilling) {
-                    const mb = [billingAddress, billingCity, billingState, billingZip].some(f => !f || !String(f.value ||
-                        '').trim());
-                    if (mb) return 'Please enter your billing address.';
+                const missingAddress = [orderAddress, orderCity, orderState, orderZip].some(f =>
+                    !f || !String(f.value || '').trim()
+                );
+
+                if (missingAddress) {
+                    return 'Please enter your shipping address.';
                 }
-                const mp = [paymentCardholder, paymentCardNumber, paymentExpiry, paymentCvv, paymentBillingZip].some(f => !
-                    f || !String(f.value || '').trim());
-                if (mp) return 'Please complete the payment information.';
+
+                const usingSameBilling = !billingSameAsShipping || billingSameAsShipping.checked;
+
+                if (!usingSameBilling) {
+                    const missingBilling = [billingAddress, billingCity, billingState, billingZip].some(f =>
+                        !f || !String(f.value || '').trim()
+                    );
+
+                    if (missingBilling) {
+                        return 'Please enter your billing address.';
+                    }
+                }
+
                 return '';
             }
 
@@ -6097,7 +6103,7 @@
 
                     if (!proofApprovalCheckbox || !proofApprovalCheckbox.checked) {
                         if (proofValidationMessage) {
-                            proofValidationMessage.textContent = 'Please approve the proof before placing your order.';
+                            proofValidationMessage.textContent = 'Please approve the proof before continuing to payment.';
                             proofValidationMessage.classList.add('show');
                         }
                         return;
@@ -6115,29 +6121,25 @@
 
                     placeOrderBtn.disabled = true;
                     const originalText = placeOrderBtn.textContent;
-                    placeOrderBtn.textContent = 'Submitting…';
+                    placeOrderBtn.textContent = 'Redirecting to payment…';
 
                     try {
                         const orderPayload = buildOrderApiPayload();
-                        const savedOrder = await apiSaveOrder(orderPayload);
 
-                        savedOrdersCache.unshift(savedOrder);
-                        renderOrderHistory(savedOrdersCache);
+                        const paymentData = await apiCreateCheckoutSession(orderPayload);
 
-                        placeOrderBtn.textContent = 'Order Placed ✓';
+                        if (!paymentData.checkout_url) {
+                            throw new Error('Stripe checkout URL not found.');
+                        }
 
-                        window.alert('Order submitted successfully. Order number: ' + savedOrder.order_number);
-
-                        setTimeout(() => {
-                            placeOrderBtn.textContent = originalText || 'Place Order';
-                            placeOrderBtn.disabled = false;
-                            closeOrderModal();
-                        }, 1200);
+                        window.location.href = paymentData.checkout_url;
                     } catch (err) {
                         console.error(err);
-                        placeOrderBtn.textContent = originalText || 'Place Order';
+
+                        placeOrderBtn.textContent = originalText || 'Pay & Place Order';
                         placeOrderBtn.disabled = false;
-                        window.alert(err.message || 'Failed to submit order.');
+
+                        window.alert(err.message || 'Failed to start payment.');
                     }
                 });
             }
@@ -8517,8 +8519,8 @@
                         },
 
                     payment_status: 'pending',
-                    payment_method: 'card',
-                    card_last_four: getCardLastFour(),
+                    payment_method: 'stripe',
+                    card_last_four: null,
 
                     proof_approved: Boolean(proofApprovalCheckbox && proofApprovalCheckbox.checked),
 
@@ -8530,11 +8532,7 @@
                         form_state: formState,
                         quote_payload: latestQuotePayload,
                         order_info: {
-                            cardholder: paymentCardholder ? paymentCardholder.value.trim() : '',
-                            // Never send full card number/cvv to backend
-                            card_last_four: getCardLastFour(),
-                            expiry: paymentExpiry ? paymentExpiry.value.trim() : '',
-                            billing_zip: paymentBillingZip ? paymentBillingZip.value.trim() : ''
+                            payment_provider: 'stripe'
                         }
                     }
                 };
@@ -8550,6 +8548,22 @@
                 restoreFormState(state);
                 closeAccountModal();
             };
+
+            async function apiCreateCheckoutSession(payload) {
+                const res = await fetch(API_BASE + '/payments/create-checkout-session', {
+                    method: 'POST',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to create payment session.');
+                }
+
+                return json.data;
+            }
 
             // "Save this address" from the order modal shipping section
             if (saveCurrentAddressBtn) {

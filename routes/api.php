@@ -6,11 +6,13 @@ use App\Http\Controllers\Api\SavedAddressController;
 use App\Http\Controllers\Api\DraftController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\EmailController;
+use App\Http\Controllers\Api\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/send-quote', [EmailController::class, 'sendQuote']);
+Route::post('/stripe/webhook', [PaymentController::class, 'webhook']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/me', [AuthController::class, 'me']);
@@ -35,4 +37,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/orders', [OrderController::class, 'index']);
     Route::post('/orders', [OrderController::class, 'store']);
     Route::get('/orders/{order}', [OrderController::class, 'show']);
+
+    Route::post('/payments/create-checkout-session', [PaymentController::class, 'createCheckoutSession']);
 });
