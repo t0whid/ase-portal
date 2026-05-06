@@ -8328,6 +8328,117 @@
                 return labels[value] || value || 'UPS Ground';
             }
 
+            function getProofHtmlForEmail() {
+                if (!proofSheetContainer) return '';
+
+                const renderedPages = Array.from(
+                    proofSheetContainer.querySelectorAll('.proof-sheet-page svg')
+                );
+
+                if (!renderedPages.length) return '';
+
+                const serializer = new XMLSerializer();
+
+                const pagesDivs = renderedPages.map(svg => {
+                    const clone = svg.cloneNode(true);
+                    clone.style.cssText = 'width:100%;height:auto;display:block;';
+                    clone.removeAttribute('width');
+                    clone.removeAttribute('height');
+
+                    return '<div style="page-break-after:always;">'
+                        + serializer.serializeToString(clone)
+                        + '</div>';
+                }).join('');
+
+                return `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { margin:0; padding:0; background:#fff; font-family:Arial,Helvetica,sans-serif; }
+                svg { width:100%; height:auto; display:block; }
+                @page { size: landscape; margin: 0.25in; }
+            </style>
+        </head>
+        <body>${pagesDivs}</body>
+        </html>
+    `;
+            }
+
+            function buildProductionOrderHtmlForEmail() {
+                if (!latestQuotePayload) return '';
+
+                const orderInfo = {
+                    name: orderName ? orderName.value : '',
+                    company: orderCompany ? orderCompany.value : '',
+                    email: orderEmail ? orderEmail.value : '',
+                    phone: orderPhone ? orderPhone.value : '',
+                    address: orderAddress ? orderAddress.value : '',
+                    city: orderCity ? orderCity.value : '',
+                    state: orderState ? orderState.value : '',
+                    zip: orderZip ? orderZip.value : '',
+                    shipping: orderShipping ? orderShipping.value : 'ground',
+                    shippingCost: getShippingTotal(orderShipping ? orderShipping.value : 'ground', latestQuotePayload.result?.subtotal || 0),
+                    cardholder: paymentCardholder ? paymentCardholder.value : '',
+                    cardLast4: getCardLastFour() || '',
+                    expiry: paymentExpiry ? paymentExpiry.value : '',
+                };
+
+                const payload = Object.assign({}, latestQuotePayload, { orderInfo });
+
+                if (typeof buildProductionSheetHtml !== 'function') {
+                    return '';
+                }
+
+                return buildProductionSheetHtml(JSON.stringify(payload));
+            }
+
+            function buildLaserReadyHtmlForEmail() {
+                if (!latestQuotePayload) return '';
+
+                // If your file has a laser-ready HTML builder, use it here.
+                // For now, fallback to proof HTML so attachment pipeline works.
+                if (typeof buildLaserReadyFileHtml === 'function') {
+                    return buildLaserReadyFileHtml(JSON.stringify(latestQuotePayload));
+                }
+
+                return '';
+            }
+
+            function buildGeneratedFilesForOrder() {
+                const files = [];
+
+                const proofHtml = getProofHtmlForEmail();
+                if (proofHtml) {
+                    files.push({
+                        type: 'proof_pdf',
+                        filename: 'proof.pdf',
+                        html: proofHtml
+                    });
+                }
+
+                const productionHtml = buildProductionOrderHtmlForEmail();
+                if (productionHtml) {
+                    files.push({
+                        type: 'production_order_sheet',
+                        filename: 'production-order-sheet.pdf',
+                        html: productionHtml
+                    });
+                }
+
+                const laserHtml = buildLaserReadyHtmlForEmail();
+                if (laserHtml) {
+                    files.push({
+                        type: 'laser_ready_file',
+                        filename: 'laser-ready-production-file.pdf',
+                        html: laserHtml
+                    });
+                }
+
+                return files;
+            }
+
             function buildOrderApiPayload() {
                 const payload = latestQuotePayload;
                 const result = payload?.result || {};
@@ -8412,6 +8523,8 @@
                     proof_approved: Boolean(proofApprovalCheckbox && proofApprovalCheckbox.checked),
 
                     items,
+
+                    generated_files: buildGeneratedFilesForOrder(),
 
                     payload: {
                         form_state: formState,
