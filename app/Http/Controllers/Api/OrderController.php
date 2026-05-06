@@ -7,6 +7,10 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use App\Mail\CustomerOrderConfirmationMail;
+use App\Mail\ProductionOrderNotificationMail;
+use App\Models\EmailLog;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -16,7 +20,7 @@ class OrderController extends Controller
             ->where('user_id', $request->user()->id)
             ->latest()
             ->get()
-            ->map(fn ($order) => $this->payload($order));
+            ->map(fn($order) => $this->payload($order));
 
         return response()->json([
             'success' => true,
@@ -131,6 +135,8 @@ class OrderController extends Controller
             return $order->load('items');
         });
 
+        $this->sendOrderEmails($order);
+
         return response()->json([
             'success' => true,
             'message' => 'Order submitted successfully.',
@@ -201,7 +207,7 @@ class OrderController extends Controller
 
             'payload' => $order->payload,
 
-            'items' => $order->items->map(fn ($item) => [
+            'items' => $order->items->map(fn($item) => [
                 'id' => $item->id,
                 'line_no' => $item->line_no,
                 'qty' => $item->qty,
@@ -222,5 +228,71 @@ class OrderController extends Controller
             'created_at' => $order->created_at?->toISOString(),
             'updated_at' => $order->updated_at?->toISOString(),
         ];
+    }
+
+    private function sendOrderEmails(Order $order): void
+    {
+        // Customer confirmation
+        $customerSubject = 'Order Confirmation - ' . $order->order_number;
+
+        $customerLog = EmailLog::create([
+            'order_id' => $order->id,
+            'type' => 'customer_order',
+            'to_email' => $order->customer_email,
+            'subject' => $customerSubject,
+            'status' => 'pending',
+            'payload' => [
+                'order_number' => $order->order_number,
+            ],
+        ]);
+
+        try {
+            Mail::to($order->customer_email)->send(new CustomerOrderConfirmationMail($order));
+
+            $customerLog->update([
+                'status' => 'sent',
+                'error_message' => null,
+            ]);
+        } catch (\Throwable $e) {
+            $customerLog->update([
+                'status' => 'failed',
+                'error_message' => $e->getMessage(),
+            ]);
+        }
+
+        // Internal production notification
+        $productionEmail = config('mail.production_team_email')
+            ?: env('PRODUCTION_TEAM_EMAIL');
+
+        if (!$productionEmail) {
+            return;
+        }
+
+        $productionSubject = 'New Production Order - ' . $order->order_number;
+
+        $productionLog = EmailLog::create([
+            'order_id' => $order->id,
+            'type' => 'production_order',
+            'to_email' => $productionEmail,
+            'subject' => $productionSubject,
+            'status' => 'pending',
+            'payload' => [
+                'order_number' => $order->order_number,
+            ],
+        ]);
+
+        try {
+            Mail::to($productionEmail)->send(new ProductionOrderNotificationMail($order));
+
+            $productionLog->update([
+                'status' => 'sent',
+                'error_message' => null,
+            ]);
+        } catch (\Throwable $e) {
+            $productionLog->update([
+                'status' => 'failed',
+                'error_message' => $e->getMessage(),
+            ]);
+        }
     }
 }

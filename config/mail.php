@@ -16,6 +16,7 @@ return [
 
     'default' => env('MAIL_MAILER', 'log'),
 
+    'production_team_email' => env('PRODUCTION_TEAM_EMAIL'),
     /*
     |--------------------------------------------------------------------------
     | Mailer Configurations
