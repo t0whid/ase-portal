@@ -4922,14 +4922,45 @@
             if (emailQuoteBtn) emailQuoteBtn.addEventListener('click', () => {
                 emailInline.classList.toggle('hidden');
             });
-            if (sendQuoteEmailBtn) sendQuoteEmailBtn.addEventListener('click', () => {
-                const email = quoteEmailInput.value.trim();
-                if (!email) {
-                    window.alert('Please enter an email');
-                    return;
-                }
-                window.alert('Quote ready to be emailed (backend not connected yet).');
-            });
+
+
+            if (sendQuoteEmailBtn) {
+                sendQuoteEmailBtn.addEventListener('click', async () => {
+                    const email = quoteEmailInput.value.trim();
+
+                    if (!email) {
+                        window.alert('Please enter an email');
+                        return;
+                    }
+
+                    if (!latestQuotePayload) {
+                        window.alert('Please generate a quote first.');
+                        return;
+                    }
+
+                    const originalText = sendQuoteEmailBtn.textContent;
+                    sendQuoteEmailBtn.textContent = 'Sending…';
+                    sendQuoteEmailBtn.disabled = true;
+
+                    try {
+                        const payload = buildQuoteEmailPayload(email);
+                        await apiSendQuoteEmail(payload);
+
+                        sendQuoteEmailBtn.textContent = 'Sent ✓';
+
+                        setTimeout(() => {
+                            sendQuoteEmailBtn.textContent = originalText || 'Send';
+                            sendQuoteEmailBtn.disabled = false;
+                            emailInline.classList.add('hidden');
+                        }, 1200);
+                    } catch (err) {
+                        console.error(err);
+                        sendQuoteEmailBtn.textContent = originalText || 'Send';
+                        sendQuoteEmailBtn.disabled = false;
+                        window.alert(err.message || 'Failed to send quote email.');
+                    }
+                });
+            }
 
             // ── Order Modal ──
             const orderModal = document.getElementById('orderModalBackdrop'),
@@ -8024,8 +8055,66 @@
                     if (draftStatusText) draftStatusText.textContent = 'Draft save failed';
                 }
             }
+            async function apiSendQuoteEmail(payload) {
+                const res = await fetch(API_BASE + '/send-quote', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
 
-          
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to send quote email.');
+                }
+
+                return json;
+            }
+
+            function buildQuoteEmailPayload(toEmail) {
+                const payload = latestQuotePayload;
+                const result = payload?.result || {};
+                const data = payload?.data || {};
+                const quoteItems = Array.isArray(result.quoteItems) ? result.quoteItems : [];
+
+                const quoteNumber = 'Q-' + Date.now().toString(36).toUpperCase();
+
+                const items = quoteItems.map((item, index) => {
+                    const tag = item.tag || {};
+                    const calc = item.calc || {};
+
+                    return {
+                        line_no: index + 1,
+                        qty: Number(tag.qty || 1),
+                        size_label: tag.sizeLabel || '',
+                        color: tag.color || '',
+                        holes: tag.holes || '',
+                        text_content: Array.isArray(tag.lines)
+                            ? tag.lines.map(line => line.text || '').filter(Boolean).join('\n')
+                            : (tag.raw || ''),
+                        unit_price: Number(calc.unitPrice || 0),
+                        subtotal: Number(calc.subtotal || 0)
+                    };
+                });
+
+                return {
+                    to_email: toEmail,
+                    quote_number: quoteNumber,
+                    customer_name: data.customerName || '',
+                    job_name: data.jobName || (getEl('jobName') ? getEl('jobName').value.trim() : ''),
+                    total_pieces: Number(result.totalPieces || 0),
+                    product_total: Number(result.subtotal || 0),
+                    items,
+                    payload: {
+                        form_state: serializeFormState(),
+                        quote_payload: latestQuotePayload
+                    }
+                };
+            }
+
 
             // ── Save as Template (main page inline flow) ──
             const saveAsTemplateBtn = document.getElementById('saveAsTemplateBtn');
