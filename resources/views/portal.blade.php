@@ -2410,6 +2410,8 @@
             let latestQuotePayload = null;
             let quoteLoadingTimer = null;
             let savedTemplatesCache = [];
+            let savedAddressesCache = [];
+            let editingAddressId = null;
 
             function getEl(id) {
                 return document.getElementById(id);
@@ -5761,24 +5763,27 @@
 
             async function checkSaveAddressNudge() {
                 if (!saveAddressNudge) return;
+
                 if (!authUser) {
                     saveAddressNudge.classList.add('hidden');
                     saveAddressNudge.style.display = 'none';
                     return;
                 }
+
                 if (addressNudgeDismissed) return;
+
                 if (!addressFieldsFilled()) {
                     saveAddressNudge.classList.add('hidden');
                     saveAddressNudge.style.display = 'none';
                     return;
                 }
 
-                // Check if this address is already saved
                 const street = orderAddress ? orderAddress.value.trim().toLowerCase() : '';
                 const zip = orderZip ? orderZip.value.trim() : '';
-                const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                const alreadySaved = addresses.some(a =>
-                    (a.street || '').toLowerCase() === street && (a.zip || '') === zip
+
+                const alreadySaved = savedAddressesCache.some(a =>
+                    (a.street || '').toLowerCase() === street &&
+                    String(a.zip || '') === zip
                 );
 
                 if (alreadySaved) {
@@ -5804,32 +5809,44 @@
                     const city = orderCity ? orderCity.value.trim() : '';
                     const state = orderState ? orderState.value.trim() : '';
                     const zip = orderZip ? orderZip.value.trim() : '';
-                    if (!street) return;
-                    const nickname = window.prompt('Give this address a nickname (e.g. "Main Office"):', city ?
-                        city + ' Location' : '');
+
+                    if (!street || !city || !state || !zip) return;
+
+                    const nickname = window.prompt(
+                        'Give this address a nickname (e.g. "Main Office"):',
+                        city ? city + ' Location' : ''
+                    );
+
                     if (nickname === null) return;
-                    const newAddr = {
-                        nickname: nickname.trim() || city + ' Location',
-                        street,
-                        city,
-                        state,
-                        zip
-                    };
-                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                    addresses.unshift(newAddr);
-                    await wpSetMeta(META_ADDRESSES, addresses);
-                    populateSavedAddressPicker(addresses);
-                    saveAddressNudge.classList.add('hidden');
-                    saveAddressNudge.style.display = 'none';
-                    addressNudgeDismissed = true;
-                    // Brief confirmation
-                    nudgeSaveAddressBtn.textContent = 'Saved ✓';
-                    setTimeout(() => {
-                        nudgeSaveAddressBtn.textContent = 'Save';
-                    }, 2000);
+
+                    try {
+                        const saved = await apiSaveAddress({
+                            nickname: nickname.trim() || city + ' Location',
+                            street,
+                            city,
+                            state,
+                            zip,
+                            contact_name: '',
+                            phone: ''
+                        });
+
+                        savedAddressesCache.unshift(saved);
+                        renderAddressList(savedAddressesCache);
+                        populateSavedAddressPicker(savedAddressesCache);
+
+                        saveAddressNudge.classList.add('hidden');
+                        saveAddressNudge.style.display = 'none';
+                        addressNudgeDismissed = true;
+
+                        nudgeSaveAddressBtn.textContent = 'Saved ✓';
+                        setTimeout(() => {
+                            nudgeSaveAddressBtn.textContent = 'Save';
+                        }, 2000);
+                    } catch (err) {
+                        window.alert(err.message || 'Failed to save address.');
+                    }
                 });
             }
-
             // Reset nudge dismissed state each time the order modal opens (handled in quoteModalContinue click above)
 
             // ── Billing address: saved picker + save nudge ──
@@ -5841,22 +5858,19 @@
 
             // Apply selected saved address to billing fields
             if (savedBillingAddressPicker) {
-                savedBillingAddressPicker.addEventListener('change', async () => {
+                savedBillingAddressPicker.addEventListener('change', () => {
                     const idx = parseInt(savedBillingAddressPicker.value, 10);
                     if (isNaN(idx)) return;
-                    const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                    const a = addresses[idx];
+
+                    const a = savedAddressesCache[idx];
                     if (!a) return;
+
                     if (billingAddress) billingAddress.value = a.street || '';
                     if (billingCity) billingCity.value = a.city || '';
                     if (billingState) billingState.value = a.state || '';
                     if (billingZip) billingZip.value = a.zip || '';
-                    syncBillingAddressState();
+
                     updatePlaceOrderState();
-                    checkSaveBillingAddressNudge();
-                    setTimeout(() => {
-                        savedBillingAddressPicker.value = '';
-                    }, 300);
                 });
             }
 
@@ -5867,18 +5881,23 @@
 
             async function checkSaveBillingAddressNudge() {
                 if (!saveBillingAddressNudge) return;
-                // Only show when billing fields are visible (not same-as-shipping)
+
                 const billingVisible = billingSameAsShipping && !billingSameAsShipping.checked;
+
                 if (!authUser || !billingVisible || billingNudgeDismissed || !billingFieldsFilled()) {
                     saveBillingAddressNudge.classList.add('hidden');
                     saveBillingAddressNudge.style.display = 'none';
                     return;
                 }
+
                 const street = billingAddress ? billingAddress.value.trim().toLowerCase() : '';
                 const zip = billingZip ? billingZip.value.trim() : '';
-                const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                const alreadySaved = addresses.some(a => (a.street || '').toLowerCase() === street && (a.zip || '') ===
-                    zip);
+
+                const alreadySaved = savedAddressesCache.some(a =>
+                    (a.street || '').toLowerCase() === street &&
+                    String(a.zip || '') === zip
+                );
+
                 if (alreadySaved) {
                     saveBillingAddressNudge.classList.add('hidden');
                     saveBillingAddressNudge.style.display = 'none';
@@ -5896,36 +5915,52 @@
                 });
             }
 
+
             if (nudgeSaveBillingAddressBtn) {
                 nudgeSaveBillingAddressBtn.addEventListener('click', async () => {
                     const street = billingAddress ? billingAddress.value.trim() : '';
                     const city = billingCity ? billingCity.value.trim() : '';
                     const state = billingState ? billingState.value.trim() : '';
                     const zip = billingZip ? billingZip.value.trim() : '';
-                    if (!street) return;
-                    const nickname = window.prompt('Give this address a nickname (e.g. "Billing Office"):',
-                        city ? city + ' Billing' : '');
+
+                    if (!street || !city || !state || !zip) return;
+
+                    const nickname = window.prompt(
+                        'Give this address a nickname (e.g. "Billing Office"):',
+                        city ? city + ' Billing' : ''
+                    );
+
                     if (nickname === null) return;
-                    const newAddr = {
-                        nickname: nickname.trim() || city + ' Billing',
-                        street,
-                        city,
-                        state,
-                        zip
-                    };
-                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                    addresses.unshift(newAddr);
-                    await wpSetMeta(META_ADDRESSES, addresses);
-                    populateSavedAddressPicker(addresses);
-                    saveBillingAddressNudge.classList.add('hidden');
-                    saveBillingAddressNudge.style.display = 'none';
-                    billingNudgeDismissed = true;
-                    nudgeSaveBillingAddressBtn.textContent = 'Saved ✓';
-                    setTimeout(() => {
-                        nudgeSaveBillingAddressBtn.textContent = 'Save address';
-                    }, 2000);
+
+                    try {
+                        const saved = await apiSaveAddress({
+                            nickname: nickname.trim() || city + ' Billing',
+                            street,
+                            city,
+                            state,
+                            zip,
+                            contact_name: '',
+                            phone: ''
+                        });
+
+                        savedAddressesCache.unshift(saved);
+                        renderAddressList(savedAddressesCache);
+                        populateSavedAddressPicker(savedAddressesCache);
+
+                        saveBillingAddressNudge.classList.add('hidden');
+                        saveBillingAddressNudge.style.display = 'none';
+                        billingNudgeDismissed = true;
+
+                        nudgeSaveBillingAddressBtn.textContent = 'Saved ✓';
+                        setTimeout(() => {
+                            nudgeSaveBillingAddressBtn.textContent = 'Save address';
+                        }, 2000);
+                    } catch (err) {
+                        window.alert(err.message || 'Failed to save billing address.');
+                    }
                 });
             }
+
             if (billingSameAsShipping) billingSameAsShipping.addEventListener('change', () => {
                 syncBillingAddressState();
                 updatePlaceOrderState();
@@ -7068,6 +7103,68 @@
                 }
             }
 
+            async function apiGetAddresses() {
+                const res = await fetch(API_BASE + '/addresses', {
+                    method: 'GET',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to load addresses.');
+                }
+
+                return json.data.addresses || [];
+            }
+
+            async function apiSaveAddress(payload) {
+                const res = await fetch(API_BASE + '/addresses', {
+                    method: 'POST',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to save address.');
+                }
+
+                return json.data.address;
+            }
+
+            async function apiUpdateAddress(id, payload) {
+                const res = await fetch(API_BASE + '/addresses/' + id, {
+                    method: 'PUT',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to update address.');
+                }
+
+                return json.data.address;
+            }
+
+            async function apiDeleteAddress(id) {
+                const res = await fetch(API_BASE + '/addresses/' + id, {
+                    method: 'DELETE',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to delete address.');
+                }
+
+                return true;
+            }
+
             function normalizeAuthUser(user) {
                 user = user || {};
 
@@ -7533,21 +7630,29 @@
                     renderTemplateList([]);
                 }
 
-                // Old features ekhono wp meta/local logic e thakuk.
-                // Next step e drafts/orders/addresses API te convert korbo.
                 try {
-                    const [drafts, orders, addresses] = await Promise.all([
+                    const addresses = await apiGetAddresses();
+                    savedAddressesCache = addresses;
+                    renderAddressList(addresses || []);
+                    populateSavedAddressPicker(addresses || []);
+                } catch (err) {
+                    console.error(err);
+                    savedAddressesCache = [];
+                    renderAddressList([]);
+                    populateSavedAddressPicker([]);
+                }
+
+                // Drafts/orders ekhono old logic e thakuk. Next step e convert korbo.
+                try {
+                    const [drafts, orders] = await Promise.all([
                         wpGetMeta(META_DRAFTS),
-                        wpGetMeta(META_ORDER_HISTORY),
-                        wpGetMeta(META_ADDRESSES)
+                        wpGetMeta(META_ORDER_HISTORY)
                     ]);
 
                     renderDraftList(drafts || []);
                     renderOrderHistory(orders || []);
-                    renderAddressList(addresses || []);
-                    populateSavedAddressPicker(addresses || []);
                 } catch (err) {
-                    console.error('Account secondary data load failed:', err);
+                    console.error('Draft/order load failed:', err);
                 }
             }
 
@@ -7871,24 +7976,35 @@
 
             function renderAddressList(addresses) {
                 if (!addressListEl) return;
+
                 if (!addresses.length) {
                     addressListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📍</div>No saved addresses yet.<br>Add delivery locations to quickly fill in shipping details when ordering.</div>';
                     return;
                 }
-                addressListEl.innerHTML = addresses.map((a, i) => {
-                    const line2 = [a.street, a.city, a.state, a.zip].filter(Boolean).join(', ');
-                    const line3 = [a.contact, a.phone].filter(Boolean).join(' · ');
-                    return `<div class="account-item">
-        <div class="account-item-head">
-          <div class="account-item-title">${esc(a.nickname || 'Address ' + (i + 1))}</div>
-        </div>
-        <div class="account-item-meta">${esc(line2 || '—')}</div>
-        ${line3 ? `<div class="account-item-meta">${esc(line3)}</div>` : ''}
-        <div class="account-item-actions">
-          <button type="button" class="account-action-btn" onclick="editAddress(${i})">Edit</button>
-          <button type="button" class="account-action-btn danger" onclick="deleteAddress(${i})">Delete</button>
-        </div>
-      </div>`;
+
+                addressListEl.innerHTML = addresses.map((addr, index) => {
+                    const title = addr.nickname || 'Address ' + (index + 1);
+                    const line1 = addr.street || '';
+                    const line2 = [addr.city, addr.state, addr.zip].filter(Boolean).join(', ');
+                    const contact = addr.contact_name || addr.phone
+                        ? [addr.contact_name, addr.phone].filter(Boolean).join(' · ')
+                        : '';
+
+                    return `
+                            <div class="account-item">
+                                <div class="account-item-head">
+                                    <div class="account-item-title">${esc(title)}</div>
+                                    <div class="account-item-meta">${esc(addr.created_at ? new Date(addr.created_at).toLocaleDateString() : '')}</div>
+                                </div>
+                                <div class="account-item-meta">${esc(line1)}</div>
+                                <div class="account-item-meta">${esc(line2)}</div>
+                                ${contact ? `<div class="account-item-meta">${esc(contact)}</div>` : ''}
+                                <div class="account-item-actions">
+                                    <button type="button" class="account-action-btn" onclick="editAddress(${index})">Edit</button>
+                                    <button type="button" class="account-action-btn danger" onclick="deleteAddress(${index})">Delete</button>
+                                </div>
+                            </div>
+                        `;
                 }).join('');
             }
 
@@ -7919,81 +8035,207 @@
 
             // Apply selected saved address to shipping fields
             if (savedAddressPicker) {
-                savedAddressPicker.addEventListener('change', async () => {
+                savedAddressPicker.addEventListener('change', () => {
                     const idx = parseInt(savedAddressPicker.value, 10);
                     if (isNaN(idx)) return;
-                    const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                    const a = addresses[idx];
+
+                    const a = savedAddressesCache[idx];
                     if (!a) return;
+
                     if (orderAddress) orderAddress.value = a.street || '';
                     if (orderCity) orderCity.value = a.city || '';
                     if (orderState) orderState.value = a.state || '';
                     if (orderZip) orderZip.value = a.zip || '';
+
                     syncBillingAddressState();
                     updatePlaceOrderState();
-                    // Reset picker back to placeholder after applying
-                    setTimeout(() => { savedAddressPicker.value = ''; }, 300);
                 });
             }
 
             // "Save this address" from the order modal shipping section
             if (saveCurrentAddressBtn) {
                 saveCurrentAddressBtn.addEventListener('click', async () => {
+                    if (!authUser) {
+                        openAuthModal('login');
+                        return;
+                    }
+
                     const street = orderAddress ? orderAddress.value.trim() : '';
                     const city = orderCity ? orderCity.value.trim() : '';
                     const state = orderState ? orderState.value.trim() : '';
                     const zip = orderZip ? orderZip.value.trim() : '';
-                    if (!street) { window.alert('Please enter a shipping address first.'); return; }
-                    const nickname = window.prompt('Give this address a nickname (e.g. "Tucson Location"):', city ? city + ' Location' : '');
-                    if (nickname === null) return; // cancelled
-                    const newAddr = { nickname: nickname.trim() || city + ' Location', street, city, state, zip, contact: '', phone: '' };
-                    let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                    addresses.unshift(newAddr);
-                    await wpSetMeta(META_ADDRESSES, addresses);
-                    populateSavedAddressPicker(addresses);
-                    saveCurrentAddressBtn.textContent = 'Saved ✓';
-                    setTimeout(() => { saveCurrentAddressBtn.textContent = '+ Save this address to My Addresses'; }, 2000);
+
+                    if (!street || !city || !state || !zip) {
+                        window.alert('Please enter a complete shipping address first.');
+                        return;
+                    }
+
+                    const nickname = window.prompt(
+                        'Give this address a nickname (e.g. "Tucson Location"):',
+                        city ? city + ' Location' : ''
+                    );
+
+                    if (nickname === null) return;
+
+                    saveCurrentAddressBtn.textContent = 'Saving…';
+                    saveCurrentAddressBtn.disabled = true;
+
+                    try {
+                        const saved = await apiSaveAddress({
+                            nickname: nickname.trim() || city + ' Location',
+                            street,
+                            city,
+                            state,
+                            zip,
+                            contact_name: '',
+                            phone: ''
+                        });
+
+                        savedAddressesCache.unshift(saved);
+                        renderAddressList(savedAddressesCache);
+                        populateSavedAddressPicker(savedAddressesCache);
+
+                        saveCurrentAddressBtn.textContent = 'Saved ✓';
+
+                        setTimeout(() => {
+                            saveCurrentAddressBtn.textContent = '+ Save this address to My Addresses';
+                            saveCurrentAddressBtn.disabled = false;
+                        }, 1500);
+                    } catch (err) {
+                        saveCurrentAddressBtn.textContent = '+ Save this address to My Addresses';
+                        saveCurrentAddressBtn.disabled = false;
+                        window.alert(err.message || 'Failed to save address.');
+                    }
                 });
             }
 
             // Add address button
-            if (addAddressBtn) addAddressBtn.addEventListener('click', () => openAddressForm('new'));
-            if (cancelAddressBtn) cancelAddressBtn.addEventListener('click', closeAddressForm);
+            if (addAddressBtn) {
+                addAddressBtn.addEventListener('click', () => {
+                    editingAddressId = null;
+                    clearAddressForm();
 
+                    if (addressFormTitle) addressFormTitle.textContent = 'New address';
+                    if (addressFormWrap) {
+                        addressFormWrap.classList.remove('hidden');
+                        addressFormWrap.style.display = 'grid';
+                    }
+                });
+            }
+
+            if (cancelAddressBtn) {
+                cancelAddressBtn.addEventListener('click', () => {
+                    editingAddressId = null;
+                    clearAddressForm();
+
+                    if (addressFormWrap) {
+                        addressFormWrap.classList.add('hidden');
+                        addressFormWrap.style.display = 'none';
+                    }
+                });
+            }
             // Save address form
-            if (saveAddressBtn) saveAddressBtn.addEventListener('click', async () => {
-                const vals = getAddressFormValues();
-                if (!vals.nickname) { document.getElementById('addrNickname').focus(); return; }
-                if (!vals.street) { document.getElementById('addrStreet').focus(); return; }
-                saveAddressBtn.textContent = 'Saving…';
-                saveAddressBtn.disabled = true;
-                let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                if (editingAddressIndex >= 0) {
-                    addresses[editingAddressIndex] = vals;
-                } else {
-                    addresses.unshift(vals);
-                }
-                await wpSetMeta(META_ADDRESSES, addresses);
-                renderAddressList(addresses);
-                populateSavedAddressPicker(addresses);
-                closeAddressForm();
-                saveAddressBtn.textContent = 'Save address';
-                saveAddressBtn.disabled = false;
-            });
+            if (saveAddressBtn) {
+                saveAddressBtn.addEventListener('click', async () => {
+                    if (!authUser) {
+                        openAuthModal('login');
+                        return;
+                    }
 
-            // Global helpers for inline onclick in address list
-            window.editAddress = async function (index) {
-                const addresses = await wpGetMeta(META_ADDRESSES) || [];
-                openAddressForm('edit', index, addresses[index]);
+                    const payload = {
+                        nickname: addrNickname ? addrNickname.value.trim() : '',
+                        street: addrStreet ? addrStreet.value.trim() : '',
+                        city: addrCity ? addrCity.value.trim() : '',
+                        state: addrState ? addrState.value.trim() : '',
+                        zip: addrZip ? addrZip.value.trim() : '',
+                        contact_name: addrContact ? addrContact.value.trim() : '',
+                        phone: addrPhone ? addrPhone.value.trim() : ''
+                    };
+
+                    if (!payload.street || !payload.city || !payload.state || !payload.zip) {
+                        window.alert('Please fill street, city, state, and zip.');
+                        return;
+                    }
+
+                    saveAddressBtn.textContent = 'Saving…';
+                    saveAddressBtn.disabled = true;
+
+                    try {
+                        let saved;
+
+                        if (editingAddressId) {
+                            saved = await apiUpdateAddress(editingAddressId, payload);
+
+                            const idx = savedAddressesCache.findIndex(a => Number(a.id) === Number(editingAddressId));
+                            if (idx >= 0) savedAddressesCache[idx] = saved;
+                        } else {
+                            saved = await apiSaveAddress(payload);
+                            savedAddressesCache.unshift(saved);
+                        }
+
+                        renderAddressList(savedAddressesCache);
+                        populateSavedAddressPicker(savedAddressesCache);
+
+                        editingAddressId = null;
+                        clearAddressForm();
+
+                        if (addressFormWrap) addressFormWrap.classList.add('hidden');
+                        if (addressFormTitle) addressFormTitle.textContent = 'New address';
+
+                        saveAddressBtn.textContent = 'Save address';
+                        saveAddressBtn.disabled = false;
+                    } catch (err) {
+                        saveAddressBtn.textContent = 'Save address';
+                        saveAddressBtn.disabled = false;
+                        window.alert(err.message || 'Failed to save address.');
+                    }
+                });
+            }
+            function clearAddressForm() {
+                if (addrNickname) addrNickname.value = '';
+                if (addrStreet) addrStreet.value = '';
+                if (addrCity) addrCity.value = '';
+                if (addrState) addrState.value = '';
+                if (addrZip) addrZip.value = '';
+                if (addrContact) addrContact.value = '';
+                if (addrPhone) addrPhone.value = '';
+            }
+
+            window.editAddress = function (index) {
+                const addr = savedAddressesCache[index];
+                if (!addr) return;
+
+                editingAddressId = addr.id;
+
+                if (addressFormWrap) addressFormWrap.classList.remove('hidden');
+                if (addressFormTitle) addressFormTitle.textContent = 'Edit address';
+
+                if (addrNickname) addrNickname.value = addr.nickname || '';
+                if (addrStreet) addrStreet.value = addr.street || '';
+                if (addrCity) addrCity.value = addr.city || '';
+                if (addrState) addrState.value = addr.state || '';
+                if (addrZip) addrZip.value = addr.zip || '';
+                if (addrContact) addrContact.value = addr.contact_name || '';
+                if (addrPhone) addrPhone.value = addr.phone || '';
             };
+
             window.deleteAddress = async function (index) {
+                const addr = savedAddressesCache[index];
+                if (!addr || !addr.id) return;
+
                 if (!window.confirm('Delete this address?')) return;
-                let addresses = await wpGetMeta(META_ADDRESSES) || [];
-                addresses.splice(index, 1);
-                await wpSetMeta(META_ADDRESSES, addresses);
-                renderAddressList(addresses);
-                populateSavedAddressPicker(addresses);
+
+                try {
+                    await apiDeleteAddress(addr.id);
+                    savedAddressesCache.splice(index, 1);
+                    renderAddressList(savedAddressesCache);
+                    populateSavedAddressPicker(savedAddressesCache);
+                } catch (err) {
+                    window.alert(err.message || 'Failed to delete address.');
+                }
             };
+
+
 
             // ── Wire up auth bar events ──
             if (authShowLogin) authShowLogin.addEventListener('click', () => openAuthModal('login'));
