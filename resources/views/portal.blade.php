@@ -2415,6 +2415,7 @@
             let savedDraftsCache = [];
             let draftSaveTimer = null;
             let draftAutoSaveInterval = null;
+            let savedOrdersCache = [];
 
             function getEl(id) {
                 return document.getElementById(id);
@@ -6056,59 +6057,59 @@
                 printWin.document.write(printHtml);
                 printWin.document.close();
             });
-            if (placeOrderBtn) placeOrderBtn.onclick = () => {
-                if (!proofApprovalCheckbox || !proofApprovalCheckbox.checked) {
-                    if (proofValidationMessage) {
-                        proofValidationMessage.textContent = 'Please approve the proof before placing your order.'
-                            ;
-                        proofValidationMessage.classList.add('show');
+            if (placeOrderBtn) {
+                placeOrderBtn.addEventListener('click', async () => {
+                    if (!authUser) {
+                        openAuthModal('login');
+                        return;
                     }
-                    updateProofApprovalState();
-                    return;
-                }
-                if (proofValidationMessage) {
-                    proofValidationMessage.textContent = '';
-                    proofValidationMessage.classList.remove('show');
-                }
 
-                const orderInfo = {
-                    name: orderName ? orderName.value : '',
-                    company: orderCompany ? orderCompany.value : '',
-                    email: orderEmail ? orderEmail.value : '',
-                    phone: orderPhone ? orderPhone.value : '',
-                    address: orderAddress ? orderAddress.value : '',
-                    city: orderCity ? orderCity.value : '',
-                    state: orderState ? orderState.value : '',
-                    zip: orderZip ? orderZip.value : '',
-                    shipping: orderShipping ? orderShipping.value : 'ground',
-                    shippingCost: getSelectedOrderShippingCost(),
-                    cardholder: paymentCardholder ? paymentCardholder.value : '',
-                    cardLast4: paymentCardNumber ? String(paymentCardNumber.value || '').replace(/\s/g, '').slice(-4) : '',
-                    expiry: paymentExpiry ? paymentExpiry.value : '',
-                };
-                const enrichedPayload = Object.assign({}, latestQuotePayload, {
-                    orderInfo
+                    if (!proofApprovalCheckbox || !proofApprovalCheckbox.checked) {
+                        if (proofValidationMessage) {
+                            proofValidationMessage.textContent = 'Please approve the proof before placing your order.';
+                            proofValidationMessage.classList.add('show');
+                        }
+                        return;
+                    }
+
+                    const validationMessage = validateOrderStep();
+
+                    if (validationMessage) {
+                        if (orderValidationMessage) {
+                            orderValidationMessage.textContent = validationMessage;
+                            orderValidationMessage.classList.add('show');
+                        }
+                        return;
+                    }
+
+                    placeOrderBtn.disabled = true;
+                    const originalText = placeOrderBtn.textContent;
+                    placeOrderBtn.textContent = 'Submitting…';
+
+                    try {
+                        const orderPayload = buildOrderApiPayload();
+                        const savedOrder = await apiSaveOrder(orderPayload);
+
+                        savedOrdersCache.unshift(savedOrder);
+                        renderOrderHistory(savedOrdersCache);
+
+                        placeOrderBtn.textContent = 'Order Placed ✓';
+
+                        window.alert('Order submitted successfully. Order number: ' + savedOrder.order_number);
+
+                        setTimeout(() => {
+                            placeOrderBtn.textContent = originalText || 'Place Order';
+                            placeOrderBtn.disabled = false;
+                            closeOrderModal();
+                        }, 1200);
+                    } catch (err) {
+                        console.error(err);
+                        placeOrderBtn.textContent = originalText || 'Place Order';
+                        placeOrderBtn.disabled = false;
+                        window.alert(err.message || 'Failed to submit order.');
+                    }
                 });
-                const payloadJson = JSON.stringify(enrichedPayload);
-
-                const prodWin = window.open('', '_blank', 'width=1200,height=900');
-                if (!prodWin) {
-                    window.alert('Popup was blocked. Please allow popups for this page and try again.');
-                    return;
-                }
-
-                const prodHtml = buildProductionSheetHtml(payloadJson);
-                prodWin.document.open();
-                prodWin.document.write(prodHtml);
-                prodWin.document.close();
-
-                closeOrderModal();
-                document.dispatchEvent(new CustomEvent('ac:orderPlaced', {
-                    detail: {
-                        payload: enrichedPayload
-                    }
-                }));
-            };
+            }
 
             // ── Production sheet builder ──
             function buildProductionSheetHtml(payloadJson) {
@@ -7217,6 +7218,37 @@
                 return true;
             }
 
+            async function apiGetOrders() {
+                const res = await fetch(API_BASE + '/orders', {
+                    method: 'GET',
+                    headers: authHeaders()
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to load orders.');
+                }
+
+                return json.data.orders || [];
+            }
+
+            async function apiSaveOrder(payload) {
+                const res = await fetch(API_BASE + '/orders', {
+                    method: 'POST',
+                    headers: authHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.success) {
+                    throw new Error(json.message || 'Failed to submit order.');
+                }
+
+                return json.data.order;
+            }
+
             function normalizeAuthUser(user) {
                 user = user || {};
 
@@ -7739,12 +7771,14 @@
                     renderDraftList([]);
                 }
 
-                // Orders ekhono old logic e thakuk, next step e order API korbo.
                 try {
-                    const orders = await wpGetMeta(META_ORDER_HISTORY);
+                    const orders = await apiGetOrders();
+                    savedOrdersCache = orders;
                     renderOrderHistory(orders || []);
                 } catch (err) {
-                    console.error('Order history load failed:', err);
+                    console.error(err);
+                    savedOrdersCache = [];
+                    renderOrderHistory([]);
                 }
             }
 
@@ -7845,22 +7879,35 @@
 
             // ── Render order history ──
             function renderOrderHistory(orders) {
-                if (!orderHistoryListEl) return;
+                if (!orderHistoryList) return;
+
                 if (!orders.length) {
-                    orderHistoryListEl.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📦</div>No orders yet.<br>Your submitted orders will appear here.</div>';
+                    orderHistoryList.innerHTML = '<div class="account-empty"><div class="account-empty-icon">📦</div>No orders yet.<br>Your submitted orders will appear here.</div>';
                     return;
                 }
-                orderHistoryListEl.innerHTML = orders.map((o, i) => `
-      <div class="account-item">
-        <div class="account-item-head">
-          <div class="account-item-title">${esc(o.orderNum || 'Order ' + (i + 1))}</div>
-          <div class="account-item-meta">${esc(o.date ? new Date(o.date).toLocaleDateString() : '')}</div>
-        </div>
-        <div class="account-item-meta">${esc(o.jobName || '—')} · ${esc(String(o.totalPieces || '?'))} pieces · <strong>${esc(o.total || '$?')}</strong></div>
-        <div class="account-item-actions">
-          <button type="button" class="account-action-btn" onclick="reorder(${i})">Reorder</button>
-        </div>
-      </div>`).join('');
+
+                orderHistoryList.innerHTML = orders.map((order, index) => {
+                    const title = order.job_name || order.order_number || 'Order';
+                    const dateText = order.created_at ? new Date(order.created_at).toLocaleString() : '';
+                    const total = Number(order.grand_total || 0).toFixed(2);
+                    const pieces = order.total_pieces || 0;
+                    const status = order.order_status || 'submitted';
+
+                    return `
+            <div class="account-item">
+                <div class="account-item-head">
+                    <div class="account-item-title">${esc(title)}</div>
+                    <div class="account-item-meta">${esc(dateText)}</div>
+                </div>
+                <div class="account-item-meta">
+                    ${esc(order.order_number || '')} · ${esc(String(pieces))} piece(s) · $${esc(total)} · ${esc(status)}
+                </div>
+                <div class="account-item-actions">
+                    <button type="button" class="account-action-btn" onclick="reorderFromHistory(${index})">Reorder</button>
+                </div>
+            </div>
+        `;
+                }).join('');
             }
 
             // ── Save current form as a named template ──
@@ -7912,14 +7959,6 @@
                 } catch (err) {
                     window.alert(err.message || 'Failed to delete draft.');
                 }
-            };
-
-            window.reorder = async function (index) {
-                const orders = await wpGetMeta(META_ORDER_HISTORY) || [];
-                const o = orders[index];
-                if (!o || !o.state) return;
-                restoreFormState(o.state);
-                closeAccountModal();
             };
 
             // ── Draft auto-save ──
@@ -7986,22 +8025,7 @@
                 }
             }
 
-            // ── Save order to history (called after Place Order) ──
-            async function saveOrderToHistory(payload) {
-                if (!authUser) return;
-                const result = payload.result || {}, data = payload.data || {};
-                let orders = await wpGetMeta(META_ORDER_HISTORY) || [];
-                orders.unshift({
-                    orderNum: 'ORD-' + Date.now().toString(36).toUpperCase(),
-                    date: new Date().toISOString(),
-                    jobName: data.jobName || '—',
-                    totalPieces: result.totalPieces || 0,
-                    total: '$' + Number((result.subtotal || 0) + (payload.orderInfo && payload.orderInfo.shippingCost || 0)).toFixed(2),
-                    state: serializeFormState()
-                });
-                if (orders.length > 50) orders = orders.slice(0, 50);
-                await wpSetMeta(META_ORDER_HISTORY, orders);
-            }
+          
 
             // ── Save as Template (main page inline flow) ──
             const saveAsTemplateBtn = document.getElementById('saveAsTemplateBtn');
@@ -8187,6 +8211,143 @@
                     updatePlaceOrderState();
                 });
             }
+
+            function getCardLastFour() {
+                const raw = paymentCardNumber ? String(paymentCardNumber.value || '').replace(/\D/g, '') : '';
+                return raw.length >= 4 ? raw.slice(-4) : null;
+            }
+
+            function getShippingTotal(method, productTotal) {
+                const total = Number(productTotal || 0);
+
+                if (method === 'pickup') return 0;
+                if (method === 'ground') return total > 100 ? 0 : 15;
+                if (method === '2day') return 30;
+                if (method === 'overnight') return 75;
+
+                return 0;
+            }
+
+            function getShippingMethodLabel(value) {
+                const labels = {
+                    pickup: 'Pickup',
+                    ground: 'UPS Ground',
+                    '2day': 'UPS 2-Day',
+                    overnight: 'Overnight'
+                };
+
+                return labels[value] || value || 'UPS Ground';
+            }
+
+            function buildOrderApiPayload() {
+                const payload = latestQuotePayload;
+                const result = payload?.result || {};
+                const data = payload?.data || {};
+                const signData = Array.isArray(result.signData) ? result.signData : [];
+                const quoteItems = Array.isArray(result.quoteItems) ? result.quoteItems : [];
+
+                const shippingMethodValue = orderShipping ? orderShipping.value : 'ground';
+                const shippingTotal = getShippingTotal(shippingMethodValue, result.subtotal || 0);
+                const grandTotal = Number(result.subtotal || 0) + Number(shippingTotal || 0);
+
+                const formState = serializeFormState();
+
+                const items = quoteItems.map((item, index) => {
+                    const tag = item.tag || {};
+                    const calc = item.calc || {};
+
+                    return {
+                        line_no: index + 1,
+                        qty: Number(tag.qty || 1),
+                        height: Number(tag.height || calc.heightIn || 0),
+                        width: Number(tag.width || calc.widthIn || 0),
+                        size_label: tag.sizeLabel || '',
+                        color: tag.color || '',
+                        holes: tag.holes || '',
+                        hole_size: tag.holeSize || '',
+                        shape: data.shape || '',
+                        text_content: Array.isArray(tag.lines)
+                            ? tag.lines.map(line => line.text || '').filter(Boolean).join('\n')
+                            : (tag.raw || ''),
+                        line_styles: Array.isArray(tag.lines) ? tag.lines : [],
+                        unit_price: Number(calc.unitPrice || 0),
+                        subtotal: Number(calc.subtotal || 0),
+                        payload: tag
+                    };
+                });
+
+                return {
+                    quote_number: data.quoteNumber || null,
+
+                    customer_name: orderName ? orderName.value.trim() : (data.customerName || ''),
+                    customer_email: orderEmail ? orderEmail.value.trim() : (data.email || ''),
+                    customer_phone: orderPhone ? orderPhone.value.trim() : (data.phone || ''),
+                    company: orderCompany ? orderCompany.value.trim() : (data.companyName || ''),
+                    job_name: data.jobName || (getEl('jobName') ? getEl('jobName').value.trim() : ''),
+
+                    total_tags: signData.length,
+                    total_pieces: Number(result.totalPieces || 0),
+
+                    product_subtotal: Number(result.rawSubtotal || 0),
+                    product_total: Number(result.subtotal || 0),
+                    shipping_total: Number(shippingTotal || 0),
+                    grand_total: Number(grandTotal || 0),
+
+                    shipping_method: getShippingMethodLabel(shippingMethodValue),
+
+                    shipping_address: {
+                        street: orderAddress ? orderAddress.value.trim() : '',
+                        city: orderCity ? orderCity.value.trim() : '',
+                        state: orderState ? orderState.value.trim() : '',
+                        zip: orderZip ? orderZip.value.trim() : ''
+                    },
+
+                    billing_address: billingSameAsShipping && billingSameAsShipping.checked
+                        ? {
+                            street: orderAddress ? orderAddress.value.trim() : '',
+                            city: orderCity ? orderCity.value.trim() : '',
+                            state: orderState ? orderState.value.trim() : '',
+                            zip: orderZip ? orderZip.value.trim() : ''
+                        }
+                        : {
+                            street: billingAddress ? billingAddress.value.trim() : '',
+                            city: billingCity ? billingCity.value.trim() : '',
+                            state: billingState ? billingState.value.trim() : '',
+                            zip: billingZip ? billingZip.value.trim() : ''
+                        },
+
+                    payment_status: 'pending',
+                    payment_method: 'card',
+                    card_last_four: getCardLastFour(),
+
+                    proof_approved: Boolean(proofApprovalCheckbox && proofApprovalCheckbox.checked),
+
+                    items,
+
+                    payload: {
+                        form_state: formState,
+                        quote_payload: latestQuotePayload,
+                        order_info: {
+                            cardholder: paymentCardholder ? paymentCardholder.value.trim() : '',
+                            // Never send full card number/cvv to backend
+                            card_last_four: getCardLastFour(),
+                            expiry: paymentExpiry ? paymentExpiry.value.trim() : '',
+                            billing_zip: paymentBillingZip ? paymentBillingZip.value.trim() : ''
+                        }
+                    }
+                };
+            }
+
+            window.reorderFromHistory = function (index) {
+                const order = savedOrdersCache[index];
+
+                if (!order || !order.payload) return;
+
+                const state = order.payload.form_state || order.payload.state || order.payload;
+
+                restoreFormState(state);
+                closeAccountModal();
+            };
 
             // "Save this address" from the order modal shipping section
             if (saveCurrentAddressBtn) {
