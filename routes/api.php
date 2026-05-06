@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\SavedTemplateController;
+use App\Http\Controllers\Api\SavedAddressController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -14,4 +15,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/templates', [SavedTemplateController::class, 'store']);
     Route::get('/templates/{template}', [SavedTemplateController::class, 'show']);
     Route::delete('/templates/{template}', [SavedTemplateController::class, 'destroy']);
+    Route::get('/addresses', [SavedAddressController::class, 'index']);
+    Route::post('/addresses', [SavedAddressController::class, 'store']);
+    Route::put('/addresses/{address}', [SavedAddressController::class, 'update']);
+    Route::delete('/addresses/{address}', [SavedAddressController::class, 'destroy']);
 });
