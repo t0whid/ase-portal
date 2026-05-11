@@ -35,6 +35,8 @@ class Order extends Model
         'proof_approved',
         'proof_approved_at',
         'payload',
+        'webgility_exported_at',
+        'webgility_export_count',
     ];
 
     protected function casts(): array
@@ -52,6 +54,8 @@ class Order extends Model
             'product_total' => 'decimal:2',
             'shipping_total' => 'decimal:2',
             'grand_total' => 'decimal:2',
+            'webgility_exported_at' => 'datetime',
+            'webgility_export_count' => 'integer',
         ];
     }
 

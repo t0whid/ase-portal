@@ -42,5 +42,7 @@ return [
         'success_url' => env('STRIPE_SUCCESS_URL'),
         'cancel_url' => env('STRIPE_CANCEL_URL'),
     ],
-
+    'webgility' => [
+        'export_password' => env('WEBGILITY_EXPORT_PASSWORD'),
+    ],
 ];
